@@ -1,0 +1,20 @@
+#promotion_box{overflow:hidden;clear:both;margin-bottom:8px}
+#outlet{width:357px;float:left}
+.s_title{background:url(../images/tintuc/bg_h2.png) top left repeat;height:16px;padding:8px 10px;clear:both;overflow:hidden;}
+.outlet_everyday{position:relative}
+.outlet_img{margin-right:10px;}
+.outlet_info{position:absolute;top:170px;height:35px;background:transparent url(../images/tran_white.png);padding:5px}
+.outlet_info p{width:170px;float:left;font-size:12px}
+.outlet_info p .price{color:#9b0000;}
+.percent{color:#009b00;font-size:24px;font-weight:bold;height:35px;border-left:dotted 1px #999;padding-left:10px;line-height:35px;display:block;float:left;margin-left:5px;}
+.outlet_title{font-size:14px;color:#333;line-height:18px;text-align:justify}
+.outlet_des{color:#666;font-size:11px}
+.red{color:#9b0000}
+#btn_buy_outlet{position:absolute;left:250px;top:176px}
+.big_blue_black{background:#64849c url(../images/btn_arrow.png) left center no-repeat;padding:5px 7px 5px 8px;color:#fff;text-transform:uppercase;font-weight:bold; font-size:14px;}
+.big_blue_black:hover{background:#9b0000 url(../images/bbnt-red.png) left -3px no-repeat; color: #FFF;}
+
+.promotion{float:left;margin-left:15px;}
+.voucher_slider{position:relative;width:357px;height:154px}
+.small_title{position:absolute;top:0px;right:0px;background:#333;color:#fff;font-size:9px;display:block;height:12px;z-index:9;padding:0 2px;}
+

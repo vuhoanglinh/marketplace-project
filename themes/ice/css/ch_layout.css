@@ -1,0 +1,207 @@
+/*======================================================================================
+ FHOUSE Global CSS
+ Created: LCT - 14/12/2010
+ Modified: LCT - 14/12/2010
+======================================================================================*/
+@import url("ch_module.css");
+@import url("ch_content.css");
+@font-face {
+    font-family: 'UTMEremitage';
+    src: url('../css/font/UTM_Avo.eot');
+    src: url('../css/font/UTM_Avo.eot?#iefix') format('embedded-opentype'),
+         url('../css/font/utm_avo-webfont.woff') format('woff'),
+         url('../css/font/UTM Eremitage.ttf') format('truetype'),
+         url('../css/font/utm_avo-webfont.svg#') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'UTMAvoBold';
+    src: url('../css/font/utm_avobold-webfont.eot');
+    src: url('../css/font/utm_avobold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../css/font/utm_avobold-webfont.woff') format('woff'),
+         url('../css/font/UTM AvoBold.ttf') format('truetype'),
+         url('../css/font/utm_avobold-webfont.svg#') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*======================================================================================*/
+*{padding:0;margin:0;outline:0}
+html{height:100%;margin-bottom:1px}
+a{outline:none}
+a:active,a:hover,a:link,a:visited{text-decoration:none}
+img{border:0}
+
+#wrapper{width:100%;height:100%}
+#ch_wrapper{margin:0 auto;text-align:left;width:960px;height:auto;background-color:transparent}
+
+
+.ie6 #ch_body{display:inline-block}
+.cleaner{clear:both}
+/* IE6 css fixer*//* add overflow:visible to (submit) buttons */ * html input,* html button{overflow:visible}
+*:first-child+html input[type="submit"],*:first-child+html button{overflow:visible}
+input,button{overflow:visible}
+/* ========================== GLOBAL HEADER Bar ========================== */#wrapperframe{margin:0 auto 0 auto;width:100%;background-color:#121212;/*position:fixed;z-index:100;background-attachment:fixed;*/}
+#wrapperhead{padding:0 0 0 0;width:980px;margin:0 auto}
+.header_top_bar{height:54px;width:100%}
+.header_top_bar .logo_top_bar{float:left}
+.header_top_bar .search_top_bar{float:left;margin-left:150px;color:#b6b6b6;padding-top:17px}
+.search_top_bar input{border:solid 1px #464646;background-color:#303030;height:17px;width:150px;color:#666;padding-left:3px;font-size:12px}
+.btn_go{margin-left:5px;background:url(../bar/images/btn_go.gif) no-repeat top left;width:31px;height:21px}
+.btn_go a{background:url(../images/bar/btn_go.gif) no-repeat top left;border:none;text-align:center;color:#FFF;font-weight:bold;padding:3px 5px}
+.btn_go a:hover{background:url(../images/bar/btn_go.gif) no-repeat bottom left}
+.close_top_bar{float:right;padding-top:18px;padding-right:18px;width:120px;color:#b6b6b6;vertical-align:top}
+/*add on*/
+
+#Left_colums_p{margin-right:15px;float:left;width:140px}
+#Content_colums{float:left;width:100%}
+.left_module{margin-bottom:10px}
+.left_module h2{color:#000;border-bottom:#ccc solid 1px;padding:5px 0;margin-bottom:10px;text-transform:uppercase}
+.left_module ul li{list-style:none}
+.left_module ul li a{color:#5b5b5b;list-style:none;line-height:20px}
+/*.right_module{display:inherit;float:left}
+.right_module h2{color:#000;border-bottom:#ccc solid 1px;padding:5px 0;margin-bottom:10px;text-transform:uppercase}
+*/
+
+/* ========================== GLOBAL HEADER ========================== */ 
+
+/*********************Menu Nav************************/
+
+/******************Search************************/
+
+.lf{float:left}
+.lr{float:right}
+/*[css for Colums]---------------------------------------*/#Left_colums{margin:0;padding:0}
+/*[css for folder]---------------------------------------*/.folder,.folder-body{position:relative;overflow:hidden}
+/*****folder01*******/.folder-top{background:transparent url(../images/colors/default/folder_bg.gif) no-repeat scroll top;background-position:100% -276px;height:5px;font-size:0 !important}
+.folder-top .square-top{background:transparent url(../images/colors/default/folder_bg.gif) no-repeat scroll top;background-position:0 -295px;width:10px;height:5px;float:left;font-size:0 !important}
+.folder-bottom{background:transparent url(../images/colors/default/folder_bg.gif) no-repeat scroll top;background-position:100% -333px;height:5px;line-height:1px !important;font-size:1px !important}
+.folder-bottom .square-bottom{background:transparent url(../images/colors/default/folder_bg.gif) no-repeat scroll top;background-position:0 -314px;width:10px;height:5px;line-height:0 !important;float:left;font-size:0 !important}
+.folder-body{background-color:#191919;padding:0 0;width:960px}
+/*************************** IMAGE RATING ***************************/#ratingdiv{overflow:hidden}
+#ratingdiv a{color:#999}
+#ratingdiv .undone,#ratingdiv .fade{background:url("../images/icon/icon-star.png") -14px 0 no-repeat;width:14px;display:inline-block;height:14px;/*float:left;margin-right:1px;*/text-indent:-99999px}
+#ratingdiv .number{/*float:left;*/ display:inline-block;margin-left:5px}
+#ratingdiv .done{background:url("../images/icon/icon-star.png") no-repeat;width:14px;display:block;height:14px;float:left;/*margin-right:1px;*/text-indent:-99999px}
+#ratingdiv .undone:hover{background-position:0}
+
+
+
+/*div#pagenav a:active{background:#aad83e url(../images/colors/default/paging.gif) no-repeat left -25px;color:#fff}
+div#pagenav a:active em{background:#aad83e url(../images/colors/default/paging.gif) no-repeat right -25px;color:#fff;margin-left:6px;padding:6px 10px 6px 4px;font-style:normal;float:left}
+*/
+
+div.pagenav a.button_nav{padding:0 14px 0 10px;margin:0 0 0 5px;display:inline-block;height:23px}
+div.pagenav a.button_nav:hover{/*background:url(../images/colors/default/paging_news.gif) no-repeat bottom left;*/}
+div.pagenav a.button_nav2{/*background:url(../images/colors/default/paging_news2.gif) no-repeat top left;*/padding:0 14px 0 10px;margin:0 0 0 5px;display:inline-block;height:23px}
+div.pagenav a.button_nav2:hover{/*background:url(../images/colors/default/paging_news2.gif) no-repeat bottom left;*/}
+/**************pageview*********************/.pageview{float:right}
+.pageview2{float:left;margin-top:5px}
+.pageview2 p{float:left;color:#1e1e1e}
+/*.pageview select{height:23px;padding-top:0;background:none;border:none}
+.pageview select{background:url(../images/colors/default/input_select.png) repeat-x;height:23px;border:none}
+*/.pageview select{/*height:23px;padding:2px;*/ background:#ccd1d8;border:#CCC solid 1px;color:#fff;width:130px}
+.pageview option{padding:5px;border:none;background:none}
+.foot_pageview{width:100%;clear:both}
+/**************block_share*********************/.block_content .block_share{margin-top:15px;float:left}
+.block_content .block_share ul li{display:inline;padding-right:15px}
+.block_content .block_share ul li a{color:#999}
+.block_content .block_share ul li.sharefriend a{background:url(../images/colors/default/store-header-footer-sprite.png) no-repeat left -350px;padding-left:25px}
+.block_content .block_share ul li.sendemail a{background:url(../images/colors/default/store-header-footer-sprite.png) no-repeat left -380px;padding-left:25px}
+.block_content .block_share ul li.sharefriend a:hover{background:url(../images/colors/default/store-header-footer-sprite.png) no-repeat left -433px;padding-left:25px;color:#fff}
+.block_content .block_share ul li.sendemail a:hover{background:url(../images/colors/default/store-header-footer-sprite.png) no-repeat left -457px;padding-left:25px;color:#9EBA10}
+/**************slidein*********************/.block_content .slidein{float:right;margin-top:15px}
+.block_content .slidein ul li{display:inline}
+.block_content .slidein ul li a{color:#999}
+.block_content .slidein ul li.slideout a{padding-right:8px}
+.block_content .slidein ul li a:hover{color:#fff}
+/* General */#cssdropdown,#cssdropdown ul{list-style:none}
+#cssdropdown,#cssdropdown *{padding:0;margin:0}
+/* Head links */#cssdropdown li.headlink{width:246px;float:left;margin-left:-1px;text-align:center}
+#cssdropdown li.headlink a{display:block;/*padding:15px;*/}
+#cssdropdown li.headlink a.icon_down{background:url(../images/icon/icon_down.gif) no-repeat 170px 20px}
+#cssdropdown li.headlink .drop{}
+/* Child lists and links */#cssdropdown li.headlink ul{display:none;text-align:left;background:#000;margin:7px 0 0 0}
+#cssdropdown li.headlink:hover ul{display:block}
+#cssdropdown li.headlink ul li a{padding:5px 5px 5px 30px;height:17px;font-size:12px;background:url(../images/icon/icon_arrow.gif) no-repeat 15px 8px}
+#cssdropdown li.headlink ul li a:hover{background-color:#c7c7c7}
+/* Pretty styling */#cssdropdown a{color:white}
+#cssdropdown ul li a:hover{text-decoration:none}
+#cssdropdown li.headlink{margin:10px 0 0 0;font-size:16px}
+#cssdropdown li.headlink ul{background-position:bottom;padding-bottom:10px}
+/* ========================== GLOBAL FOOTER ========================== *//* Footer Layout */#ch_footer{clear:both;xwidth:100%;xheight:95px;height:41px;xoverflow:hidden;xpadding:10px 0 0 0;margin:0 0 0 0;xposition:relative;font-size:12px;xfont-family:Arial,Helvetica,sans-serif;background:#002f61}
+.ie #ch_footer{padding:5px 0 0 0}
+#ch_footer_wapper{margin:0 auto;text-align:left;/* counter the body center. for IE;see http://flumpcakes.co.uk/css/center-div-ie */width:960px;height:41px;background:#196bc2;color:#FFF}
+#ch_footer a:link,#ch_footer a:active,#ch_footer a:visited{font-family:Arial,Helvetica,sans-serif;text-decoration:none;color:#fff}
+#ch_footer a:hover{color:#ccc}
+#ch_footer h3{display:none;text-indent:-990em;float:left}
+.sup_foot{xdisplay:block;xheight:41px}
+.link_list{font-size:1em;line-height:1em;float:right;margin-right:10px;width:100%}
+.upper_list{margin-top:20px;width:100%}
+.ie .upper_list{margin-top:10px}
+.link_list ul{float:right;margin:0 0 5px 0}
+#ch_footer ul li{float:left;list-style:none;display:block}
+#ch_footer ul li.last{border:0}
+#ch_footer ul li a{display:block;/*padding:0 7px;*/margin-left:5px}
+#ch_footer ul li.copyright{padding:5px 0 0 0}
+#ch_footer div.facebook{float:right;width:24px;margin-right:5px}
+#ch_footer div.twitter{float:right;width:24px;margin-right:5px}
+#ch_footer div.facebook a{display:block;background:url(../images/icon/facebook.png) no-repeat top left;height:24px;width:24px}
+#ch_footer div.facebook a:hover{display:block;background:url(../images/icon/facebook.png) no-repeat bottom left;height:24px;width:24px}
+#ch_footer div.twitter a{display:block;background:url(../images/icon/twitter.png) no-repeat top left;height:24px;width:24px}
+#ch_footer div.twitter a:hover{display:block;background:url(../images/icon/twitter.png) no-repeat bottom left;height:24px;width:24px}
+#ch_footer ul li.rss a{display:block;background:url(../images/icon/rss.png) no-repeat top left;height:24px;width:24px}
+#ch_footer ul li.rss a:hover{display:block;background:url(../images/icon/rss.png) no-repeat bottom left;height:24px;width:24px}
+.pcopy{padding:0 7px 0 0;color:#9b9c9c}
+.sub_foot .lt_foot{width:500px;float:left;margin:12px 0 0}
+.sub_foot .lt_foot ul{}
+.sub_foot .lt_foot ul li{border-right:#999 solid 1px;padding:0 10px 0 0}
+.sub_foot .lt_foot ul li.end{border-right:none;padding:0 10px 0 0}
+.sub_foot .rt_foot{width:410px;float:right;margin:8px 0 0 0}
+.sub_foot .rt_foot ul{float:right}
+li.selected{font-weight:bolder}
+.fhousecom #ch_footer .fhousehome a{color:red}
+span.pagenext a{background:url(../images/colors/default/paging_view.gif) no-repeat top left;width:23px;height:23px;position:absolute;top:0;right:26px}
+span.pageprev a{background:url(../images/colors/default/paging_view.gif) no-repeat top right;width:23px;height:23px;position:absolute;top:0;right:0}
+.new .box{}
+.box{width:940px;/*background:#fdfbfd;*/float:left;padding:10px;/*margin-top:15px;*/display:inline}
+/*Slide Banner top*/#slide{background:#fff}
+
+
+.theme-rebook .nivoSlider img{position:absolute;top:0;left:0;display:none;width:960px;/* Make sure your images are the same size */ height:480px;/* Make sure your images are the same size */z-index:21}
+.theme-rebook .nivoSlider a{border:0;display:block}
+
+.theme-rebook .nivo-controlNav a{display:block;width:18px;height:20px;background:url(../images/colors/default/slider_theme/bullets.png) no-repeat;text-indent:-9999px;border:0;margin-right:3px;float:left}
+.theme-rebook .nivo-controlNav a.active{background-position:0 -20px}
+
+
+
+
+
+.theme-rebook .nivo-caption{bottom:40%;left:auto;right:0;width:auto;max-width:630px;overflow:hidden;background:#fff;text-shadow:none;font-family:arial,serif;color:#4c4b4b}
+.theme-rebook .nivo-caption p{padding:5px 15px;color:#333;font-weight:bold;font-size:27px;text-transform:uppercase}
+.theme-rebook .nivo-caption a{color:#333;font-weight:bold;font-size:27px;text-transform:uppercase}
+.theme-rebook .ribbon{background:url(ribbon.png) no-repeat;width:111px;height:111px;position:absolute;top:-8px;left:-8px;z-index:300}
+/* The Nivo Slider styles */.nivoSlider{position:relative}
+.nivoSlider img{position:absolute;top:0;left:0}
+/* If an image is wrapped in a link */.nivoSlider a.nivo-imageLink{position:absolute;top:0;left:0;width:100%;height:100%;border:0;padding:0;margin:0;z-index:6;display:none}
+/* The slices and boxes in the Slider */.nivo-slice{display:block;position:absolute;z-index:5;height:100%}
+.nivo-box{display:block;position:absolute;z-index:5}
+/* Caption styles */.nivo-caption{position:absolute;left:0;bottom:0;background:#000;color:#fff;opacity:0.8;/* Overridden by captionOpacity setting */width:100%;z-index:8}
+.nivo-caption p{padding:5px;margin:0}
+.nivo-caption a{display:inline !important}
+.nivo-html-caption{display:none}
+/* Direction nav styles (e.g. Next & Prev) */.nivo-directionNav a{position:absolute;top:45%;z-index:9;cursor:pointer}
+.nivo-prevNav{left:0}
+.nivo-nextNav{right:0}
+/* Control nav styles (e.g. 1,2,3...) */.nivo-controlNav a{position:relative;z-index:9;cursor:pointer}
+.nivo-controlNav a.active{font-weight:bold}
+/*******Panel Slide********/#panel{/*background:#754c24;*/height:auto;display:none}
+
+/*#panel ul li{list-style:none;display:inline;padding:0 5px;margin:5px 0;border-right:#fff solid 1px;color:#fff;float:left}
+#panel ul li a{list-style:none;display:inline;padding:0 5px;color:#fff}
+#panel ul li a:hover{list-style:none;display:inline;padding:0 5px;color:#000}
+*/
+

@@ -1,0 +1,1777 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<title>Sản phẩm khuyến mãi hấp dẫn hàng hiệu chính hãng tại Chon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link type="text/css" href="../css/reset.css" rel="stylesheet">
+<link type="text/css" href="../css/typography.css" rel="stylesheet">
+<link type="text/css" href="../css/grid.css" rel="stylesheet">
+<link type="text/css" href="../css/set.css" rel="stylesheet">
+<link type="text/css" href="../css/outlet.css" rel="stylesheet">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.cycle.js" type="text/ecmascript"></script>
+<script src="../js/jsSet.js" type="text/ecmascript"></script>
+<script src="../js/jsOutlet.js" type="text/ecmascript"></script>
+<script src="../js/jquery.countdown.js" type="text/ecmascript"></script>
+<!--[if IE]> 
+<script src="../js/html5.js"></script>
+<! [endif]-->
+</head>
+
+<body>
+<!-- Header Begin -->
+<header class="header"> 
+  <!-- Section user-menu: login, logon, cart Begin -->
+  <section class="span-26 user-menu"> 
+    <script language="javascript" type="text/javascript">
+	    $(document).ready(function() {
+	        $(document).click(function(e) {
+	            if ($(e.target).closest('.divbox').length <= 0
+	            && $(e.target).closest('.showbox').length <= 0) {
+	                $('.showbox').hide();
+	                $('.divbox').parent().removeClass('active');
+	                $('.divbox').find('i').removeClass('up');
+	            }
+	        });
+
+
+	        $('.divbox').click(function() {
+	            $('.divbox').parent().removeClass('active');
+	            $('.divbox').find('i').removeClass('up');
+	            if ($(this).siblings('.showbox').is(':hidden')) {
+
+	                $(this).parent().addClass('active');
+	                $(this).find('i').addClass('up');
+	                $(this).siblings('.showbox').show();
+	            }
+	            else {
+
+	                $(this).parent().removeClass('active');
+	                $(this).find('i').removeClass('up');
+	                $(this).siblings('.showbox').hide();
+	            }
+	        });
+
+	    });
+
+	    function CreateLink() {
+	        var url = window.location.pathname;
+	        window.location = "";
+	    }
+	</script>
+    <article class="user-inner"> 
+      <!-- Loading login Begin -->
+      <div style="float:right;position: absolute;right:242px;top:10px"> <span id="loading_login" style="display: none;"><img src="../images/loading2.gif"></span> </div>
+      <!-- Loading login End --> 
+      
+      <!-- NonLogin Begin --> 
+      <script type="text/javascript" src="../js/LoginStatus.js"></script>
+      <div id="nonLogin" style="display:block">
+        <ul>
+          <!-- Login Normal Begin -->
+          <li class="lg-normal">
+            <div class="pao divbox"> <a href="javascript:void(0)"> <span>Đăng Nhập</span> <i class="down"></i> </a> </div>
+            <div class="box_login showbox" style="display: none;">
+              <div class="box_login1">
+                <form action="" method="post" name="frmLogin" id="frmLogin">
+                  <div class="loginUser">
+                    <label>Email hoặc username</label>
+                    <span>
+                    <input type="text" value="" id="loginUser" name="loginUser">
+                    </span> </div>
+                  <div class="loginPass">
+                    <label>Mật mã</label>
+                    <span>
+                    <input type="password" value="" id="loginPass" name="loginPass">
+                    </span> </div>
+                  <div class="fotgetPass"> <a href=""><span>Quên mật mã</span></a> <a href="javascript:void(0)" onclick="CreateLink()"><span>Đăng ký</span></a> </div>
+                  <div class="btnEnter"> <a href="javascript:void(0)" rel="nofollow" onclick="FuncLogin()">Đăng Nhập</a> </div>
+                </form>
+              </div>
+              <!-- Login Messessage Waring Begin -->
+              <div id="loginmessage" style="text-align: center;clear: both;padding-top: 10px;color:#c00; display: none;">Mật mã truy cập hoặc tên tài khoản không đúng! Vui lòng thử lại.</div>
+              <!-- Login Messessage Waring End -->
+              <div class="box_login2"> <span class="line"></span> <span class="line1"></span> <span class="title">hoặc</span> <a href="javascript:void(0)" rel="nofollow" onclick="OnPopupFuncLogin()" class="img_login-fb"><img src="../images/icon/img-facebook.png" alt="login facebook" title="login facebook" border="0"></a> </div>
+            </div>
+          </li>
+          <!-- Login Normal End --> 
+          
+          <!-- Login Facebook Begin -->
+          <li class="lg-facebook"><a href="javascript:void(0)" rel="nofollow" onclick="OnPopupFuncLogin()"><img src="../images/icon/login-fb.jpg" alt="login facebook" title="login facebook" border="0"></a></li>
+          <!-- Login Facebook End-->
+        </ul>
+      </div>
+      
+      <!-- NonLogin End --> 
+      
+      <!-- LoginOn Begin -->
+      
+      <div id="logon" style="display:none">
+        <ul>
+          <li class="lg-success">
+            <div class="pao1 divbox"> <a href="javascript:void(0)"> <span id="lblLoginName"></span> <i class="down"></i> </a> <a href="javascript:void(0)" class="postActor"> <img id="avatarUrlsmall" src="" alt="" title="" border="0" width="22"> </a> </div>
+            <div class="box_login_success showbox" style="display: none;">
+              <div class="box_info">
+                <div class="rowspan"> <a href="" class="title">Đơn hàng</a> <span id="lblTotalOrders" class="num"></span> </div>
+                <div class="rowspan"> <a href="" class="title">Yêu thích</a> <span id="lblTotalFavouriteProducts" class="num"></span> </div>
+              </div>
+              <div class="box_info">
+                <div class="rowspan"> <a href="" class="title">Điểm thưởng</a> <span id="lblTotalPoints" class="num"></span> </div>
+              </div>
+              <div class="box_info">
+                <div class="rowspan"> <a href="" class="title">Thông tin cá nhân</a> </div>
+                <div id="linkacc" class="rowspan" style="display:none"></div>
+                <div class="rowspan"> <a href="" class="title">Đổi mật mã</a> </div>
+              </div>
+              <div class="btnlogout"> <a href="" rel="nofollow">Thoát</a> </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- LoginOn End --> 
+      
+      <!-- Basket Begin -->
+      <div class="Basket">
+        <div id="cart_menu" class="s_nav"> <a class="bk_cart" href="/nguoi-dung/gio-hang.aspx" rel="nofollow"><span class="grand_total">
+          <label id="lblTotalQuantity" class="qproduct">0</label>
+          </span> </a>
+          <div class="s_submenu"> <a>Giỏ hàng</a>
+            <div class="s_mb_0"> <span class="img-loading"><img src="../images/loading2.gif"></span>
+              <div class="cart-contpopup"> 
+                
+                <!-- Ajax Loading cart--> 
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Basket End --> 
+    </article>
+  </section>
+  <!-- Section user-menu: login, logon, cart End --> 
+  
+  <!-- Section hdchon: logo, search, info numberphone, share Begin-->
+  <section class="span-26 hdchon">
+    <div class="logo"> <a href=""> <span>Trung tâm thời trang</span> </a> </div>
+    <div class="search"> 
+      
+      <!-- Key tag Begin -->
+      <div class="common_keyword">
+        <ul>
+          <li onmouseover="showkeyword()" onmouseout="hidekeyword()"><span>Từ khoá thông dụng</span>
+            <div class="tooltip" style="display: none;"> <a class="topKeyword_link" href="/tim-kiem.aspx?q=%c3%a1o+couple" title="áo couple">áo couple (229)</a>&nbsp; <a class="topKeyword_link" href="/tim-kiem.aspx?q=ao+so+mi+blue" title="ao so mi blue">ao so mi blue (279)</a>&nbsp; <a class="topKeyword_link" href="/tim-kiem.aspx?q=kieu+viet+lien" title="kieu viet lien">kieu viet lien (63)</a>&nbsp; <a class="topKeyword_link" href="/tim-kiem.aspx?q=gi%c3%a0y+boot" title="giày boot">giày boot (30)</a>&nbsp; <a class="topKeyword_link" href="/tim-kiem.aspx?q=ao+thun+nam+tron" title="ao thun nam tron">ao thun nam tron (246)</a>&nbsp; <a class="topKeyword_link" href="/tim-kiem.aspx?q=Vi+nu+mau+cam" title="Vi nu mau cam">Vi nu mau cam (46)</a>&nbsp; <a class="topKeyword_link" href="/tim-kiem.aspx?q=so+mi+trang+nu" title="so mi trang nu">so mi trang nu (297)</a>&nbsp; <a class="topKeyword_link" href="/tim-kiem.aspx?q=giay+valentino" title="giay valentino">giay valentino (36)</a>&nbsp; <a class="topKeyword_link" href="/tim-kiem.aspx?q=v%c3%ad+nam+da" title="ví nam da">ví nam da (103)</a>&nbsp; <a class="topKeyword_link" href="/tim-kiem.aspx?q=marc+jacobs+t%c3%bai+x%c3%a1ch" title="marc jacobs túi xách">marc jacobs túi xách (78)</a>&nbsp; </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Key tag End --> 
+      
+      <!-- Box search -->
+      <div class="searchbox">
+        <form action="" name="" id="" method="post">
+          <p class="isearch" onclick="doSearch();"></p>
+          <p class="iconsearch">
+            <input type="text" id="txtQuery" maxlength="100" value="Nhập tên thương hiệu, mã hoặc đặc điểm sản phẩm" onblur="if(this.value=='') this.value='Nhập tên thương hiệu, mã hoặc đặc điểm sản phẩm';" onfocus="if(jQuery.trim(this.value)=='Nhập tên thương hiệu, mã hoặc đặc điểm sản phẩm') this.value='';" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+          </p>
+          <p class="iconbutton" onclick="doSearch();"> </p>
+        </form>
+      </div>
+    </div>
+    <div class="hotline">
+      <p> Hotline:</p>
+      <p class="num"> 1900­ 55 88 34</p>
+    </div>
+    <div class="Share">
+      <p> Chia sẻ:</p>
+      <p> <a title="Đăng lên Facebook" style="cursor: pointer;" onclick="window.open('http://www.facebook.com/share.php?u='+document.location,'_blank');" class="facebook" rel="nofollow"></a> <a title="Đăng lên Twitter" style="cursor: pointer;" onclick="window.open('http://twitter.com/home?status='+document.location,'_blank');" class="twitter" rel="nofollow"> </a> <a title="Đăng lên googleplus" class="googleplus" onclick="window.open('https://plus.google.com/share?url='+document.location,'_blank');" rel="nofollow"></a> <a id="ShowMailBox999" title="" class="email" href="/nguoi-dung/Moi-ban-be.aspx?iframe=true&amp;width=735&amp;height=645" rel="nofollow" style="display:block"> </a> </p>
+    </div>
+  </section>
+  <!-- Section hdchon: logo, search, info numberphone, share End--> 
+  
+  <!-- Section nav: container menu, navbar, Begin-->
+  
+  <section class="span-26 nav"> 
+    <!-- Menu Begin -->
+    <ul id="menu" class="sf-menu sf-navbar">
+      <div class="home"> <a href="/"></a> </div>
+      <!-- Menu Item 1 Begin-->
+      <li id="liProductlist" class="current sfHover"> <a href="" title="MUA SẮM">MUA SẮM +</a> 
+        
+        <!-- Submenu Begin-->
+        <div class="subl_1"> 
+          
+          <!-- ul#CateListMenu Begin-->
+          <ul id="CateListMenu">
+            
+            <!-- ul#CateListMenu Item 1 li.parentcatid0 Begin-->
+            <li class="parentcatid0"><a href="/mua-sam/thoi-trang-nu.aspx?ref=menu-cat"> Thời trang nữ</a> 
+              <!-- div.chon_2columns.chon-megamenu store all column Begin-->
+              <div class="chon_2columns chon-megamenu"> 
+                <!-- div store category (DANH MỤC) Begin-->
+                <div class="col_2">
+                  <div class="drawer">Danh mục <a class="readmore" href="/tim-kiem.aspx?catid=1556&amp;ref=menu-cat">Xem tất cả &gt;&gt; </a></div>
+                  <!-- col left Begin-->
+                  <ul class="navgray">
+                    <li> <a class="dm_a" href="" title="Áo kiểu" target="_self"> <span><img src="../images/purpose/icon-cat.png" alt="Áo kiểu" title="Áo kiểu" class="nav0_0"></span> Áo kiểu </a> </li>
+                    <li> <a class="dm_a" href="" title="Áo thun" target="_self"> <span><img src="../images/purpose/icon-cat.png" alt="Áo thun" title="Áo thun" class="nav0_1"></span> Áo thun </a> </li>
+                    <li> <a class="dm_a" href="" title="Áo sơ mi" target="_self"> <span><img src="../images/purpose/icon-cat.png" alt="Áo sơ mi" title="Áo sơ mi" class="nav0_2"></span> Áo sơ mi </a> </li>
+                    <li> <a class="dm_a" href="" title="Áo khoác" target="_self"> <span><img src="../images/purpose/icon-cat.png" alt="Áo khoác" title="Áo khoác" class="nav0_3"></span> Áo khoác </a> </li>
+                    <li> <a class="dm_a" href="" title="Áo đầm" target="_self"> <span><img src="../images/purpose/icon-cat.png" alt="Áo đầm" title="Áo đầm" class="nav0_4"></span> Áo đầm </a> </li>
+                    <li> <a class="dm_a" href="" title="Váy" target="_self"> <span><img src="../images/purpose/icon-cat.png" alt="Váy" title="Váy" class="nav0_5"></span> Váy </a> </li>
+                    <li> <a class="dm_a" href="" title="Quần tây, quần kiểu" target="_self"> <span><img src="../images/purpose/icon-cat.png" alt="Quần tây, quần kiểu" title="Quần tây, quần kiểu" class="nav0_6"></span> Quần tây, quần kiểu </a> </li>
+                    <li> <a class="dm_a" href="" title="Quần jeans" target="_self"> <span><img src="../images/purpose/icon-cat.png" alt="Quần jeans" title="Quần jeans" class="nav0_7"></span> Quần jeans </a> </li>
+                    <li> <a class="dm_a" href="" title="Quần short" target="_self"> <span><img src="../images/purpose/icon-cat.png" alt="Quần short" title="Quần short" class="nav0_8"></span> Quần short </a> </li>
+                    <li> <a class="dm_a" href="" title="Đồ công sở" target="_self"> <span><img src="../images/purpose/icon-cat.png" alt="Đồ công sở" title="Đồ công sở" class="nav0_9"></span> Đồ công sở </a> </li>
+                  </ul>
+                  <!-- col left End--> 
+                  <!-- col right Begin-->
+                  <ul class="navgray">
+                    <li> <a class="dm_a" href="" title="Thời trang bầu" target="_self"> <span><img src="../images/purpose/icon-cat.png" alt="Thời trang bầu" title="Thời trang bầu" class="nav0_10"></span> Thời trang bầu </a> </li>
+                    <li> <a class="dm_a" href="" title="Đồ ngủ, Đồ mặc nhà" target="_self"> <span><img src="../images/purpose/icon-cat.png" alt="Đồ ngủ, Đồ mặc nhà" title="Đồ ngủ, Đồ mặc nhà" class="nav0_11"></span> Đồ ngủ, Đồ mặc nhà </a> </li>
+                    <li> <a class="dm_a" href="" target="_self"> <span><img src="../images/purpose/icon-cat.png" alt="Đồ bơi" title="Đồ bơi" class="nav0_12"></span> Đồ bơi </a> </li>
+                    <li> <a class="dm_a" href="" title="Đồ lót" target="_self"> <span><img src="../images/purpose/icon-cat.png" alt="Đồ lót" title="Đồ lót" class="nav0_13"></span> Đồ lót </a> </li>
+                  </ul>
+                  <!-- col right End--> 
+                </div>
+                <!-- div store category (DANH MỤC) End--> 
+                <!-- div.col_3 store brand (THƯƠNG HIỆU) Begin-->
+                <div class="col_3">
+                  <div class="drawer">Tất cả thương hiệu<a class="readmore" href="">Xem tất cả &gt;&gt; </a></div>
+                  <ul class="navgray2">
+                    <li><a title="Texto" target="_self" href=""> TEXTO</a></li>
+                  </ul>
+                </div>
+                <!-- div.col_3 store brand (THƯƠNG HIỆU) End--> 
+                <!-- div.col_1 store sort ,use product Begin  -->
+                <div class="col_1"> 
+                  <!-- Sort Begin-->
+                  <div class="drawer">Loại sản phẩm</div>
+                  <ul class="navgray1">
+                    <li><a href="" title="Thời trang nữ" target="_self">Mới nhất</a></li>
+                    <li><a href="" title="Thời trang nữ" target="_self">Giá thấp nhất </a></li>
+                    <li><a href="" title="Thời trang nữ" target="_self">Khuyến mãi lớn nhất </a></li>
+                    <li><a href="" title="Thời trang nữ" target="_self">Nổi bật nhất </a></li>
+                    <li><a href="" title="Thời trang nữ" target="_self">Yêu thích nhất </a></li>
+                  </ul>
+                  <!-- Sort End--> 
+                  <!-- Use Begin-->
+                  <div class="drawer"> Mục đích sử dụng </div>
+                  <ul class="navgray1">
+                    <li><a href="">Dạo phố</a></li>
+                    <li><a href="">Công sở</a></li>
+                    <li><a href="">Đi tiệc</a></li>
+                    <li><a href="">Du lịch</a></li>
+                    <li><a href="">Đi học</a></li>
+                    <li><a href="">Khác</a></li>
+                  </ul>
+                  <!-- Use End--> 
+                </div>
+                <!-- div.col_1 store sort ,use product End  --> 
+                <!-- div.col_1 store sort price of product Begin -->
+                <div class="col_1">
+                  <div class="drawer">Giá bán</div>
+                  <ul class="navgray1">
+                    <li><a href=""> Dưới 200 ngàn</a></li>
+                    <li><a href=""> 200 ngàn                                -                                400 ngàn</a></li>
+                    <li><a href=""> 400 ngàn                                -                                600 ngàn</a></li>
+                    <li><a href=""> 600 ngàn                                -                                800 ngàn</a></li>
+                    <li><a href=""> Trên 800 ngàn</a></li>
+                  </ul>
+                  <div class="nav-adv"> <a href="" target="_blank"> <img alt="banner 0612-02" src="http://img.chon.vn/thumbnail.ashx?width=165&amp;height=209&amp;url=Files/upload/Images/Banner/0f78932f-cde7-4124-8ba9-53e10fd529ee_pop-up-165x209.jpg" width="165" height="209"> </a> </div>
+                </div>
+                <!-- div.col_1 store sort price of product Begin --> 
+              </div>
+              <!-- div.chon_2columns.chon-megamenu store all column End--> 
+            </li>
+            <!-- ul#CateListMenu Item 1 li.parentcatid0 End-->
+            
+          </ul>
+          <!-- ul#CateListMenu End--> 
+        </div>
+        <!-- Submenu End--> 
+      </li>
+      <!-- Menu Item 1 End--> 
+      
+      <!-- Menu Item 2 Begin-->
+      <li class=""> <a href="" title="KHUYẾN MÃI">KHUYẾN MÃI</a> </li>
+      <!-- Menu Item 2 End--> 
+      
+      <!-- Menu Item 3 Begin-->
+      <li class=""><a href="/outlet-everyday/" title="Outlet Everyday">OUTLET EVERYDAY</a> </li>
+      <!-- Menu Item 3 End--> 
+      
+      <!-- Menu Item 4 Begin-->
+      <li><a href="/weekly-deal/" title="Weekly deal">WEEKLY DEAL</a> </li>
+      <!-- Menu Item 4 End--> 
+      
+      <!-- Menu Item 5 Begin-->
+      <li><a href="/cua-hang/" title="Cửa hàng">CỬA HÀNG +</a>
+        <div id="popupmerchantlist" class="lever01">
+          <div class="col_1">
+            <h2>Cửa hàng nổi bật nhất</h2>
+            <ul>
+              <li><a href="/cua-hang/g2000.aspx?ref=menu-merchant" title="G2000"> G2000</a></li>
+              <li><a href="/cua-hang/mode-outlet.aspx?ref=menu-merchant" title="Mode Outlet"> Mode Outlet</a></li>
+              <li><a href="/cua-hang/ninewest.aspx?ref=menu-merchant" title="NineWest"> NineWest</a></li>
+              <li><a href="/cua-hang/quynh-binh-phuong.aspx?ref=menu-merchant" title="Quỳnh Bình Phương"> Quỳnh Bình Phương</a></li>
+              <li><a href="/cua-hang/runway.aspx?ref=menu-merchant" title="Runway"> Runway</a></li>
+            </ul>
+            <div class="col-foot"> <a href="/cua-hang/?featured=1&amp;ref=menu-merchant" style="text-align: right;">Tất cả &gt;&gt;</a></div>
+          </div>
+          <div class="col_1">
+            <h2> Cửa hàng Diamond</h2>
+            <ul>
+              <li><a href="/cua-hang/aino-sofia.aspx?ref=menu-merchant" title="Aino Sofia"> Aino Sofia</a></li>
+              <li><a href="/cua-hang/byice.aspx?ref=menu-merchant" title="BYICE"> BYICE</a></li>
+              <li><a href="/cua-hang/como.aspx?ref=menu-merchant" title="Como"> Como</a></li>
+              <li><a href="/cua-hang/dicapac.aspx?ref=menu-merchant" title="Dicapac"> Dicapac</a></li>
+              <li><a href="/cua-hang/g2000.aspx?ref=menu-merchant" title="G2000"> G2000</a></li>
+              <li><a href="/cua-hang/gendai.aspx?ref=menu-merchant" title="Gendai"> Gendai</a></li>
+              <li><a href="/cua-hang/gendai-en.aspx?ref=menu-merchant" title="Gendai-en"> Gendai-en</a></li>
+              <li><a href="/cua-hang/noir.aspx?ref=menu-merchant" title="Noir"> Noir</a></li>
+              <li><a href="/cua-hang/san-sciaro-manhattan.aspx?ref=menu-merchant" title="San Sciaro &amp; Manhattan"> San Sciaro &amp; ...</a></li>
+              <li><a href="/cua-hang/sensorial.aspx?ref=menu-merchant" title="Sensorial"> Sensorial</a></li>
+              <li><a href="/cua-hang/unicol.aspx?ref=menu-merchant" title="Unicol"> Unicol</a></li>
+              <li><a href="/cua-hang/vaalen.aspx?ref=menu-merchant" title="VAALEN"> VAALEN</a></li>
+            </ul>
+            <div class="col-foot"> <a href="/cua-hang/?premium=1&amp;ref=menu-merchant" style="text-align: right;">Tất cả &gt;&gt;</a></div>
+          </div>
+          <div class="col_2">
+            <div class="col_2c2">
+              <h2> Tất cả cửa hàng</h2>
+              <div class="col_2c2_inner" id="col_2c2_inner">
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/agatha.aspx?ref=menu-merchant" title="Agatha"> Agatha</a></li>
+                  <li><a href="/cua-hang/agtex28.aspx?ref=menu-merchant" title="Agtex28"> Agtex28</a></li>
+                  <li><a href="/cua-hang/aimless.aspx?ref=menu-merchant" title="Aimless"> Aimless</a></li>
+                  <li><a href="/cua-hang/aino-sofia.aspx?ref=menu-merchant" title="Aino Sofia"> Aino Sofia</a></li>
+                  <li><a href="/cua-hang/alain-delon.aspx?ref=menu-merchant" title="Alain Delon"> Alain Delon</a></li>
+                  <li><a href="/cua-hang/alain-delon-handbag.aspx?ref=menu-merchant" title="Alain Delon Handbag"> Alain Delon Handbag</a></li>
+                  <li><a href="/cua-hang/alcado.aspx?ref=menu-merchant" title="Alcado"> Alcado</a></li>
+                  <li><a href="/cua-hang/aldo.aspx?ref=menu-merchant" title="Aldo"> Aldo</a></li>
+                  <li><a href="/cua-hang/amadoris.aspx?ref=menu-merchant" title="Amadoris"> Amadoris</a></li>
+                  <li><a href="/cua-hang/amme.aspx?ref=menu-merchant" title="Amme"> Amme</a></li>
+                  <li><a href="/cua-hang/amour-boutique.aspx?ref=menu-merchant" title="Amour Boutique"> Amour Boutique</a></li>
+                  <li><a href="/cua-hang/an-nhien.aspx?ref=menu-merchant" title="An Nhiên"> An Nhiên</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/ananas.aspx?ref=menu-merchant" title="Ananas"> Ananas</a></li>
+                  <li><a href="/cua-hang/andes.aspx?ref=menu-merchant" title="Andes"> Andes</a></li>
+                  <li><a href="/cua-hang/anna-nina.aspx?ref=menu-merchant" title="Anna Nina"> Anna Nina</a></li>
+                  <li><a href="/cua-hang/annie.aspx?ref=menu-merchant" title="Annie"> Annie</a></li>
+                  <li><a href="/cua-hang/ans.aspx?ref=menu-merchant" title="Ans"> Ans</a></li>
+                  <li><a href="/cua-hang/anti-x.aspx?ref=menu-merchant" title="Anti-X"> Anti-X</a></li>
+                  <li><a href="/cua-hang/angel-madam--luna-belle.aspx?ref=menu-merchant" title="Angel Madam &amp; Luna Belle"> Angel Madam &amp; Luna ...</a></li>
+                  <li><a href="/cua-hang/anhlee.aspx?ref=menu-merchant" title="AnhLee"> AnhLee</a></li>
+                  <li><a href="/cua-hang/aqua.aspx?ref=menu-merchant" title="Aqua"> Aqua</a></li>
+                  <li><a href="/cua-hang/asia.aspx?ref=menu-merchant" title="Asia"> Asia</a></li>
+                  <li><a href="/cua-hang/b-classique-by-b-store.aspx?ref=menu-merchant" title="B.classiqué By B.store"> B.classiqué By ...</a></li>
+                  <li><a href="/cua-hang/b-office-by-b-store.aspx?ref=menu-merchant" title="B.office By B.store"> B.office By B.store</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/bandolini.aspx?ref=menu-merchant" title="Bandolini"> Bandolini</a></li>
+                  <li><a href="/cua-hang/barishidiparis.aspx?ref=menu-merchant" title="BarishidiParis"> BarishidiParis</a></li>
+                  <li><a href="/cua-hang/bcbg.aspx?ref=menu-merchant" title="BCBG"> BCBG</a></li>
+                  <li><a href="/cua-hang/bedding-gallery.aspx?ref=menu-merchant" title="Bedding Gallery"> Bedding Gallery</a></li>
+                  <li><a href="/cua-hang/belair.aspx?ref=menu-merchant" title="Belair"> Belair</a></li>
+                  <li><a href="/cua-hang/belleto.aspx?ref=menu-merchant" title="Belleto"> Belleto</a></li>
+                  <li><a href="/cua-hang/belli-blossom.aspx?ref=menu-merchant" title="Belli Blossom"> Belli Blossom</a></li>
+                  <li><a href="/cua-hang/belluni.aspx?ref=menu-merchant" title="Belluni"> Belluni</a></li>
+                  <li><a href="/cua-hang/bernard-cassiere.aspx?ref=menu-merchant" title="Bernard Cassiere"> Bernard Cassiere</a></li>
+                  <li><a href="/cua-hang/bitis.aspx?ref=menu-merchant" title="Bitis"> Bitis</a></li>
+                  <li><a href="/cua-hang/black-forest.aspx?ref=menu-merchant" title="Black Forest"> Black Forest</a></li>
+                  <li><a href="/cua-hang/blue-exchange.aspx?ref=menu-merchant" title="Blue Exchange"> Blue Exchange</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/blue-kite.aspx?ref=menu-merchant" title="Blue Kite"> Blue Kite</a></li>
+                  <li><a href="/cua-hang/bolzano.aspx?ref=menu-merchant" title="Bolzano"> Bolzano</a></li>
+                  <li><a href="/cua-hang/bossanjerasu.aspx?ref=menu-merchant" title="Bossanjerasu"> Bossanjerasu</a></li>
+                  <li><a href="/cua-hang/boxxyno.aspx?ref=menu-merchant" title="BOXXYNO"> BOXXYNO</a></li>
+                  <li><a href="/cua-hang/bon-mua.aspx?ref=menu-merchant" title="Bốn Mùa"> Bốn Mùa</a></li>
+                  <li><a href="/cua-hang/byice.aspx?ref=menu-merchant" title="BYICE"> BYICE</a></li>
+                  <li><a href="/cua-hang/bysi.aspx?ref=menu-merchant" title="Bysi"> Bysi</a></li>
+                  <li><a href="/cua-hang/camel.aspx?ref=menu-merchant" title="Camel"> Camel</a></li>
+                  <li><a href="/cua-hang/candy-rox.aspx?ref=menu-merchant" title="Candy Rox"> Candy Rox</a></li>
+                  <li><a href="/cua-hang/cashew.aspx?ref=menu-merchant" title="Cashew"> Cashew</a></li>
+                  <li><a href="/cua-hang/cellact.aspx?ref=menu-merchant" title="Cellact"> Cellact</a></li>
+                  <li><a href="/cua-hang/clarks.aspx?ref=menu-merchant" title="Clarks"> Clarks</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/cocoxi.aspx?ref=menu-merchant" title="Cocoxi"> Cocoxi</a></li>
+                  <li><a href="/cua-hang/como.aspx?ref=menu-merchant" title="Como"> Como</a></li>
+                  <li><a href="/cua-hang/coupletx.aspx?ref=menu-merchant" title="CoupleTX"> CoupleTX</a></li>
+                  <li><a href="/cua-hang/cong-khanh.aspx?ref=menu-merchant" title="Công Khanh"> Công Khanh</a></li>
+                  <li><a href="/cua-hang/charles-david.aspx?ref=menu-merchant" title="Charles David"> Charles David</a></li>
+                  <li><a href="/cua-hang/chon-outlet.aspx?ref=menu-merchant" title="Chon Outlet"> Chon Outlet</a></li>
+                  <li><a href="/cua-hang/dc-shoes.aspx?ref=menu-merchant" title="DC Shoes"> DC Shoes</a></li>
+                  <li><a href="/cua-hang/depkool.aspx?ref=menu-merchant" title="Depkool"> Depkool</a></li>
+                  <li><a href="/cua-hang/diamond-eyeservices.aspx?ref=menu-merchant" title="Diamond Eyeservices"> Diamond Eyeservices</a></li>
+                  <li><a href="/cua-hang/dicapac.aspx?ref=menu-merchant" title="Dicapac"> Dicapac</a></li>
+                  <li><a href="/cua-hang/disney-baby.aspx?ref=menu-merchant" title="Disney Baby"> Disney Baby</a></li>
+                  <li><a href="/cua-hang/dkk.aspx?ref=menu-merchant" title="DKK"> DKK</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/dkny.aspx?ref=menu-merchant" title="DKNY"> DKNY</a></li>
+                  <li><a href="/cua-hang/dkny-jeans.aspx?ref=menu-merchant" title="DKNY Jeans"> DKNY Jeans</a></li>
+                  <li><a href="/cua-hang/dmk.aspx?ref=menu-merchant" title="DMK"> DMK</a></li>
+                  <li><a href="/cua-hang/dreamvolts.aspx?ref=menu-merchant" title="Dreamvolts"> Dreamvolts</a></li>
+                  <li><a href="/cua-hang/ecco.aspx?ref=menu-merchant" title="ECCO"> ECCO</a></li>
+                  <li><a href="/cua-hang/elle.aspx?ref=menu-merchant" title="ELLE"> ELLE</a></li>
+                  <li><a href="/cua-hang/ellise.aspx?ref=menu-merchant" title="Ellise"> Ellise</a></li>
+                  <li><a href="/cua-hang/eveline.aspx?ref=menu-merchant" title="Eveline"> Eveline</a></li>
+                  <li><a href="/cua-hang/everbest.aspx?ref=menu-merchant" title="Everbest"> Everbest</a></li>
+                  <li><a href="/cua-hang/f-house.aspx?ref=menu-merchant" title="f.house"> f.house</a></li>
+                  <li><a href="/cua-hang/fcuk.aspx?ref=menu-merchant" title="FCUK"> FCUK</a></li>
+                  <li><a href="/cua-hang/foci.aspx?ref=menu-merchant" title="Foci"> Foci</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/franco-sarto.aspx?ref=menu-merchant" title="Franco Sarto"> Franco Sarto</a></li>
+                  <li><a href="/cua-hang/freeman.aspx?ref=menu-merchant" title="Freeman"> Freeman</a></li>
+                  <li><a href="/cua-hang/g2000.aspx?ref=menu-merchant" title="G2000"> G2000</a></li>
+                  <li><a href="/cua-hang/g2000-chon.aspx?ref=menu-merchant" title="G2000-Chon"> G2000-Chon</a></li>
+                  <li><a href="/cua-hang/gc-watch.aspx?ref=menu-merchant" title="GC Watch"> GC Watch</a></li>
+                  <li><a href="/cua-hang/gendai.aspx?ref=menu-merchant" title="Gendai"> Gendai</a></li>
+                  <li><a href="/cua-hang/gendai-en.aspx?ref=menu-merchant" title="Gendai-en"> Gendai-en</a></li>
+                  <li><a href="/cua-hang/golden-age.aspx?ref=menu-merchant" title="Golden Age"> Golden Age</a></li>
+                  <li><a href="/cua-hang/good-morning.aspx?ref=menu-merchant" title="Good Morning"> Good Morning</a></li>
+                  <li><a href="/cua-hang/gosto.aspx?ref=menu-merchant" title="Gosto"> Gosto</a></li>
+                  <li><a href="/cua-hang/guess-watch.aspx?ref=menu-merchant" title="Guess watch"> Guess watch</a></li>
+                  <li><a href="/cua-hang/gwens.aspx?ref=menu-merchant" title="Gwens"> Gwens</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/gia-gia.aspx?ref=menu-merchant" title="Gia Gia"> Gia Gia</a></li>
+                  <li><a href="/cua-hang/gino-rossi.aspx?ref=menu-merchant" title="Gino Rossi"> Gino Rossi</a></li>
+                  <li><a href="/cua-hang/ginger-world.aspx?ref=menu-merchant" title="Ginger World"> Ginger World</a></li>
+                  <li><a href="/cua-hang/giordano.aspx?ref=menu-merchant" title="Giordano"> Giordano</a></li>
+                  <li><a href="/cua-hang/giossardi.aspx?ref=menu-merchant" title="Giossardi"> Giossardi</a></li>
+                  <li><a href="/cua-hang/hang-ten-crocodile.aspx?ref=menu-merchant" title="Hang Ten &amp; Crocodile"> Hang Ten &amp; Crocodile</a></li>
+                  <li><a href="/cua-hang/happy-hoop.aspx?ref=menu-merchant" title="Happy Hoop"> Happy Hoop</a></li>
+                  <li><a href="/cua-hang/heatwave.aspx?ref=menu-merchant" title="Heatwave"> Heatwave</a></li>
+                  <li><a href="/cua-hang/hh-fashion.aspx?ref=menu-merchant" title="hh-fashion"> hh-fashion</a></li>
+                  <li><a href="/cua-hang/hidesign.aspx?ref=menu-merchant" title="Hidesign"> Hidesign</a></li>
+                  <li><a href="/cua-hang/hifashion.aspx?ref=menu-merchant" title="Hifashion"> Hifashion</a></li>
+                  <li><a href="/cua-hang/huy-hoang.aspx?ref=menu-merchant" title="Huy Hoàng"> Huy Hoàng</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/ibasic.aspx?ref=menu-merchant" title="iBasic"> iBasic</a></li>
+                  <li><a href="/cua-hang/its-well-plus.aspx?ref=menu-merchant" title="Its Well Plus"> Its Well Plus</a></li>
+                  <li><a href="/cua-hang/jada.aspx?ref=menu-merchant" title="Jada"> Jada</a></li>
+                  <li><a href="/cua-hang/jemma.aspx?ref=menu-merchant" title="Jemma"> Jemma</a></li>
+                  <li><a href="/cua-hang/john-henry.aspx?ref=menu-merchant" title="John Henry"> John Henry</a></li>
+                  <li><a href="/cua-hang/jojo.aspx?ref=menu-merchant" title="JOJO"> JOJO</a></li>
+                  <li><a href="/cua-hang/jolie.aspx?ref=menu-merchant" title="Jolie"> Jolie</a></li>
+                  <li><a href="/cua-hang/kk-fashion.aspx?ref=menu-merchant" title="K&amp;K fashion"> K&amp;K fashion</a></li>
+                  <li><a href="/cua-hang/kabukj.aspx?ref=menu-merchant" title="Kabukj"> Kabukj</a></li>
+                  <li><a href="/cua-hang/kelly-bui.aspx?ref=menu-merchant" title="Kelly Bùi"> Kelly Bùi</a></li>
+                  <li><a href="/cua-hang/kentazo.aspx?ref=menu-merchant" title="Kentazo"> Kentazo</a></li>
+                  <li><a href="/cua-hang/kevel.aspx?ref=menu-merchant" title="Kevel"> Kevel</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/kico.aspx?ref=menu-merchant" title="KICO"> KICO</a></li>
+                  <li><a href="/cua-hang/kim-cuong-an-khang.aspx?ref=menu-merchant" title="Kim Cương An Khang"> Kim Cương An Khang</a></li>
+                  <li><a href="/cua-hang/kim-khanh.aspx?ref=menu-merchant" title="Kim Khanh"> Kim Khanh</a></li>
+                  <li><a href="/cua-hang/khatoco.aspx?ref=menu-merchant" title="Khatoco"> Khatoco</a></li>
+                  <li><a href="/cua-hang/la-tour-eiffel-paris.aspx?ref=menu-merchant" title="La Tour Eiffel Paris"> La Tour Eiffel Paris</a></li>
+                  <li><a href="/cua-hang/labella.aspx?ref=menu-merchant" title="Labella"> Labella</a></li>
+                  <li><a href="/cua-hang/lamant.aspx?ref=menu-merchant" title="Lamant"> Lamant</a></li>
+                  <li><a href="/cua-hang/lan-hanh.aspx?ref=menu-merchant" title="Lan Hạnh"> Lan Hạnh</a></li>
+                  <li><a href="/cua-hang/lanopearl.aspx?ref=menu-merchant" title="Lanopearl"> Lanopearl</a></li>
+                  <li><a href="/cua-hang/lason-j.aspx?ref=menu-merchant" title="Lason-J"> Lason-J</a></li>
+                  <li><a href="/cua-hang/le-chateau.aspx?ref=menu-merchant" title="Le Chateau"> Le Chateau</a></li>
+                  <li><a href="/cua-hang/lena-muto.aspx?ref=menu-merchant" title="Lena Muto"> Lena Muto</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/letengo.aspx?ref=menu-merchant" title="Letengo"> Letengo</a></li>
+                  <li><a href="/cua-hang/lewin.aspx?ref=menu-merchant" title="Lewin"> Lewin</a></li>
+                  <li><a href="/cua-hang/le-hang.aspx?ref=menu-merchant" title="Lệ Hằng"> Lệ Hằng</a></li>
+                  <li><a href="/cua-hang/le-thuy.aspx?ref=menu-merchant" title="Lê Thủy"> Lê Thủy</a></li>
+                  <li><a href="/cua-hang/li-ning.aspx?ref=menu-merchant" title="Li Ning"> Li Ning</a></li>
+                  <li><a href="/cua-hang/lime-orange.aspx?ref=menu-merchant" title="Lime Orange"> Lime Orange</a></li>
+                  <li><a href="/cua-hang/lloyd.aspx?ref=menu-merchant" title="LLOYD"> LLOYD</a></li>
+                  <li><a href="/cua-hang/locean.aspx?ref=menu-merchant" title="Locean"> Locean</a></li>
+                  <li><a href="/cua-hang/lolita-lempicka.aspx?ref=menu-merchant" title="Lolita Lempicka"> Lolita Lempicka</a></li>
+                  <li><a href="/cua-hang/lucy.aspx?ref=menu-merchant" title="Lucy"> Lucy</a></li>
+                  <li><a href="/cua-hang/mac.aspx?ref=menu-merchant" title="MAC"> MAC</a></li>
+                  <li><a href="/cua-hang/mammut.aspx?ref=menu-merchant" title="Mammut"> Mammut</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/marco-alfredo.aspx?ref=menu-merchant" title="Marco Alfredo"> Marco Alfredo</a></li>
+                  <li><a href="/cua-hang/mariposa.aspx?ref=menu-merchant" title="Mariposa"> Mariposa</a></li>
+                  <li><a href="/cua-hang/maschio.aspx?ref=menu-merchant" title="Maschio"> Maschio</a></li>
+                  <li><a href="/cua-hang/mattana.aspx?ref=menu-merchant" title="Mattana"> Mattana</a></li>
+                  <li><a href="/cua-hang/max.aspx?ref=menu-merchant" title="MAX"> MAX</a></li>
+                  <li><a href="/cua-hang/may-london.aspx?ref=menu-merchant" title="May London"> May London</a></li>
+                  <li><a href="/cua-hang/me-girl-shoes.aspx?ref=menu-merchant" title="Me Girl Shoes"> Me Girl Shoes</a></li>
+                  <li><a href="/cua-hang/mezzo.aspx?ref=menu-merchant" title="Mezzo"> Mezzo</a></li>
+                  <li><a href="/cua-hang/miki.aspx?ref=menu-merchant" title="MIKI"> MIKI</a></li>
+                  <li><a href="/cua-hang/milaross.aspx?ref=menu-merchant" title="Milaross"> Milaross</a></li>
+                  <li><a href="/cua-hang/milvus.aspx?ref=menu-merchant" title="Milvus"> Milvus</a></li>
+                  <li><a href="/cua-hang/minh-ha.aspx?ref=menu-merchant" title="Minh Hà"> Minh Hà</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/minh-hanh.aspx?ref=menu-merchant" title="Minh Hạnh"> Minh Hạnh</a></li>
+                  <li><a href="/cua-hang/minh-hoa.aspx?ref=menu-merchant" title="Minh Hoa"> Minh Hoa</a></li>
+                  <li><a href="/cua-hang/misaki.aspx?ref=menu-merchant" title="Misaki"> Misaki</a></li>
+                  <li><a href="/cua-hang/missha.aspx?ref=menu-merchant" title="Missha"> Missha</a></li>
+                  <li><a href="/cua-hang/mizada.aspx?ref=menu-merchant" title="Mizada"> Mizada</a></li>
+                  <li><a href="/cua-hang/mmifashion.aspx?ref=menu-merchant" title="MmiFashion"> MmiFashion</a></li>
+                  <li><a href="/cua-hang/mobivi.aspx?ref=menu-merchant" title="Mobivi"> Mobivi</a></li>
+                  <li><a href="/cua-hang/moda-mundo.aspx?ref=menu-merchant" title="Moda Mundo"> Moda Mundo</a></li>
+                  <li><a href="/cua-hang/mode-outlet.aspx?ref=menu-merchant" title="Mode Outlet"> Mode Outlet</a></li>
+                  <li><a href="/cua-hang/morgan-de-toi.aspx?ref=menu-merchant" title="Morgan de Toi"> Morgan de Toi</a></li>
+                  <li><a href="/cua-hang/morgan-de-toi-ready-to-wear.aspx?ref=menu-merchant" title="Morgan de Toi Ready-To-Wear"> Morgan de Toi ...</a></li>
+                  <li><a href="/cua-hang/mson.aspx?ref=menu-merchant" title="MSon"> MSon</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/mst-golf.aspx?ref=menu-merchant" title="MST Golf"> MST Golf</a></li>
+                  <li><a href="/cua-hang/mung-sinh-nhat.aspx?ref=menu-merchant" title="Mừng sinh nhật"> Mừng sinh nhật</a></li>
+                  <li><a href="/cua-hang/mypham2014.aspx?ref=menu-merchant" title="Mypham2014"> Mypham2014</a></li>
+                  <li><a href="/cua-hang/negozio.aspx?ref=menu-merchant" title="Negozio"> Negozio</a></li>
+                  <li><a href="/cua-hang/new-top.aspx?ref=menu-merchant" title="New Top"> New Top</a></li>
+                  <li><a href="/cua-hang/ninewest.aspx?ref=menu-merchant" title="NineWest"> NineWest</a></li>
+                  <li><a href="/cua-hang/noir.aspx?ref=menu-merchant" title="Noir"> Noir</a></li>
+                  <li><a href="/cua-hang/novelty.aspx?ref=menu-merchant" title="Novelty"> Novelty</a></li>
+                  <li><a href="/cua-hang/ocimode.aspx?ref=menu-merchant" title="OCIMode"> OCIMode</a></li>
+                  <li><a href="/cua-hang/opi.aspx?ref=menu-merchant" title="OPI"> OPI</a></li>
+                  <li><a href="/cua-hang/orio.aspx?ref=menu-merchant" title="ORIO"> ORIO</a></li>
+                  <li><a href="/cua-hang/oris.aspx?ref=menu-merchant" title="Oris"> Oris</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/outlet.aspx?ref=menu-merchant" title="Outlet"> Outlet</a></li>
+                  <li><a href="/cua-hang/owen.aspx?ref=menu-merchant" title="Owen"> Owen</a></li>
+                  <li><a href="/cua-hang/pavo.aspx?ref=menu-merchant" title="Pavo"> Pavo</a></li>
+                  <li><a href="/cua-hang/peekaboo.aspx?ref=menu-merchant" title="Peekaboo"> Peekaboo</a></li>
+                  <li><a href="/cua-hang/pepco.aspx?ref=menu-merchant" title="Pepco"> Pepco</a></li>
+                  <li><a href="/cua-hang/pinkage.aspx?ref=menu-merchant" title="Pinkage"> Pinkage</a></li>
+                  <li><a href="/cua-hang/police.aspx?ref=menu-merchant" title="Police"> Police</a></li>
+                  <li><a href="/cua-hang/proace-ashaway.aspx?ref=menu-merchant" title="Proace-Ashaway"> Proace-Ashaway</a></li>
+                  <li><a href="/cua-hang/protec.aspx?ref=menu-merchant" title="Protec"> Protec</a></li>
+                  <li><a href="/cua-hang/prowin.aspx?ref=menu-merchant" title="Prowin"> Prowin</a></li>
+                  <li><a href="/cua-hang/psf.aspx?ref=menu-merchant" title="PSF"> PSF</a></li>
+                  <li><a href="/cua-hang/puma.aspx?ref=menu-merchant" title="Puma"> Puma</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/phong-phu-jeans.aspx?ref=menu-merchant" title="Phong Phu JEANS"> Phong Phu JEANS</a></li>
+                  <li><a href="/cua-hang/qtpn-men.aspx?ref=menu-merchant" title="QTPN-men"> QTPN-men</a></li>
+                  <li><a href="/cua-hang/qtpn-women.aspx?ref=menu-merchant" title="QTPN-women"> QTPN-women</a></li>
+                  <li><a href="/cua-hang/qua-tang.aspx?ref=menu-merchant" title="Qua tang"> Qua tang</a></li>
+                  <li><a href="/cua-hang/quang-huy.aspx?ref=menu-merchant" title="Quang Huy"> Quang Huy</a></li>
+                  <li><a href="/cua-hang/quoctephunu2014.aspx?ref=menu-merchant" title="Quoctephunu2014"> Quoctephunu2014</a></li>
+                  <li><a href="/cua-hang/quyengop.aspx?ref=menu-merchant" title="Quyengop"> Quyengop</a></li>
+                  <li><a href="/cua-hang/quynh-binh-phuong.aspx?ref=menu-merchant" title="Quỳnh Bình Phương"> Quỳnh Bình Phương</a></li>
+                  <li><a href="/cua-hang/rb.aspx?ref=menu-merchant" title="R&amp;B"> R&amp;B</a></li>
+                  <li><a href="/cua-hang/reebok.aspx?ref=menu-merchant" title="Reebok"> Reebok</a></li>
+                  <li><a href="/cua-hang/relax.aspx?ref=menu-merchant" title="Relax"> Relax</a></li>
+                  <li><a href="/cua-hang/return.aspx?ref=menu-merchant" title="Return"> Return</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/revlon.aspx?ref=menu-merchant" title="Revlon"> Revlon</a></li>
+                  <li><a href="/cua-hang/rock.aspx?ref=menu-merchant" title="Rock"> Rock</a></li>
+                  <li><a href="/cua-hang/rockport.aspx?ref=menu-merchant" title="Rockport"> Rockport</a></li>
+                  <li><a href="/cua-hang/rosabella.aspx?ref=menu-merchant" title="Rosabella"> Rosabella</a></li>
+                  <li><a href="/cua-hang/runway.aspx?ref=menu-merchant" title="Runway"> Runway</a></li>
+                  <li><a href="/cua-hang/sabina.aspx?ref=menu-merchant" title="Sabina"> Sabina</a></li>
+                  <li><a href="/cua-hang/san-sciaro-manhattan.aspx?ref=menu-merchant" title="San Sciaro &amp; Manhattan"> San Sciaro &amp; ...</a></li>
+                  <li><a href="/cua-hang/sansho.aspx?ref=menu-merchant" title="Sansho"> Sansho</a></li>
+                  <li><a href="/cua-hang/sbj.aspx?ref=menu-merchant" title="SBJ"> SBJ</a></li>
+                  <li><a href="/cua-hang/seahorse.aspx?ref=menu-merchant" title="Seahorse"> Seahorse</a></li>
+                  <li><a href="/cua-hang/sensorial.aspx?ref=menu-merchant" title="Sensorial"> Sensorial</a></li>
+                  <li><a href="/cua-hang/sieu-tan-the.aspx?ref=menu-merchant" title="Siêu tận thế"> Siêu tận thế</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/silverline.aspx?ref=menu-merchant" title="Silverline"> Silverline</a></li>
+                  <li><a href="/cua-hang/skin-watchers.aspx?ref=menu-merchant" title="Skin Watchers"> Skin Watchers</a></li>
+                  <li><a href="/cua-hang/skinlovers.aspx?ref=menu-merchant" title="Skinlovers"> Skinlovers</a></li>
+                  <li><a href="/cua-hang/somiviet.aspx?ref=menu-merchant" title="SOMIVIET"> SOMIVIET</a></li>
+                  <li><a href="/cua-hang/soskin.aspx?ref=menu-merchant" title="Soskin"> Soskin</a></li>
+                  <li><a href="/cua-hang/strojis.aspx?ref=menu-merchant" title="Strojis"> Strojis</a></li>
+                  <li><a href="/cua-hang/swatch.aspx?ref=menu-merchant" title="Swatch"> Swatch</a></li>
+                  <li><a href="/cua-hang/targus.aspx?ref=menu-merchant" title="Targus"> Targus</a></li>
+                  <li><a href="/cua-hang/teetalk.aspx?ref=menu-merchant" title="TeeTalk"> TeeTalk</a></li>
+                  <li><a href="/cua-hang/texto.aspx?ref=menu-merchant" title="Texto"> Texto</a></li>
+                  <li><a href="/cua-hang/tissot.aspx?ref=menu-merchant" title="Tissot "> Tissot </a></li>
+                  <li><a href="/cua-hang/titoni.aspx?ref=menu-merchant" title="Titoni"> Titoni</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/thanh-hoa.aspx?ref=menu-merchant" title="Thanh Hòa"> Thanh Hòa</a></li>
+                  <li><a href="/cua-hang/thanh-huyen.aspx?ref=menu-merchant" title="Thanh Huyền"> Thanh Huyền</a></li>
+                  <li><a href="/cua-hang/tri-an.aspx?ref=menu-merchant" title="Tri Ân"> Tri Ân</a></li>
+                  <li><a href="/cua-hang/trong-nguyen.aspx?ref=menu-merchant" title="Trọng Nguyên"> Trọng Nguyên</a></li>
+                  <li><a href="/cua-hang/truong-anh-vu.aspx?ref=menu-merchant" title="Trương Anh Vũ"> Trương Anh Vũ</a></li>
+                  <li><a href="/cua-hang/umbrella.aspx?ref=menu-merchant" title="Umbrella"> Umbrella</a></li>
+                  <li><a href="/cua-hang/unicol.aspx?ref=menu-merchant" title="Unicol"> Unicol</a></li>
+                  <li><a href="/cua-hang/us-polo-assn.aspx?ref=menu-merchant" title="US POLO ASSN"> US POLO ASSN</a></li>
+                  <li><a href="/cua-hang/utena.aspx?ref=menu-merchant" title="Utena"> Utena</a></li>
+                  <li><a href="/cua-hang/vaalen.aspx?ref=menu-merchant" title="VAALEN"> VAALEN</a></li>
+                  <li><a href="/cua-hang/valentino-rudy-danti.aspx?ref=menu-merchant" title="Valentino Rudy &amp; Danti"> Valentino Rudy &amp; ...</a></li>
+                  <li><a href="/cua-hang/vangent-classic.aspx?ref=menu-merchant" title="VanGent Classic"> VanGent Classic</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/vania.aspx?ref=menu-merchant" title="Vania"> Vania</a></li>
+                  <li><a href="/cua-hang/van-vo.aspx?ref=menu-merchant" title="Vân Võ"> Vân Võ</a></li>
+                  <li><a href="/cua-hang/vera.aspx?ref=menu-merchant" title="Vera"> Vera</a></li>
+                  <li><a href="/cua-hang/verchini.aspx?ref=menu-merchant" title="Verchini"> Verchini</a></li>
+                  <li><a href="/cua-hang/vienne.aspx?ref=menu-merchant" title="Vienne"> Vienne</a></li>
+                  <li><a href="/cua-hang/viet-tien.aspx?ref=menu-merchant" title="Viet Tien"> Viet Tien</a></li>
+                  <li><a href="/cua-hang/vietnam-designers-house.aspx?ref=menu-merchant" title="VietNam Designers House"> VietNam Designers ...</a></li>
+                  <li><a href="/cua-hang/viet-nam-tshirt-project.aspx?ref=menu-merchant" title="Việt Nam Tshirt Project"> Việt Nam Tshirt ...</a></li>
+                  <li><a href="/cua-hang/viet-thang-vdh.aspx?ref=menu-merchant" title="Việt Thắng VDH"> Việt Thắng VDH</a></li>
+                  <li><a href="/cua-hang/viet-thy.aspx?ref=menu-merchant" title="Việt Thy"> Việt Thy</a></li>
+                  <li><a href="/cua-hang/viva.aspx?ref=menu-merchant" title="Viva"> Viva</a></li>
+                  <li><a href="/cua-hang/vonzer.aspx?ref=menu-merchant" title="VONZER"> VONZER</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/cua-hang/westman.aspx?ref=menu-merchant" title="Westman"> Westman</a></li>
+                  <li><a href="/cua-hang/windy.aspx?ref=menu-merchant" title="Windy"> Windy</a></li>
+                  <li><a href="/cua-hang/winny.aspx?ref=menu-merchant" title="Winny"> Winny</a></li>
+                  <li><a href="/cua-hang/wow.aspx?ref=menu-merchant" title="WOW"> WOW</a></li>
+                  <li><a href="/cua-hang/xuan-giap-ngo.aspx?ref=menu-merchant" title="Xuân Giáp Ngọ"> Xuân Giáp Ngọ</a></li>
+                  <li><a href="/cua-hang/yess.aspx?ref=menu-merchant" title="Yess"> Yess</a></li>
+                  <li><a href="/cua-hang/zaa.aspx?ref=menu-merchant" title="Zaa"> Zaa</a></li>
+                  <li><a href="/cua-hang/zan.aspx?ref=menu-merchant" title="Zan"> Zan</a></li>
+                  <li><a href="/cua-hang/z-test.aspx?ref=menu-merchant" title="Z-test"> Z-test</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ch_arr"> <a href="#" onclick="PrevPagging();" id="pre"><em>Trước</em><img src="../images/icon/prev-slide-list.gif"></a> <a href="#" id="next" onclick="NextPagging();"><em>Sau</em><img src="../images/icon/index_opt6_17.jpg"></a></div>
+            <div class="col-foot"> <a href="/cua-hang/?ref=menu-merchant" style="text-align: right;">Tất cả &gt;&gt;</a></div>
+          </div>
+        </div>
+      </li>
+      <!-- Menu Item 5 End--> 
+      
+      <!-- Menu Item 6 Begin-->
+      <li style="display: none;"><a href="/thuong-hieu/" title="Thương hiệu">THƯƠNG HIỆU +</a>
+        <div id="popupbrandlist" class="lever01">
+          <div class="col_1">
+            <h2> Thương hiệu premium</h2>
+            <ul>
+              <li><a href="/tim-kiem.aspx?brand=Agatha&amp;ref=menu-brand" title="Agatha"> Agatha</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Aldo&amp;ref=menu-brand" title="Aldo"> Aldo</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Everbest&amp;ref=menu-brand" title="Everbest"> Everbest</a></li>
+              <li><a href="/tim-kiem.aspx?brand=HIMuomo&amp;ref=menu-brand" title="HIMuomo"> HIMuomo</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Li+Ning&amp;ref=menu-brand" title="Li Ning"> Li Ning</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Morgan+de+Toi+Ready-To-Wear&amp;ref=menu-brand" title="Morgan de Toi Ready-To-Wear"> Morgan de Toi ...</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Nike&amp;ref=menu-brand" title="Nike"> Nike</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Nine+West&amp;ref=menu-brand" title="Nine West"> Nine West</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Reebok&amp;ref=menu-brand" title="Reebok"> Reebok</a></li>
+              <li><a href="/tim-kiem.aspx?brand=SBJ&amp;ref=menu-brand" title="SBJ"> SBJ</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Swarovski&amp;ref=menu-brand" title="Swarovski"> Swarovski</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Targus&amp;ref=menu-brand" title="Targus"> Targus</a></li>
+            </ul>
+            <div class="col-foot"> <a href="/thuong-hieu/?featured=1" style="text-align: right;">Tất cả &gt;&gt;</a></div>
+          </div>
+          <div class="col_1">
+            <h2> Thương hiệu luxury</h2>
+            <ul>
+              <li><a href="/tim-kiem.aspx?brand=Cartier&amp;ref=menu-brand" title="Cartier"> Cartier</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Dior&amp;ref=menu-brand" title="Dior"> Dior</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Dunhill&amp;ref=menu-brand" title="Dunhill"> Dunhill</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Escada&amp;ref=menu-brand" title="Escada"> Escada</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Herm%c3%a8s&amp;ref=menu-brand" title="Hermès"> Hermès</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Lanc%c3%b4me&amp;ref=menu-brand" title="Lancôme"> Lancôme</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Marc+Jacobs&amp;ref=menu-brand" title="Marc Jacobs"> Marc Jacobs</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Mont+Blanc&amp;ref=menu-brand" title="Mont Blanc"> Mont Blanc</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Prada&amp;ref=menu-brand" title="Prada"> Prada</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Roberto+Cavalli&amp;ref=menu-brand" title="Roberto Cavalli"> Roberto Cavalli</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Salvatore+Ferragamo&amp;ref=menu-brand" title="Salvatore Ferragamo"> Salvatore Ferragamo</a></li>
+              <li><a href="/tim-kiem.aspx?brand=Versace&amp;ref=menu-brand" title="Versace"> Versace</a></li>
+            </ul>
+            <div class="col-foot"> <a href="/thuong-hieu/?featured=1" style="text-align: right;">Tất cả &gt;&gt;</a></div>
+          </div>
+          <div class="col_2">
+            <div class="col_2c2">
+              <h2> Tất cả thương hiệu</h2>
+              <div class="col_2c2_inner" id="brand">
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=ACME&amp;ref=menu-brand" title="ACME"> ACME</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Adidas&amp;ref=menu-brand" title="Adidas"> Adidas</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Agent+Provocateur&amp;ref=menu-brand" title="Agent Provocateur"> Agent Provocateur</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Agtex28&amp;ref=menu-brand" title="Agtex28"> Agtex28</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Aigner&amp;ref=menu-brand" title="Aigner"> Aigner</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Aimless&amp;ref=menu-brand" title="Aimless"> Aimless</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Aino+Sofia&amp;ref=menu-brand" title="Aino Sofia"> Aino Sofia</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Alain+Delon&amp;ref=menu-brand" title="Alain Delon"> Alain Delon</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Alcado&amp;ref=menu-brand" title="Alcado"> Alcado</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Alfred+Sung&amp;ref=menu-brand" title="Alfred Sung"> Alfred Sung</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Amadoris&amp;ref=menu-brand" title="Amadoris"> Amadoris</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Amme&amp;ref=menu-brand" title="Amme"> Amme</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Amour&amp;ref=menu-brand" title="Amour"> Amour</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Ananas&amp;ref=menu-brand" title="Ananas"> Ananas</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Ancci&amp;ref=menu-brand" title="Ancci"> Ancci</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Andes&amp;ref=menu-brand" title="Andes"> Andes</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Anna+Nina&amp;ref=menu-brand" title="Anna Nina"> Anna Nina</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Anna+Sui&amp;ref=menu-brand" title="Anna Sui"> Anna Sui</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Annie&amp;ref=menu-brand" title="Annie"> Annie</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Anti-X&amp;ref=menu-brand" title="Anti-X"> Anti-X</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Angel+Madam&amp;ref=menu-brand" title="Angel Madam"> Angel Madam</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Aqua&amp;ref=menu-brand" title="Aqua"> Aqua</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Aristar&amp;ref=menu-brand" title="Aristar"> Aristar</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Armand+Basi&amp;ref=menu-brand" title="Armand Basi"> Armand Basi</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Armani+Exchange&amp;ref=menu-brand" title="Armani Exchange"> Armani Exchange</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Armani+Jeans&amp;ref=menu-brand" title="Armani Jeans"> Armani Jeans</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Arturo+Chiang&amp;ref=menu-brand" title="Arturo Chiang"> Arturo Chiang</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Ashaway&amp;ref=menu-brand" title="Ashaway"> Ashaway</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Asia&amp;ref=menu-brand" title="Asia"> Asia</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Azzaro&amp;ref=menu-brand" title="Azzaro"> Azzaro</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Baleno&amp;ref=menu-brand" title="Baleno"> Baleno</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Bandolini&amp;ref=menu-brand" title="Bandolini"> Bandolini</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=B%e1%ba%a3o+Kim&amp;ref=menu-brand" title="Bảo Kim"> Bảo Kim</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Barishidi+Paris&amp;ref=menu-brand" title="Barishidi Paris"> Barishidi Paris</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=BCB+Generation&amp;ref=menu-brand" title="BCB Generation"> BCB Generation</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=BCBG+MaxAzria&amp;ref=menu-brand" title="BCBG MaxAzria"> BCBG MaxAzria</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Bebe&amp;ref=menu-brand" title="Bebe"> Bebe</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Belair&amp;ref=menu-brand" title="Belair"> Belair</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Belleto&amp;ref=menu-brand" title="Belleto"> Belleto</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Belluni&amp;ref=menu-brand" title="Belluni"> Belluni</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Belly&amp;ref=menu-brand" title="Belly"> Belly</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Bernard+Cassiere&amp;ref=menu-brand" title="Bernard Cassiere"> Bernard Cassiere</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Bidankutu&amp;ref=menu-brand" title="Bidankutu"> Bidankutu</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Biti's&amp;ref=menu-brand" title="Biti's"> Biti's</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Bizo&amp;ref=menu-brand" title="Bizo"> Bizo</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Black+Forest&amp;ref=menu-brand" title="Black Forest"> Black Forest</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Blue+Exchange&amp;ref=menu-brand" title="Blue Exchange"> Blue Exchange</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Blue+Kite&amp;ref=menu-brand" title="Blue Kite"> Blue Kite</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=BONIA&amp;ref=menu-brand" title="BONIA"> BONIA</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Borani&amp;ref=menu-brand" title="Borani"> Borani</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Boxxyno&amp;ref=menu-brand" title="Boxxyno"> Boxxyno</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Brilliant&amp;ref=menu-brand" title="Brilliant"> Brilliant</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Britney+Spears&amp;ref=menu-brand" title="Britney Spears"> Britney Spears</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Burberry&amp;ref=menu-brand" title="Burberry"> Burberry</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Bvlgari&amp;ref=menu-brand" title="Bvlgari"> Bvlgari</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=bYSI&amp;ref=menu-brand" title="bYSI"> bYSI</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Cacharel&amp;ref=menu-brand" title="Cacharel"> Cacharel</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Camel&amp;ref=menu-brand" title="Camel"> Camel</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Canary&amp;ref=menu-brand" title="Canary"> Canary</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Carolina+Herrera&amp;ref=menu-brand" title="Carolina Herrera"> Carolina Herrera</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Carrera&amp;ref=menu-brand" title="Carrera"> Carrera</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Cashew&amp;ref=menu-brand" title="Cashew"> Cashew</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Casio&amp;ref=menu-brand" title="Casio"> Casio</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Celine&amp;ref=menu-brand" title="Celine"> Celine</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Celine+Dion&amp;ref=menu-brand" title="Celine Dion"> Celine Dion</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=CellAct&amp;ref=menu-brand" title="CellAct"> CellAct</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Cincinati&amp;ref=menu-brand" title="Cincinati"> Cincinati</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=ck+Calvin+Klein&amp;ref=menu-brand" title="ck Calvin Klein"> ck Calvin Klein</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Clarks&amp;ref=menu-brand" title="Clarks"> Clarks</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Clinique&amp;ref=menu-brand" title="Clinique"> Clinique</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Cobaden&amp;ref=menu-brand" title="Cobaden"> Cobaden</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Cocoxi&amp;ref=menu-brand" title="Cocoxi"> Cocoxi</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Como&amp;ref=menu-brand" title="Como"> Como</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Couple+TX&amp;ref=menu-brand" title="Couple TX"> Couple TX</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Cover&amp;ref=menu-brand" title="Cover"> Cover</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Creed&amp;ref=menu-brand" title="Creed"> Creed</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Crocodile&amp;ref=menu-brand" title="Crocodile"> Crocodile</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=C%c6%b0%e1%bb%9dng+Th%e1%bb%8bnh&amp;ref=menu-brand" title="Cường Thịnh"> Cường Thịnh</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Chanel&amp;ref=menu-brand" title="Chanel"> Chanel</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Charmant&amp;ref=menu-brand" title="Charmant"> Charmant</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Chopard&amp;ref=menu-brand" title="Chopard"> Chopard</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Christian+Dior&amp;ref=menu-brand" title="Christian Dior"> Christian Dior</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=D%26A&amp;ref=menu-brand" title="D&amp;A"> D&amp;A</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Danti&amp;ref=menu-brand" title="Danti"> Danti</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=David+Beckham&amp;ref=menu-brand" title="David Beckham"> David Beckham</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Davidoff&amp;ref=menu-brand" title="Davidoff"> Davidoff</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=DC&amp;ref=menu-brand" title="DC"> DC</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Debenhams&amp;ref=menu-brand" title="Debenhams"> Debenhams</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Delsey&amp;ref=menu-brand" title="Delsey"> Delsey</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Depkool&amp;ref=menu-brand" title="Depkool"> Depkool</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Diamond+Eyeservices&amp;ref=menu-brand" title="Diamond Eyeservices"> Diamond Eyeservices</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Diesel&amp;ref=menu-brand" title="Diesel"> Diesel</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Disney+Baby&amp;ref=menu-brand" title="Disney Baby"> Disney Baby</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Disney+Princess&amp;ref=menu-brand" title="Disney Princess"> Disney Princess</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=DKNY&amp;ref=menu-brand" title="DKNY"> DKNY</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=DKNYC&amp;ref=menu-brand" title="DKNYC"> DKNYC</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=DMK&amp;ref=menu-brand" title="DMK"> DMK</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Dolce+%26+Gabbana&amp;ref=menu-brand" title="Dolce &amp; Gabbana"> Dolce &amp; Gabbana</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Dreamvolts&amp;ref=menu-brand" title="Dreamvolts"> Dreamvolts</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Dsquared2&amp;ref=menu-brand" title="Dsquared2"> Dsquared2</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=%c4%90%c4%83ng+Khoa&amp;ref=menu-brand" title="Đăng Khoa"> Đăng Khoa</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=%c4%90%e1%ba%a7m+b%e1%ba%a7u+Vu%c3%b4ng+Tr%c3%b2n&amp;ref=menu-brand" title="Đầm bầu Vuông Tròn"> Đầm bầu Vuông Tròn</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Eastpak&amp;ref=menu-brand" title="Eastpak"> Eastpak</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Ecco&amp;ref=menu-brand" title="Ecco"> Ecco</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Elizabeth+Arden&amp;ref=menu-brand" title="Elizabeth Arden"> Elizabeth Arden</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Elizabeth+Taylor&amp;ref=menu-brand" title="Elizabeth Taylor"> Elizabeth Taylor</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Elle&amp;ref=menu-brand" title="Elle"> Elle</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Ellise&amp;ref=menu-brand" title="Ellise"> Ellise</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Emanuel+Ungaro&amp;ref=menu-brand" title="Emanuel Ungaro"> Emanuel Ungaro</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Emilio+Pucci&amp;ref=menu-brand" title="Emilio Pucci"> Emilio Pucci</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Emporio+Armani&amp;ref=menu-brand" title="Emporio Armani"> Emporio Armani</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Ermenegildo+Zegna&amp;ref=menu-brand" title="Ermenegildo Zegna"> Ermenegildo Zegna</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Esprit&amp;ref=menu-brand" title="Esprit"> Esprit</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Estee+Lauder&amp;ref=menu-brand" title="Estee Lauder"> Estee Lauder</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Eveline&amp;ref=menu-brand" title="Eveline"> Eveline</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Eyewear+Hut&amp;ref=menu-brand" title="Eyewear Hut"> Eyewear Hut</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=f.house&amp;ref=menu-brand" title="f.house"> f.house</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=F8&amp;ref=menu-brand" title="F8"> F8</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Fila&amp;ref=menu-brand" title="Fila"> Fila</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Flyer&amp;ref=menu-brand" title="Flyer"> Flyer</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Foci&amp;ref=menu-brand" title="Foci"> Foci</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Format&amp;ref=menu-brand" title="Format"> Format</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Freeman&amp;ref=menu-brand" title="Freeman"> Freeman</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Furla&amp;ref=menu-brand" title="Furla"> Furla</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=G2000&amp;ref=menu-brand" title="G2000"> G2000</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Gc&amp;ref=menu-brand" title="Gc"> Gc</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Gendai&amp;ref=menu-brand" title="Gendai"> Gendai</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Geox&amp;ref=menu-brand" title="Geox"> Geox</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Goden+Travel&amp;ref=menu-brand" title="Goden Travel"> Goden Travel</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Golden+Age&amp;ref=menu-brand" title="Golden Age"> Golden Age</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Gosto&amp;ref=menu-brand" title="Gosto"> Gosto</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Grandluxe&amp;ref=menu-brand" title="Grandluxe"> Grandluxe</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Gres&amp;ref=menu-brand" title="Gres"> Gres</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Gucci&amp;ref=menu-brand" title="Gucci"> Gucci</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Guerlain&amp;ref=menu-brand" title="Guerlain"> Guerlain</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Guess&amp;ref=menu-brand" title="Guess"> Guess</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Guy+Laroche&amp;ref=menu-brand" title="Guy Laroche"> Guy Laroche</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Gwens&amp;ref=menu-brand" title="Gwens"> Gwens</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Gia+Gia&amp;ref=menu-brand" title="Gia Gia"> Gia Gia</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Gianfranco+Ferre&amp;ref=menu-brand" title="Gianfranco Ferre"> Gianfranco Ferre</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Gi%c3%a0y+Si%c3%aau+Nh%e1%ba%b9&amp;ref=menu-brand" title="Giày Siêu Nhẹ"> Giày Siêu Nhẹ</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Giordano&amp;ref=menu-brand" title="Giordano"> Giordano</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Giorgio+Armani&amp;ref=menu-brand" title="Giorgio Armani"> Giorgio Armani</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Giorgio+Ferri&amp;ref=menu-brand" title="Giorgio Ferri"> Giorgio Ferri</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Giossardi&amp;ref=menu-brand" title="Giossardi"> Giossardi</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Givenchy&amp;ref=menu-brand" title="Givenchy"> Givenchy</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Ha+Gatini&amp;ref=menu-brand" title="Ha Gatini"> Ha Gatini</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Hanowa&amp;ref=menu-brand" title="Hanowa"> Hanowa</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Hang+Ten&amp;ref=menu-brand" title="Hang Ten"> Hang Ten</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Happy+Hoop&amp;ref=menu-brand" title="Happy Hoop"> Happy Hoop</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Harajuku+Lovers&amp;ref=menu-brand" title="Harajuku Lovers"> Harajuku Lovers</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Heatwave&amp;ref=menu-brand" title="Heatwave"> Heatwave</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Hi+Fashion&amp;ref=menu-brand" title="Hi Fashion"> Hi Fashion</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Hidesign&amp;ref=menu-brand" title="Hidesign"> Hidesign</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Hi%e1%bb%81n+L%c3%aa&amp;ref=menu-brand" title="Hiền Lê"> Hiền Lê</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Hilary+Duff&amp;ref=menu-brand" title="Hilary Duff"> Hilary Duff</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=H%e1%bb%93ng+H%e1%ba%a1nh&amp;ref=menu-brand" title="Hồng Hạnh"> Hồng Hạnh</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Hugo+Boss&amp;ref=menu-brand" title="Hugo Boss"> Hugo Boss</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=iBasic&amp;ref=menu-brand" title="iBasic"> iBasic</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=ICE&amp;ref=menu-brand" title="ICE"> ICE</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Issey+Miyake&amp;ref=menu-brand" title="Issey Miyake"> Issey Miyake</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Jaguar&amp;ref=menu-brand" title="Jaguar"> Jaguar</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Jean+Paul+Gaultier&amp;ref=menu-brand" title="Jean Paul Gaultier"> Jean Paul Gaultier</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Jemma&amp;ref=menu-brand" title="Jemma"> Jemma</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Jennifer+Lopez&amp;ref=menu-brand" title="Jennifer Lopez"> Jennifer Lopez</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Jessica+Simpson&amp;ref=menu-brand" title="Jessica Simpson"> Jessica Simpson</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Jesus+Del+Pozo&amp;ref=menu-brand" title="Jesus Del Pozo"> Jesus Del Pozo</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=John+Henry&amp;ref=menu-brand" title="John Henry"> John Henry</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=JOJO&amp;ref=menu-brand" title="JOJO"> JOJO</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Jolie&amp;ref=menu-brand" title="Jolie"> Jolie</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Joop&amp;ref=menu-brand" title="Joop"> Joop</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Just+Cavalli&amp;ref=menu-brand" title="Just Cavalli"> Just Cavalli</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=K%26K+fashion&amp;ref=menu-brand" title="K&amp;K fashion"> K&amp;K fashion</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Kabukj&amp;ref=menu-brand" title="Kabukj"> Kabukj</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Kelly+B%c3%b9i&amp;ref=menu-brand" title="Kelly Bùi"> Kelly Bùi</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Kentazo&amp;ref=menu-brand" title="Kentazo"> Kentazo</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Kenzo&amp;ref=menu-brand" title="Kenzo"> Kenzo</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Kevel&amp;ref=menu-brand" title="Kevel"> Kevel</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Kico&amp;ref=menu-brand" title="Kico"> Kico</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Ki%e1%bb%81u+Vi%e1%bb%87t+Li%c3%aan&amp;ref=menu-brand" title="Kiều Việt Liên"> Kiều Việt Liên</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Kim+C%c6%b0%c6%a1ng+An+Khang&amp;ref=menu-brand" title="Kim Cương An Khang"> Kim Cương An Khang</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Kim+Khanh&amp;ref=menu-brand" title="Kim Khanh"> Kim Khanh</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Kony&amp;ref=menu-brand" title="Kony"> Kony</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Kh%c3%a1nh+Vi&amp;ref=menu-brand" title="Khánh Vi"> Khánh Vi</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=La+Tour+Eiffel&amp;ref=menu-brand" title="La Tour Eiffel"> La Tour Eiffel</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Labella&amp;ref=menu-brand" title="Labella"> Labella</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Lacoste&amp;ref=menu-brand" title="Lacoste"> Lacoste</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=L'amant&amp;ref=menu-brand" title="L'amant"> L'amant</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Lan+H%e1%ba%a1nh&amp;ref=menu-brand" title="Lan Hạnh"> Lan Hạnh</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Lanopearl&amp;ref=menu-brand" title="Lanopearl"> Lanopearl</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Lason-J&amp;ref=menu-brand" title="Lason-J"> Lason-J</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Le+Chateau&amp;ref=menu-brand" title="Le Chateau"> Le Chateau</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Len+Vi%e1%bb%87t&amp;ref=menu-brand" title="Len Việt"> Len Việt</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Le'tengo&amp;ref=menu-brand" title="Le'tengo"> Le'tengo</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Levi's&amp;ref=menu-brand" title="Levi's"> Levi's</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Lewin&amp;ref=menu-brand" title="Lewin"> Lewin</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=L%e1%bb%87+H%e1%ba%b1ng&amp;ref=menu-brand" title="Lệ Hằng"> Lệ Hằng</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Lloyd&amp;ref=menu-brand" title="Lloyd"> Lloyd</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=L'ocean&amp;ref=menu-brand" title="L'ocean"> L'ocean</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Lolita&amp;ref=menu-brand" title="Lolita"> Lolita</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Lolita+Lempicka&amp;ref=menu-brand" title="Lolita Lempicka"> Lolita Lempicka</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Louis-F.Lamy&amp;ref=menu-brand" title="Louis-F.Lamy"> Louis-F.Lamy</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Lucy&amp;ref=menu-brand" title="Lucy"> Lucy</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Luna+Belle&amp;ref=menu-brand" title="Luna Belle"> Luna Belle</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=M.mi&amp;ref=menu-brand" title="M.mi"> M.mi</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=MAC&amp;ref=menu-brand" title="MAC"> MAC</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Mango&amp;ref=menu-brand" title="Mango"> Mango</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Manhattan&amp;ref=menu-brand" title="Manhattan"> Manhattan</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Marc+by+Marc+Jacobs&amp;ref=menu-brand" title="Marc by Marc Jacobs"> Marc by Marc Jacobs</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Marco+Alfredo&amp;ref=menu-brand" title="Marco Alfredo"> Marco Alfredo</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Mariposa&amp;ref=menu-brand" title="Mariposa"> Mariposa</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Maschio&amp;ref=menu-brand" title="Maschio"> Maschio</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Mattana&amp;ref=menu-brand" title="Mattana"> Mattana</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Max+Mara&amp;ref=menu-brand" title="Max Mara"> Max Mara</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=M%e1%ba%aft+Vi%e1%bb%87t&amp;ref=menu-brand" title="Mắt Việt"> Mắt Việt</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Me+Girl&amp;ref=menu-brand" title="Me Girl"> Me Girl</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Merriman&amp;ref=menu-brand" title="Merriman"> Merriman</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Mezzo&amp;ref=menu-brand" title="Mezzo"> Mezzo</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=MIKI&amp;ref=menu-brand" title="MIKI"> MIKI</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Milaross&amp;ref=menu-brand" title="Milaross"> Milaross</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Milvus&amp;ref=menu-brand" title="Milvus"> Milvus</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Minh+H%e1%ba%a1nh&amp;ref=menu-brand" title="Minh Hạnh"> Minh Hạnh</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Minh+Hoa&amp;ref=menu-brand" title="Minh Hoa"> Minh Hoa</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Misaki&amp;ref=menu-brand" title="Misaki"> Misaki</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Missha&amp;ref=menu-brand" title="Missha"> Missha</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Mizada&amp;ref=menu-brand" title="Mizada"> Mizada</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Moda+Mundo&amp;ref=menu-brand" title="Moda Mundo"> Moda Mundo</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Mommy&amp;ref=menu-brand" title="Mommy"> Mommy</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Mondo&amp;ref=menu-brand" title="Mondo"> Mondo</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Morgan+de+Toi&amp;ref=menu-brand" title="Morgan de Toi"> Morgan de Toi</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Mori&amp;ref=menu-brand" title="Mori"> Mori</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Moschino&amp;ref=menu-brand" title="Moschino"> Moschino</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Nava&amp;ref=menu-brand" title="Nava"> Nava</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Negozio&amp;ref=menu-brand" title="Negozio"> Negozio</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Nina+Ricci&amp;ref=menu-brand" title="Nina Ricci"> Nina Ricci</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Noir&amp;ref=menu-brand" title="Noir"> Noir</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Noir+Apparel&amp;ref=menu-brand" title="Noir Apparel"> Noir Apparel</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Novelty&amp;ref=menu-brand" title="Novelty"> Novelty</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Nguy%c3%aan+H%c3%a0ng&amp;ref=menu-brand" title="Nguyên Hàng"> Nguyên Hàng</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=O+Dark+30&amp;ref=menu-brand" title="O Dark 30"> O Dark 30</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=O.P.I&amp;ref=menu-brand" title="O.P.I"> O.P.I</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=OCI&amp;ref=menu-brand" title="OCI"> OCI</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Oriflame&amp;ref=menu-brand" title="Oriflame"> Oriflame</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Orio&amp;ref=menu-brand" title="Orio"> Orio</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Owen&amp;ref=menu-brand" title="Owen"> Owen</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Parim&amp;ref=menu-brand" title="Parim"> Parim</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Paris+Hilton&amp;ref=menu-brand" title="Paris Hilton"> Paris Hilton</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Paul+Smith&amp;ref=menu-brand" title="Paul Smith"> Paul Smith</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Peekaboo&amp;ref=menu-brand" title="Peekaboo"> Peekaboo</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Pepco&amp;ref=menu-brand" title="Pepco"> Pepco</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Pierre+Balmain&amp;ref=menu-brand" title="Pierre Balmain"> Pierre Balmain</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Playboy&amp;ref=menu-brand" title="Playboy"> Playboy</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Polarone&amp;ref=menu-brand" title="Polarone"> Polarone</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Police&amp;ref=menu-brand" title="Police"> Police</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=POP&amp;ref=menu-brand" title="POP"> POP</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Porsche&amp;ref=menu-brand" title="Porsche"> Porsche</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Proace&amp;ref=menu-brand" title="Proace"> Proace</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Protec&amp;ref=menu-brand" title="Protec"> Protec</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Prowin&amp;ref=menu-brand" title="Prowin"> Prowin</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=PSF&amp;ref=menu-brand" title="PSF"> PSF</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Ph%c6%b0%c6%a1ng+Linh&amp;ref=menu-brand" title="Phương Linh"> Phương Linh</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Quang+Huy&amp;ref=menu-brand" title="Quang Huy"> Quang Huy</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=R%26B&amp;ref=menu-brand" title="R&amp;B"> R&amp;B</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Ralph+Lauren&amp;ref=menu-brand" title="Ralph Lauren"> Ralph Lauren</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Ray-Ban&amp;ref=menu-brand" title="Ray-Ban"> Ray-Ban</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Relax&amp;ref=menu-brand" title="Relax"> Relax</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Replay&amp;ref=menu-brand" title="Replay"> Replay</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Return&amp;ref=menu-brand" title="Return"> Return</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Revlon&amp;ref=menu-brand" title="Revlon"> Revlon</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Rock&amp;ref=menu-brand" title="Rock"> Rock</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Rockport&amp;ref=menu-brand" title="Rockport"> Rockport</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Rodenstock&amp;ref=menu-brand" title="Rodenstock"> Rodenstock</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Royale+Baby&amp;ref=menu-brand" title="Royale Baby"> Royale Baby</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=San+Sciaro&amp;ref=menu-brand" title="San Sciaro"> San Sciaro</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Sansho&amp;ref=menu-brand" title="Sansho"> Sansho</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Sea+Collection&amp;ref=menu-brand" title="Sea Collection"> Sea Collection</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Seahorse&amp;ref=menu-brand" title="Seahorse"> Seahorse</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Sensorial&amp;ref=menu-brand" title="Sensorial"> Sensorial</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Silverline&amp;ref=menu-brand" title="Silverline"> Silverline</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Skin+Watchers&amp;ref=menu-brand" title="Skin Watchers"> Skin Watchers</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Skinlovers&amp;ref=menu-brand" title="Skinlovers"> Skinlovers</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Soskin&amp;ref=menu-brand" title="Soskin"> Soskin</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Soviet&amp;ref=menu-brand" title="Soviet"> Soviet</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Strojis&amp;ref=menu-brand" title="Strojis"> Strojis</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=T%26T&amp;ref=menu-brand" title="T&amp;T"> T&amp;T</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Texto&amp;ref=menu-brand" title="Texto"> Texto</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Tissot&amp;ref=menu-brand" title="Tissot"> Tissot</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=To%c3%a0n+Di%e1%bb%87u&amp;ref=menu-brand" title="Toàn Diệu"> Toàn Diệu</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Tommy+Hilfiger&amp;ref=menu-brand" title="Tommy Hilfiger"> Tommy Hilfiger</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Tonino+Lamborghini&amp;ref=menu-brand" title="Tonino Lamborghini"> Tonino Lamborghini</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Tu%e1%ba%a5n+Huy&amp;ref=menu-brand" title="Tuấn Huy"> Tuấn Huy</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Thanh+H%c3%b2a&amp;ref=menu-brand" title="Thanh Hòa"> Thanh Hòa</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Thanh+Huy%e1%bb%81n&amp;ref=menu-brand" title="Thanh Huyền"> Thanh Huyền</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=The+Blues&amp;ref=menu-brand" title="The Blues"> The Blues</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Thierry+Mugler&amp;ref=menu-brand" title="Thierry Mugler"> Thierry Mugler</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Thi%c3%aan+Trang&amp;ref=menu-brand" title="Thiên Trang"> Thiên Trang</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Tr%e1%bb%8dng+Nguy%c3%aan&amp;ref=menu-brand" title="Trọng Nguyên"> Trọng Nguyên</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Tr%c6%b0%c6%a1ng+Anh+V%c5%a9&amp;ref=menu-brand" title="Trương Anh Vũ"> Trương Anh Vũ</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Unicol&amp;ref=menu-brand" title="Unicol"> Unicol</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=United+Colors+of+Benetton&amp;ref=menu-brand" title="United Colors of Benetton"> United Colors of ...</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Utena&amp;ref=menu-brand" title="Utena"> Utena</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Valentino&amp;ref=menu-brand" title="Valentino"> Valentino</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Valentino+Rudy&amp;ref=menu-brand" title="Valentino Rudy"> Valentino Rudy</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Vania&amp;ref=menu-brand" title="Vania"> Vania</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Vangent+Classic&amp;ref=menu-brand" title="Vangent Classic"> Vangent Classic</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Vascara&amp;ref=menu-brand" title="Vascara"> Vascara</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=V%c4%83n+V%c3%b5&amp;ref=menu-brand" title="Văn Võ"> Văn Võ</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Verchini&amp;ref=menu-brand" title="Verchini"> Verchini</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Victoria's+Secret&amp;ref=menu-brand" title="Victoria's Secret"> Victoria's Secret</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Viet+Nam+Designer+House&amp;ref=menu-brand" title="Viet Nam Designer House"> Viet Nam Designer ...</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Viettien+Smart+Casual&amp;ref=menu-brand" title="Viettien Smart Casual"> Viettien Smart Casual</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Vi%e1%bb%87t+Ti%e1%ba%bfn&amp;ref=menu-brand" title="Việt Tiến"> Việt Tiến</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Vi%e1%bb%87t+Ti%e1%ba%bfn+Smart+Casual&amp;ref=menu-brand" title="Việt Tiến Smart Casual"> Việt Tiến Smart ...</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Vi%e1%bb%87t+Th%e1%ba%afng&amp;ref=menu-brand" title="Việt Thắng"> Việt Thắng</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Vi%e1%bb%87t+Thy&amp;ref=menu-brand" title="Việt Thy"> Việt Thy</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Vince+Camuto&amp;ref=menu-brand" title="Vince Camuto"> Vince Camuto</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=VONZER&amp;ref=menu-brand" title="VONZER"> VONZER</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Westman&amp;ref=menu-brand" title="Westman"> Westman</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Windy&amp;ref=menu-brand" title="Windy"> Windy</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Winny&amp;ref=menu-brand" title="Winny"> Winny</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=WOW&amp;ref=menu-brand" title="WOW"> WOW</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Yes's&amp;ref=menu-brand" title="Yes's"> Yes's</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Yves+Saint+Laurent&amp;ref=menu-brand" title="Yves Saint Laurent"> Yves Saint Laurent</a></li>
+                  <li><a href="/tim-kiem.aspx?brand=Zaa&amp;ref=menu-brand" title="Zaa"> Zaa</a></li>
+                </ul>
+                <ul class="ul-store">
+                  <li><a href="/tim-kiem.aspx?brand=Zan&amp;ref=menu-brand" title="Zan"> Zan</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ch_arr"> <a href="#" onclick="PrevPaggingBrand();" id="pre"><em>Trước</em><img src="../images/icon/prev-slide-list.gif"></a> <a href="#" id="next" onclick="NextPaggingBrand();"><em>Sau</em><img src="../images/icon/index_opt6_17.jpg"></a></div>
+            <div class="col-foot"> <a href="/thuong-hieu/" style="text-align: right;">Tất cả &gt;&gt;</a></div>
+          </div>
+        </div>
+      </li>
+      <!-- Menu Item 6 End--> 
+      
+      <!-- Menu Item 7 Begin-->
+      <li><a href="/stylist.aspx" title="Xu hướng">XU HƯỚNG</a></li>
+      <!-- Menu Item 7 End--> 
+      
+      <!-- Menu Item 8 Begin-->
+      <li><a href="/thoi-trang/" title="Tin thời trang">TIN THỜI TRANG</a></li>
+      <!-- Menu Item 8 End--> 
+      
+      <!-- Menu Item 9 Begin-->
+      <li><a href="#" title="Giời thiệu">Giới thiệu</a>
+        <div class="lever02">
+          <ul>
+            <li><a href="/doanh-nghiep/tong-quan.aspx" title="Tổng quan chon.vn">Tổng quan chon.vn</a></li>
+            <li><a href="/doanh-nghiep/giai-phap-tmdt-chonvn.aspx" title="Giải pháp TMĐT Chon.vn">Giải pháp TMĐT Chon.vn</a></li>
+            <li><a href="/doanh-nghiep/Dinh-vu-truyen-thong.aspx" title="Dịch vụ truyền thông">Dịch vụ truyền thông</a></li>
+            <li><a href="/mua-hang-si.aspx" title="Dịch vụ truyền thông">Mua hàng số lượng lớn</a></li>
+          </ul>
+        </div>
+      </li>
+      <!-- Menu Item 9 End--> 
+      
+      <!-- Menu Item 10 Begin-->
+      <li><a href="/doi-tac/" title="Đối tác">ĐỐI TÁC</a></li>
+      <!-- Menu Item 10 End--> 
+      
+      <!-- li:hover-->
+      <li class="back" style="left: 30px; width: 89px; overflow: hidden;">
+        <div class="left"></div>
+      </li>
+    </ul>
+    <!-- Menu End --> 
+  </section>
+  <!-- Section nav: container menu, navbar, Begin--> 
+</header>
+<!-- Header End --> 
+
+<!-- Header Responsive Begin -->
+<header id="h" class="">
+  <h1 id="logo"> <a href="/">Chọn.vn</a> </h1>
+  <div id="h_i"> <a id="h_seach_i" class="h_i" href="javascript:void(0)"> <span class="i"></span> <i class="small_arrow"></i> </a> <a id="h_menu_i" class="h_i" href="javascript:void(0)"> <span class="i"></span> </a> <a id="h_cart_i" class="h_i" href="javascript:void(0)"> <span class="i"></span> <i class="small_arrow"></i> <span id="totalcartitem" class="h_cart_bagget ra10">0</span> </a> </div>
+</header>
+
+<!--Menu Begin-->
+<div class="header_menu_outter menu_pop" id="wrapper" style="display: none;">
+  <div class="pop_menu" id="header_menu">
+    <ul class="sub_accordion">
+      <li class=""> <a href="javascript:void(0)">Thời trang nữ</a>
+        <ul style="display: none;">
+          <li> <a href="Search/SearchImage.aspx?catid=9298&amp;sort=newest">Áo kiểu</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1557&amp;sort=newest">Áo thun</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1558&amp;sort=newest">Áo sơ mi</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1559&amp;sort=newest">Áo khoác</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1561&amp;sort=newest">Áo đầm</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1560&amp;sort=newest">Váy</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1562&amp;sort=newest">Quần tây, quần kiểu</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1563&amp;sort=newest">Quần jeans</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1564&amp;sort=newest">Quần short</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1565&amp;sort=newest">Đồ công sở</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=28113&amp;sort=newest">Thời trang bầu</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1566&amp;sort=newest">Đồ ngủ, Đồ mặc nhà</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1567&amp;sort=newest">Đồ bơi</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=31359&amp;sort=newest">Đồ lót</a> </li>
+        </ul>
+      </li>
+      <li> <a href="javascript:void(0)">Thời trang nam</a>
+        <ul style="display: none;">
+          <li> <a href="Search/SearchImage.aspx?catid=1569&amp;sort=newest">Áo thun</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1570&amp;sort=newest">Áo sơ mi</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1571&amp;sort=newest">Áo khoác</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1572&amp;sort=newest">Quần jeans</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1573&amp;sort=newest">Quần short</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1574&amp;sort=newest">Quần tây, kaki</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1575&amp;sort=newest">Đồ công sở</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=1578&amp;sort=newest">Đồ bơi</a> </li>
+          <li> <a href="Search/SearchImage.aspx?catid=31360&amp;sort=newest">Đồ lót</a> </li>
+        </ul>
+      </li>
+      <li> <a href="javascript:void(0)">Phụ kiện nữ</a>
+        <ul style="display: none;">
+          <li> <a href="/Search/SearchImage.aspx?catid=1580&amp;sort=newest">Nước hoa</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=13625&amp;sort=newest">Ví nữ</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=1581&amp;sort=newest">Túi xách</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=1582&amp;sort=newest">Đồng hồ</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=1584&amp;sort=newest">Nón</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=1585&amp;sort=newest">Mắt kính</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=1586&amp;sort=newest">Giày, dép</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=1587&amp;sort=newest">Thắt lưng</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=1588&amp;sort=newest">Nữ trang</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=35340&amp;sort=newest">Sơn móng</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=9148&amp;sort=newest">Khăn choàng, nơ</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=23288&amp;sort=newest">Vali</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=27795&amp;sort=newest">Trang sức</a> </li>
+        </ul>
+      </li>
+      <li> <a href="javascript:void(0)">Phụ kiện nam</a>
+        <ul style="display: none;">
+          <li> <a href="/Search/SearchImage.aspx?catid=1591&amp;sort=newest">Nước hoa</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=1600&amp;sort=newest">Ví</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=1592&amp;sort=newest">Túi xách</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=1593&amp;sort=newest">Đồng hồ</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=1595&amp;sort=newest">Nón</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=1596&amp;sort=newest">Mắt kính</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=1597&amp;sort=newest">Giày, dép</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=1598&amp;sort=newest">Thắt lưng</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=1599&amp;sort=newest">Cà vạt, kẹp cà vạt</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=9149&amp;sort=newest">Khăn choàng</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=23287&amp;sort=newest">Vali</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=27798&amp;sort=newest">Trang sức</a> </li>
+        </ul>
+      </li>
+      <li> <a href="javascript:void(0)">Hàng thể thao nữ</a>
+        <ul style="display: none;">
+          <li> <a href="/Search/SearchImage.aspx?catid=40276&amp;sort=newest">Áo thể thao</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=40278&amp;sort=newest">Quần thể thao</a> </li>
+        </ul>
+      </li>
+      <li> <a href="javascript:void(0)">Hàng thể thao nam</a>
+        <ul style="display: none;">
+          <li> <a href="/Search/SearchImage.aspx?catid=40274&amp;sort=newest">Áo thể thao</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=40275&amp;sort=newest">Quần thể thao</a> </li>
+        </ul>
+      </li>
+      <li> <a href="javascript:void(0)">Thời trang bé gái</a>
+        <ul style="display: none;">
+          <li> <a href="/Search/SearchImage.aspx?catid=33485&amp;sort=newest">Áo đầm</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=33487&amp;sort=newest">Áo khoác</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=33488&amp;sort=newest">Áo sơ mi, áo kiểu</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=33486&amp;sort=newest">Áo thun</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=33566&amp;sort=newest">Quần dài</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=33490&amp;sort=newest">Quần short, quần lửng</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=33489&amp;sort=newest">Váy</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=33506&amp;sort=newest">Đồ bơi</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=33491&amp;sort=newest">Đồ lót, đồ sơ sinh</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=35968&amp;sort=newest">Giày. dép</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=50943&amp;sort=newest">Bộ đồ</a> </li>
+        </ul>
+      </li>
+      <li> <a href="javascript:void(0)">Thời trang bé trai</a>
+        <ul style="display: none;">
+          <li> <a href="/Search/SearchImage.aspx?catid=54537&amp;sort=newest">Đồ bơi</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=33492&amp;sort=newest">Áo thun</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=33493&amp;sort=newest">Áo sơ mi</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=33494&amp;sort=newest">Áo khoác</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=33495&amp;sort=newest">Quần short</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=33497&amp;sort=newest">Quần dài</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=35969&amp;sort=newest">Giày, dép</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=97345&amp;sort=newest">Bộ đồ</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=99142&amp;sort=newest">Đồ lót</a> </li>
+        </ul>
+      </li>
+      <li> <a href="javascript:void(0)">Mỹ phẩm</a>
+        <ul style="display: none;">
+          <li> <a href="/Search/SearchImage.aspx?catid=49987&amp;sort=newest">Trang điểm</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=50008&amp;sort=newest">Chăm sóc da</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=100860&amp;sort=newest">Chăm sóc tóc</a> </li>
+        </ul>
+      </li>
+      <li> <a href="javascript:void(0)">Sản phẩm khác</a>
+        <ul style="display: none;">
+          <li> <a href="/Search/SearchImage.aspx?catid=50570&amp;sort=newest">Phụ kiện máy tính bảng, iPad</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=50571&amp;sort=newest">Nón bảo hiểm</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=53637&amp;sort=newest">Cặp, túi đựng laptop</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=56683&amp;sort=newest">Bộ quà tặng</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=59658&amp;sort=newest">Phụ kiện thể thao</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=73753&amp;sort=newest">Đồ chơi cho bé</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=74098&amp;sort=newest">Khẩu trang</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=80160&amp;sort=newest">Phụ kiện điện thoại</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=80818&amp;sort=newest">Khăn</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=91683&amp;sort=newest">Quần áo sơ sinh</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=91685&amp;sort=newest">Dụng cụ ăn uống</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=91686&amp;sort=newest">Dụng cụ ngủ</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=91687&amp;sort=newest">Dụng cụ vệ sinh</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=91688&amp;sort=newest">Dụng cụ đi chơi</a> </li>
+          <li> <a href="/Search/SearchImage.aspx?catid=92675&amp;sort=newest">Sản phẩm Tết</a> </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!-- Menu End --> 
+
+<!-- 
+	<!-- Card Begin-->
+<div class="header_cart_outter menu_pop" style="display: none;">
+  <div id="header_cart">
+    <p id="totalamount" class="aright white">Tổng thanh toán: 
+      0đ </p>
+    <a href="/cart/CartProduct.aspx" class="red_btn">Thanh toán</a><br>
+    <a href="javascript:void(0)" id="btnclosepopup" class="blue_btn">Tiếp tục mua sắm</a>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!-- Card End --> 
+<!-- SearchBox Begin-->
+<div style="display:none" class="header_search clearfix">
+  <div class="row" id="search_box2" style="display: none;">
+    <input type="text" placeholder="Từ khóa" id="querySearch2">
+    <a onclick="ClickSearch()" id="search_btn2" class="black_btn fltlft">Tìm</a> </div>
+  <div style="display:none" class="autoSearch">
+    <ul id="autocomplete">
+    </ul>
+  </div>
+</div>
+<div class="gridContainer">
+  <div class="row" id="search_box">
+    <input type="text" placeholder="Từ khóa" id="querySearch">
+    <a onclick="ClickSearch()" id="search_btn" class="black_btn fltlft">Tìm</a> </div>
+  <div style="display:none" class="autoSearch2">
+    <ul id="autocomplete2">
+    </ul>
+  </div>
+</div>
+<!-- SearchBox End--> 
+<script type="text/javascript" language="javascript">
+	(function(jQuery){
+		jQuery.fn.extend({
+			accordion: function() {
+				return this.each(function() {
+					var $ul = $(this);
+					if($ul.data('accordiated'))
+						return false;
+					$.each($ul.find('ul, li>div'), function(){
+						$(this).data('accordiated', true);
+						$(this).hide();
+					});
+					$.each($ul.find('a'), function(){
+						$(this).click(function(e){
+							activate(this);
+							return void(0);
+						});
+					});
+					var active = (location.hash)?$(this).find('a[href=' + location.hash + ']')[0]:'';
+					if(active){
+						activate(active, 'toggle');
+						$(active).parents().show();
+					}
+					function activate(el,effect){
+						$(el).parent('li').toggleClass('active').siblings().removeClass('active').children('ul, div').slideUp('fast');
+						$(el).siblings('ul, div')[(effect || 'slideToggle')]((!effect)?'fast':null);
+					}
+				});
+			}
+		});
+	})(jQuery);
+    $(document).ready(function(e) {
+	
+        $('#main_menu ul').accordion();
+        $('#header_menu ul').accordion();
+        $('#h_cart_i').click(function() {
+            // $('.menu_pop').hide();
+            if ($('.header_cart_outter').is(':hidden'))
+                $('.header_cart_outter').show();
+            else
+                $('.header_cart_outter').hide();
+            $('.header_search').hide();
+            $('#search_box2').hide();
+            $('.header_menu_outter').hide();
+
+        });
+
+        $('#h_menu_i').click(function() {
+            $(this).removeClass('active');
+            if ($('.header_menu_outter').is(':hidden')) {
+                $('.header_menu_outter').show();
+                $(this).addClass('active');
+            }
+            else {
+                $('.header_menu_outter').hide();
+                $(this).removeClass('active');
+            }
+            $('.header_cart_outter').hide();
+            $('.header_search').hide();
+            $('#search_box2').hide();
+
+        });
+		
+		
+        //$('#h_seach_i').click(function() {
+            //if (window.location.pathname != "/" &amp;&amp; window.location.pathname != "/Default.aspx") {
+                //if ($('.header_search').is(':hidden')) {
+                    //$(".ovl").show();
+                    //$('.header_search').show();
+                    //$('#search_box2').show();
+                //}
+                //else {
+                    //$('.header_search').hide();
+                    //$('#search_box2').hide();
+                    //$(".ovl").hide();
+                //}
+                //$('.header_menu_outter').hide();
+                //$('.header_cart_outter').hide();
+            //}
+        //});
+
+        $("#btnclosepopup").click(function() {
+            $('.header_cart_outter').hide();
+        });
+        
+    });	
+</script> 
+<!-- Header Responsive End --> 
+
+<!-- Breadcrumb Begin-->
+<div class="breadcrumb">
+  <ul class="brech">
+    <li class="icon_home" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"> <a itemprop="url" href="/" title="Trang chủ" rel="v:url" property="v:title"><span itemprop="title"></span></a></li>
+    <li class="currentPage" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"> › <a itemprop="url" rel="v:url" property="v:title" href="" title="Weekly Deal"> <span itemprop="title">Outlet everyday</span> </a></li>
+  </ul>
+  <div id="ctl00_ctl00_cphContent_MainProduct1_BreadCrumb1_divH1" class="Breads">
+    <h1 class="Breadscat">Outlet everyday</h1>
+  </div>
+</div>
+<!-- Breadcrumb End--> 
+
+<!-- Content Begin-->
+<section class="container"> 
+  <script src="../js/jquery.lazyload.js" type="text/ecmascript"></script> 
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('.date_info').each(function() {
+            var year = $(this).attr('rel_year');
+            var month = $(this).attr('rel_month') - 1;
+            var date = $(this).attr('rel_date')
+            //alert(year + '/' + month + '/' + date);
+            $(this).countdown({
+                until: new Date(year, month, date, 24, 0, 0),
+                layout: '{d<}{dnn}<span>Ngày</span>{d>}' +
+                   '{hnn}<span>Giờ</span>' +
+                   '{mnn}<span>Phút</span>' +
+                   '{snn}<span>Giây</span>',
+                onExpiry: 'Hết Thời gian',
+                format: 'HMS'
+            });
+        });
+		
+		$('.count').each(function() {
+            var year = $(this).attr('rel_year');
+            var month = $(this).attr('rel_month') - 1;
+            var date = $(this).attr('rel_date')
+            //alert(year + '/' + month + '/' + date);
+            $(this).countdown({
+                until: new Date(year, month, date, 24, 0, 0),
+                layout: '{d<}{dnn}<span>Ngày</span>{d>}' +
+                   '{hnn}<span>Giờ</span>' +
+                   '{mnn}<span>Phút</span>' +
+                   '{snn}<span>Giây</span>',
+                onExpiry: 'Hết Thời gian',
+                format: 'HMS'
+            });
+        });
+		
+        if (navigator.platform == "iPad") {
+            $("img.lazyload").each(function() {
+                $(this).attr("src", $(this).attr("original"));
+            });
+        }
+        else {
+            $("img.lazyload").lazyload({
+                effect: "fadeIn",
+                placeholder: "../images/grey.gif"
+            });
+        }
+    });
+  </script>
+  <div class="clearfloat"> </div>
+  
+  <!-- Title Begin-->
+  <h2 class="grid_title"> <img src="../images/outlet_icon.png" alt="">CHỈ GIẢM GIÁ TRONG 24H - HÃY MUA NGAY!<span class="date">Thứ Hai 24/03/2014</span></h2>
+  <!-- Title End--> 
+  <!-- Outlet Box Begin-->
+  <section class="outlet_box"> 
+	<!-- Oulet responsive Begin -->
+	<article class="med_img">
+		<div class="count" rel_date="14" rel_month="05" rel_year="2014"></div>
+		<div class="c_img">
+			<a href="/mua-sam/phu-kien-nu/vi-nu/Vi-nu-Huy-Hoang-mau-cam-van-ca-sau-Outlet.aspx" target="_blank"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/14/153031_Vi-nu-Huy-Hoang-mau-cam-van-ca-sau-Outlet_vi nu huy hoang mau cam van ca sau outlet 1603001.jpg&amp;width=348&amp;height=382" alt="Ví nữ Huy Hoàng màu cam vân cá sấu Outlet" title="Ví nữ Huy Hoàng màu cam vân cá sấu Outlet" width="175" height="194"> </a>
+		</div>
+	</article>
+	<div class="pro_info">
+        <h2 class="d_name"><a href="javascript:void(0)" style="color:Black;font-size:14px" id="title_url"><strong id="title">Ví nữ Huy Hoàng màu cam vân cá sấu Outlet</strong></a></h2>
+        <br />
+           
+        <p class="d_price red">300.000đ</p>
+        <p class="small disable">Giá gốc: <span class="old_price">600.000đ </span> </p>            
+        <a href="" class="red_btn">Mua ngay</a>
+    </div>
+	<!-- Oulet responsive End -->
+    <!-- Slider News Begin-->
+    <article id="slider_news"> 
+      <!-- Cháy hàng -->
+      <div class="sold-out" style="display:none;"></div>      
+      <!-- List Images Begin-->
+      <ul id="featured" class="frame_view" style="display: block; height: 382px; width: 672px; padding: 0px; position: relative; overflow: hidden; list-style: none;">
+        <li class="slidee" style="top: 0px; z-index: 0; margin: 0px; padding: 0px; float: left; display: block; position: absolute; overflow: hidden; width: 348px; height: 382px; left: 0px; cursor: pointer;"><a href="/mua-sam/phu-kien-nu/vi-nu/Vi-nu-Huy-Hoang-mau-cam-van-ca-sau-Outlet.aspx" target="_blank"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/14/153031_Vi-nu-Huy-Hoang-mau-cam-van-ca-sau-Outlet_vi nu huy hoang mau cam van ca sau outlet 1603001.jpg&amp;width=348&amp;height=382" alt="Ví nữ Huy Hoàng màu cam vân cá sấu Outlet" title="Ví nữ Huy Hoàng màu cam vân cá sấu Outlet" width="348" height="382"> </a><span class="bg_pure"></span></li>
+        <li class="slidee slidee-open" style="top: 0px; z-index: 10; margin: 0px; padding: 0px; float: left; display: block; position: absolute; overflow: hidden; width: 348px; height: 382px; left: 162px; cursor: default;"> <a href="../mua-sam/phu-kien-nu/vi-nu/Vi-nu-Huy-Hoang-mau-cam-van-ca-sau-Outlet.aspx" target="_blank"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/productimage/2014/03/14/Vi-n1EEF-Huy-Hoang-mau-cam-van-ca-s1EA5u-Outletvi nu huy hoang mau cam van ca sau outlet 1603002.jpg&amp;width=348&amp;height=382" alt="Ví nữ Huy Hoàng màu cam vân cá sấu Outlet" title="Ví nữ Huy Hoàng màu cam vân cá sấu Outlet" width="348" height="382"> </a><span class="bg_pure"></span></li>
+        <li class="slidee slidee-previous slidee-closed" style="top: 0px; z-index: 20; margin: 0px; padding: 0px; float: left; display: block; position: absolute; overflow: hidden; width: 348px; height: 382px; left: 510px; cursor: pointer;"> <a href="../mua-sam/phu-kien-nu/vi-nu/Vi-nu-Huy-Hoang-mau-cam-van-ca-sau-Outlet.aspx" target="_blank"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/productimage/2014/03/14/Vi-n1EEF-Huy-Hoang-mau-cam-van-ca-s1EA5u-Outletvi nu huy hoang mau cam van ca sau outlet 1603003.jpg&amp;width=348&amp;height=382" alt="Ví nữ Huy Hoàng màu cam vân cá sấu Outlet" title="Ví nữ Huy Hoàng màu cam vân cá sấu Outlet" width="348" height="382"> </a><span class="bg_pure"></span></li>
+      </ul>
+      <!-- List Images End--> 
+    </article>
+    <!-- Slider News End--> 
+    <!-- Outlet Info Begin-->
+    <article class="outlet_info_box">
+      <h2 class="outlet_title"> <a href="/mua-sam/phu-kien-nu/vi-nu/Vi-nu-Huy-Hoang-mau-cam-van-ca-sau-Outlet.aspx" target="_blank"> Ví nữ Huy Hoàng màu cam vân cá sấu Outlet </a> </h2>
+      <p class="outlet_des"> Ví nữ phối vân cá sấu được thiết kế từ chất liệu da thật của thương hiệu Huy Hoàng đang được bán với mức giảm giá đến 50%. Giá chỉ còn 300.000đ.</p>
+      <div class="outlet_info"> 
+        <!-- Outlet Time CountDown Begin-->
+        <div class="outlet-time">
+          <p class="date_info" rel_year="2014" rel_month="05" rel_date="14"></p>
+          <!-- rel_year rel_month rel_date --> 
+        </div>
+        <!-- Outlet Time CountDown End-->
+        <p class="outlet_price_info"> <span class="price"><strong> 300.000đ </strong></span> <br>
+          <span class="disable">Giá gốc:</span> <span class="old_price disable"> 600.000đ </span> </p>
+        <p class="outlet_sale_info"> <span class="disable">Tiết kiệm</span><br>
+          <span class="percent"> 50%</span></p>
+      </div>
+      <a href="javascript:void(0)" onclick="" rel="614300e2-d3f9-4bdc-820b-dc1f333df6bd" relid="711e753d-7266-45f6-9ed7-147c1775b994" stock="1" quantity="0" paymode="Online" title="Ví nữ Huy Hoàng màu cam vân cá sấu Outlet" price="300.000đ" class="big_green_black fltrt enabled" id="btn_buy_outlet"> Mua ngay </a> </article>
+    <!-- Outlet Info End--> 
+  </section>
+  <!-- Outlet Box End-->
+  <div class="space30"> </div>
+  <!-- Middle Banner Outlet Begin -->
+  <div class="middle_banner-outlet">
+    <div class="get-email"> <span class="get-tips">Đăng ký để nhận thông tin khuyến mãi mới nhất của <strong>OUTLET EVERYDAY</strong></span> <span class="register-get-email"> 
+      <!-- Send Email Outlet Ajax Begin --> 
+      <!-- <form action="" method="post" id="frmEmailOutlet" name="frmEmailOutlet"> -->
+      <input type="text" name="email" onblur="checkemail(12)" id="txtEmail" value="Nhập email" maxlength="100" onfocus="if(jQuery.trim(this.value)=='Nhập email') this.value='';">
+      <p></p>
+      <a id="lbtMailBox" value="" class="btn_b" name="submit_search" type="button" rel="prettyPhoto[iframes]">Đăng ký</a> 
+      <!-- </form> --> 
+      <!-- Send Email Outlet Ajax End --> 
+      </span> </div>
+    <img src="../upload/images/banner/71c512f2-8665-4caa-8553-48f55fcb2968_outlet.jpg" alt="banner outlet 0210"> </div>
+  <!-- Middle Banner Oulet End -->
+  <div class="space30"> </div>
+  
+  <!-- List Product Outlet Begin -->
+  <ul class="outlets">
+    <li class="">
+      <div class="outlet_date"> Thứ Ba - Thời trang nữ</div>
+	  <div class="outlet_date2"> Thứ Ba</div>
+      <div class="outlet_date_info" style="overflow: hidden; height: 35px;">
+        <div class="retime" style="display: none;">
+          <p class="retitle">Sản phẩm chưa bán hôm nay. Hãy quay lại vào ngày</p>
+          <p class=""><span class="dofw">Thứ Ba</span> - <span class="dofwn">25/03/2014</span></p>
+        </div>
+        <div class="destime">
+          <p> <a href="/tim-kiem.aspx?brand=Milaross" target="_blank"> <strong class="upper">[Milaross]</strong> </a> <br>
+            <span class="price"><strong> 105.000đ</strong></span> <span> - </span> <span class="old_price"> 210.000đ</span> </p>
+          <span class="percent"> 50%</span> </div>
+      </div>
+      <a href="/mua-sam/thoi-trang-nu/ao-so-mi/ao-so-mi-nu-milaross-mau-kem-xep-ply-outlet.aspx" target="_blank"> <img class="lazyload" src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/product/2014/03/12/152249_Ao-so-mi-nu-Milaross-mau-kem-xep-ply-Outlet_thumbnail (4)_ao so mi milaross mau kem xep ply outlet 1303001.jpg&amp;width=326&amp;height=358" original="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/product/2014/03/12/152249_Ao-so-mi-nu-Milaross-mau-kem-xep-ply-Outlet_thumbnail (4)_ao so mi milaross mau kem xep ply outlet 1303001.jpg&amp;width=326&amp;height=358" width="326" height="358" alt="Áo sơ mi nữ Milaross màu kem xếp ply Outlet" title="Áo sơ mi nữ Milaross màu kem xếp ply Outlet" style="display: inline;"> </a> </li>
+    <li class="">
+      <div class="outlet_date"> Thứ Tư - Thời trang nữ</div>
+	  <div class="outlet_date2"> Thứ Tư</div>
+      <div class="outlet_date_info" style="height: 35px; overflow: hidden;">
+        <div class="retime" style="display: none;">
+          <p class="retitle">Sản phẩm chưa bán hôm nay. Hãy quay lại vào ngày</p>
+          <p class=""><span class="dofw">Thứ Tư</span> - <span class="dofwn">26/03/2014</span></p>
+        </div>
+        <div class="destime">
+          <p> <a href="/tim-kiem.aspx?brand=Winny" target="_blank"> <strong class="upper">[Winny]</strong> </a> <br>
+            <span class="price"><strong> 142.000đ</strong></span> <span> - </span> <span class="old_price"> 284.000đ</span> </p>
+          <span class="percent"> 50%</span> </div>
+      </div>
+      <a href="/mua-sam/thoi-trang-nu/do-ngu-do-mac-nha/Ao-dam-ngu-Winny-theu-hoa-Outlet.aspx" target="_blank"> <img class="lazyload" src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/product/2014/03/24/154110_Ao-dam-ngu-Winny-mau-den-theu-hoa-Outlet_ao dam ngu winny mau den theu hoa outletQUY_6653 (1).jpg&amp;width=326&amp;height=358" original="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/product/2014/03/24/154110_Ao-dam-ngu-Winny-mau-den-theu-hoa-Outlet_ao dam ngu winny mau den theu hoa outletQUY_6653 (1).jpg&amp;width=326&amp;height=358" width="326" height="358" alt="Áo đầm ngủ Winny thêu hoa Outlet" title="Áo đầm ngủ Winny thêu hoa Outlet" style="display: inline;"> </a> </li>
+    <li class="three">
+      <div class="outlet_date"> Thứ Năm - Thời trang nữ</div>
+	  <div class="outlet_date2"> Thứ Năm</div>
+      <div class="outlet_date_info" style="height: 35px; overflow: hidden;">
+        <div class="retime" style="display: none;">
+          <p class="retitle">Sản phẩm chưa bán hôm nay. Hãy quay lại vào ngày</p>
+          <p class=""><span class="dofw">Thứ Năm</span> - <span class="dofwn">27/03/2014</span></p>
+        </div>
+        <div class="destime">
+          <p> <a href="/tim-kiem.aspx?brand=M.A.C" target="_blank"> <strong class="upper">[M.A.C]</strong> </a> <br>
+            <span class="price"><strong> 162.500đ</strong></span> <span> - </span> <span class="old_price"> 325.000đ</span> </p>
+          <span class="percent"> 50%</span> </div>
+      </div>
+      <a href="/mua-sam/thoi-trang-nu/ao-thun/Ao-thun-nu-M-A-C-mau-do-in-chu-Outlet.aspx" target="_blank"> <img class="lazyload" src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/product/2014/03/19/153570_Ao-thun-nu-M-A-C-mau-do-in-chu-Outlet_ao thun nu m.a.c mau do in chu outletIMG_0104 (1)_ao thun nu mac mau do in chu outletIMG_0104 (1).JPG&amp;width=326&amp;height=358" original="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/product/2014/03/19/153570_Ao-thun-nu-M-A-C-mau-do-in-chu-Outlet_ao thun nu m.a.c mau do in chu outletIMG_0104 (1)_ao thun nu mac mau do in chu outletIMG_0104 (1).JPG&amp;width=326&amp;height=358" width="326" height="358" alt="Áo thun nữ M.A.C màu đỏ in chữ Outlet" title="Áo thun nữ M.A.C màu đỏ in chữ Outlet" style="display: inline;"> </a> </li>
+    <li class="">
+      <div class="outlet_date"> Thứ Sáu - Thời trang nữ</div>
+	  <div class="outlet_date2"> Thứ Sáu</div>
+      <div class="outlet_date_info up_trends" style="height: 80px; overflow: hidden;">
+        <div class="retime" style="display: block;">
+          <p class="retitle">Sản phẩm chưa bán hôm nay. Hãy quay lại vào ngày</p>
+          <p class=""><span class="dofw">Thứ Sáu</span> - <span class="dofwn">28/03/2014</span></p>
+        </div>
+        <div class="destime">
+          <p> <a href="/tim-kiem.aspx?brand=Quỳnh Bình Phương" target="_blank"> <strong class="upper">[Quỳnh Bình Phương]</strong> </a> <br>
+            <span class="price"><strong> 245.000đ</strong></span> <span> - </span> <span class="old_price"> 490.000đ</span> </p>
+          <span class="percent"> 50%</span> </div>
+      </div>
+      <a href="/mua-sam/thoi-trang-nu/ao-dam/ao-dam-quynh-binh-phuong-mau-hong-phoi-trang-outlet.aspx" target="_blank"> <img class="lazyload" src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/product/2014/03/20/153597_Ao-dam-Quynh-Binh-Phuong-mau-hong-phoi-trang-Outlet_ao dam quynh binh phuong mau hong phoi trang outletIMG_4818 (1).JPG&amp;width=326&amp;height=358" original="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/product/2014/03/20/153597_Ao-dam-Quynh-Binh-Phuong-mau-hong-phoi-trang-Outlet_ao dam quynh binh phuong mau hong phoi trang outletIMG_4818 (1).JPG&amp;width=326&amp;height=358" width="326" height="358" alt="Áo đầm Quỳnh Bình Phương màu hồng phối trắng Outlet" title="Áo đầm Quỳnh Bình Phương màu hồng phối trắng Outlet" style="display: inline;"> </a> </li>
+    <li class="">
+      <div class="outlet_date"> Thứ Bảy - Thời trang nam</div>
+	  <div class="outlet_date2"> Thứ Bảy</div>
+      <div class="outlet_date_info" style="overflow: hidden; height: 35px;">
+        <div class="retime" style="display: none;">
+          <p class="retitle">Sản phẩm chưa bán hôm nay. Hãy quay lại vào ngày</p>
+          <p class=""><span class="dofw">Thứ Bảy</span> - <span class="dofwn">29/03/2014</span></p>
+        </div>
+        <div class="destime">
+          <p> <a href="/tim-kiem.aspx?brand=G2000" target="_blank"> <strong class="upper">[G2000]</strong> </a> <br>
+            <span class="price"><strong> 379.000đ</strong></span> <span> - </span> <span class="old_price"> 1.000.000đ</span> </p>
+          <span class="percent"> 62%</span> </div>
+      </div>
+      <a href="/mua-sam/thoi-trang-nam/ao-so-mi/Ao-so-mi-nam-G2000-mau-hong-soc-nhuyen-tay-dai-Outlet.aspx" target="_blank"> <img class="lazyload" src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/product/2014/03/21/153749_Ao-so-mi-nam-G2000-mau-hong-soc-nhuyen-tay-dai-Outlet_ao so mi nam g2000 mau hong soc nhuyen tay dai outlet_MG_1517 (1).JPG&amp;width=326&amp;height=358" original="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/product/2014/03/21/153749_Ao-so-mi-nam-G2000-mau-hong-soc-nhuyen-tay-dai-Outlet_ao so mi nam g2000 mau hong soc nhuyen tay dai outlet_MG_1517 (1).JPG&amp;width=326&amp;height=358" width="326" height="358" alt="Áo sơ mi nam G2000 màu hồng sọc nhuyễn tay dài Outlet" title="Áo sơ mi nam G2000 màu hồng sọc nhuyễn tay dài Outlet" style="display: inline;"> </a> </li>
+    <li class="three">
+      <div class="outlet_date"> Thứ Hai - Phụ kiện</div>
+	  <div class="outlet_date2"> Thứ Hai</div>
+      <div class="outlet_date_info">
+        <div class="retime">
+          <p class="retitle">Sản phẩm chưa bán hôm nay. Hãy quay lại vào ngày</p>
+          <p class=""><span class="dofw">Thứ Hai</span> - <span class="dofwn">31/03/2014</span></p>
+        </div>
+        <div class="destime">
+          <p> <a href="/tim-kiem.aspx?brand=Bolzano" target="_blank"> <strong class="upper">[Bolzano]</strong> </a> <br>
+            <span class="price"><strong> 238.000đ</strong></span> <span> - </span> <span class="old_price"> 641.509đ</span> </p>
+          <span class="percent"> 63%</span> </div>
+      </div>
+      <a href="/mua-sam/thoi-trang-nu/quan-tay-quan-kieu/quan-tay-nu-bolzano-ong-suong-outlet.aspx" target="_blank"> <img class="lazyload" src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/product/2014/03/14/152885_Quan-tay-nu-Bolzano-ong-suong-Outlet_quan tay nu ong suong bolzano outlet 1503001.jpg&amp;width=326&amp;height=358" original="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/product/2014/03/14/152885_Quan-tay-nu-Bolzano-ong-suong-Outlet_quan tay nu ong suong bolzano outlet 1503001.jpg&amp;width=326&amp;height=358" width="326" height="358" alt="Quần tây nữ Bolzano ống suông Outlet" title="Quần tây nữ Bolzano ống suông Outlet" style="display: inline;"> </a> </li>
+  </ul>
+  <!-- List Product Outlet End -->
+  <div class="space30"> </div>
+  <!-- Sub-footer Begin-->
+  <footer class="span-26 subfooter">
+    <div class="span-8">
+      <div class="support">
+        <h2> <a title="Hỗ trợ khách hàng" rel="nofollow">Hỗ trợ khách hàng</a></h2>
+        <div class="cs-conntent">
+          <ul class="fhotline">
+            <li>
+              <h3> Hotline:</h3>
+            </li>
+            <li><span class="buy"><i class="ibuy"></i>Mua hàng:</span>1900­ 55 88 34</li>
+            <li><span class="custom"><i class="ibuy2"></i>Khách hàng:</span>0938­ 60 21 22</li>
+            <li><span class="custom"><i class="ibuy2"></i>Doanh nghiệp:</span>0909­ 89 21 22</li>
+          </ul>
+          <ul class="ftimeoff">
+            <li>
+              <h3> Thời gian làm việc:</h3>
+            </li>
+            <li>8:00 đến 21:00 (thứ 2 đến thứ 6)</li>
+            <li>8:00 đến 17: 00 (thứ 7 và CN)</li>
+            <li>HCM: Giao hàng từ 3 - 7 ngày </li>
+            <li>Tỉnh: Giao hàng từ 7 - 15 ngày </li>
+          </ul>
+          <ul class="fEmail">
+            <li>
+              <h3> Email:</h3>
+            </li>
+            <li><a href="mailto:customer-service@chonvn.com">customer-service@chonvn.com</a></li>
+            <li><a href="mailto:sales@chonvn.com">sales@chonvn.com</a></li>
+          </ul>
+          <ul class="exchange-bct">
+            <li><a href="http://online.gov.vn/HomePage/WebsiteDisplay.aspx?DocId=299" target="_blank" rel="nofollow"><img title="Quy chế sàn giao dịch đã đăng ký với bộ công thương" alt="Quy chế sàn giao dịch đã đăng ký với bộ công thương" width="96" src="../images/logo/dang-ky-bo-cong-thuong.png"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="span-6">
+      <div class="promise">
+        <h2> <a href="/ve-chung-toi/" title="Cam kết của chon.vn" rel="nofollow">Cam kết của chon.vn</a></h2>
+        <div class="cpromise">
+          <ul>
+            <li class="cpromise1"><a href="/ve-chung-toi/" rel="nofollow" title="Thời trang chính hãng"><em></em>Thời trang chính hãng</a></li>
+            <li class="cpromise3"><a href="/ve-chung-toi/" rel="nofollow" title="Miễn phí vận chuyển toàn quốc"><em></em>Miễn phí vận chuyển toàn quốc</a></li>
+            <li class="cpromise2"><a href="/ve-chung-toi/" rel="nofollow" title="Giá thấp hơn hoặc bằng cửa hàng"><em></em>Giá thấp hơn hoặc bằng cửa hàng</a></li>
+            <li class="cpromise4"><a href="/ve-chung-toi/" rel="nofollow" title="Đổi/trả hàng trong 7 ngày (*)"><em></em>Đổi/trả hàng trong 7 ngày (*)</a></li>
+            <li class="cpromise5"><a href="/ve-chung-toi/" rel="nofollow" title="Bảo mật thanh toán"><em></em>Bảo mật thanh toán</a></li>
+            <li class="cpromise6"><a href="/ve-chung-toi/" rel="nofollow" title="Phục vụ 24/7"><em></em>Phục vụ 24/7</a></li>
+            <li class="cpromise7">(*) Đổi/trả hàng không áp dụng cho sản phẩm khuyến mãi</li>
+          </ul>
+          <p class="regulation"> <a rel="nofollow" href="http://www.chon.vn/ve-chung-toi/quy-che-san-giao-dich.aspx">Quy chế hoạt động sàn giao dịch TMĐT chon.vn</a> </p>
+        </div>
+      </div>
+    </div>
+    <div class="span-7">
+      <div class="payment">
+        <h2> <a href="/huong-dan-su-dung/" title="Hệ thống thanh toán" rel="nofollow">Hệ thống thanh toán</a></h2>
+        <div class="cpayment">
+          <div class="cpayment1">
+            <h3> Thanh toán sau (COD):</h3>
+            <ul>
+              <li class="po1"><a href="/huong-dan-su-dung/Faq.aspx?FaqCategoryID=4" rel="nofollow" title="Đặt hàng"><span>Đặt hàng</span></a></li>
+              <li class="po2"><a href="/huong-dan-su-dung/Faq.aspx?FaqCategoryID=4" rel="nofollow" title="Xác minh"><span>Xác minh</span></a></li>
+              <li class="po3"><a href="/huong-dan-su-dung/Faq.aspx?FaqCategoryID=4" rel="nofollow" title="Chuyển hàng"><span>Chuyển hàng</span></a></li>
+              <li class="po4"><a href="/huong-dan-su-dung/Faq.aspx?FaqCategoryID=4" rel="nofollow" title="Nhận hàng &amp; thanh toán"><span>Nhận hàng &amp; thanh toán</span></a></li>
+            </ul>
+          </div>
+          <div class="cpayment2">
+            <h3> Thanh toán online:</h3>
+            <ul>
+              <li class="po5"><a href="/huong-dan-su-dung/Faq.aspx?FaqCategoryID=4" rel="nofollow" title="Đặt hàng"><span>Đặt hàng</span></a></li>
+              <li class="po6"><a href="/huong-dan-su-dung/Faq.aspx?FaqCategoryID=4" rel="nofollow" title="Thanh toán"><span>Thanh toán</span></a></li>
+              <li class="po7"><a href="/huong-dan-su-dung/Faq.aspx?FaqCategoryID=4" rel="nofollow" title="Xác minh"><span>Xác minh</span></a></li>
+              <li class="po8"><a href="/huong-dan-su-dung/Faq.aspx?FaqCategoryID=4" rel="nofollow" title="Chuyển hàng"><span>Chuyển hàng</span></a></li>
+              <li class="po9"><a href="/huong-dan-su-dung/Faq.aspx?FaqCategoryID=4" rel="nofollow" title="Nhận hàng"><span>Nhận hàng</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Sub-footer End--> 
+  <!-- Share footer icon Begin-->
+  <div class="sharePageIcon"> <a href="https://www.facebook.com/www.chon.vn" target="_blank" class="fb"><img src="../images/icon/iconsharepage.png" alt="" title="" border="0"></a> <a href="https://plus.google.com/111158422892152419495" rel="publisher" target="_blank" class="gg"><img src="../images/icon/iconsharepage.png" alt="" title="" border="0"></a> </div>
+  <!-- Share footer icon End--> 
+</section>
+
+<!-- Content End--> 
+
+<!-- Responsive Menu Footer Begin -->
+<div class="gridContainer clearfix" style="padding-top: 10px;">
+  <div class="row" id="main_menu">
+    <ul class="accordion">
+      <li> <a href="javascript:void(0)">Mua sắm</a>
+        <ul id="cate_muasam" style="display: none;">
+          <div id="ext-comp-1001" class=" x-panel">
+            <div class="x-panel-bwrap" id="ext-gen4">
+              <div class="x-panel-body x-panel-body-noheader" id="ext-gen5">
+                <div id="ext-comp-1002">
+                  <li onclick="ClickCategory(this)"> <a href="/search/searchimage.aspx?sort=newest&amp;catid=1556">Thời trang nữ</a> </li>
+                  <li onclick="ClickCategory(this)"> <a href="/search/searchimage.aspx?sort=newest&amp;catid=1568">Thời trang nam</a> </li>
+                  <li onclick="ClickCategory(this)"> <a href="/search/searchimage.aspx?sort=newest&amp;catid=1579">Phụ kiện nữ</a> </li>
+                  <li onclick="ClickCategory(this)"> <a href="/search/searchimage.aspx?sort=newest&amp;catid=1590">Phụ kiện nam</a> </li>
+                  <li onclick="ClickCategory(this)"> <a href="/search/searchimage.aspx?sort=newest&amp;catid=40254">Hàng thể thao nữ</a> </li>
+                  <li onclick="ClickCategory(this)"> <a href="/search/searchimage.aspx?sort=newest&amp;catid=40253">Hàng thể thao nam</a> </li>
+                  <li onclick="ClickCategory(this)"> <a href="/search/searchimage.aspx?sort=newest&amp;catid=33484">Thời trang bé gái</a> </li>
+                  <li onclick="ClickCategory(this)"> <a href="/search/searchimage.aspx?sort=newest&amp;catid=33483">Thời trang bé trai</a> </li>
+                  <li onclick="ClickCategory(this)"> <a href="/search/searchimage.aspx?sort=newest&amp;catid=49982">Mỹ phẩm</a> </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </li>
+      <li> <a href="javascript:void(0)">Khuyến mãi</a>
+        <ul style="display: none;">
+          <li> <a href="/outlet-everyday/Default.aspx">Outlet Everyday</a> </li>
+          <li> <a href="/outlet-everyday/weekylydeal.aspx">Weekly Deal</a> </li>
+        </ul>
+      </li>
+      <li class="non_sub"> <a href="/news/newslist.aspx">Tin thời trang</a> </li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+  <div class="row"> <a id="account_btn" class="black_btn fltlft" onclick="OnclickRegister()" href="javascript:void(0)">Tài khoản</a> </div>
+</div>
+<!-- Responsive Menu Footer End --> 
+
+<!-- Footer Begin -->
+<footer class="footer">
+  <div class="fcontent">
+    <div itemscope="" itemtype="http://schema.org/Organization">
+      <p itemprop="name">Bản quyền © 2012 <a href="http://www.chon.vn" itemprop="url">Chọn.vn</a> - Bản quyền được bảo vệ</p>
+    </div>
+    <div>
+      <p><span>Công ty CPTM Chọn, 339/19 Lê Văn Sỹ, P.13, Q.3</span> – ĐT:<span> (08) 3526 4733 </span> – Fax: <span>(08) 3526 4736</span></p>
+    </div>
+    <p> Giấy phép số 49/GP - ICP - STTT cấp ngày 11/06/2012 do sở thông tin truyền thông TP.HCM cấp<br>
+      Giấy chứng nhận ĐKKD số 0310257037 do Sở Kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp lần đầu ngày 17/8/2010<br>
+      và đăng ký thay đổi lần thứ 4 ngày 12/3/2013.<br>
+      <br>
+    </p>
+  </div>
+</footer>
+<!-- Footer End --> 
+<a href="#logon" title="Lên đầu trang" class="hr" style="display: none;"><span>Lên Đầu Trang</span></a> 
+<script type="text/javascript">
+$(document).ready(function(){
+
+	// hide #back-top first
+	$("a.hr").hide();
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('a.hr').fadeIn();
+			} else {
+				$('a.hr').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('a.hr').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
+});
+</script>
+</body>
+</html>

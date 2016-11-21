@@ -1,0 +1,66 @@
+﻿.trending_banner{ border:#f5f5f5 solid 1px; float:left; margin-bottom:10px}
+.trending_banner a{ float:left; display:inline-block; height:251px}
+
+/*View by content*/
+.trending_result_list li{/*float: left;list-style: none;position: relative;*/width: 232px;margin:20px 16px 20px 0px}
+	.search_pro_brand{color:#333;font-size:11px;font-weight:bold;text-transform:uppercase}
+	.search_pro_brand:hover{color:#9b0000;}
+	.search_pro_color ul{display:block;float:left; width: 180px;}
+	.search_pro_color .color_title{font-size:11px;color:#666;float:left; line-height:20px; margin:0 5px 0 0; width: 45px;}
+	.search_pro_color li {float: left;margin: 2px 4px 2px 0px;width: auto;height: 15px;border: solid 1px #EEE;display: block;}
+	.search_pro_color li span {text-align: center;vertical-align: middle;padding: 2px 4px;float: left;line-height: 10px;font-size: 11px;}
+	.search_pro_color li a.color{width:13px;height:13px;display:block;border:solid 1px #fff;text-indent:-9999px;}
+	.search_pro_color li a.color:hover{box-shadow:0 0 3px 0px #666 }
+	
+	
+	.price{font-size:11px;}
+	.old_price{font-size:11px;color:#999;text-decoration:line-through;margin-right:3px}
+	.buy_info{height:19px;position:relative;border:dotted 1px #ccc;}
+	.outstock{height:19px;position:relative;border:dotted 1px #eee}
+	.buy_btn{background:url(../images/small_cart_btn.png) left top no-repeat;padding-left:30px;color:#6c8090;text-transform:uppercase;height:21px;display:block;line-height:21px;font-size:10px;-webkit-transition: all 0.25s ease-in-out;-moz-transition: all 0.25s ease-in-out;-o-transition: all 0.25s ease-in-out;transition: all 0.25s ease-in-out;position:absolute; top: -1px;left: -1px;}
+	.buy_btn:hover{background:url(../images/small_cart_btn_hover.png) left top no-repeat;color:#9b0000}
+	.outstock .buy_btn{opacity:.25;color:#666}
+	.outstock .buy_btn:hover{opacity:.25;color:#666;background:url(../images/small_cart_btn.png) left top no-repeat;}
+	
+	.premium{background:url(../css/images/premium_icon.png) left top no-repeat;position:absolute;top:0;right:0px;display:block;width:17px;height:70px;}
+	.luxury{background:url(../images/premium_icon.png) left top no-repeat;position:absolute;top:0px;right:0px;display:block;width: 14px;height: 66px;}
+	.baget{position:absolute;top:0px;left:0px;text-indent:-9999px;width:31px;height:31px;}
+	.baget_new{background:url(../images/new_bagget.png);} 
+	.baget_hot{background:url(../images/hot_bagget.png);} 
+	.baget_sale{position:absolute;left:0px; bottom: 19px; width:32px;height:32px;text-align:center;color:#fff;font-size:14px;line-height:32px;font-weight:bold;background:url(../images/sale_bagget.png);}
+    .trend_buy{}
+.trending_product{ float:left; position:relative; display:block; margin-bottom:20px}
+.trending_product li{ display:inline; position:relative}
+.trending_product p{margin:0}
+
+.search_pro_color { background: none repeat scroll 0 0 #FFFFFF; bottom: 0; height: 65px; left: 49px; padding: 0 10px; position: absolute; width: 231px; z-index: 4;}
+.treding_Thumbnail{ position:absolute;  z-index:4; left:0; padding:5px; border-right:#ededed solid 1px;background: #fff; height:355px; width:38px}
+.treding_Thumbnail li{display:block;}
+.treding_Thumbnail li a{ margin-bottom:5px;border:#ededed solid 1px; float:left}
+.treding_hide{ display:block; z-index:4; width:300px; height:365px; position:absolute; top:-2px; left:-60px;border:#d9d9d9 solid 2px;/*background: #fff;*/ box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); cursor:pointer;}
+.s_thumb { position: absolute; display: block; cursor:pointer; float: left; width:232px; height:292px; z-index:3}
+.s_thumb a.figure{ position:relative; float:left; height:260px;}
+.grid_2{width: 232px; float:left}
+.s_item {position: relative;width: 232px; float:left; margin:0 13px 30px 0px;display: block; height: 290px;}
+button.css3button { position:absolute; top:184px; left:58px; z-index:9; text-transform:uppercase; cursor:pointer; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #fff; padding: 10px 20px; background-color:#000; border: 1px solid #999  ;}
+
+
+
+.treding_hide a.figure { float: left; height: 260px; left: 58px; position: relative; width: 230px; z-index: 10;}
+
+
+.scratch_card{float: left;  width: 978px; height: 360px; overflow: hidden;}
+.scratch_card a{display: block; width: 980px; height: 360px; overflow: hidden;}
+
+.dayGold30{float: left;  width: 978px; height: 360px; overflow: hidden;}
+.bannerStylist{/*float: left;  width: 978px; height: 360px; overflow: hidden;*/}
+
+/*chay hang*/
+.outOfStock{background: url("../css/images/chayhang.png") no-repeat scroll 0 0 transparent; height: 253px; left: 0; position: absolute; top: 0; width: 230px; z-index: 10;}
+
+.clickviewmore{text-align: center;width: 504px;height: 30px; float: left; margin: 1px 237px;}
+.clickviewmore span{display: block; border-radius: 2px;cursor: default !important; font-family: arial,sans-serif;font-size: 11px;font-weight: bold;height: 27px;line-height: 27px;margin: 2px 0;min-width: 54px;padding: 0 8px;text-align: center;-webkit-transition: all 0.218s,visibility 0s;transition: all 0.218s,visibility 0s;background-repeat: repeat-x;padding: 0;width: 504px !important; background-color: #f5f5f5;background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);background-image: linear-gradient(top,#f5f5f5,#f1f1f1);border: 1px solid #dcdcdc;border: 1px solid rgba(0, 0, 0, 0.1);color: #444;}
+.clickviewmore span:hover{box-shadow: 0px 1px 3px #E3E3E3; cursor: pointer !important;}

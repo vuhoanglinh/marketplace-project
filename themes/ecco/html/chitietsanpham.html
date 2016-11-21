@@ -1,0 +1,582 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html;" />
+<meta id="ctl00_ctl00_metaDescription" name="Description" content="cua hang ECCO, giay nam, giay nu" />
+<meta id="ctl00_ctl00_metaKeywords" name="Keywords" content="cua hang ECCO, giay nam, giay nu" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8; IE=EmulateIE9" />
+<title>Ecco</title>
+<link href="../../ice/css/ch_layout.css" type="text/css" rel="stylesheet">
+<link href="../css/color/ecco.css" type="text/css" rel="stylesheet">
+<link href="../css/main.css" type="text/css" rel="stylesheet">
+<link href="../css/menu.css" type="text/css" rel="stylesheet">
+<link href="../css/product.css" type="text/css" rel="stylesheet">
+<link href="../css/prettyPhoto.css" type="text/css" rel="stylesheet">
+<link type="text/css" href="../../default/css/nivo-slider.css" rel="stylesheet">
+<link type="text/css" href="../../ui-lightness/ui.all.css" rel="stylesheet">
+<script src="../../default/js/jquery.min.js" type="application/javascript"></script>
+<script src="../../default/js/jquery.nivo.slider.js" type="application/javascript"></script>
+<script src="../../merchant1/js/jquery.cookie.js" type="application/javascript"></script>
+<script src="../../merchant1/js/jquery.tinyscrollbar.min.js" type="application/javascript"></script>
+<script src="../../default/js/jcarousellite_1.0.1.min.js" type="application/javascript"></script>
+<script type="text/javascript">
+function closeSearchChonFrame() {
+	$.cookie('hideSearchChonFrame', '1');
+	var hideFrame = $.cookie("hideSearchChonFrame");
+	if (hideFrame == '1') {
+		$('#wrapperhead').hide();
+	}	
+} 
+$(document).ready(function() {
+	var hideFrame = $.cookie("hideSearchChonFrame");
+	if (hideFrame == '1') {
+		$('#wrapperhead').hide();
+	}
+}); 
+</script>
+<script>
+$(function() {
+$('.nivoSlider').nivoSlider({
+	effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+	directionNav: false, // Next & Prev navigation
+	controlNav: false
+});
+});
+$(window).load(function() {
+	$('.btn-slide').click(function() {
+	$(this).parent().parent().find('#panel').toggleClass('autonav');
+	$(this).toggleClass("active");
+	});
+}); 
+
+
+$(document).ready(function(){
+	$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	//On Click Event
+	$("ul.tabs li").mouseover(function() {
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("tablink"); //Find the rel attribute value to identify the active tab + content
+		//$(activeTab).fadeIn(); //Fade in the active content
+		$(activeTab).show();
+		return false;
+	});  
+});
+</script>
+</head>
+
+<body>
+<div id="loadingDiv" class="loading" style="display:none;"> <img src="../images/loading.gif" alt="Loading..."> </div>
+<div id="wrapper">
+<!-- BEGIN: MAIN FRAME -->
+<div id="wrapperframe" style="background:#121212;">
+  <div id="wrapperhead">
+    <div id="ctl00_ctl00_ChonSearchBox1_divSearchOnChon" class="header_top_bar">
+      <div class="logo_top_bar"> <a href="/"> <img src="../../Merchant1/images/Chon.vn Logo_3D.png" alt=""></a></div>
+      <div class="search_top_bar">
+        <div id="ctl00_ctl00_ChonSearchBox1_pnSearchOnChon" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_ctl00_ChonSearchBox1_btnSearchOnChon')"> <strong style="color:#999999">Tìm kiếm:&nbsp;&nbsp;&nbsp;</strong>
+          <input name="ctl00$ctl00$ChonSearchBox1$txtQueryOnChon" type="text" id="ctl00_ctl00_ChonSearchBox1_txtQueryOnChon">
+          <span class="btn_go"> <a id="ctl00_ctl00_ChonSearchBox1_btnSearchOnChon" href="javascript:__doPostBack('ctl00$ctl00$ChonSearchBox1$btnSearchOnChon','')">Tìm</a></span> </div>
+      </div>
+      <div class="close_top_bar"> Đóng khung này&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" onclick="closeSearchChonFrame()"><img src="../../FHouse/images/bar/btn_close.gif" style="vertical-align:middle"></a></div>
+    </div>
+  </div>
+</div>
+<!-- END: MAIN FRAME -->
+<div id="ch_header">
+  <div id="ch_wrapper"> 
+    <!-- BEGIN: HEADER -->
+    <div class="top">
+      <div class="logo"> <a href="/cua-hang/ecco.aspx"> <img height="59" src="http://img.chon.vn/Files/Upload/Images/Merchant/2013/06/20/6060_logostore.png" alt="ECCO"> </a> </div>
+      <div class="top_right"> 
+        <!-- HEADER: SEARCH-->
+        <div class="last">
+          <div class="search">
+            <form action="" method="post" id="frmsearch" name="frmsearch">
+              <div class="input">
+                <input type="text" name="search" id="txtQueryClient" placeholder="Nhập từ khóa tìm kiếm" maxlength="80" alt="Search" >
+              </div>
+              <button class="button" type="button" ></button>
+            </form>
+          </div>
+        </div>
+        <div class="share"></div>
+        <!-- HEADER USER: BEGIN -->
+        <div class="user_block"> 
+          <script type="text/javascript">
+        //alert(location.pathname);
+        /*
+        $(document).ready(function() {
+            if (currentUserInfo.Username != undefined) {
+                if (currentUserInfo.Username != null && currentUserInfo.Username != '') {
+                    $("#lblLoginName").html("<b>" + currentUserInfo.Username + "</b>");
+                    $("#nonLogin").attr("style", "display:none");
+                    $("#logon").attr("style", "display:block;float:right;");
+                    $("#lblTotalQuantity").html(currentUserInfo.TotalQuantity);
+                } else {
+                    $("#lblLoginName").html("");
+                    $("#nonLogin").attr("style", "display:block");
+                    $("#logon").attr("style", "display:none");
+                    $("#lblCartItemCount2").html(currentUserInfo.TotalQuantity);
+                }
+            }
+    
+    
+        });
+        */
+    </script>
+          <div id="nonLogin" style="display:block">
+            <p class="lostpass"> <a rel="noindex, nofollow" href="/nguoi-dung/Quen-mat-ma.aspx?returnUrl=%2fcua-hang%2fecco.aspx%3fref%3dmenu-merchant">Quên mật khẩu</a></p>
+            <p class="register"> <a rel="noindex, nofollow" href="/nguoi-dung/dang-nhap.aspx?returnUrl=%2fcua-hang%2fecco.aspx%3fref%3dmenu-merchant">Đăng ký</a> </p>
+            <p class="login_name"> <a rel="noindex, nofollow" href="/nguoi-dung/dang-nhap.aspx?returnUrl=%2fcua-hang%2fecco.aspx%3fref%3dmenu-merchant">Đăng nhập</a> </p>
+            <p class="l_cart"> <a rel="noindex, nofollow" href="/nguoi-dung/gio-hang.aspx">Giỏ hàng (<span id="lblCartItemCount2" style="font-size:x-small;">0</span>)</a> </p>
+          </div>
+          <div id="logon" style="display:none">
+            <div style="display: none;"> Chào
+              <label id="lblLoginName"></label>
+            </div>
+            <p class="l_cart"> <a rel="noindex, nofollow" href="/nguoi-dung/gio-hang.aspx">Giỏ hàng (<span id="lblTotalQuantity" style="font-size:x-small;"></span>)</a> </p>
+            <p class="l_signout"> <a rel="noindex, nofollow" href="/nguoi-dung/thoat.aspx?returnUrl=%2fcua-hang%2fecco.aspx%3fref%3dmenu-merchant">Thoát</a> </p>
+          </div>
+        </div>
+        <!-- HEADER USER: END --> 
+      </div>
+    </div>
+    <!-- END: HEADER --> 
+  </div>
+  <!-- BEGIN: MAIN NAVIGATION -->
+  <nav class="topMenu">
+    <div id="ch_mainmenu">
+      <div class="menunav">
+        <div class="chonlink"><a href="/">Chon.vn</a></div>
+        <div class="menunav_back">
+          <ul class="lavaLamp_menu" id="lava">
+            <li class="current"><a href="/cua-hang/ecco/san-pham.aspx#content" title="san-pham"><span>Sản phẩm</span></a></li>
+            <li><a href="/cua-hang/ecco/gioi-thieu.aspx#content" title="gioi-thieu"><span>Giới thiệu</span></a></li>
+            <li id="licollection" style="display:none;"><a href="#" title="bo-suu-tap">Bộ sưu tập</a></li>
+            <li><a href="/cua-hang/ecco/su-kien.aspx#content" title="su-kien"><span>Sự kiện</span></a></li>
+            <li><a href="/cua-hang/ecco/danh-gia.aspx#content" title="danh-gia"><span>Đánh giá</span></a></li>
+            <li><a href="/cua-hang/ecco/lien-he.aspx#content" title="lien-he"><span>Liên hệ</span></a></li>
+            <li><a href="/cua-hang/ecco/gioi-thieu/he-thong-cua-hang.aspx#content" title="he-thong"><span>Hệ thống cửa hàng</span></a></li>
+            <li id="ctl00_ctl00_TopNavigator1_liHome"> <a rel="nofollow" target="_blank" href="http://www.tbssport.com.vn">Website</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END: MAIN NAVIGATION --> 
+</div>
+<!-- BEGIN: SLIDER -->
+<div id="ch_wrapper">
+  <div id="ch_features">
+    <div id="features_panes_container">
+      <div id="slider" class="nivoSlider"> <a href='' target="_blank"> <img alt='banner 01' src='http://img.chon.vn/Files/upload/Images/Banner/4cea4af9-b706-47c1-9a3d-6c6b34eb3b64_001.jpg'  /> </a> <a href='' target="_blank"> <img alt='banner 02' src='http://img.chon.vn/Files/upload/Images/Banner/de183aff-42e4-48df-a5b1-cb4c6719cf25_004.jpg'  /> </a> <a href='' target="_blank"> <img alt='banner 03' src='http://img.chon.vn/Files/upload/Images/Banner/de762cc6-cb22-49ca-a5f3-b9eee319e290_005.jpg'  /> </a> </div>
+    </div>
+    <div class="liner"></div>
+  </div>
+  <!--END: SLIDER --> 
+  <!-- BEGIN: BODY -->
+  <div id="ch_body">
+    <div id="ch_wrapper">
+      <div id="ch_mainbody">
+        <div id="ch_submenu">
+          <div class="sub_left">
+            <div class="sub_left_c">
+              <h2> SẢN PHẨM</h2>
+              <!-- BEGIN: CATEGORY -->
+              <ul class="tabs" id="products_selection">
+                <li class="active"><a href="/cua-hang/ecco/san-pham/giay-nam-c3438.aspx#content" tablink="#tab3438"> <em> Giày nam<span class="txt_red">(297)</span></em> </a></li>
+                <li><a href="/cua-hang/ecco/san-pham/giay-nu-c3440.aspx#content" tablink="#tab3440"> <em> Giày nữ<span class="txt_red">(588)</span></em> </a></li>
+                <li><a href="/cua-hang/ecco/san-pham/giay-golf-c3442.aspx#content" tablink="#tab3442"> <em> Giày Golf<span class="txt_red">(71)</span></em> </a></li>
+                <li><a href="/cua-hang/ecco/san-pham/phu-kien-c3444.aspx#content" tablink="#tab3444"> <em> Phụ kiện<span class="txt_red">(0)</span></em> </a></li>
+                <li><a href="/cua-hang/ecco/san-pham/tui-xach-nu-c4632.aspx#content" tablink="#tab4632"> <em> Túi xách nữ<span class="txt_red">(12)</span></em> </a></li>
+                <li><a href="/cua-hang/ecco/san-pham/vi-nu-c4634.aspx#content" tablink="#tab4634"> <em> Ví nữ<span class="txt_red">(8)</span></em> </a></li>
+                <li><a href="/cua-hang/ecco/san-pham/vi-nam-c4636.aspx#content" tablink="#tab4636"> <em> Ví nam<span class="txt_red">(4)</span></em> </a></li>
+                <li><a href="/cua-hang/ecco/san-pham/that-lung-nam-c4637.aspx#content" tablink="#tab4637"> <em> Thắt lưng nam<span class="txt_red">(12)</span></em> </a></li>
+              </ul>
+              <!-- END: CATEGORY --> 
+            </div>
+            <!-- BEGIN: CATEGORY CHILDREN -->
+            <div id="product_list_container">
+              <div class="tab_container">
+                <div class="tab_content" id="tab3438" style="display: block;">
+                  <div class="sub_right">
+                    <div class="sub_right_r">
+                      <div style="display: block" class="hnav" id="panel">
+                        <ul class="Nav_sub_slide">
+                          <li><a href="/cua-hang/ecco/san-pham/mcasual-c3400.aspx#content"> MCasual <span class="txt_red">(139)</span></a></li>
+                          <li><a href="/cua-hang/ecco/san-pham/mformal-c3408.aspx#content"> MFormal <span class="txt_red">(114)</span></a></li>
+                          <li><a href="/cua-hang/ecco/san-pham/msport-c3412.aspx#content"> Msport <span class="txt_red">(44)</span></a></li>
+                        </ul>
+                      </div>
+                      <p class="slide"> <a class="btn-slide active" href="javascript:void(0)">&nbsp;</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab3440" style="display: none;">
+                  <div class="sub_right">
+                    <div class="sub_right_r">
+                      <div style="display: block" class="hnav" id="panel">
+                        <ul class="Nav_sub_slide">
+                          <li><a href="/cua-hang/ecco/san-pham/lcasual-c191.aspx#content"> Lcasual <span class="txt_red">(314)</span></a></li>
+                          <li><a href="/cua-hang/ecco/san-pham/lformal-c3402.aspx#content"> LFormal <span class="txt_red">(204)</span></a></li>
+                          <li><a href="/cua-hang/ecco/san-pham/lsport-c3406.aspx#content"> Lsport <span class="txt_red">(70)</span></a></li>
+                        </ul>
+                      </div>
+                      <p class="slide"> <a class="btn-slide active" href="javascript:void(0)">&nbsp;</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab3442" style="display: none;">
+                  <div class="sub_right">
+                    <div class="sub_right_r">
+                      <div style="display: block" class="hnav" id="panel">
+                        <ul class="Nav_sub_slide">
+                          <li><a href="/cua-hang/ecco/san-pham/lgolf-c3404.aspx#content"> Lgolf <span class="txt_red">(21)</span></a></li>
+                          <li><a href="/cua-hang/ecco/san-pham/mgolf-c3410.aspx#content"> Mgolf <span class="txt_red">(50)</span></a></li>
+                        </ul>
+                      </div>
+                      <p class="slide"> <a class="btn-slide active" href="javascript:void(0)">&nbsp;</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab3444" style="display: none;">
+                  <div class="sub_right">
+                    <div class="sub_right_r">
+                      <div style="display: block" class="hnav" id="panel">
+                        <ul class="Nav_sub_slide">
+                        </ul>
+                      </div>
+                      <p class="slide"> <a class="btn-slide active" href="javascript:void(0)">&nbsp;</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab4632" style="display: none;">
+                  <div class="sub_right">
+                    <div class="sub_right_r">
+                      <div style="display: block" class="hnav" id="panel">
+                        <ul class="Nav_sub_slide">
+                        </ul>
+                      </div>
+                      <p class="slide"> <a class="btn-slide active" href="javascript:void(0)">&nbsp;</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab4634" style="display: none;">
+                  <div class="sub_right">
+                    <div class="sub_right_r">
+                      <div style="display: block" class="hnav" id="panel">
+                        <ul class="Nav_sub_slide">
+                        </ul>
+                      </div>
+                      <p class="slide"> <a class="btn-slide active" href="javascript:void(0)">&nbsp;</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab4636" style="display: none;">
+                  <div class="sub_right">
+                    <div class="sub_right_r">
+                      <div style="display: block" class="hnav" id="panel">
+                        <ul class="Nav_sub_slide">
+                        </ul>
+                      </div>
+                      <p class="slide"> <a class="btn-slide active" href="javascript:void(0)">&nbsp;</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab4637" style="display: none;">
+                  <div class="sub_right">
+                    <div class="sub_right_r">
+                      <div style="display: block" class="hnav" id="panel">
+                        <ul class="Nav_sub_slide">
+                        </ul>
+                      </div>
+                      <p class="slide"> <a class="btn-slide active" href="javascript:void(0)">&nbsp;</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END: CATEGORY CHILDREN --> 
+          </div>
+        </div>
+        <!-- BEGIN :BREADCRUMB -->
+        <div id="ch_breadcrumbs" class="cleaner">
+          <ol class="breadcrumbs">
+            <li class="first-child"><a href="/" class="home" name="content"></a></li>
+            <li><a href="/cua-hang/ecco.aspx">Trang chủ</a></li>
+            <li><a href="">MCasual</a></li>
+            <li><a href="#">Giày nam Ecco màu đen mờ Androw 53252402001</a></li>
+          </ol>
+        </div>
+        <!-- END: BREADCRUMB --> 
+        <!-- BEGIN: PRODUCT -->
+        <div id="ch_containt">
+          <div id="product_detail"> 
+            <!-- BEGIN: PRODUCT SHOW -->
+            <div id="product_detail_show">
+              <div class="product_detail_images">
+                <div class="product_detail_full">
+                  <div> <a onclick="zoomButton_OnClicḳ̣̣̣()" href="javascript:;"> <img id="imgProduct" class="img" height="440" width="400" src="http://img.chon.vn/files/upload/images/merchantproduct/2014/02/17/148580_Giay-nam-Ecco-mau-den-mo-Androw-53252402001_53252402001_SS13.jpg" alt="Giày nam Ecco màu đen mờ Androw 53252402001" title="Giày nam Ecco màu đen mờ Androw 53252402001"> </a> </div>
+                  <div class="image-big-control">
+                    <div id="ctl00_ctl00_cphContent_ProductDetails1_divout">
+                      <div class="zoom-out current"> <a href="javascript:;" id="imgout" onclick="zoomButton_OnClicḳ̣̣̣()">Hình lớn</a> </div>
+                    </div>
+                    <div id="ctl00_ctl00_cphContent_ProductDetails1_div360">
+                      <div class="zoom360"> <a id="ctl00_ctl00_cphContent_ProductDetails1_img360" class="unactive">360 độ</a> </div>
+                    </div>
+                    <div id="ctl00_ctl00_cphContent_ProductDetails1_divVideo">
+                      <div class="zoom-video"> <a id="ctl00_ctl00_cphContent_ProductDetails1_imgVideo" class="unactive">Video</a> </div>
+                    </div>
+                    &nbsp; </div>
+                </div>
+                <div class="product_detail_thumbnail">
+                  <div class="detail_thumbnail">
+                    <ul>
+                      <li> <a title="Giày nam Ecco màu đen mờ Androw 53252402001" class="firstzoom" href="http://img.chon.vn/files/upload/images/merchantproduct/2014/02/17/148580_Giay-nam-Ecco-mau-den-mo-Androw-53252402001_53252402001_SS13.jpg" rel="prettyPhoto[gallery]"> <img onmousemove="changeThumbnail(this)" height="63" width="58" src="http://img.chon.vn/files/upload/images/merchantproduct/2014/02/17/148580_Giay-nam-Ecco-mau-den-mo-Androw-53252402001_53252402001_SS13.jpg" alt="Giày nam Ecco màu đen mờ Androw 53252402001"> </a> </li>
+                    </ul>
+                  </div>
+                  <div class="thumbnail-ctrl"> <a class="btn_up" href="#" style="display: none;">&nbsp;</a> <a class="btn_down" href="#" style="display: none;">&nbsp;</a> </div>
+                </div>
+              </div>
+            </div>
+            <!-- END: PRODUCT SHOW --> 
+            <!-- BEGIN: DESCRIPTION -->
+            <div id="product_detail_description">
+              <div class="product_detail_title">
+                <h2> Giày nam Ecco màu đen mờ Androw 53252402001</h2>
+                <div class="day" style="display:none;">
+                  <div class="day-see"> Đánh giá: </div>
+                  <div class="day-qua"> Đã xem:
+                    112</div>
+                  <div class="day_head"> Ngày:
+                    17/02/2014</div>
+                </div>
+              </div>
+              <div class="block_detail">
+                <div class="block_detail_left">
+                  <div id="ctl00_ctl00_cphContent_ProductDetails1_update1">
+                    <p class="p_code">
+                      <label>Mã sản phẩm:</label>
+                      <span>53252402001</span> </p>
+                    <p class="p_award_after">
+                      <label>Giá sản phẩm:</label>
+                      <span> 1.895.000đ</span> </p>
+                    <div class="content_product_list">
+                      <p class="addtocart">
+                        <input type="button" class="btnAddToCart_Iframe" href="javascript:void(0)" rel="17aa7ce4-e9b4-4b62-9813-a37132ef6f4c" relid="56b9716e-da41-4338-976f-42c38d2d51cc" stock="1" quantity="0" style="cursor:pointer;font-size:11px;background:none;border:none; width:100%;text-align:left;" value="Mua sản phẩm" paymode="Online" price="1895000,0000" title="Còn hàng">
+                      </p>
+                    </div>
+                    <p class="p_color" style="display:none;">
+                      <label>Màu sắc:</label>
+                      <span>
+                      <select name="ctl00$ctl00$cphContent$ProductDetails1$ddColors" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$cphContent$ProductDetails1$ddColors\',\'\')', 0)" id="ctl00_ctl00_cphContent_ProductDetails1_ddColors">
+                      </select>
+                      </span> </p>
+                    <p class="size_total" style="display:none;">
+                      <label>Kích cỡ:</label>
+                      <span>
+                      <select name="ctl00$ctl00$cphContent$ProductDetails1$ddSizes" id="ctl00_ctl00_cphContent_ProductDetails1_ddSizes">
+                        <option value="42">42</option>
+                        <option value=""></option>
+                      </select>
+                      </span> </p>
+                    <p class="p_price" style="display:none;">
+                      <label style="width:100px;">Giá cũ: </label>
+                      <span>1.895.000đ</span> </p>
+                    <p class="p_award" style="display:none;">
+                      <label style="width:100px;">Thưởng:</label>
+                      <span> không có</span> </p>
+                    <span class="color" style="display:none;">
+                    <label>Số lượng:</label>
+                    <span>
+                    <select name="size">
+                      <option value="#ED000">10</option>
+                      <option value="#ED000">20</option>
+                      <option value="#ED000">30</option>
+                      <option value="#ED000">40</option>
+                    </select>
+                    </span> </span> </div>
+                  <div id="content_product_c3">
+                    <div id="Select" style="margin:0px;" class="content_product_list">
+                      <div class="black_button3"> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block_detail_right">
+                  <p class="addcomment" style="display: ;"> <a href="/mua-sam/phu-kien-nam/giay-dep/giay-nam-ecco-mau-den-mo-androw-53252402001-viet-danh-gia.aspx?ref=merchant&amp;iframe=true&amp;width=610&amp;height=265" rel="prettyPhoto[iframes]"> <span onclick="redirectreview()" style="background:transparent;margin-top:-7px;">Viết đánh giá</span></a> </p>
+                  <p class="addcomment"> <a href="/mua-sam/phu-kien-nam/giay-dep/giay-nam-ecco-mau-den-mo-androw-53252402001.aspx" style="display: ;">Sản phẩm liên kết</a> </p>
+                </div>
+                <div class="block_detail_pay"> 
+                  <!-- Hinh thuc mua hang -->
+                  <p>Hình thức thanh toán:</p>
+                  <p class="bantaicuahang_hien"><a href="#">Bán tại cửa hàng</a></p>
+                  <p class="giaohangnhantien_an"><a href="#">Giao hàng nhận tiền</a></p>
+                  <p class="thanhtoantructuyen_hien"><a href="#">Thanh toán trực tuyến</a></p>
+                  
+                  <!-- End Hinh thuc mua hang --> 
+                  
+                </div>
+              </div>
+              <div id="ch_products" style="float:left;width:100%;">
+                <div id="products_head_tab" style="z-index:998!important">
+                  <ul id="products_selection2" class="tabs">
+                    <!--class="tabs"-->
+                    <li class=""><a href="#tab1"><em>Thông tin chi tiết</em></a></li>
+                    <li class=""><a href="#tab2"><em> Thông số kỹ thuật</em></a></li>
+                  </ul>
+                </div>
+                <div class="product_list_container">
+                  <div class="tab_container" style="_margin-top:-9px;"> 
+                    <!--<div class="tab_t"></div>-->
+                    <div class="tab_c">
+                      <div id="tab1" class="tab_content2" style="word-wrap: break-word; text-align: justify; display: block;"> <br>
+                        <br>
+                        <p> Thương hiệu: <b style="color:red;">Ecco</b><br>
+                          <b>Thông tin thương hiệu:</b> Ecco là một thương hiệu lớn mới xuất hiện tại thị trường Việt Nam vào năm 2007, nhưng trên thị trường toàn cầu Ecco lại là một thương hiệu cao cấp quen thuộc từ lâu và là lựa chọn hàng đầu tại các nước Âu Mỹ. Ecco có đầy đủ chủng loại giày cho từng mục đích khác nhau: giày Formal dành cho nơi công sở, giày Casual sử dụng khi đi vui chơi, giải trí và Performance phục vụ cho các môn thể thao chuyên biệt như : Running, Walking, Outdoor, Golf. </p>
+                        <p> Giày nam, màu đen, cột dây trắng, dạo phố. </p>
+                        <p> </p>
+                        <p style="font-weight:bold;margin-top:10px;text-align:left;display:none;">® Thông số kích cỡ sản phẩm: </p>
+                      </div>
+                      <div id="tab2" class="tab_content2" style="display: none;"> </div>
+                    </div>
+                    <!--<div class="tab_b"></div>--> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END: DESCRIPTION --> 
+            
+            <!--BEGIN: LIKE PRODUCT -->
+            <div class="like_product">
+              <h2><span>&nbsp;</span> </h2>
+              <div id="product_list_container"> 
+                <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAADtKCySsD748uAcEr44aHdxTEAuq1iMwtYp3SCnt-BbQdMhzz2BT7pMosFC13keCWkfrqpiVhUu2U8Q" type="text/javascript"></script><script src="http://maps.gstatic.com/cat_js/intl/en_us/mapfiles/api-3/17/2/%7Bmain,adsense,geometry,zombie%7D.js" type="text/javascript"></script>
+                <input type="hidden" id="countItemsWidth" value="59974">
+                <a href="#" style="display:block">
+                <button class="prev"></button>
+                </a>
+                <div id="scroll_slide" style="display: block; visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; width: 900px;">
+                  <ul style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; width: 48900px; left: -900px;">
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/giay-nu-ecco-mau-xanh-den-summer-zone-ss11-ma-hang-EC20004301038.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2011/06/07/12588_San-pham-237230706103826213_20004301038_SS11.jpg&amp;width=186&amp;height=204" alt="Giày nữ ECCO màu xanh đen Summer Zone SS11" title="Giày nữ ECCO màu xanh đen Summer Zone SS11" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/giay-nu-ecco-mau-xanh-essence-sandal-ss11-ma-hang-23150301471.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2011/06/07/13042_San-pham-237230706145022457_23150301471_SS11.jpg&amp;width=186&amp;height=204" alt="Giày nữ ECCO màu xanh Essence Sandal SS11" title="Giày nữ ECCO màu xanh Essence Sandal SS11" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/giay-nu-ecco-mau-xanh-goya-ss11-ma-hang-31005301001.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2011/06/07/13082_San-pham-23723070615611281_31005301001_SS11.jpg&amp;width=186&amp;height=204" alt="Giày nữ ECCO màu xanh Goya SS11" title="Giày nữ ECCO màu xanh Goya SS11" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/giay-nu-ecco-mau-xanh-kent-ss11-ma-hang-34030301038.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2011/06/07/13163_San-pham-237230706162332703_34030301038_SS11.jpg&amp;width=186&amp;height=204" alt="Giày nữ ECCO màu xanh Kent SS11" title="Giày nữ ECCO màu xanh Kent SS11" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/giay-nu-ecco-mau-xanh-notice-ss11-ma-hang-EC23200351088.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2011/06/07/13068_San-pham-237230706145741457_23200351088_SS11.jpg&amp;width=186&amp;height=204" alt="Giày nữ ECCO màu xanh Notice SS11" title="Giày nữ ECCO màu xanh Notice SS11" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/giay-nu-ecco-mau-xanh-summer-zone-ss11-ma-hang-20004301498.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2011/06/07/12621_San-pham-23723070610544535_20004301498_SS11.jpg&amp;width=186&amp;height=204" alt="Giày nữ ECCO màu xanh Summer Zone SS11" title="Giày nữ ECCO màu xanh Summer Zone SS11" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/dep-nu-ecco-mau-den-flash-24075302001-ma-hang-24075302001.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/04/02/155750_Dep-nu-Ecco-mau-den-Flash-24075302001_24075302001_SS14.jpg&amp;width=186&amp;height=204" alt="Dép nữ Ecco màu đen Flash 24075302001" title="Dép nữ Ecco màu đen Flash 24075302001" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/dep-nu-ecco-mau-den-quai-nho-2001-ma-hang-24069302001.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2013/06/25/108637_Dep-nu-ECCO-mau-den-quai-nho-2001_24069302001_SS13.jpg&amp;width=186&amp;height=204" alt="Dép nữ ECCO màu đen quai nhỏ 2001" title="Dép nữ ECCO màu đen quai nhỏ 2001" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/dep-nu-ecco-mau-kem-quai-nho-2004-ma-hang-24069302004.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2013/06/25/108639_Dep-nu-ECCO-mau-kem-quai-nho-2004_24069302004_SS13.jpg&amp;width=186&amp;height=204" alt="Dép nữ ECCO màu kem quai nhỏ 2004" title="Dép nữ ECCO màu kem quai nhỏ 2004" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/dep-nu-ecco-mau-nau-flash-24075302021-ma-hang-24075302021.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/04/02/155754_Dep-nu-Ecco-mau-nau-Flash-24075302021_24075302021_SS14.jpg&amp;width=186&amp;height=204" alt="Dép nữ Ecco màu nâu Flash 24075302021" title="Dép nữ Ecco màu nâu Flash 24075302021" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/dep-nu-ecco-mau-trang-quai-manh-kawaii-sandal-82259358324-ma-hang-82259358324.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/02/13/148265_Dep-nu-Ecco-mau-trang-quai-manh-Kawaii-Sandal-82259358324_82259358324_SS14.jpg&amp;width=186&amp;height=204" alt="Dép nữ Ecco màu trắng quai mảnh Kawaii Sandal 82259358324" title="Dép nữ Ecco màu trắng quai mảnh Kawaii Sandal 82259358324" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/dep-nu-ecco-mau-trang-vien-den-vibration-ii-sandal-ma-hang-20207350041.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2013/04/26/99933_Dep-nu-Ecco-mau-trang-vien-den-Vibration-II-Sandal_20207350041_SS12.jpg&amp;width=186&amp;height=204" alt="Dép nữ ECCO màu trắng viền đen Vibration II Sandal" title="Dép nữ ECCO màu trắng viền đen Vibration II Sandal" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/giay-nu-ecco-mau-bac-bluma-23072355294-ma-hang-23072355294.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/02/13/148216_Giay-nu-ECCO-mau-bac-phoi-luoi-23072355294_23072355294_SS14.jpg&amp;width=186&amp;height=204" alt="Giày nữ ECCO màu bạc Bluma 23072355294" title="Giày nữ ECCO màu bạc Bluma 23072355294" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/giay-nu-ecco-mau-bac-cot-day-04720357462-ma-hang-04720357462.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/02/12/148120_Giay-nu-ECCO-mau-bac-cot-day-04720357462_04720357462_SS13.jpg&amp;width=186&amp;height=204" alt="Giày nữ ECCO màu bạc cột dây 04720357462" title="Giày nữ ECCO màu bạc cột dây 04720357462" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/giay-nu-ecco-mau-bac-groove-sandal-ma-hang-20575354893.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2013/04/03/96290_Giay-nu-Ecco-mau-bac-Groove-Sandal_20575354893_SS13.jpg&amp;width=186&amp;height=204" alt="Giày nữ ECCO màu bạc Groove Sandal" title="Giày nữ ECCO màu bạc Groove Sandal" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/giay-nu-ecco-mau-bac-spin-ma-hang-24904301708.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2013/04/12/97609_Giay-nu-Ecco-mau-bac-Spin_24904301708_SS12.jpg&amp;width=186&amp;height=204" alt="Giày nữ ECCO màu bạc Spin" title="Giày nữ ECCO màu bạc Spin" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/giay-nu-ecco-mau-cam-de-trang-7043-ma-hang-23755357043.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2013/06/25/108621_Giay-nu-ECCO-mau-cam-de-trang-7043_23755357043_SS13.jpg&amp;width=186&amp;height=204" alt="Giày nữ ECCO màu cam đế trắng 7043" title="Giày nữ ECCO màu cam đế trắng 7043" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/giay-nu-ecco-mau-cam-jogga-ma-hang-23602357043.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2013/04/03/96316_Giay-nu-Ecco-mau-cam-Jogga_23602357043_SS13.jpg&amp;width=186&amp;height=204" alt="Giày nữ ECCO màu cam Jogga" title="Giày nữ ECCO màu cam Jogga" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/giay-nu-ecco-mau-den-1-quai-dan-21027301001-ma-hang-21027301001.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/02/13/148205_Giay-nu-ECCO-mau-den-1-quai-dan-21027301001_21027301001_SS14.jpg&amp;width=186&amp;height=204" alt="Giày nữ ECCO màu đen 1 quai dán 21027301001" title="Giày nữ ECCO màu đen 1 quai dán 21027301001" width="138" height="152"> </a> </li>
+                    <li style="overflow: hidden; float: left; width: 138px; height: 152px;"> <a href="/cua-hang/ecco/san-pham/giay-nu-ecco-mau-den-2-quai-dan-de-thap-21023301001-ma-hang-21023301001.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/02/13/148194_Giay-nu-ECCO-mau-den-2-quai-dan-de-thap-21023301001_21023301001_SS14.jpg&amp;width=186&amp;height=204" alt="Giày nữ ECCO màu đen 2 quai dán đế thấp 21023301001" title="Giày nữ ECCO màu đen 2 quai dán đế thấp 21023301001" width="138" height="152"> </a> </li>
+                  </ul>
+                </div>
+                <a href="#" style="display:block">
+                <button class="next"></button>
+                </a> 
+                <script type="text/javascript">
+				   $(function() {
+						$("#scroll_slide").jCarouselLite({
+							btnNext: ".next",
+							btnPrev: ".prev",
+							scroll: 1,
+							visible: 6
+						});
+					});
+
+</script> 
+              </div>
+            </div>
+            <!--END: LIKE PRODUCT --> 
+          </div>
+          <script type="text/javascript">
+				
+				function changeThumbnail(objImg) {
+					$('#imgProduct').attr('src', objImg.src);
+				}
+
+				var count = $(".detail_thumbnail a img").size();
+				if (count <= 5) {
+					$(".btn_up").hide();
+					$(".btn_down").hide();
+				}
+			</script> 
+          <script type="text/javascript">
+				$(document).ready(function() {
+				
+					//Default Action tab jquery
+					$(".tab_content2").hide(); //Hide all content
+					$("ul#products_selection2 li:first").addClass("active").show(); //Activate first tab
+					$(".tab_content2:first").show(); //Show first tab content
+					
+					//On Click Event
+					$("ul#products_selection2 li").click(function() {
+						$("ul#products_selection2 li").removeClass("active"); //Remove any "active" class
+						$(this).addClass("active"); //Add "active" class to selected tab
+						$(".tab_content2").hide(); //Hide all tab content
+						var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+						$(activeTab).fadeIn(); //Fade in the active content
+						return false;
+					});
+				
+				});
+			</script> 
+          <script type="text/javascript">
+			// Tuan - gioi han so luong thumb hien thi = 4.
+				$(document).ready(function() {
+					$(".detail_thumbnail ul li").each(function(index) {
+
+						if (index > 3)
+							$(this).attr('style', 'display:none');
+					});
+					
+					$(".btn_up").hide();
+					$(".btn_down").hide();        
+				});    
+			</script>
+          <div class="cleaner"></div>
+        </div>
+        <!-- END: PRODUCT --> 
+      </div>
+    </div>
+    <!-- END: BODY --> 
+  </div>
+  <!-- BEGIN: FOOTER -->
+  <div id="ch_footer">
+    <div id="ch_footer_wapper">
+      <div class="sub_foot">
+        <div class="lt_foot">
+          <ul>
+            <li><a href="/">Chọn.vn</a></li>
+            <li><a href="/cua-hang/ecco/san-pham.aspx">Sản phẩm</a></li>
+            <li><a href="/cua-hang/ecco/gioi-thieu.aspx">Giới thiệu</a></li>
+            <li><a href="/cua-hang/ecco/su-kien.aspx">Sự kiện</a></li>
+            <li><a href="/cua-hang/ecco/danh-gia.aspx">Đánh giá</a></li>
+            <li><a href="/cua-hang/ecco/lien-he.aspx">Liên hệ</a></li>
+            <li><a href="/cua-hang/ecco/gioi-thieu.aspx?f=he-thong">Cửa hàng</a></li>
+            <li class="end"><a href="http://www.tbssport.com.vn" id="ctl00_ctl00_BottomNavigator1_lnkWebsite" rel="nofollow" target="_blank">Website</a></li>
+          </ul>
+        </div>
+        <div class="rt_foot"> <span>Template Ecco. GVHD: Dương Trọng Đính</span>
+          <div class="facebook"><a title="Đăng lên Facebook" onclick="window.open('http://www.facebook.com/share.php?u='+document.location,'_blank');" style="cursor: pointer;"></a></div>
+          <div class="twitter"><a title="Đăng lên Twitter" onclick="window.open('http://twitter.com/home?status='+document.location,'_blank');" style="cursor: pointer;"></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

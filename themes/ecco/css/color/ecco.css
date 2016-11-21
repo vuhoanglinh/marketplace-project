@@ -1,0 +1,260 @@
+body{-x-system-font:none;font-family:Arial,Verdana,sans-serif;font-size:12px;font-size-adjust:none;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal;line-height:normal;text-align:center;width:100%;height:100%;background:url(../../images/colors/ecco/bg-body.jpg) no-repeat 0 0 #e1e8f0;}
+@font-face {font-family: UTM_Avo; src: url("../../css/font/UTM_Avo.eot");}
+@font-face {font-family: UTM_Avo; src: url("../../css/font/UTM Avo.ttf");}
+/*header*/
+	#ch_header{width:100%;float: left;z-index:99999}
+	#ch_header .top{width:100%;height:84px;}
+	#ch_header h1{display:none}
+	#ch_header .logo{margin:18px 0 0;float:left;width:290px}
+	#ch_header .top_right{margin:40px 0 0 0;float:right}
+	#ch_header .user_block{float:left}
+	#ch_header .user_block ul{list-style:none}
+	#ch_header .user_block ul li{float:right;padding:0 0 0 10px;font-family:'UTMAvoRegular',Arial,Helvetica,sans-serif}
+	#ch_header .user_block ul li a{padding-left:25px;display:inline;height:20px;font-size:11px;color:#fff}
+	#ch_header .user_block ul li a:hover{color:#76003d}
+	#ch_header .user_block ul li.login a{background:url(../../images/icon/login.png) no-repeat top left}
+	#ch_header .user_block ul li.register a{background:url(../../images/icon/book_key.png) no-repeat top left}
+	#ch_header .user_block ul li.forgetpass a{background:url(../../images/icon/key_go.png) no-repeat top left}
+	#ch_header .user_block p a{padding-left:25px;display:inline;height:20px;font-size:11px;color:#666666}
+	#ch_header .user_block p a:hover{text-decoration:underline}
+	#ch_header .user_block .l_cart{background:url("../../images/l_cart.png") no-repeat scroll 7px 0 transparent;float:left;height:20px;padding:0 0 0 10px;line-height: 20px;}
+	#ch_header .user_block .l_signout{background:url("../../images/colors/ecco/iconlogin.png") no-repeat scroll 8px -125px transparent;float:left;height:20px;padding:0 0 0 10px;margin-top:0; line-height: 20px;}
+	#ch_header .user_block .lostpass{background:url("../../images/colors/ecco/iconlogin.png") no-repeat scroll 12px -5px transparent;float:left;height:20px;padding:0 0 0 10px;line-height: 20px;}
+	#ch_header .user_block .register{background:url("../../images/colors/ecco/iconlogin.png") no-repeat scroll 12px -35px transparent;float:left;height:20px;padding:0 0 0 10px ; line-height: 20px;}
+	#ch_header .user_block .login_name{background:url("../../images/colors/ecco/iconlogin.png") no-repeat scroll 12px -64px transparent;float:left;height:20px;margin:0;padding:0 0 0 10px;position:relative; line-height: 20px; }
+	#ch_header .ch_share{overflow:hidden;position:relative;width:130px;height:40px;/*margin:10px 0 0 0;*/}
+	#ch_header .share{font-size:12px;float:right;padding-left:15px}
+	#ch_header .share a{background: url("../../images/colors/ecco/iconlogin.png") no-repeat scroll -2px -94px transparent; height: 21px; line-height: 19px; overflow: hidden; padding: 4px 10px 4px 20px; width: 48px;}
+	#ch_header .share a{color:#000;cursor:pointer;font-size:11px}
+	#ch_header .last{float:right;margin-top:-1px}
+	#ch_header .search{width:190px;height:20px;border:#333 solid 1px;background-color:#fff;position:relative}
+	#ch_header .search .input{float:left;margin:3px 0 0 10px;display:inline}
+	#ch_header .search .button{float:right;margin:4px 6px 0 0;display:inline; border:0}
+	#ch_header .search .button{background:url(../../images/colors/ecco/btnSearch.png) no-repeat 0 0 transparent;height:12px;width:15px;cursor:pointer;position:absolute;top:0;right:0}
+	#ch_header .search .input input{border:none;background:none;font-size:10px;color:#707070;width:150px}
+	#ch_header .search .button input{display:none}
+	#subcontent2{right: 199px !important; top: 60px !important;}
+	#top{clear:both;overflow:visible;padding-bottom:0}
+#ch_header nav.topMenu{float: left; width: 100%; height: 59px; background: url('../../images/colors/ecco/bg-navi.png') repeat-x 0px 0px;}
+#ch_mainmenu{width: 960px; margin: auto;}
+#ch_header .menunav{height:52px;float:left;}
+#ch_header .menunav_back{height:52px;float:left;position:relative}
+#ch_header .chonlink{float:left;}
+#ch_header .chonlink a{width:65px;height:52px;font-size:11px;text-align:center;text-transform:uppercase;line-height:52px;cursor:pointer;float:left;font-family:'UTM_Avo',Arial,Helvetica,sans-serif;color:#575757}
+#ch_header .chonlink a:hover{background:url('../../images/colors/ecco/topmenu_bg_hover.png') repeat 0px 0px;}
+#ch_header .lavaLamp_menu{position:relative;width:890px;height:52px;margin:0;float:left}
+#ch_header .lavaLamp_menu li{float:left;list-style:none}
+#ch_header .lavaLamp_menu li.back{height:52px;position:absolute;z-index:1;top:0px;border:none;padding:0; background: none;}
+#ch_header .lavaLamp_menu li.back .left{height:52px;color:#333;border:none; background:url('../../images/colors/ecco/topmenu_bg_hover.png') repeat 0px 0px; }
+#ch_header .lavaLamp_menu li{line-height: 52px; background:url('../../images/colors/ecco/line.png') no-repeat left 0; padding:0 5px;position:relative;z-index:2;height: 52px;}
+#ch_header .lavaLamp_menu li a{font-family:'UTM_Avo',Arial,Helvetica,sans-serif;font-size:11px;word-spacing:-1px;color:#575757;outline:none;text-align:center;/*top:10px;*/ text-transform:uppercase;letter-spacing:0;z-index:10;display:block;float:left;position:relative;overflow:hidden;margin:auto 12px}
+#ch_header .lavaLamp_menu li a:hover,.lavaLamp_menu li a:active, .lavaLamp_menu li.current a{border:none;color:#E63A3A !important;}
+#ch_header .lavaLamp_menu li a:visited{border:none}
+/*slider*/
+.theme-rebook .nivo-directionNav a{display:block;width:30px;height:53px;background:url(../../images/colors/ecco/iconControlnavi.png) no-repeat 0px 3px;text-indent:-9999px;border:0}
+.theme-rebook a.nivo-prevNav{left:-30px}
+.theme-rebook a.nivo-nextNav{background-position:0 -43px; right:-30px}
+.theme-rebook .nivoSlider{position:relative;width:960px;height:400px !important;background:url(../../images/colors/default/slider_theme/loading.gif) no-repeat 50% 50%}
+.slider-wrapper{width:960px; height:400px; margin:0 auto; position:relative}
+.theme-rebook .nivo-controlNav{ height:18px; position:absolute; left: 50%; bottom: 3px; z-index:6}
+
+/*content*/
+#ch_mainbody{padding:0 0 20px 0;float:left;}
+#ch_body{clear:both;float:left;width:100%; margin-top: 10px;}
+#ch_breadcrumbs{ overflow:hidden; position:relative; width:960px; height:20px; margin: 20px 0 0 0 ; float: left;}
+#ch_submenu{box-shadow: 2px 3px 2px #5F6266; float:left; position:relative; width:100%; background:url(../../images/colors/ecco/bg-head-content.png) repeat-x 0px 0px #FFFFFF;}
+#ch_submenu .sub_left{ float:left; position:relative; width:100%;}
+#ch_submenu .sub_left .sub_left_c h2{ background: url("../images/icon/001.png") no-repeat scroll 100px 16px transparent; color: #686868; float: left; font-family: 'UTM_Avo',Arial,Helvetica,sans-serif; font-size: 19px; font-weight: normal; padding: 7px 0 0 20px;}
+
+	.hnav{height:31px !important;overflow:hidden;display:block}
+	.autonav{height:auto !important;overflow:hidden}
+	#panel .Nav_sub_slide{float:left; margin-left: 15px;}
+	#panel ul{padding:0}
+	#panel li{display:inline;float:left; margin:8px 5px}
+	#panel li a{display:block;color:#626262;padding:8px;  padding: 0 10px; border-right: 1px solid #626262;}
+	#panel li a:hover{color: #000000;}
+	#panel .shownDescription{height:200px;float:left}
+	.slide{margin:0;padding:0;width:39px;height:40px;float:right;position:absolute;bottom:-2px;right:-1px}
+	.btn-slide{width:39px;height:40px;background:url(../../images/colors/ecco/slide-subcat1.png) no-repeat 0 0;background-position:right 0;text-decoration:none}	
+	.btn-slide.active{width:39px;height:40px;background:url(../../images/colors/ecco/slide-subcat.png) no-repeat 0 0;background-position:right 0;text-decoration:none}
+	
+	#ch_submenu .sub_right {float:left; width:960px;}
+	#ch_submenu .sub_right .sub_right_t { padding:10px 0 10px 0px; width:90%; float:left;}
+	#ch_submenu .sub_right .sub_right_t ul li{ list-style:none; display:inline; padding:0 5px; border-right:#fff solid 1px; color:#fff; float:left;}
+	#ch_submenu .sub_right .sub_right_t ul li a{ list-style:none; display:inline; padding:0 5px; color:#fff;}
+	#ch_submenu .sub_right .sub_right_b { margin:10px 0 0 15px; text-transform:uppercase; cursor:pointer; color:#000;}
+	#ch_submenu .sub_right .sub_right_r { width:100%; float:left;}
+	#ch_products{margin-top:0;float:left;width:100%}
+	
+#products_head_wrapper{position:relative}
+#review_store h2{color:black;border-bottom:#CCC solid 1px;padding:5px 0;margin-bottom:10px;text-transform:uppercase;width:240px}
+#products_head_tab{height:40px;position:relative;width:auto;margin-top:20px}
+#ch_products h2{color:#1e1e1e;float:left;padding:5px 0}
+#products_selection{float: left; height: 34px; margin-left: 20px;}
+#products_selection li{float: left; float: left; padding: 5px 10px; margin: 9px 0;}
+#products_selection li.active{background: #FFFFFF; border-radius: 10px 10px 0 0;}
+#products_selection li a{color: #545454; font-family: 'UTM_Avo',Arial,Helvetica,sans-serif; text-transform: uppercase;}
+#products_selection li a em{font-style: normal;}
+#products_selection li.active  a em {font-weight: bold;}
+	#products_selection2{position:absolute; bottom:-2px; left:0;z-index:9999}
+	#products_selection2{list-style:none}
+	
+	
+	
+
+/*san pham moi*/
+#ch_containt{float:left;width:100%}
+.right_module{display:inherit;float:left;width:100%}
+	.right_module h2{float: left; background: url('../../images/colors/ecco/bg-title.png')no-repeat left 0px; height: 36px; margin: 15px 0;}
+	.right_module h2 span{background: url("../../images/colors/ecco/bg-title.png") no-repeat scroll right -36px transparent; display: block; float: left; margin-left: 6px; padding: 8px 110px 12px 7px; line-height: 16px; font-weight: normal; text-shadow: 1px 1px 0 #FFFFFF;}
+.new_events{margin-bottom:10px;font-size:11px}
+
+.create_date{width:140px;display:inherit}
+.create_date a{color:#5d5d5d;font-weight:bold}
+.create_date a:hover{color:#ccc}
+.detail_news{color:#5d5d5d}
+.more{text-align:right}
+.more a{text-align:right;font-size:11px;color:#000}
+.more a:hover{color:#5d5d5d}
+.menu_cat{float:left;width:140px;margin-right:15px}
+.promotion_tag{background:url("/Files/Themes/Default/media/images/promotion_tag.png") no-repeat scroll left top transparent;bottom:94px;color:#FFF;display:block;font-weight:bold;height:25px;left:20px;line-height:30px;position:absolute;text-align:center;width:37px}
+.product_list,.productnew_list{margin:0;padding:0;text-indent:0;list-style-type:none;display:block;float:left;width:100%}
+ul.productnew_list{}
+.product_list li, .productnew_list li{position:relative;float:left;width:133px;min-height:278px; margin-bottom:5px; padding:10px 13px}
+.product_list li:hover,.productnew_list li:hover{background-color:#f9f9f9}
+.product_list .end_block{margin-right:0}
+.product_list li.hover{cursor:pointer}
+.product_list li.hover h3{color:#fff}
+.product_list .image_wrapper,.productnew_list .image_wrapper{overflow:hidden;margin:10px 0 10px 0;float:left}
+.product_list .title_product,.productnew_list .title_product{/*float:left;*/}
+.product_title_details{float:left}
+.product_title_details .star{width:100px}
+.product_title_details h3{overflow:hidden;font-weight:normal;font-size:11px;color:#333;text-align:left;height:35px}
+.product_list .title_product h3 a,.productnew_list .title_product h3 a{color:#525252;text-align:center; font-family: Arial,Helvetica,sans-serif;}
+.product_list .title_product h3 a:hover,.productnew_list .title_product h3 a:hover{color:#999}
+.product_list .title_product p,.productnew_list .title_product p{width:100%;padding:0px 0;float:left}
+.product_list .title_product span,.productnew_list .title_product span{color:#000; font-weight:bold;font-size:13px;}
+.product_list .title_product span.priceOld{color: #797979; font-size: 12px; font-weight: normal; text-decoration: line-through;}
+.product_list p.buttonStore,.productnew_list p.buttonStore{background:url(../../images/colors/ecco/bg-muahang.png) no-repeat 0 0;width:125px;height:20px;padding:0 0 0 8px;line-height:20px;margin:20px 0 0 0;font-size:11px;text-align:left;color:#454545;text-shadow:1px 1px #fff;cursor:pointer}
+.product_list p.buttonStore:hover,.productnew_list p.buttonStore:hover{background:url(../../images/colors/ecco/bg-muahang.png) no-repeat 0 -20px;line-height:20px;font-size:11px;text-align:left;text-shadow:none;color:#fff;cursor:pointer}
+.product_list p.buttonStore input,.productnew_list p.buttonStore input{color:#454545;text-shadow:1px 1px #fff}
+.product_list p.buttonStore input:hover,.productnew_list p.buttonStore input:hover{text-shadow:none;color:#fff}
+/*paging*/
+div#pagenav { float: right; margin-right: 20px;}
+div#pagenav a{color:#797979;text-decoration:none;float:left;font-style:normal;float:left;font-size:11px; padding: 0px 5px;}
+div#pagenav a:hover{color:#000000;}
+
+/**/
+#ch_productnew{width:100%;height:auto; float:left;}
+.productnew_list .title_product span.priceOld { color: #C2C2C2; font-size: 12px; font-weight: normal; text-decoration: line-through;}
+	#ch_productnew h2{float: left; background: url('../../images/colors/ecco/bg-title.png')no-repeat left 0px; height: 36px; margin: 15px 0;}
+	#ch_productnew h2 span{background: url("../../images/colors/ecco/bg-title.png") no-repeat scroll right -36px transparent; display: block; float: left; margin-left: 6px; padding: 8px 21px 12px 7px; line-height: 16px; font-weight: normal; text-shadow: 1px 1px 0 #FFFFFF;}
+	
+/*su kien home*/
+#ch_news{float: right; position: relative; width: 247px;height: 278px;margin: 10px 0 0px 0px;background:url(../../images/colors/ecco/bg_event.png) no-repeat;}
+#news_container{overflow:hidden;position:relative;padding: 37px 0px 0px 30px;}
+#ch_Contact{overflow: hidden;position: relative;padding: 0px 0px 0px 25px;margin-bottom: 10px;width: 90%;}
+#news_container .nugget_content a{color: #5d5d5d;}
+#news_container .nugget_content a:hover{color: #c0c0c0;}
+#ch_Contact h2{width:100%;padding:0px 0px 15px 0px;font-size:14px;text-transform:uppercase;color:#666666;font-family:"UTM_Avo",Arial, Helvetica, sans-serif;font-weight:normal;}
+#ch_news > h2{text-shadow: 1px 1px 0 #FFFFFF; position: absolute;top: 12px;font-size: 15px;font-weight: normal;text-transform: uppercase;left: 20px;font-family: "UTM_Avo",Arial, Helvetica, sans-serif;}
+#news_items li{position:relative;float: left;width: 180px;height: 45px;cursor:pointer;overflow:hidden;}
+#ch_news .read_more {margin-top: 11px;float: right;}
+
+/*gioi thieu*/
+#introduction h2{padding: 0px; float: left; background: url('../../images/colors/ecco/bg-title.png')no-repeat left 0px; height: 36px; margin: 15px 0;}
+#introduction h2 span{background: url("../../images/colors/ecco/bg-title.png") no-repeat scroll right -36px transparent; display: block; float: left; margin-left: 6px; padding: 8px 88px 12px 7px; line-height: 16px; font-weight: normal; text-shadow: 1px 1px 0 #FFFFFF;}
+h2.address{padding: 0px; float: left; background: url('../../images/colors/ecco/bg-title.png')no-repeat left 0px; height: 36px; margin: 15px 0;}
+h2.address span{background: url("../../images/colors/ecco/bg-title.png") no-repeat scroll right -36px transparent; display: block; float: left; margin-left: 6px; padding: 8px 21px 12px 7px; line-height: 16px; font-weight: normal; text-shadow: 1px 1px 0 #FFFFFF;}
+#introduction .right_pages .container .written p{line-height: 1.5;}
+#introduction .right_pages .container .written ul li{list-style: inside; border: none; float: inherit; margin: 0px; padding: 0px 0px 5px;}
+/*su kien*/
+.event h2{padding: 0px; float: left; background: url('../../images/colors/ecco/bg-title.png')no-repeat left 0px; height: 36px; margin: 15px 0;}
+.event h2 span{background: url("../../images/colors/ecco/bg-title.png") no-repeat scroll right -36px transparent; display: block; float: left; margin-left: 6px; padding: 8px 100px 12px 7px; line-height: 16px; font-weight: normal; text-shadow: 1px 1px 0 #FFFFFF;}
+	div#pagenav a.next:hover{background:url(../../images/colors/ecco/pagenav.png) no-repeat -7px -10px;width:7px;height:10px;padding:0;border-right:none}
+	div#pagenav a.button_nav2:hover{background:url(../../images/colors/ecco/pagenev.png) no-repeat 0 -10px;width:10px;height:10px;padding:0;border-right:none;color:#014083;font-size:12px}
+	div#pagenav a.nav{background:url(../../images/colors/ecco/pagenav.png) no-repeat 0 0;width:7px;height:10px;padding:0;margin:1px 5px 0 0;border-right:none}
+	div#pagenav a.nav:hover{background:url(../../images/colors/ecco/pagenav.png) no-repeat 0 -10px;width:7px;height:10px;padding:0;border-right:none}
+	div#pagenav a.button_nav2{background:url(../../images/colors/ecco/pagenev.png) no-repeat 0 0;width:10px;height:10px;padding:0;margin:1px 5px 0 0;border-right:none;color:#014083;font-size:12px}
+
+	div#pagenav a.button_nav3{background:url(../../images/colors/ecco/pagenev.png) no-repeat -10px 0;width:10px;height:10px;padding:0;margin:1px 0 0 10px;border-right:none;color:#014083;font-size:12px}
+	div#pagenav a.button_nav3:hover{background:url(../../images/colors/ecco/pagenev.png) no-repeat -10px -10px;width:10px;height:10px;padding:0;border-right:none;color:#014083;font-size:12px}
+	div#pagenav a.next{background:url(../../images/colors/ecco/pagenav.png) no-repeat -7px 0;width:7px;height:10px;padding:0;margin:1px 0 0 10px;border-right:none}
+	div#pagenav a:last-child{border-right:none}
+	
+	div#pagenav a.current{font-weight:bold;color:#fff;float:left;font-style:normal;padding:0 5px;margin:0 5px;background:#196bc2}
+	div#pagenav span.current{font-weight:bold;color:#fff;float:left;font-size:10px;font-style:normal;padding:0 5px;margin:0 5px;background:#A0A0A0}
+	div#pagenav span.disabled{BORDER-RIGHT:#f3f3f3 1px solid;PADDING-RIGHT:5px;BORDER-TOP:#f3f3f3 1px solid;PADDING-LEFT:5px;PADDING-BOTTOM:2px;BORDER-LEFT:#f3f3f3 1px solid;COLOR:#ccc;MARGIN-RIGHT:2px;PADDING-TOP:2px;BORDER-BOTTOM:#f3f3f3 1px solid}
+	div.pagenav{}
+
+/*danh gia*/
+.backreview{color:#666;float:left;min-height:100px !important;overflow:hidden;/*padding:0 5px;*/width:209px;/*background-image:-moz-linear-gradient(center bottom,rgb(1,1,1) 0%,rgb(42,42,42) 75%);-moz-border-radius:10px;-webkit-border-radius:10px;-moz-box-shadow:1px 1px 1px #0f0f0f;-webkit-box-shadow:1px 1px 1px #0f0f0f;box-shadow:1px 1px 5px #0f0f0f;*/}
+.backreview_b{/*background:url("../../images/colors/default/review_bot.gif") no-repeat scroll left top transparent;*/float:left;height:5px;width:221px}
+.backreview td{height:25px;margin:0;padding:0;border-spacing:0}
+.backreview p.addcomment{box-shadow: 0 0 2px #4E4E4E; background-color:#c0c0c0;width:100px;height:20px;line-height:20px;text-align:center;/*padding:5px 0;*/ margin:10px auto}
+.backreview p.addcomment a{color:#fff;padding:0 0 0 5px}
+.backreview p.addcomment a:hover{color:#000}
+.reviews_bg{width:100%}
+.review-boxer2{color:#666;float:left;padding:10px;position:relative;width:98%;border-bottom:1px solid #196BC2;}
+.review-col1{width:450px}
+.review-col1 p{width:100%;float:left}
+.review-col1 p a{color:#666}
+.review-col2{width:220px;margin-right:6px}
+.review-col1,.review-col2{float:left}
+
+/*lien he*/
+#introduction .right_pages .container .comments-form h2 { margin-top: 0; background: none repeat scroll 0 0 transparent; font-weight: normal; height: 30px; margin-bottom: 0; width: 100%;}
+.addressFrom { float: left; width: 100%;}
+.addressFrom p{float: left;}
+#introduction .right_pages p { display: inherit; line-height: 1.5; /*margin: 15px 0;*/}
+.ouiForm.oi { float: left;}
+.ouiForm fieldset .btn { background-color: #ADADAD; border: medium none; color: #FFFFFF; cursor: pointer; font-family: 'UTM_Avo',Arial,sans-serif; font-size: 16px; font-weight: normal; padding: 7px 30px; word-spacing: -1px;}
+.ouiForm fieldset .btn:hover{background-color:#565656}
+.ouiForm fieldset .btn-hover{background-color:#565656}
+
+/*san pham chi tiet*/
+.detail_thumbnail a { display: block;}
+#products_selection2 li.active,#products_selection2 li.hover{background:#BABABA}
+#products_selection2 li{display:inline-block;float:left;background:#434343;cursor:pointer;margin-right:2px}
+#products_selection2 li em{display:inline-block;float:left;padding:7px 15px 7px 4px;margin:0 0 0 12px;font-style:normal;color:#FFFFFF;font-size:12px}
+#product_detail_description .product_detail_title{width:100%;float:left}
+#product_detail_description .product_detail_title h2{font-weight:background:none;margin:0;padding:0;color:#1e1e1e;line-height:25px;font-size:16px;float:left;height:auto}
+.image-big-control { background: none repeat scroll 0 0 transparent; display: inline;  float: right; height: auto; margin: 0; width: 100%;}
+.image-big-control:after{background-color: #E1E1E1; background-image: -moz-repeating-linear-gradient(45deg, transparent, transparent 1px, rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0.05) 4px); content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: -1; }
+
+.zoom360:hover, .zoom-video:hover, .zoom-out:hover, .zoom-out.current { margin: 0; padding: 0; height: auto; width: auto; border: medium none;}
+.zoom-out a {font-weight: bold; float: left; background: url("../../images/colors/ecco/icon-30.png") no-repeat scroll 0 -60px transparent; color: #ABABAB; line-height: 19px; margin: 0; padding: 6px 28px;}
+.zoom360 a.unactive {cursor: auto; float: left; background: url("../../images/colors/ecco/icon-30.png") no-repeat scroll 0 -90px transparent; border: medium none; line-height: 19px; margin: 0; padding: 6px 28px; color: #FFFFFF; font-weight: bold;}
+.zoom360, .zoom-video, .zoom-out { border: medium none; height: auto; margin: 0; padding: 0; width: auto; display: inherit; float: left;}
+.zoom-video a.unactive { cursor: auto; float: left; background: url("../../images/colors/ecco/icon-30.png") no-repeat scroll 0 -120px transparent; border: medium none; line-height: 19px; margin: 0; padding: 6px 28px;color: #FFFFFF; display: inline;}
+.zoom-out a:hover{ color: #737373;}
+	.block_detail_left .addtocart a{float:left;color:#000}
+	.block_detail_left .addtocart{float:left;display:inline;background:url("../../images/colors/ecco/bg-muahang.png") no-repeat scroll 0 0 transparent;width:125px;height:17px;padding:3px 0 0 8px;line-height:17px}
+	.block_detail_left .addtocart:hover{background:url("../../images/colors/ecco/bg-muahang.png") no-repeat scroll 0 -20px transparent;color:#fff}
+	.block_detail_left .addtocart input{float:left;color:#000}
+	.block_detail_left .addtocart input:hover{float:left;color:#fff}
+
+.block_detail_pay .bantaicuahang_hien{background:url(../../images/colors/ecco/icon-30.png) no-repeat 0px -214px; padding:0 0 0 30px;margin:5px 0 5px 10px;height:21px}
+.block_detail_pay .bantaicuahang_an{background:url(../../images/colors/ecco/icon-30.png) no-repeat 0px -305px; padding:0 0 0 30px;margin:5px 0 5px 10px;height:21px}
+.block_detail_pay .giaohangnhantien_hien{background:url(../../images/colors/ecco/icon-30.png) no-repeat 0px -246px;padding:0 0 0 30px;margin:0 0 5px 10px;height:21px}
+.block_detail_pay .giaohangnhantien_an{background:url(../../images/colors/ecco/icon-30.png) no-repeat 0px -334px;padding:0 0 0 30px;color:#999;margin:0 0 5px 10px;height:21px}
+.block_detail_pay .thanhtoantructuyen_hien{background:url(../../images/colors/ecco/icon-30.png) no-repeat 0px -274px;padding:0 0 0 30px;margin:0 0 0 10px;height:21px}
+.block_detail_pay .thanhtoantructuyen_an{background:url(../../images/colors/ecco/icon-30.png) no-repeat 0px -364px;padding:0 0 0 30px;margin:0 0 0 10px;height:21px}
+
+	#product_list_container a{position:relative;float:left}
+	#product_list_container button{border:none}
+	#product_list_container button.prev{background: url("../../images/colors/ecco/iconControlnavi1.png") no-repeat scroll 0 12px transparent; cursor: pointer; height: 51px; left: 0; position: absolute; top: 50px; width: 23px;}
+	#product_list_container button.next{background: url("../../images/colors/ecco/iconControlnavi1.png") no-repeat scroll 0 -35px transparent; cursor: pointer; height: 51px; position: absolute; right: 0; top: 50px; width: 23px;}
+	#scroll_slide{float:left;margin:0 17px 0 17px;width:926px;height:155px;overflow:hidden}
+	#scroll_slide img:hover{filter:alpha(opacity=70)}
+	#scroll_slide li{margin:0 6px;padding:0;text-indent:0;list-style-type:none;display:inline-block;cursor:pointer}
+	.like_product { float: left; margin-top: 20px; position: relative;}
+/*footer*/	
+.sub_foot .lt_foot{width: 520px;}
+.sub_foot .rt_foot{}
+.sub_foot .rt_foot > span{display: block; float: left; padding: 6px 0;}
+
+
+
+
+

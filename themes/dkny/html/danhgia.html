@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html;" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8; IE=EmulateIE9" />
+<title>DKNY</title>
+<link href="../css/main.css" type="text/css" rel="stylesheet">
+<link href="../css/menu.css" type="text/css" rel="stylesheet">
+<link href="../css/product.css" type="text/css" rel="stylesheet">
+<link type="text/css" href="../../default/css/nivo-slider.css" rel="stylesheet">
+<script src="../../francosarto/js/jquery-1.7.2.min.js" type="application/javascript"></script>
+<script src="../../default/js/jquery.nivo.slider.js" type="application/javascript"></script>
+<script src="../../merchant1/js/jquery.cookie.js" type="application/javascript"></script>
+<script src="../../default/js/jcarousellite_1.0.1.min.js" type="application/javascript"></script>
+<script src="../../default/js/jquery.cycle.js" type="application/javascript"></script>
+<script src="../../merchant1/js/jquery.tinyscrollbar.min.js" type="application/javascript"></script>
+<link href="../css/ch_layout.css" type="text/css" rel="stylesheet">
+<link href="../css/ch_nav.css" type="text/css" rel="stylesheet">
+<link href="../css/color/DKNY.css" type="text/css" rel="stylesheet">
+<script type="text/javascript">
+function closeSearchChonFrame() {
+	$.cookie('hideSearchChonFrame', '1');
+	var hideFrame = $.cookie("hideSearchChonFrame");
+	if (hideFrame == '1') {
+		$('#wrapperhead').hide();
+	}	
+} 
+$(document).ready(function() {
+	var hideFrame = $.cookie("hideSearchChonFrame");
+	if (hideFrame == '1') {
+		$('#wrapperhead').hide();
+	}
+}); 
+</script>
+<script>
+$(function() {
+	$('.nivoSlider').nivoSlider({
+		effect: 'boxRainGrow', // Specify sets like: 'fold,fade,sliceDown'
+		directionNav: false, // Next & Prev navigation
+		controlNav: false
+	});
+});
+$(window).load(function() {
+	$('.btn-slide').click(function() {
+	$(this).parent().parent().find('#panel').toggleClass('autonav');
+	$(this).toggleClass("active");
+	});
+}); 
+</script>
+</head>
+
+<body>
+<div id="dialog"></div>
+<div id="loadingDiv" class="loading" style="display:none;"><img src="../images/loading.gif" alt="Loading..."></div>
+<!--BEGIN-->
+<div id="wrapper"> 
+  <!-- BEGIN: MAIN FRAME -->
+  <div id="wrapperframe" style="background:#121212;">
+    <div id="wrapperhead">
+      <div id="ctl00_ctl00_ChonSearchBox1_divSearchOnChon" class="header_top_bar">
+        <div class="logo_top_bar"> <a href="/"> <img src="../../Merchant1/images/Chon.vn Logo_3D.png" alt=""></a></div>
+        <div class="search_top_bar">
+          <div id="ctl00_ctl00_ChonSearchBox1_pnSearchOnChon" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_ctl00_ChonSearchBox1_btnSearchOnChon')"> <strong style="color:#999999">Tìm kiếm:&nbsp;&nbsp;&nbsp;</strong>
+            <input name="ctl00$ctl00$ChonSearchBox1$txtQueryOnChon" type="text" id="ctl00_ctl00_ChonSearchBox1_txtQueryOnChon">
+            <span class="btn_go"> <a id="ctl00_ctl00_ChonSearchBox1_btnSearchOnChon" href="javascript:__doPostBack('ctl00$ctl00$ChonSearchBox1$btnSearchOnChon','')">Tìm</a></span> </div>
+        </div>
+        <div class="close_top_bar"> Đóng khung này&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" onclick="closeSearchChonFrame()"><img src="../../FHouse/images/bar/btn_close.gif" style="vertical-align:middle"></a></div>
+      </div>
+    </div>
+  </div>
+  <!-- END: MAIN FRAME --> 
+  
+  <!--HEADER: BEGIN-->
+  <div class="content-header">
+    <div id="ch_header">
+      <div id="ch_wrapper"> 
+        <!-- BEGIN: HEADER -->
+        <div class="top">
+          <div class="logo"> <a href="/cua-hang/dkny.aspx"> <img height="100" src="http://img.chon.vn/Files/Upload/Images/Merchant/2013/09/17/81780_logostore.png" alt="DKNY"> </a> </div>
+          <div class="last">
+            <div class="search">
+              <div class="input">
+                <input type="text" name="search" id="txtQueryClient" value="" placeholder="Nhập từ khóa tìm kiếm" maxlength="80" alt="Search">
+              </div>
+              <button type="button" class="button"></button>
+            </div>
+          </div>
+          <div class="user_block">
+            <div id="nonLogin" style="display:block">
+              <p class="login_name"> <a href="/nguoi-dung/dang-nhap.aspx?returnUrl=%2fcua-hang%2fdkny.aspx%3fref%3dcatmer-merchant">Đăng nhập</a> </p>
+              <p class="register"> <a href="/nguoi-dung/dang-nhap.aspx?returnUrl=%2fcua-hang%2fdkny.aspx%3fref%3dcatmer-merchant">Đăng ký</a> </p>
+              <p class="lostpass"> <a href="/nguoi-dung/Quen-mat-ma.aspx?returnUrl=%2fcua-hang%2fdkny.aspx%3fref%3dcatmer-merchant">Quên mật khẩu</a></p>
+              <p class="l_cart" style="background: url(&quot;/files/themes/custom2/images/colors/pink/l_cart.gif&quot;) no-repeat scroll 15px 8px transparent;padding: 10px 0 0 40px;"> <a href="/nguoi-dung/gio-hang.aspx"><span class="text-cart">Giỏ hàng</span> <span class="carticon">(<span id="lblTotalQuantity" style="font-size:x-small;">0</span>)</span></a> </p>
+            </div>
+            <div id="logon" style="display:none">
+              <div style="display: none;"> Chào
+                <label id="lblLoginName"></label>
+              </div>
+              <p class="l_signout"> <a href="/nguoi-dung/thoat.aspx?returnUrl=%2fcua-hang%2fdkny.aspx%3fref%3dcatmer-merchant">Thoát</a> </p>
+            </div>
+          </div>
+          <div class="bookmark" style="width:400px;display:none;"> <a id="linkpublicshare" onmouseout="hideicon('subcontent2')" onmouseover="showicon('subcontent2')" rel="subcontent2" style="color:#fff; float:right; cursor:pointer;"><img src="/files/themes/merchant1/images/share.gif" style="display: none !important;">Chia sẻ</a> </div>
+          <div id="subcontent2" onmouseout="hideicon('subcontent2')" onmouseover="showicon('subcontent2')">
+            <div style="width: 49%; float: left;">
+              <ul style="padding: 4px; margin: 0 0 0 5px; list-style: none;">
+                <li><a class="linkIcon delicious" title="Thêm vào del.icio.us" style="cursor: pointer;" onclick="window.open('http://del.icio.us/post?url='+document.location,'_blank');"> Del.icio.us</a></li>
+                <li style="display:none;"><a class="linkIcon facebook" title="Đăng lên Facebook" style="cursor: pointer;" onclick="window.open('http://www.facebook.com/share.php?u='+document.location,'_blank');"> Facebook</a></li>
+                <li><a class="linkIcon stumble" title="Đăng lên Stumbleupon" style="cursor: pointer;" onclick="window.open('http://www.stumbleupon.com/submit?url='+document.location,'_blank');"> Stumbleupon</a></li>
+                <li><a class="linkIcon newsvine" title="Đăng lên Newsvine" style="cursor: pointer;" onclick="window.open('http://www.newsvine.com/_tools/seed&amp;save?u='+document.location,'_blank');"> Newsvine</a></li>
+                <li><a class="linkIcon ybookmarks" title="Đăng lên Yahoo Bookmarks" style="cursor: pointer;" onclick="window.open('http://bookmarks.yahoo.com/toolbar/savebm?opener=tb&amp;u='+document.location,'_blank');"> Ya bookmarks</a></li>
+              </ul>
+            </div>
+            <div style="width: 49%; float: left;">
+              <ul style="padding: 4px; margin:0 0 0 5px; list-style: none;">
+                <li><a class="linkIcon digg" title="Thêm vào Digg" style="cursor: pointer;margin-right:30px;" onclick="window.open('http://digg.com/submit?url='+document.location,'_blank');"> Digg</a></li>
+                <li><a class="linkIcon reddit" title="Thêm vào Reddit" style="cursor: pointer;margin-right:30px;" onclick="window.open('http://www.reddit.com/submit?url='+document.location,'_blank');"> Reddit</a></li>
+                <li><a class="linkIcon google" title="Đăng lên Google Bookmarks" style="cursor: pointer;margin-right:30px;" onclick="window.open('http://www.google.com/bookmarks/mark?op=edit&amp;bkmk='+document.location,'_blank');"> Google</a></li>
+                <li><a class="linkIcon twitter" title="Đăng lên Twitter" style="cursor: pointer;margin-right:30px;" onclick="window.open('http://twitter.com/home?status='+document.location,'_blank');"> Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+          <script type="text/javascript">
+			function showicon(divid) {
+				document.getElementById(divid).style.visibility = "visible";
+			}
+			function hideicon(divid) {
+				document.getElementById(divid).style.visibility = "hidden";
+			}
+			
+		</script> 
+        </div>
+        <!-- END: HEADER --> 
+      </div>
+    </div>
+    <div id="ch_mainmenu">
+      <div id="ch_wrapper">
+        <div class="wr-menu">
+          <div class="navLeft"></div>
+          <div class="menunav">
+            <div class="chonlink"> <a href="/">Chon.vn</a></div>
+            <div class="menunav_back">
+              <ul class="lavaLamp_menu" id="lava">
+                <li><a href="/">Chọn.vn</a></li>
+                <li><a href="/cua-hang/dkny/san-pham.aspx"> Sản phẩm</a></li>
+                <li><a href="/cua-hang/dkny/gioi-thieu.aspx"> Giới thiệu</a></li>
+                <li></li>
+                <li><a href="/cua-hang/dkny/su-kien.aspx"> Sự kiện</a></li>
+                <li><a href="/cua-hang/dkny/danh-gia.aspx"> Đánh giá</a></li>
+                <li><a href="/cua-hang/dkny/lien-he.aspx"> Liên hệ</a></li>
+                <li class=""><a href="http://www.8lions.com" id="ctl00_ctl00_ctl00_cphBody_BottomNavigator1_lnkWebsite" target="_blank">Website</a></li>
+              </ul>
+              <div class="share" onmouseout="hideicon('subcontent2')" onmouseover="showicon('subcontent2')"> <a>Chia sẻ</a> </div>
+            </div>
+          </div>
+          <div class="navRight"></div>
+        </div>
+      </div>
+    </div>
+    <!-- END: MAIN NAVIGATION --> 
+  </div>
+  <!--HEADER: END--> 
+  <!--BODY:BEGIN -->
+  <div id="ch_body">
+    <div id="ch_wrapper">
+      <div id="ch_mainbody">
+        <div id="ch_features">
+          <div id="features_panes_container"> 
+            <!-- SLIDER:BEGIN -->
+            <div id="slider" class="nivoSlider"> <a href='' target="_blank"><img alt="banner_17-9" src="http://img.chon.vn/Files/upload/Images/Banner/9bbf3b99-138d-4411-b009-765430e325f2_Banner store.jpg" /></a> <a href='' target="_blank"> <img alt='banner_19-9' src='http://img.chon.vn/Files/upload/Images/Banner/1377d236-ed86-44dc-be31-546f933a7e1e_banner 1.jpg'  /> </a> </div>
+            <!-- SLIDER:END --> 
+          </div>
+          <div class="liner"></div>
+        </div>
+        <!-- MENU:BEGIN-->
+        <div id="ch_MenuSub" class="cleaner">
+          <div id="ch_MenuSub_panes">
+            <ul id="cssdropdown">
+              <li class="headlink"><a class="icon_down" href="/cua-hang/dkny/san-pham.aspx"> DANH MỤC SẢN PHẨM</a> </li>
+            </ul>
+          </div>
+          <div id="ch_MenuSub_Sub">
+            <div id="ch_MenuSub_Sub">
+              <ul class="menuSubnav">
+                <li lang="3659" class=""><a href="/cua-hang/dkny/san-pham/ao-kieu-c3659.aspx#content"> Áo kiểu <span class="txt_red">(52)</span></a> </li>
+                <li lang="3661" class=""><a href="/cua-hang/dkny/san-pham/ao-dam-c3661.aspx#content"> Áo đầm <span class="txt_red">(53)</span></a> </li>
+                <li lang="3663" class=""><a href="/cua-hang/dkny/san-pham/vay-c3663.aspx#content"> Váy <span class="txt_red">(12)</span></a> </li>
+                <li lang="3665" class=""><a href="/cua-hang/dkny/san-pham/ao-khoac-c3665.aspx#content"> Áo khoác <span class="txt_red">(25)</span></a> </li>
+                <li lang="3679" class=""><a href="/cua-hang/dkny/san-pham/quan-c3679.aspx#content"> Quần <span class="txt_red">(9)</span></a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- MENU:END--> 
+        
+        <!--BREADCRUMB:BEGIN-->
+        <div id="ch_breadcrumbs" class="cleaner">
+          <ol class="breadcrumbs">
+            <li class="first-child"><a href="/" class="home" name="content"></a></li>
+            <li><a href="/cua-hang/dkny.aspx">Trang chủ</a></li>
+            <li><a href="/cua-hang/dkny.aspx">Đánh giá</a></li>
+          </ol>
+        </div>
+        <!--BREADGRUMB:END--> 
+        
+        <!--COMMENT:BEGIN-->
+        <div class="new">
+          <div class="box">
+            <div id="ch_products">
+              <div id="products_head_wrapper2">
+                <h2>ĐÁNH GIÁ CỬA HÀNG</h2>
+              </div>
+              <div id="product_list_container" style="height:auto;">
+                <div class="tab_container">
+                  <div id="tab1" class="tab_content" style="display: block;">
+                    <div class="modulecontent">
+                      <div id="comment_box">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                          <tbody>
+                            <tr>
+                              <td style="width:220px;padding-right:20px;vertical-align:top;" valign="top"><div id="comment_box1" style="margin:0px;"> <a href="/cua-hang/dkny.aspx"> <img width="220" src="http://chon.vn/Files/Upload/Images/Merchant/2013/09/17/81780_logostore.png" alt="DKNY" title="DKNY"></a> </div>
+                                <div class="backreview_t"></div>
+                                <div class="backreview">
+                                  <table cellspacing="10">
+                                    <tbody>
+                                      <tr>
+                                        <td class="style1"> Thành viên&nbsp;&nbsp; </td>
+                                        <td class="style2"><span id="ctl00_ctl00_ctl00_cphBody_cphContent_MerchantUserReviewList_lblMerchantType">Gold</span></td>
+                                      </tr>
+                                      <tr>
+                                        <td> Tham gia </td>
+                                        <td><span id="ctl00_ctl00_ctl00_cphBody_cphContent_MerchantUserReviewList_lblMerchantPublishDate">17/09/2013</span></td>
+                                      </tr>
+                                      <tr>
+                                        <td valign="top"> Đánh giá </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="2"><span class="buttonadd"><em> <a class="rate total">Viết đánh giá</a></em></span></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <div class="backreview_b"></div></td>
+                              <td valign="top" class="reviews_bg"><div id="review_box2">
+                                  <div id="MechantReview18"> 
+                                    
+                                    <!-- Row module pagin and box filter--> 
+                                    <!-- END: Row module paging -->
+                                    
+                                    <div id="review-content">
+                                      <div class="review-boxer2">
+                                        <div class="review-col1" style="word-wrap break-word;text-align:justify;">
+                                          <p> <a href="#" class="activer" style="font-size: 13px;font-weight:bold;font-style:normal;" title="hàng hiệu giá tốt"> hàng hiệu giá tốt</a> </p>
+                                          <p style=" margin-bottom:20px;font-size:11px; font-style:italic; color:#666;"> Được gửi bởi <em style="color:#F00;">Guest</em> (01/10/2013 3:50:00 CH) </p>
+                                          <p style="white-space:normal;margin-top:10px;padding-top:5px;padding-right:10px;"><b> Ưu điểm:</b> khuyến mãi mạnh</p>
+                                          <p style="white-space:normal;padding-top:5px;padding-right:10px;"><b>Khuyết điểm:</b> ít sản phẩm</p>
+                                          <p id="96415d33-696e-4859-a2fb-dcceb46d94a1danhgiachitiet1" style="display: block;padding-right:10px;"> hàng hiệu, mẫu mã đẹp, giá tốt </p>
+                                          <p id="96415d33-696e-4859-a2fb-dcceb46d94a1danhgiachitiet2" style="display: none;padding-right:10px;"> hàng hiệu, mẫu mã đẹp, giá tốt </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="pagenav" style="margin-top:20px;float:right;"> <span id="ctl00_ctl00_ctl00_cphBody_cphContent_MerchantUserReviewList_lvMerchantReview_lvPager"><a disabled="disabled" class="button_nav2">&lt;&lt; Đầu</a>&nbsp;<a disabled="disabled">&lt;&lt;</a>&nbsp;<span class="current">1</span>&nbsp;<a disabled="disabled">&gt;&gt;</a>&nbsp;<a disabled="disabled" class="button_nav">Cuối &gt;&gt;</a>&nbsp;</span> </div>
+                                  </div>
+                                </div></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--COMMENT:END--> 
+        
+      </div>
+    </div>
+  </div>
+  <!--BODY:END--> 
+  
+  <!--FOOTER: BEGIN -->
+  <div id="ch_footer">
+    <div id="ch_footer_wapper">
+      <div class="sub_foot">
+        <div class="lt_foot">
+          <ul>
+            <li><a href="/">Chọn.vn</a></li>
+            <li><a href="/cua-hang/dkny/san-pham.aspx"> Sản phẩm</a></li>
+            <li><a href="/cua-hang/dkny/gioi-thieu.aspx"> Giới thiệu</a></li>
+            <li></li>
+            <li><a href="/cua-hang/dkny/su-kien.aspx"> Sự kiện</a></li>
+            <li><a href="/cua-hang/dkny/danh-gia.aspx"> Đánh giá</a></li>
+            <li><a href="/cua-hang/dkny/lien-he.aspx"> Liên hệ</a></li>
+            <li class="end"><a href="http://www.8lions.com" id="ctl00_ctl00_ctl00_cphBody_BottomNavigator1_lnkWebsite" target="_blank">Website</a></li>
+          </ul>
+        </div>
+        <div class="rt_foot"> <span>Bản quyền © 2011 <a href="/">Chọn.vn</a> - Bản quyền được bảo vệ</span>
+          <ul>
+            <li class="facebook"><a title="Đăng lên Facebook" onclick="window.open('http://www.facebook.com/share.php?u='+document.location,'_blank');" style="cursor: pointer;"></a></li>
+            <li class="twitter"><a title="Đăng lên Twitter" onclick="window.open('http://twitter.com/home?status='+document.location,'_blank');" style="cursor: pointer;"></a></li>
+            <li class="rss" style="display:none;"><a href="/rss/Cua-hang-giam-gia-noi-bat.aspx" target="_blank"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FOOTER: END --> 
+</div>
+<!--END-->
+</body>
+</html>

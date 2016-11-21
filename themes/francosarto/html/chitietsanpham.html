@@ -1,0 +1,441 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Franco Sarto</title>
+<link href="../css/francosarto.css" type="text/css" rel="stylesheet">
+<link href="../css/stylesheet.css" type="text/css" rel="stylesheet">
+<link href="../../default/css/jquery1.8.1.css" type="text/css" rel="stylesheet">
+<link type="text/css" href="../../default/css/nivo-slider.css" rel="stylesheet">
+<script src="../js/jquery-1.7.2.min.js" type="application/javascript"></script>
+<script src="../../default/js/jquery.nivo.slider.js" type="application/javascript"></script>
+<script src="../../default/js/jquery-ui-1.8.1.js" type="application/javascript"></script>
+<script src="../../default/js/jcarousellite_1.0.1.min.js" type="application/javascript"></script>
+<script src="../../default/js/jquery.cycle.js" type="application/javascript"></script>
+<script src="../../default/js/jquery.pajinate.js" type="application/javascript"></script>
+<script src="../js/jquery.easing.1.3.js" type="application/javascript"></script>
+<script src="../js/jquery.mousewheel.js" type="application/javascript"></script>
+<script>
+$(function() {
+	$('.nivoSlider').nivoSlider({
+		effect: 'fold,sliceDown', // Specify sets like: 'fold,fade,sliceDown'
+		directionNav: false, // Next & Prev navigation
+		controlNav: false
+	});
+});
+$(document).ready(function() {
+    $('.clcode').hover(function() {
+        $(this).find('.box-info').stop().animate({
+            height: '85px'
+        });
+    }, function() {
+        $(this).find('.box-info').stop().animate({
+            height: '50px'
+        });
+    })
+}); 
+</script>
+
+<script>
+$(document).ready(function() {
+    
+
+    $('.clcode').hover(function() {
+        $(this).find('.box-info').stop().animate({
+            height: '85px'
+        });
+    }, function() {
+        $(this).find('.box-info').stop().animate({
+            height: '50px'
+        });
+    })
+
+    $('.cols-right .pd-imagery-small').each(function(e) {
+        if ((e + 1) % 2 == 0) {
+            $(this).addClass('margin-none');
+        }
+    })
+    $('.selling-pd .pd-imagery-small').each(function(e) {
+        if ((e + 1) % 4 == 0) {
+            $(this).addClass('margin-none');
+        }
+    });
+    $(".product_detail_thumbnail .jCarouselLite").jCarouselLite({
+        btnNext: ".product_detail_thumbnail .next",
+        btnPrev: ".product_detail_thumbnail .prev",
+        vertical: true,
+        visible: 4,
+        circular: false
+
+    });
+
+
+
+    $(".same_products_list").jCarouselLite({
+        btnNext: "#same_products .next",
+        btnPrev: "#same_products .prev",
+        mouseWheel: true,
+        visible: 5,
+        vertical: true
+
+    });
+
+    $(".tab_content").hide();
+    $("ul.tab li a:first").addClass("tab_active").show();
+    $(".tab_content:first").show();
+
+
+    $("ul.tab li").click(function() {
+        $("ul.tab li a").removeClass("tab_active");
+        $(this).find("a").addClass("tab_active");
+        $(".tab_content").hide();
+        var activeTab = $(this).find("a").attr("href");
+        $(activeTab).fadeIn();
+        return false;
+    });
+}); 
+</script>
+</head>
+
+<body>
+
+<!--HEADER:BEGIN -->
+<div class="header full">
+  <div class="header-outside width-960">
+    <div class="header-inside full">
+      <div class="control-logon">
+        <ul class="list-logon">
+          <li id="nonLogin1" class="forgot-pass" style="display:block"> <a rel="noindex, nofollow" href="/nguoi-dung/Quen-mat-ma.aspx?returnUrl=%2fcua-hang%2ffranco-sarto.aspx"> Quên mật khẩu </a> </li>
+          <li id="nonLogin2" class="register" style="display:block"> <a rel="noindex, nofollow" href="/nguoi-dung/dang-nhap.aspx?returnUrl=%2fcua-hang%2ffranco-sarto.aspx"> Đăng ký </a> </li>
+          <li id="nonLogin3" class="login" style="display:block"> <a rel="noindex, nofollow" class="none_bor" href="/nguoi-dung/dang-nhap.aspx?returnUrl=%2fcua-hang%2ffranco-sarto.aspx"> Đăng nhập </a> </li>
+          <li id="lblLoginName1" class="username" style="display: none"> <a rel="noindex, nofollow" id="lblLoginName" style="cursor: pointer" onclick="window.location='/nguoi-dung/quan-ly/chinh-sua-tieu-su.aspx'"></a> </li>
+          <li id="lblLoginName2" class="logout" style="display: none"> <a rel="noindex, nofollow" href="/nguoi-dung/thoat.aspx?returnUrl=%2fcua-hang%2ffranco-sarto.aspx"> Thoát </a> </li>
+          <li id="shopCart" class="cart"> <a rel="noindex, nofollow" href="/nguoi-dung/gio-hang.aspx" id="header_cart"> Giỏ hàng<span class="black"> (<strong><span id="lblTotalQuantity">0</span></strong>)</span></a> </li>
+        </ul>
+        <div id="search_box"> 
+          <!--<input name="ctl00$ctl00$ctl00$cphBody$LoginBox1$txtQuery" type="text" value="Nhập từ khóa tìm kiếm" id="ctl00_ctl00_ctl00_cphBody_LoginBox1_txtQuery" class="inputsearch" onfocus="if(jQuery.trim(this.value)=='Nhập từ khóa tìm kiếm') this.value='';" onblur="if(jQuery.trim(this.value)=='') this.value='Nhập từ khóa tìm kiếm';" />
+    <input type="submit" name="ctl00$ctl00$ctl00$cphBody$LoginBox1$btnSearchQuery" value="Tìm kiếm" id="ctl00_ctl00_ctl00_cphBody_LoginBox1_btnSearchQuery" class="btn_black" />--> 
+          
+        </div>
+      </div>
+      <div class="search">
+        <input type="text" name="search" id="txtQueryClient" placeholder="Tìm kiếm..." maxlength="80">
+        <a href="javascript:void(0);" class="btn-search" ></a> </div>
+      <div class="logo"> <a href="/cua-hang/franco-sarto.aspx"> <img src="http://img.chon.vn/Files/Upload/Images/Merchant/2014/03/20/95770_logo store.png" alt="Franco Sarto"> </a> </div>
+      <div class="navigation">
+        <ul class="list-nav">
+          <li><a href="http://www.chon.vn" data-hover="Chon.vn"><span>Chon.vn</span></a></li>
+          <li class=""> <a href="/cua-hang/franco-sarto/san-pham.aspx?sort=newest" data-hover="Sản phẩm"><span>Sản phẩm</span></a> </li>
+          <li class=""> <a href="/cua-hang/franco-sarto/gioi-thieu.aspx#container" data-hover="Giới thiệu"><span>Giới thiệu</span></a> </li>
+          <li class=""> <a href="/cua-hang/franco-sarto/su-kien.aspx#container" data-hover="Sự kiện"><span>Sự kiện</span></a></li>
+          <li class=""><a href="/cua-hang/franco-sarto/danh-gia.aspx#container" data-hover="Đánh giá"><span>Đánh giá</span></a></li>
+          <li class=""><a href="/cua-hang/franco-sarto/lien-he.aspx#container" data-hover="Liên hệ"><span>Liên hệ</span></a></li>
+          <li class=""><a href="/cua-hang/franco-sarto/gioi-thieu.aspx?tab=2#container" data-hover="Hệ thống cửa hàng"><span>Hệ thống cửa hàng</span></a></li>
+          <li class="last-child"><a href="https://www.facebook.com/franco.sarto.vietnam" target="_blank" data-hover="facebook"><span>website</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- HEADER:END --> 
+<!-- BANNER: BEGIN -->
+<div class="banner full">
+  <div class="banner-outside width-960">
+    <div id="slider" class="nivoSlider"> <a><img src="http://www.chon.vn/Files/upload/Images/Banner/d0dd2f79-889d-41a8-b53a-63fd05dfd8d2_banner store.jpg?1403293185365" class="imgLoaded" data-alignment="" data-portrait="" width="960" height="420"> </a> <a><img src="http://www.chon.vn/Files/upload/Images/Banner/b40bcdcd-c1ca-45c0-baf3-cc84135fb2da_banner 02.jpg?1403293185652" class="imgLoaded"> </a> </div>
+  </div>
+</div>
+
+<!-- BANNER: END --> 
+
+<!-- CATEGORY: BEGIN -->
+<div class="category full">
+  <div class="category-outside width-960">
+    <div class="category-inside full">
+      <ul class="category-list">
+        <li class=""><a href="/cua-hang/franco-sarto/san-pham.aspx?nw=1&amp;sort=newest">Hàng mới</a></li>
+        <li class=""><a href="/cua-hang/franco-sarto/san-pham.aspx?cb=1&amp;sort=highestpromotion">Khuyến mãi</a></li>
+        <li class=""> <a href="/cua-hang/franco-sarto/san-pham/giay-cao-got-c4477.aspx" rel="boxx-4477"> Giày cao gót </a> </li>
+        <li class=""> <a href="/cua-hang/franco-sarto/san-pham/giay-de-xuong-c4479.aspx" rel="boxx-4479"> Giày đế xuồng </a> </li>
+        <li class=""> <a href="/cua-hang/franco-sarto/san-pham/giay-sandal-c4481.aspx" rel="boxx-4481"> Giày sandal </a> </li>
+        <li class=""> <a href="/cua-hang/franco-sarto/san-pham/giay-bup-be-c4483.aspx" rel="boxx-4483"> Giày búp bê </a> </li>
+        <li class=""> <a href="/cua-hang/franco-sarto/san-pham/dep-c4485.aspx" rel="boxx-4485"> Dép </a> </li>
+        <li class=""> <a href="/cua-hang/franco-sarto/san-pham/giay-boots-c4529.aspx" rel="boxx-4529"> Giày boots </a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- CATEGORY: END --> 
+
+<!-- CONTENT: BEGIN -->
+<div id="container">
+  <ul id="breadcrumb">        	
+            <li><a href="/cua-hang/franco-sarto.aspx">
+            <img src="../images/home2.jpg" alt=""></a></li>
+            <li><a href="/cua-hang/franco-sarto/san-pham.aspx?sort=newest">Sản phẩm</a></li>
+             <li><a itemprop="url" href="/cua-hang/franco-sarto/san-pham/giay-bup-be-c4483.aspx#container"><span itemprop="title">Giày búp bê</span></a></li>
+             <li>Chi tiết sản phẩm</li>
+        </ul>
+  <div class="subpage">
+      <div class="spacing">&nbsp;</div>
+      <div class="col_right">
+        <div class="col_right_block">
+          <div class="right_title">
+            <h3 class="upper customfont white">Sản phẩm tương tự</h3>
+          </div>
+          <div class="right_block_content">
+            <div id="same_products"> <a class="prev" href="javascript:void(0);">&nbsp;</a> <a class="next" href="javascript:void(0);">&nbsp;</a>
+              <div class="same_products_list">
+                <ul>
+                  <li> <a href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-b6891l1003-ma-hang-B6891L1003.aspx#container"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/02/26/149914_Giay-nu-Franco-Sarto-mau-den-B6891L1003_giay nu franco sarto mau den b6891l1003DSC_0081 (1).JPG&width=150&height=165"
+                                                        width="150" height="165" alt="Giày nữ Franco Sarto màu đen B6891L1003" title="Giày nữ Franco Sarto màu đen B6891L1003" /> <span class="big-sale" style='display:block'> 20% </span> </a>
+                    <div class="same_products_list_info"> <a title="Giày nữ Franco Sarto màu đen B6891L1003" href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-b6891l1003-ma-hang-B6891L1003.aspx#container" class="black fltlft"> <strong> Franco Sarto </strong></a><br />
+                      <span class="price fltlft" title="Giá bán"> 1.752.000đ </span> <span class="old_price fltlft" style="display:block"  title="Giá sản phẩm"> 2.190.000đ </span> </div>
+                  </li>
+                  <li> <a href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-bit-mui-b4388mj004-ma-hang-B4388MJ004.aspx#container"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/02/26/149878_Giay-nu-Franco-Sarto-mau-den-bit-mui-B4388MJ004_giay nu franco sarto mau den bit mui b4388mj004 DSC_0189 (1).JPG&width=150&height=165"
+                                                        width="150" height="165" alt="Giày nữ Franco Sarto màu đen bít mũi B4388MJ004" title="Giày nữ Franco Sarto màu đen bít mũi B4388MJ004" /> <span class="big-sale" style='display:block'> 20% </span> </a>
+                    <div class="same_products_list_info"> <a title="Giày nữ Franco Sarto màu đen bít mũi B4388MJ004" href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-bit-mui-b4388mj004-ma-hang-B4388MJ004.aspx#container" class="black fltlft"> <strong> Franco Sarto </strong></a><br />
+                      <span class="price fltlft" title="Giá bán"> 2.392.000đ </span> <span class="old_price fltlft" style="display:block"  title="Giá sản phẩm"> 2.990.000đ </span> </div>
+                  </li>
+                  <li> <a href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-bit-mui-b4388mk404-ma-hang-B4388MK404.aspx#container"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/02/26/149884_Giay-nu-Franco-Sarto-mau-den-bit-mui-B4388MK404_giay nu franco sarto mau den bit mui b4388mk404 DSC_0194 (1).JPG&width=150&height=165"
+                                                        width="150" height="165" alt="Giày nữ Franco Sarto màu đen bít mũi B4388MK404" title="Giày nữ Franco Sarto màu đen bít mũi B4388MK404" /> <span class="big-sale" style='display:block'> 20% </span> </a>
+                    <div class="same_products_list_info"> <a title="Giày nữ Franco Sarto màu đen bít mũi B4388MK404" href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-bit-mui-b4388mk404-ma-hang-B4388MK404.aspx#container" class="black fltlft"> <strong> Franco Sarto </strong></a><br />
+                      <span class="price fltlft" title="Giá bán"> 2.392.000đ </span> <span class="old_price fltlft" style="display:block"  title="Giá sản phẩm"> 2.990.000đ </span> </div>
+                  </li>
+                  <li> <a href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-da-beo-dinh-cuom-leosequ-b6891f6901-ma-hang-B6891F6901.aspx#container"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/154090_Giay-nu-Franco-Sarto-mau-den-da-beo-dinh-cuom-Leosequ-B6891F6901_giay nu franco sarto mau den da beo dinh cuom leosequ b6891f6901 DSC_0068 (1).JPG&width=150&height=165"
+                                                        width="150" height="165" alt="Giày nữ Franco Sarto màu đen da beo đính cườm Leosequ B6891F6901" title="Giày nữ Franco Sarto màu đen da beo đính cườm Leosequ B6891F6901" /> <span class="big-sale" style='display:none'> 0% </span> </a>
+                    <div class="same_products_list_info"> <a title="Giày nữ Franco Sarto màu đen da beo đính cườm Leosequ B6891F6901" href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-da-beo-dinh-cuom-leosequ-b6891f6901-ma-hang-B6891F6901.aspx#container" class="black fltlft"> <strong> Franco Sarto </strong></a><br />
+                      <span class="price fltlft" title="Giá bán"> 2.190.000đ </span> <span class="old_price fltlft" style="display:none"  title="Giá sản phẩm"> </span> </div>
+                  </li>
+                  <li> <a href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-dang-bup-be-c3811m1002-ma-hang-C3811M1002.aspx#container"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/02/26/149870_Giay-nu-Franco-Sarto-mau-den-dang-bup-be-C3811M1002_giay nu franco sarto mau den dang bup be c3811m1002 (1).JPG&width=150&height=165"
+                                                        width="150" height="165" alt="Giày nữ Franco Sarto màu đen dạng búp bê C3811M1002" title="Giày nữ Franco Sarto màu đen dạng búp bê C3811M1002" /> <span class="big-sale" style='display:none'> 0% </span> </a>
+                    <div class="same_products_list_info"> <a title="Giày nữ Franco Sarto màu đen dạng búp bê C3811M1002" href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-dang-bup-be-c3811m1002-ma-hang-C3811M1002.aspx#container" class="black fltlft"> <strong> Franco Sarto </strong></a><br />
+                      <span class="price fltlft" title="Giá bán"> 2.790.000đ </span> <span class="old_price fltlft" style="display:none"  title="Giá sản phẩm"> </span> </div>
+                  </li>
+                  <li> <a href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-dinh-cuom-47798fi009-ma-hang-47798FI009.aspx#container"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/154067_Giay-nu-Franco-Sarto-mau-den-dinh-cuom-47798FI009_giay nu franco sarto mau den dinh cuom 47798fi009 DSC_0058 (1).JPG&width=150&height=165"
+                                                        width="150" height="165" alt="Giày nữ Franco Sarto màu đen đính cườm 47798FI009" title="Giày nữ Franco Sarto màu đen đính cườm 47798FI009" /> <span class="big-sale" style='display:none'> 0% </span> </a>
+                    <div class="same_products_list_info"> <a title="Giày nữ Franco Sarto màu đen đính cườm 47798FI009" href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-dinh-cuom-47798fi009-ma-hang-47798FI009.aspx#container" class="black fltlft"> <strong> Franco Sarto </strong></a><br />
+                      <span class="price fltlft" title="Giá bán"> 2.190.000đ </span> <span class="old_price fltlft" style="display:none"  title="Giá sản phẩm"> </span> </div>
+                  </li>
+                  <li> <a href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-mui-dinh-hat-c0606l1001-ma-hang-C0606L1001.aspx#container"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/02/26/149920_Giay-nu-Franco-Sarto-mau-den-mui-dinh-hat-C0606L1001_giay nu franco sarto mau den mui dinh hat c0606l1001DSC_0086 (1).JPG&width=150&height=165"
+                                                        width="150" height="165" alt="Giày nữ Franco Sarto màu đen mũi đính hạt C0606L1001" title="Giày nữ Franco Sarto màu đen mũi đính hạt C0606L1001" /> <span class="big-sale" style='display:block'> 20% </span> </a>
+                    <div class="same_products_list_info"> <a title="Giày nữ Franco Sarto màu đen mũi đính hạt C0606L1001" href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-mui-dinh-hat-c0606l1001-ma-hang-C0606L1001.aspx#container" class="black fltlft"> <strong> Franco Sarto </strong></a><br />
+                      <span class="price fltlft" title="Giá bán"> 2.312.000đ </span> <span class="old_price fltlft" style="display:block"  title="Giá sản phẩm"> 2.890.000đ </span> </div>
+                  </li>
+                  <li> <a href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-mui-nhon-c0844l4004-ma-hang-C0844L4004.aspx#container"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/02/25/149854_Giay-nu-Franco-Sarto-mau-den-mui-nhon-C0844L4004_giay nu franco sarto mau den mui nhon c0844l4004DSC_0019 (1).JPG&width=150&height=165"
+                                                        width="150" height="165" alt="Giày nữ Franco Sarto màu đen mũi nhọn C0844L4004" title="Giày nữ Franco Sarto màu đen mũi nhọn C0844L4004" /> <span class="big-sale" style='display:none'> 0% </span> </a>
+                    <div class="same_products_list_info"> <a title="Giày nữ Franco Sarto màu đen mũi nhọn C0844L4004" href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-mui-nhon-c0844l4004-ma-hang-C0844L4004.aspx#container" class="black fltlft"> <strong> Franco Sarto </strong></a><br />
+                      <span class="price fltlft" title="Giá bán"> 2.590.000đ </span> <span class="old_price fltlft" style="display:none"  title="Giá sản phẩm"> </span> </div>
+                  </li>
+                  <li> <a href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-mui-nhon-c2896l4002-ma-hang-C2896L4002.aspx#container"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/02/26/149864_Giay-nu-Franco-Sarto-mau-den-mui-nhon-C2896L4002_giay nu franco sarto mau den mui nhon c2896l4002DSC_0029 (1).JPG&width=150&height=165"
+                                                        width="150" height="165" alt="Giày nữ Franco Sarto màu đen mũi nhọn C2896L4002" title="Giày nữ Franco Sarto màu đen mũi nhọn C2896L4002" /> <span class="big-sale" style='display:block'> 20% </span> </a>
+                    <div class="same_products_list_info"> <a title="Giày nữ Franco Sarto màu đen mũi nhọn C2896L4002" href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-mui-nhon-c2896l4002-ma-hang-C2896L4002.aspx#container" class="black fltlft"> <strong> Franco Sarto </strong></a><br />
+                      <span class="price fltlft" title="Giá bán"> 2.232.000đ </span> <span class="old_price fltlft" style="display:block"  title="Giá sản phẩm"> 2.790.000đ </span> </div>
+                  </li>
+                  <li> <a href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-phoi-beo-camel-b4388mh204-ma-hang-B4388MH204.aspx#container"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/02/26/149887_Giay-nu-Franco-Sarto-mau-den-phoi-beo-Camel-B4388MH204_giay nu franco sarto mau den phoi beo camel b4388mh204 DSC_0199 (1).JPG&width=150&height=165"
+                                                        width="150" height="165" alt="Giày nữ Franco Sarto màu đen phối beo Camel B4388MH204" title="Giày nữ Franco Sarto màu đen phối beo Camel B4388MH204" /> <span class="big-sale" style='display:block'> 20% </span> </a>
+                    <div class="same_products_list_info"> <a title="Giày nữ Franco Sarto màu đen phối beo Camel B4388MH204" href="/cua-hang/franco-sarto/san-pham/giay-nu-franco-sarto-mau-den-phoi-beo-camel-b4388mh204-ma-hang-B4388MH204.aspx#container" class="black fltlft"> <strong> Franco Sarto </strong></a><br />
+                      <span class="price fltlft" title="Giá bán"> 2.632.000đ </span> <span class="old_price fltlft" style="display:block"  title="Giá sản phẩm"> 3.290.000đ </span> </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="../js/cloud-zoom.1.0.2.js"></script> 
+      <link href="../css/cloud-zoom.css" rel="stylesheet" type="text/css"/> 
+      <div class="col_content">
+        <div class="big_left_title">
+          <h3 class="customfont white">Giày nữ Franco Sarto màu nâu Cuoio B8790L1200 </h3>
+          <span class="disable">&nbsp; Mã sản phẩm: B8790L1200</span>
+          <ul class="detail_share fltrt">
+            <li><a onclick="window.open('http://www.facebook.com/share.php?u='+document.location,'_blank');" title="Đăng lên Facebook" style="cursor: pointer;"> <img src="../images/fb.png" width="16" height="16" alt=""/> </a></li>
+            <li><a title="Đăng lên Twitter" style="cursor: pointer;" onclick="window.open('http://twitter.com/home?status='+document.location,'_blank');"> <img src="../images/tw.png" width="16" height="16" alt=""/></a></li>
+          </ul>
+        </div>
+        <div id="product">
+          <div class="wpd">
+            <div class="product_detail_thumbnail"> <a href="javascript:void(0);" class="prev">&nbsp;</a>
+              <div class="jCarouselLite">
+                <ul>
+                  <li class="default">
+					  <a onclick="return false;" href="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/154116_Giay-nu-Franco-Sarto-mau-nau-Cuoio-B8790L1200_giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (1).JPG&width=700&height=770" class="cloud-zoom-gallery" rel="useZoom: 'zoom1', smallImage: 'http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/154116_Giay-nu-Franco-Sarto-mau-nau-Cuoio-B8790L1200_giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (1).JPG&width=350&height=385'"> 					  
+					  <img width="60px" height="66px" src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/154116_Giay-nu-Franco-Sarto-mau-nau-Cuoio-B8790L1200_giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (1).JPG" alt="Giày nữ Franco Sarto màu nâu Cuoio B8790L1200" title="Giày nữ Franco Sarto màu nâu Cuoio B8790L1200" /> 
+					</a>
+				  </li>
+                  <li class="default" style=""> 
+					  <a title="" onclick="return false;" href="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/Giay-n1EEF-Franco-Sarto-mau-nau-Cuoio-B8790L1200giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (2).JPG&width=700&height=770" class="cloud-zoom-gallery" rel="useZoom: 'zoom1', smallImage: 'http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/Giay-n1EEF-Franco-Sarto-mau-nau-Cuoio-B8790L1200giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (2).JPG&width=350&height=385'"> 
+						<img width="60px" height="66px" src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/Giay-n1EEF-Franco-Sarto-mau-nau-Cuoio-B8790L1200giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (2).JPG" alt="" title="" /> 
+					  </a>
+				  </li>
+                  <li class="default" style=""> 
+					  <a title="" onclick="return false;" href="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/Giay-n1EEF-Franco-Sarto-mau-nau-Cuoio-B8790L1200giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (3).JPG&width=700&height=770" class="cloud-zoom-gallery" rel="useZoom: 'zoom1', smallImage: 'http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/Giay-n1EEF-Franco-Sarto-mau-nau-Cuoio-B8790L1200giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (3).JPG&width=350&height=385'"> 
+						<img width="60px" height="66px" src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/Giay-n1EEF-Franco-Sarto-mau-nau-Cuoio-B8790L1200giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (3).JPG" alt="" title="" /> 
+					  </a>
+				  </li>
+                  <li class="default" style=""> 
+					<a title="" onclick="return false;" href="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/Giay-n1EEF-Franco-Sarto-mau-nau-Cuoio-B8790L1200giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (4).JPG&width=700&height=770" class="cloud-zoom-gallery" rel="useZoom: 'zoom1', smallImage: 'http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/Giay-n1EEF-Franco-Sarto-mau-nau-Cuoio-B8790L1200giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (4).JPG&width=350&height=385'"> <img width="60px" height="66px" src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/Giay-n1EEF-Franco-Sarto-mau-nau-Cuoio-B8790L1200giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (4).JPG" alt="" title="" /> 
+					</a>
+				 </li>
+				  <li class="default" style=""> 
+					<a title="" onclick="return false;" href="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/Giay-n1EEF-Franco-Sarto-mau-nau-Cuoio-B8790L1200giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (4).JPG&width=700&height=770" class="cloud-zoom-gallery" rel="useZoom: 'zoom1', smallImage: 'http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/Giay-n1EEF-Franco-Sarto-mau-nau-Cuoio-B8790L1200giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (4).JPG&width=350&height=385'"> <img width="60px" height="66px" src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/Giay-n1EEF-Franco-Sarto-mau-nau-Cuoio-B8790L1200giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (4).JPG" alt="" title="" /> 
+					</a>
+				 </li>
+				  <li class="default" style=""> 
+					<a title="" onclick="return false;" href="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/Giay-n1EEF-Franco-Sarto-mau-nau-Cuoio-B8790L1200giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (4).JPG&width=700&height=770" class="cloud-zoom-gallery" rel="useZoom: 'zoom1', smallImage: 'http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/Giay-n1EEF-Franco-Sarto-mau-nau-Cuoio-B8790L1200giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (4).JPG&width=350&height=385'"> <img width="60px" height="66px" src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/Giay-n1EEF-Franco-Sarto-mau-nau-Cuoio-B8790L1200giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (4).JPG" alt="" title="" /> 
+					</a>
+				 </li>
+                </ul>
+              </div>
+              <a href="javascript:void(0);" class="next">&nbsp</a>
+              <div class="clear"></div>
+            </div>
+            <div id="wrap" style="top:10px;z-index:9;position:relative;left:80px;height:405px;width:350px"> 
+				<a href="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/154116_Giay-nu-Franco-Sarto-mau-nau-Cuoio-B8790L1200_giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (1).JPG&width=700&height=770" class="cloud-zoom" id="zoom1" rel="adjustX: 0, adjustY:-4" style="position: relative; display: block; "> 
+					<img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/154116_Giay-nu-Franco-Sarto-mau-nau-Cuoio-B8790L1200_giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (1).JPG&width=350&height=385" alt="" align="left" title="Giày nữ Franco Sarto màu nâu Cuoio B8790L1200" style="display: block;"> 
+				</a>
+              <div class="mousetrap" style="background-image:url(&quot;.&quot;);z-index:999;position:absolute;width:350px;height:384px;left:4px;top:0px;"></div>
+            </div>
+          </div>
+		  <script>$('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();</script> 
+          <div id="product_info">
+            <h4 class="dotted_title">Đánh giá sản phẩm</h4>
+            <div class="dotted_content">              
+              <div class="clearfloat"></div>
+              <p class="rating-links"> <a id="newestRating" href="#commentlist" >Xem đánh giá mới nhất</a> <span class="separator" >|</span> <a href="#write1_comment">Viết đánh giá</a> <span class="separator" style=''>|</span> <a href="/mua-sam/phu-kien-nu/giay-dep/giay-nu-franco-sarto-mau-nau-cuoio-b8790l1200.aspx" style=''>Xem tất cả đánh giá</a> <span class="separator" >|</span> <a href="/mua-sam/phu-kien-nu/giay-dep/giay-nu-franco-sarto-mau-nau-cuoio-b8790l1200.aspx">Sản phẩm liên kết</a> </p>
+            </div>
+            <h4 class="dotted_title">Giá</h4>
+            <div class="dotted_content">
+              <p style="display:none" >Giá sản phẩm: <span class="disable old_price fltrt">2.990.000đ </span></p>
+              <p>Giá bán khuyến mãi: <span class="price fltrt red"><strong> 2.990.000đ</strong></span></p>
+              <p style="display:none">Giảm giá: <span class="fltrt green"> 0%</span></p>
+            </div>
+            <h4 class="dotted_title"></h4>
+            <div class="dotted_content">
+              <div>
+                <div class="boxMaterial"> <span class="fltlft">Kích cỡ:&nbsp;&nbsp;</span>
+                  <div>
+                    <ul class="size" rel="default">
+                      <li><a class="itemsize active">5</a></li>
+                      <li><a class="itemsize">6</a></li>
+                      <li><a class="itemsize">7</a></li>
+                      <li><a class="itemsize">7.5</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="sizeSytem" class="boxMaterial1"> <a id='systemSizeImage' class='fltrt red' href='http://img.chon.vn/thumbnail.ashx?url=/Files/Upload/Images/MerchantProduct/2014/04/02/0_Giay-bup-be_sizechart_FrancoSarto.jpg'>Hệ thống size</a> </div>
+                <div class="clearfloat"></div>
+                <div class="boxMaterial"> <span class="fltlft">Màu sắc:&nbsp;</span>
+                  <ul class="pro_details_color">
+                    <li class="activecolor active"><a title="Giày nữ Franco Sarto màu nâu Cuoio B8790L1200" style='cursor: pointer;'><img src='http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/24/Giay-n1EEF-Franco-Sarto-mau-nau-Cuoio-B8790L1200giay nu franco sarto mau nau cuoio b8790l1200 DSC_0098 (4).JPG' width='20px' height='20px' /></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="btn_buyItem"> <a id='btn_big_buy' rel='7c5b5a70-afe9-46e4-86b1-ac2ea41e9d9c' relid='a075a3a5-d665-403b-9978-fb64a353d77c'  stock='1' price='2990000,0000' quantity='0' href='javascript:void(0)'></a> </div>
+          </div>
+        </div>
+        <div class="big_left_title bg" style='display:block'>
+          <h3 class="customfont white upper">Thông tin chi tiết</h3>
+        </div>
+        <div class="product_detail" style='display:block'>
+          <p>Giày nữ, màu nâu, bít mũi, dạo phố. </p>
+          <div class="tab_ttct" style="display:none">
+            <table summary="Info Detail" class="hor-table" width="100%">
+              <tbody>
+                <tr>
+                  <th scope="col" colspan="2"> Thông tin chi tiết </th>
+                </tr>
+                <tr>
+                  <td style="width: 25%; position: relative; "> Danh mục sản phẩm </td>
+                  <td style="width: 75%; position: relative; "><a href=""><span itemprop="category"> </span></a></td>
+                </tr>
+                <tr style="background-color:#e5e5e5;">
+                  <td style="width: 25%; position: relative; "> Mũi giày </td>
+                  <td style="width: 75%; position: relative; "><a href=""> bít mũi</a> <span id="ctl00_ctl00_ctl00_cphBody_cphContent_ProductDetails1_rptGroupFilter_ctl01_rptFilter_ctl00_lblFilter"></span></td>
+                </tr>
+                <tr >
+                  <td style="width:25%;"> Kiểu giày dép </td>
+                  <td style="width:75%;"><a href=""> búp bê</a> <span id="ctl00_ctl00_ctl00_cphBody_cphContent_ProductDetails1_rptGroupFilter_ctl02_rptFilter_ctl00_lblFilter"></span></td>
+                </tr>
+                <tr style="background-color:#e5e5e5;">
+                  <td style="width: 25%; position: relative; "> Mục đích sử dụng </td>
+                  <td style="width: 75%; position: relative; "><a href=""> dạo phố</a> <span id="ctl00_ctl00_ctl00_cphBody_cphContent_ProductDetails1_rptGroupFilter_ctl03_rptFilter_ctl00_lblFilter"></span></td>
+                </tr>
+                <tr >
+                  <td style="width:25%;"> Gót/Đế giày </td>
+                  <td style="width:75%;"><a href=""> đế thấp</a> <span id="ctl00_ctl00_ctl00_cphBody_cphContent_ProductDetails1_rptGroupFilter_ctl04_rptFilter_ctl00_lblFilter"></span></td>
+                </tr>
+                <tr style="background-color:#e5e5e5;">
+                  <td style="width: 25%; position: relative; "> Màu sắc </td>
+                  <td style="width: 75%; position: relative; "><a href=""> nâu</a> <span id="ctl00_ctl00_ctl00_cphBody_cphContent_ProductDetails1_rptGroupFilter_ctl05_rptFilter_ctl00_lblFilter"></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="big_left_title bg">
+          <h3 class="customfont white upper">Thông tin thương hiệu</h3>
+        </div>
+        <div class="product_detail"> </div>
+        <div class="big_left_title bg">
+          <h3 class="customfont white upper">Đánh giá</h3>
+        </div>
+        <div class="block-comment">
+          <div id="commentlist"> 
+            <ul class="comments">
+            </ul>
+            <div class="show-comments"> </div>
+            <div id="ctl00_ctl00_ctl00_cphBody_cphContent_ProductDetails1_ProductAssociatedReview1_MerchantReview_WriteReview1_frmReview">
+              <div id="write1_comment" class="comment">
+                <h3 class="blue customfont">Gửi bình luận</h3>
+                <div class="comment-rating">
+                  <p><span id="ctl00_ctl00_ctl00_cphBody_cphContent_ProductDetails1_ProductAssociatedReview1_MerchantReview_WriteReview1_lblProductTitle">Giày nữ Franco Sarto màu nâu Cuoio B8790L1200</span></p>
+                </div>
+                <div class="comment-input">
+                  <ul>
+                    <li class="name" style="padding-left:40px"><span id="ctl00_ctl00_ctl00_cphBody_cphContent_ProductDetails1_ProductAssociatedReview1_MerchantReview_WriteReview1_login"> Vui lòng <a rel="noindex, nofollow" href="/nguoi-dung/dang-nhap.aspx?returnUrl=%2fcua-hang%2ffranco-sarto%2fsan-pham%2fgiay-nu-franco-sarto-mau-nau-cuoio-b8790l1200-ma-hang-B8790L1200.aspx" style="text-decoration:none;color:Red;cursor:pointer" > đăng nhập </a> trước khi đánh giá</span></li>
+                    <li class="name">
+                      <label>Tiêu đề:*</label>
+                      <input name="txtAuthor" type="text" id="txtAuthor" />
+                      <span id="msgAuthor" style="color:Red;font-weight:bold;visibility:hidden;">*</span> </li>
+                    <li class="message">
+                      <label>Đánh giá:*</label>
+                      <textarea name="txtMessage" rows="5" cols="40" id="txtMessage"></textarea>
+                      <span id="msgMessage" style="color:Red;font-weight:bold;visibility:hidden;">*</span> </li>
+                    <li class="name"> <span id="ctl00_ctl00_ctl00_cphBody_cphContent_ProductDetails1_ProductAssociatedReview1_MerchantReview_WriteReview1_lblMessage" style="color:Red;"></span> </li>
+                    <li class="submit"> <a href="/nguoi-dung/dang-nhap.aspx?returnUrl=%2fcua-hang%2ffranco-sarto%2fsan-pham%2fgiay-nu-franco-sarto-mau-nau-cuoio-b8790l1200-ma-hang-B8790L1200.aspx" id="ctl00_ctl00_ctl00_cphBody_cphContent_ProductDetails1_ProductAssociatedReview1_MerchantReview_WriteReview1_btnlogin1" class="btn_blue fltrt" style="cursor:pointer">Đăng nhập</a> <a class="btn_black fltrt" href="javascript:void(0)">Nhập lại</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>            
+          </div>          
+        </div>
+      </div>       
+    </div>
+  </div>
+</div>
+<!-- CONTENT: END --> 
+
+<!-- FOOTER: BEGIN -->
+<div class="footer full">
+  <div class="width-960">
+    <div class="ft-menu">
+      <ul>
+        <li class="first-child"><a href="/">Chọn.vn</a></li>
+        <li class=""><a href="/cua-hang/franco-sarto/gioi-thieu.aspx#container">Giới thiệu</a></li>
+        <li class=""><a href="/cua-hang/franco-sarto/san-pham.aspx#container">Sản phẩm</a></li>
+        <li class=""><a href="/cua-hang/franco-sarto/su-kien.aspx#container">Sự kiện</a></li>
+        <li class=""><a href="/cua-hang/franco-sarto/danh-gia.aspx#container">Đánh giá</a></li>
+        <li class=""><a href="/cua-hang/franco-sarto/lien-he.aspx#container">Liên hệ</a></li>
+        <li><a href="https://www.facebook.com/franco.sarto.vietnam">Website</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>Template Franco Sarto. GVHD: Dương Trọng Đính</p>
+    </div>
+  </div>
+</div>
+<!-- FOOTER: END -->
+</body>
+</html>

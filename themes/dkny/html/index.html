@@ -1,0 +1,575 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html;" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8; IE=EmulateIE9" />
+<title>DKNY</title>
+<link href="../css/main.css" type="text/css" rel="stylesheet">
+<link href="../css/menu.css" type="text/css" rel="stylesheet">
+<link href="../css/product.css" type="text/css" rel="stylesheet">
+<link type="text/css" href="../../default/css/nivo-slider.css" rel="stylesheet">
+<script src="../../francosarto/js/jquery-1.7.2.min.js" type="application/javascript"></script>
+<script src="../../default/js/jquery.nivo.slider.js" type="application/javascript"></script>
+<script src="../../merchant1/js/jquery.cookie.js" type="application/javascript"></script>
+<script src="../../default/js/jcarousellite_1.0.1.min.js" type="application/javascript"></script>
+<script src="../../default/js/jquery.cycle.js" type="application/javascript"></script>
+<script src="../../merchant1/js/jquery.tinyscrollbar.min.js" type="application/javascript"></script>
+<link href="../css/ch_layout.css" type="text/css" rel="stylesheet">
+<link href="../css/ch_nav.css" type="text/css" rel="stylesheet">
+<link href="../css/color/DKNY.css" type="text/css" rel="stylesheet">
+<script type="text/javascript">
+function closeSearchChonFrame() {
+	$.cookie('hideSearchChonFrame', '1');
+	var hideFrame = $.cookie("hideSearchChonFrame");
+	if (hideFrame == '1') {
+		$('#wrapperhead').hide();
+	}	
+} 
+$(document).ready(function() {
+	var hideFrame = $.cookie("hideSearchChonFrame");
+	if (hideFrame == '1') {
+		$('#wrapperhead').hide();
+	}
+}); 
+</script>
+<script>
+$(function() {
+	$('.nivoSlider').nivoSlider({
+		effect: 'boxRainGrow', // Specify sets like: 'fold,fade,sliceDown'
+		directionNav: false, // Next & Prev navigation
+		controlNav: false
+	});
+});
+$(window).load(function() {
+	$('.btn-slide').click(function() {
+	$(this).parent().parent().find('#panel').toggleClass('autonav');
+	$(this).toggleClass("active");
+	});
+}); 
+</script>
+</head>
+
+<body>
+<div id="dialog"></div>
+<div id="loadingDiv" class="loading" style="display:none;"><img src="../images/loading.gif" alt="Loading..."></div>
+<!--BEGIN-->
+<div id="wrapper"> 
+  <!-- BEGIN: MAIN FRAME -->
+  <div id="wrapperframe" style="background:#121212;">
+    <div id="wrapperhead">
+      <div id="ctl00_ctl00_ChonSearchBox1_divSearchOnChon" class="header_top_bar">
+        <div class="logo_top_bar"> <a href="/"> <img src="../../Merchant1/images/Chon.vn Logo_3D.png" alt=""></a></div>
+        <div class="search_top_bar">
+          <div id="ctl00_ctl00_ChonSearchBox1_pnSearchOnChon" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_ctl00_ChonSearchBox1_btnSearchOnChon')"> <strong style="color:#999999">Tìm kiếm:&nbsp;&nbsp;&nbsp;</strong>
+            <input name="ctl00$ctl00$ChonSearchBox1$txtQueryOnChon" type="text" id="ctl00_ctl00_ChonSearchBox1_txtQueryOnChon">
+            <span class="btn_go"> <a id="ctl00_ctl00_ChonSearchBox1_btnSearchOnChon" href="javascript:__doPostBack('ctl00$ctl00$ChonSearchBox1$btnSearchOnChon','')">Tìm</a></span> </div>
+        </div>
+        <div class="close_top_bar"> Đóng khung này&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" onclick="closeSearchChonFrame()"><img src="../../FHouse/images/bar/btn_close.gif" style="vertical-align:middle"></a></div>
+      </div>
+    </div>
+  </div>
+  <!-- END: MAIN FRAME --> 
+  
+  <!--HEADER: BEGIN-->
+  <div class="content-header">
+    <div id="ch_header">
+      <div id="ch_wrapper"> 
+        <!-- BEGIN: HEADER -->
+        <div class="top">
+          <div class="logo"> <a href="/cua-hang/dkny.aspx"> <img height="100" src="http://img.chon.vn/Files/Upload/Images/Merchant/2013/09/17/81780_logostore.png" alt="DKNY"> </a> </div>
+          <div class="last">
+            <div class="search">
+              <div class="input">
+                <input type="text" name="search" id="txtQueryClient" value="" placeholder="Nhập từ khóa tìm kiếm" maxlength="80" alt="Search">
+              </div>
+              <button type="button" class="button"></button>
+            </div>
+          </div>
+          <div class="user_block">
+            <div id="nonLogin" style="display:block">
+              <p class="login_name"> <a href="/nguoi-dung/dang-nhap.aspx?returnUrl=%2fcua-hang%2fdkny.aspx%3fref%3dcatmer-merchant">Đăng nhập</a> </p>
+              <p class="register"> <a href="/nguoi-dung/dang-nhap.aspx?returnUrl=%2fcua-hang%2fdkny.aspx%3fref%3dcatmer-merchant">Đăng ký</a> </p>
+              <p class="lostpass"> <a href="/nguoi-dung/Quen-mat-ma.aspx?returnUrl=%2fcua-hang%2fdkny.aspx%3fref%3dcatmer-merchant">Quên mật khẩu</a></p>
+              <p class="l_cart" style="background: url(&quot;/files/themes/custom2/images/colors/pink/l_cart.gif&quot;) no-repeat scroll 15px 8px transparent;padding: 10px 0 0 40px;"> <a href="/nguoi-dung/gio-hang.aspx"><span class="text-cart">Giỏ hàng</span> <span class="carticon">(<span id="lblTotalQuantity" style="font-size:x-small;">0</span>)</span></a> </p>
+            </div>
+            <div id="logon" style="display:none">
+              <div style="display: none;"> Chào
+                <label id="lblLoginName"></label>
+              </div>
+              <p class="l_signout"> <a href="/nguoi-dung/thoat.aspx?returnUrl=%2fcua-hang%2fdkny.aspx%3fref%3dcatmer-merchant">Thoát</a> </p>
+            </div>
+          </div>
+          <div class="bookmark" style="width:400px;display:none;"> <a id="linkpublicshare" onmouseout="hideicon('subcontent2')" onmouseover="showicon('subcontent2')" rel="subcontent2" style="color:#fff; float:right; cursor:pointer;"><img src="/files/themes/merchant1/images/share.gif" style="display: none !important;">Chia sẻ</a> </div>
+          <div id="subcontent2" onmouseout="hideicon('subcontent2')" onmouseover="showicon('subcontent2')">
+            <div style="width: 49%; float: left;">
+              <ul style="padding: 4px; margin: 0 0 0 5px; list-style: none;">
+                <li><a class="linkIcon delicious" title="Thêm vào del.icio.us" style="cursor: pointer;" onclick="window.open('http://del.icio.us/post?url='+document.location,'_blank');"> Del.icio.us</a></li>
+                <li style="display:none;"><a class="linkIcon facebook" title="Đăng lên Facebook" style="cursor: pointer;" onclick="window.open('http://www.facebook.com/share.php?u='+document.location,'_blank');"> Facebook</a></li>
+                <li><a class="linkIcon stumble" title="Đăng lên Stumbleupon" style="cursor: pointer;" onclick="window.open('http://www.stumbleupon.com/submit?url='+document.location,'_blank');"> Stumbleupon</a></li>
+                <li><a class="linkIcon newsvine" title="Đăng lên Newsvine" style="cursor: pointer;" onclick="window.open('http://www.newsvine.com/_tools/seed&amp;save?u='+document.location,'_blank');"> Newsvine</a></li>
+                <li><a class="linkIcon ybookmarks" title="Đăng lên Yahoo Bookmarks" style="cursor: pointer;" onclick="window.open('http://bookmarks.yahoo.com/toolbar/savebm?opener=tb&amp;u='+document.location,'_blank');"> Ya bookmarks</a></li>
+              </ul>
+            </div>
+            <div style="width: 49%; float: left;">
+              <ul style="padding: 4px; margin:0 0 0 5px; list-style: none;">
+                <li><a class="linkIcon digg" title="Thêm vào Digg" style="cursor: pointer;margin-right:30px;" onclick="window.open('http://digg.com/submit?url='+document.location,'_blank');"> Digg</a></li>
+                <li><a class="linkIcon reddit" title="Thêm vào Reddit" style="cursor: pointer;margin-right:30px;" onclick="window.open('http://www.reddit.com/submit?url='+document.location,'_blank');"> Reddit</a></li>
+                <li><a class="linkIcon google" title="Đăng lên Google Bookmarks" style="cursor: pointer;margin-right:30px;" onclick="window.open('http://www.google.com/bookmarks/mark?op=edit&amp;bkmk='+document.location,'_blank');"> Google</a></li>
+                <li><a class="linkIcon twitter" title="Đăng lên Twitter" style="cursor: pointer;margin-right:30px;" onclick="window.open('http://twitter.com/home?status='+document.location,'_blank');"> Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+          <script type="text/javascript">
+			function showicon(divid) {
+				document.getElementById(divid).style.visibility = "visible";
+			}
+			function hideicon(divid) {
+				document.getElementById(divid).style.visibility = "hidden";
+			}
+			
+		</script> 
+        </div>
+        <!-- END: HEADER --> 
+      </div>
+    </div>
+    <div id="ch_mainmenu">
+      <div id="ch_wrapper">
+        <div class="wr-menu">
+          <div class="navLeft"></div>
+          <div class="menunav">
+            <div class="chonlink"> <a href="/">Chon.vn</a></div>
+            <div class="menunav_back">
+              <ul class="lavaLamp_menu" id="lava">
+                <li><a href="/">Chọn.vn</a></li>
+                <li><a href="/cua-hang/dkny/san-pham.aspx"> Sản phẩm</a></li>
+                <li><a href="/cua-hang/dkny/gioi-thieu.aspx"> Giới thiệu</a></li>
+                <li></li>
+                <li><a href="/cua-hang/dkny/su-kien.aspx"> Sự kiện</a></li>
+                <li><a href="/cua-hang/dkny/danh-gia.aspx"> Đánh giá</a></li>
+                <li><a href="/cua-hang/dkny/lien-he.aspx"> Liên hệ</a></li>
+                <li class=""><a href="http://www.8lions.com" id="ctl00_ctl00_ctl00_cphBody_BottomNavigator1_lnkWebsite" target="_blank">Website</a></li>
+              </ul>
+              <div class="share" onmouseout="hideicon('subcontent2')" onmouseover="showicon('subcontent2')"> <a>Chia sẻ</a> </div>
+            </div>
+          </div>
+          <div class="navRight"></div>
+        </div>
+      </div>
+    </div>
+    <!-- END: MAIN NAVIGATION --> 
+  </div>
+  <!--HEADER: END--> 
+  <!--BODY:BEGIN -->
+  <div id="ch_body">
+    <div id="ch_wrapper">
+      <div id="ch_mainbody">
+        <div id="ch_features">
+          <div id="features_panes_container"> 
+            <!-- SLIDER:BEGIN -->
+            <div id="slider" class="nivoSlider"> <a href='' target="_blank"><img alt="banner_17-9" src="http://img.chon.vn/Files/upload/Images/Banner/9bbf3b99-138d-4411-b009-765430e325f2_Banner store.jpg" /></a> <a href='' target="_blank"> <img alt='banner_19-9' src='http://img.chon.vn/Files/upload/Images/Banner/1377d236-ed86-44dc-be31-546f933a7e1e_banner 1.jpg'  /> </a> </div>
+            <!-- SLIDER:END --> 
+          </div>
+          <div class="liner"></div>
+        </div>
+        <!-- MENU:BEGIN-->
+        <div id="ch_MenuSub" class="cleaner"> 
+          <div id="ch_MenuSub_panes">
+            <ul id="cssdropdown">
+              <li class="headlink"><a class="icon_down" href="/cua-hang/dkny/san-pham.aspx"> DANH MỤC SẢN PHẨM</a> </li>
+            </ul>
+          </div>
+          <div id="ch_MenuSub_Sub">
+            <div id="ch_MenuSub_Sub">
+              <ul class="menuSubnav">
+                <li lang="3659" class=""><a href="/cua-hang/dkny/san-pham/ao-kieu-c3659.aspx#content"> Áo kiểu <span class="txt_red">(52)</span></a> </li>
+                <li lang="3661" class=""><a href="/cua-hang/dkny/san-pham/ao-dam-c3661.aspx#content"> Áo đầm <span class="txt_red">(53)</span></a> </li>
+                <li lang="3663" class=""><a href="/cua-hang/dkny/san-pham/vay-c3663.aspx#content"> Váy <span class="txt_red">(12)</span></a> </li>
+                <li lang="3665" class=""><a href="/cua-hang/dkny/san-pham/ao-khoac-c3665.aspx#content"> Áo khoác <span class="txt_red">(25)</span></a> </li>
+                <li lang="3679" class=""><a href="/cua-hang/dkny/san-pham/quan-c3679.aspx#content"> Quần <span class="txt_red">(9)</span></a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- MENU:END--> 
+        
+        <!--BREADCRUMB:BEGIN-->
+        <div id="ch_breadcrumbs" class="cleaner">
+          <ol class="breadcrumbs">
+            <li class="first-child"><a href="/" class="home" name="content"></a></li>
+            <li><a href="/cua-hang/dkny.aspx">Trang chủ</a></li>
+          </ol>
+        </div>
+        <!--BREADGRUMB:END--> 
+        <script type="text/javascript">
+			$(document).ready(function() {
+				//Default Action tab jquery
+				$(".tab_content").hide(); //Hide all content
+				$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+				$(".tab_content:first").show(); //Show first tab content
+
+				//On Click Event
+				$("ul.tabs li").click(function() {
+					$("ul.tabs li").removeClass("active"); //Remove any "active" class
+					$(this).addClass("active"); //Add "active" class to selected tab
+					$(".tab_content").hide(); //Hide all tab content
+					var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+					$(activeTab).fadeIn(); //Fade in the active content
+					return false;
+				});
+			});
+		</script> 
+        <script type="text/javascript">
+			$(document).ready(function() {
+				$('.tabs li a em').click(function() {
+					$('#products_head_wrapper h2').text($(this).text().toUpperCase());
+				});					
+			});
+		</script> 
+        <!--PRODUCT:BEGIN-->
+        <div id="ch_products">
+          <div id="products_head_wrapper" class="bg-non">
+            <h2>SẢN PHẨM ĐƯỢC XEM NHIỀU NHẤT</h2>
+            <ul id="products_selection" class="tabs">
+              <!--class="tabs"-->
+              <li class=""><a href="#tab1"><em>Sản phẩm mới nhất</em></a></li>
+              <li class=""><a href="#tab4"><em>Sản phẩm được xem nhiều nhất</em></a></li>
+            </ul>
+          </div>
+          <div id="product_list_container" class="option-tab">
+            <div class="tab_container">
+              <div id="tab1" class="tab_content">
+                <div id="ctl00_ctl00_ctl00_cphBody_cphContent_LatestMerchantProductList161">
+                  <ul class="product_list" style="height: 470px;">
+                    <li>
+                      <div class="image_wrapper"> <a class="zoom360image" rel="prettyPhoto" style="display: none" href="/Files/Upload/Images/Product/360/?zoom=1"> </a><a href="/cua-hang/dkny/san-pham/ao-dam-dkny-mau-den-hoa-tiet-co-chu-v-dkp337513cc-ma-hang-DKP337513CC_001.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/12/152233_Ao-dam-DKNY-mau-den-hoa-tiet-co-chu-V-DKP337513CC_ao dam dkny mau den hoa tiet co chu v dkp337513ccDSC_0093 (1).JPG&amp;width=170&amp;height=190" alt="Áo đầm DKNY màu đen họa tiết cổ chữ V DKP337513CC" title="Áo đầm DKNY màu đen họa tiết cổ chữ V DKP337513CC" width="170" height="190"></a></div>
+                      <div class="title_product">
+                        <div class="price">
+                          <p style="visibility: block; margin-top: 2px;"> <span class="priceOld"> 12.070.000đ</span> </p>
+                          <p class="priceNew"> 8.449.000đ </p>
+                          <p> (30%)</p>
+                        </div>
+                        <div class="product_title_details">
+                          <h3> <a href="/cua-hang/dkny/san-pham/ao-dam-dkny-mau-den-hoa-tiet-co-chu-v-dkp337513cc-ma-hang-DKP337513CC_001.aspx#content" title="Áo đầm DKNY màu đen họa tiết cổ chữ V DKP337513CC"> ÁO ĐẦM DKNY MÀU ĐEN HỌA TIẾT CỔ CHỮ V DKP337513CC</a> </h3>
+                        </div>
+                        <p class="content_product_list" style="padding-left: 16px; width: 100px;"> <span class="buttonStore"><em>
+                          <input type="button" style="border: solid 0px; background: none repeat scroll 0 0 transparent; color: #fff; width: 85px; font: 62.5% Arial,Verdana,sans-serif; font-size: 11px; margin-top: -2px;" rel="87f96fd4-017e-4bd9-b35f-fe73e3219a68" relid="bb69bdad-4bf7-4890-927f-de6b96e457f0" stock="1" quantity="0" paymode="Online" price="8449000,0000" class="buy_btn btnAddToCart_Iframe addtocart_button_module" value="Thêm vào giỏ">
+                          </em></span> </p>
+                      </div>
+                    </li>
+                    <li class="itemsep" style="width: 21px; background: transparent;"></li>
+                    <li>
+                      <div class="image_wrapper"> <a class="zoom360image" rel="prettyPhoto" style="display: none" href="/Files/Upload/Images/Product/360/?zoom=1"> </a><a href="/cua-hang/dkny/san-pham/vay-dkny-mau-den-phoi-ren-dkp131183d-ma-hang-DKP131183D.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/14/152747_Vay-DKNY-mau-den-phoi-ren-DKP131183D_vay dkny mau den phoi ren dkp131183dDSC_0073 (1).JPG&amp;width=170&amp;height=190" alt="Váy DKNY màu đen phối ren DKP131183D" title="Váy DKNY màu đen phối ren DKP131183D" width="170" height="190"></a></div>
+                      <div class="title_product">
+                        <div class="price">
+                          <p style="visibility: block; margin-top: 2px;"> <span class="priceOld"> 9.440.000đ</span> </p>
+                          <p class="priceNew"> 9.440.000đ </p>
+                          <p>&nbsp;</p>
+                        </div>
+                        <div class="product_title_details">
+                          <h3> <a href="/cua-hang/dkny/san-pham/vay-dkny-mau-den-phoi-ren-dkp131183d-ma-hang-DKP131183D.aspx#content" title="Váy DKNY màu đen phối ren DKP131183D"> VÁY DKNY MÀU ĐEN PHỐI REN DKP131183D</a> </h3>
+                        </div>
+                        <p class="content_product_list" style="padding-left: 16px; width: 100px;"> <span class="buttonStore"><em>
+                          <input type="button" style="border: solid 0px; background: none repeat scroll 0 0 transparent; color: #fff; width: 85px; font: 62.5% Arial,Verdana,sans-serif; font-size: 11px; margin-top: -2px;" rel="87f96fd4-017e-4bd9-b35f-fe73e3219a68" relid="d61c999f-f0fd-42db-8f5e-f9a25f1e4073" stock="1" quantity="0" paymode="Online" price="9440000,0000" class="buy_btn btnAddToCart_Iframe addtocart_button_module" value="Thêm vào giỏ">
+                          </em></span> </p>
+                      </div>
+                    </li>
+                    <li class="itemsep" style="width: 21px; background: transparent;"></li>
+                    <li>
+                      <div class="image_wrapper"> <a class="zoom360image" rel="prettyPhoto" style="display: none" href="/Files/Upload/Images/Product/360/?zoom=1"> </a><a href="/cua-hang/dkny/san-pham/ao-dam-dkny-mau-den-tron-dkp237725ca2-ma-hang-DKP237725CA2_001.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/14/152758_Ao-dam-DKNY-mau-den-tron-DKP237725CA2_ao dam dkny mau den tron dkp237725ca2DSC_0175 (1).JPG&amp;width=170&amp;height=190" alt="Áo đầm DKNY màu đen trơn DKP237725CA2" title="Áo đầm DKNY màu đen trơn DKP237725CA2" width="170" height="190"></a></div>
+                      <div class="title_product">
+                        <div class="price">
+                          <p style="visibility: block; margin-top: 2px;"> <span class="priceOld"> 8.730.000đ</span> </p>
+                          <p class="priceNew"> 8.730.000đ </p>
+                          <p>&nbsp;</p>
+                        </div>
+                        <div class="product_title_details">
+                          <h3> <a href="/cua-hang/dkny/san-pham/ao-dam-dkny-mau-den-tron-dkp237725ca2-ma-hang-DKP237725CA2_001.aspx#content" title="Áo đầm DKNY màu đen trơn DKP237725CA2"> ÁO ĐẦM DKNY MÀU ĐEN TRƠN DKP237725CA2</a> </h3>
+                        </div>
+                        <p class="content_product_list" style="padding-left: 16px; width: 100px;"> <span class="buttonStore"><em>
+                          <input type="button" style="border: solid 0px; background: none repeat scroll 0 0 transparent; color: #fff; width: 85px; font: 62.5% Arial,Verdana,sans-serif; font-size: 11px; margin-top: -2px;" rel="87f96fd4-017e-4bd9-b35f-fe73e3219a68" relid="22652c0f-a90c-448e-9595-56f8e81aec51" stock="1" quantity="0" paymode="Online" price="8730000,0000" class="buy_btn btnAddToCart_Iframe addtocart_button_module" value="Thêm vào giỏ">
+                          </em></span> </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="image_wrapper"> <a class="zoom360image" rel="prettyPhoto" style="display: none" href="/Files/Upload/Images/Product/360/?zoom=1"> </a><a href="/cua-hang/dkny/san-pham/ao-dam-dkny-mau-do-tron-dkp337482kb1-ma-hang-DKP337482KB1_941.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/12/152408_Ao-dam-DKNY-mau-do-tron-DKP337482KB1_ao dam dkny mau do tron dkp337482kb1DSC_0259 (1).JPG&amp;width=170&amp;height=190" alt="Áo đầm DKNY màu đỏ trơn DKP337482KB1" title="Áo đầm DKNY màu đỏ trơn DKP337482KB1" width="170" height="190"></a></div>
+                      <div class="title_product">
+                        <div class="price">
+                          <p style="visibility: block; margin-top: 2px;"> <span class="priceOld"> 8.980.000đ</span> </p>
+                          <p class="priceNew"> 8.980.000đ </p>
+                          <p>&nbsp;</p>
+                        </div>
+                        <div class="product_title_details">
+                          <h3> <a href="/cua-hang/dkny/san-pham/ao-dam-dkny-mau-do-tron-dkp337482kb1-ma-hang-DKP337482KB1_941.aspx#content" title="Áo đầm DKNY màu đỏ trơn DKP337482KB1"> ÁO ĐẦM DKNY MÀU ĐỎ TRƠN DKP337482KB1</a> </h3>
+                        </div>
+                        <p class="content_product_list" style="padding-left: 16px; width: 100px;"> <span class="buttonStore"><em>
+                          <input type="button" style="border: solid 0px; background: none repeat scroll 0 0 transparent; color: #fff; width: 85px; font: 62.5% Arial,Verdana,sans-serif; font-size: 11px; margin-top: -2px;" rel="87f96fd4-017e-4bd9-b35f-fe73e3219a68" relid="26fbbc77-eb9e-4439-a054-c1934cdc3958" stock="1" quantity="0" paymode="Online" price="8980000,0000" class="buy_btn btnAddToCart_Iframe addtocart_button_module" value="Thêm vào giỏ">
+                          </em></span> </p>
+                      </div>
+                    </li>
+                    <li class="itemsep" style="width: 21px; background: transparent;"></li>
+                    <li>
+                      <div class="image_wrapper"> <a class="zoom360image" rel="prettyPhoto" style="display: none" href="/Files/Upload/Images/Product/360/?zoom=1"> </a><a href="/cua-hang/dkny/san-pham/vay-dkny-mau-kem-soc-ngang-phoi-mau-dkp231043aa1-ma-hang-DKP231043AA1_001.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/13/152526_Vay-DKNY-mau-kem-soc-ngang-phoi-mau-DKP231043AA1_vay dkny mau kem soc ngang phoi mau dkp231043aa1DSC_0148 (1).JPG&amp;width=170&amp;height=190" alt="Váy DKNY màu kem sọc ngang phối màu DKP231043AA1" title="Váy DKNY màu kem sọc ngang phối màu DKP231043AA1" width="170" height="190"></a></div>
+                      <div class="title_product">
+                        <div class="price">
+                          <p style="visibility: block; margin-top: 2px;"> <span class="priceOld"> 6.320.000đ</span> </p>
+                          <p class="priceNew"> 6.320.000đ </p>
+                          <p>&nbsp;</p>
+                        </div>
+                        <div class="product_title_details">
+                          <h3> <a href="/cua-hang/dkny/san-pham/vay-dkny-mau-kem-soc-ngang-phoi-mau-dkp231043aa1-ma-hang-DKP231043AA1_001.aspx#content" title="Váy DKNY màu kem sọc ngang phối màu DKP231043AA1"> VÁY DKNY MÀU KEM SỌC NGANG PHỐI MÀU DKP231043AA1</a> </h3>
+                        </div>
+                        <p class="content_product_list" style="padding-left: 16px; width: 100px;"> <span class="buttonStore"><em>
+                          <input type="button" style="border: solid 0px; background: none repeat scroll 0 0 transparent; color: #fff; width: 85px; font: 62.5% Arial,Verdana,sans-serif; font-size: 11px; margin-top: -2px;" rel="87f96fd4-017e-4bd9-b35f-fe73e3219a68" relid="2a072a75-2e24-46a2-8fb7-277572439a06" stock="1" quantity="0" paymode="Online" price="6320000,0000" class="buy_btn btnAddToCart_Iframe addtocart_button_module" value="Thêm vào giỏ">
+                          </em></span> </p>
+                      </div>
+                    </li>
+                    <li class="itemsep" style="width: 21px; background: transparent;"></li>
+                    <li>
+                      <div class="image_wrapper"> <a class="zoom360image" rel="prettyPhoto" style="display: none" href="/Files/Upload/Images/Product/360/?zoom=1"> </a><a href="/cua-hang/dkny/san-pham/vay-dkny-mau-trang-phoi-ren-dkp131183d-ma-hang-DKP131183D_100.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/03/13/152521_Vay-DKNY-mau-trang-phoi-ren-DKP131183D_vay dkny mau trang phoi ren dkp131183dDSC_0069 (1).JPG&amp;width=170&amp;height=190" alt="Váy DKNY màu trắng phối ren DKP131183D" title="Váy DKNY màu trắng phối ren DKP131183D" width="170" height="190"></a></div>
+                      <div class="title_product">
+                        <div class="price">
+                          <p style="visibility: block; margin-top: 2px;"> <span class="priceOld"> 9.440.000đ</span> </p>
+                          <p class="priceNew"> 5.664.000đ </p>
+                          <p> (40%)</p>
+                        </div>
+                        <div class="product_title_details">
+                          <h3> <a href="/cua-hang/dkny/san-pham/vay-dkny-mau-trang-phoi-ren-dkp131183d-ma-hang-DKP131183D_100.aspx#content" title="Váy DKNY màu trắng phối ren DKP131183D"> VÁY DKNY MÀU TRẮNG PHỐI REN DKP131183D</a> </h3>
+                        </div>
+                        <p class="content_product_list" style="padding-left: 16px; width: 100px;"> <span class="buttonStore"><em>
+                          <input type="button" style="border: solid 0px; background: none repeat scroll 0 0 transparent; color: #fff; width: 85px; font: 62.5% Arial,Verdana,sans-serif; font-size: 11px; margin-top: -2px;" rel="87f96fd4-017e-4bd9-b35f-fe73e3219a68" relid="9f9f398c-988b-4747-891c-1325cc31d735" stock="1" quantity="0" paymode="Online" price="5664000,0000" class="buy_btn btnAddToCart_Iframe addtocart_button_module" value="Thêm vào giỏ">
+                          </em></span> </p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div id="pagenav" style="margin-left: 250px; width: 710px;"> <a href="/cua-hang/dkny/san-pham.aspx?sort=newest"> Xem tất cả&gt;&gt;&gt;</a> </div>
+                </div>
+              </div>
+              <div id="tab4" class="tab_content">
+                <div id="ctl00_ctl00_ctl00_cphBody_cphContent_upMostViewMerchantProductLost16">
+                  <ul class="product_list" style="height: 470px;">
+                    <li>
+                      <div class="image_wrapper"> <a href="/cua-hang/dkny/san-pham/tui-xach-nu-dkny-mau-xanh-dam-vien-trang-dkr1314107-ma-hang-DKR1314107.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/01/11/143403_Tui-xach-nu-DKNY-mau-xanh-dam-vien-trang-DKR1314107_tui xach nu dkny mau xanh dam vien trang dkr1314107 DSC_0002 (1).JPG&amp;width=170&amp;height=190" alt="Túi xách nữ DKNY màu xanh đậm viền trắng DKR1314107" title="Túi xách nữ DKNY màu xanh đậm viền trắng DKR1314107" width="170" height="190"></a></div>
+                      <div class="title_product">
+                        <div class="price">
+                          <p style="visibility: block; margin-top: 2px;"> <span class="priceOld"> 9.430.000đ</span> </p>
+                          <p class="priceNew"> 9.430.000đ</p>
+                          <p>&nbsp;</p>
+                        </div>
+                        <div class="product_title_details">
+                          <h3> <a href="/cua-hang/dkny/san-pham/tui-xach-nu-dkny-mau-xanh-dam-vien-trang-dkr1314107-ma-hang-DKR1314107.aspx#content" title="Túi xách nữ DKNY màu xanh đậm viền trắng DKR1314107"> TÚI XÁCH NỮ DKNY MÀU XANH ĐẬM VIỀN TRẮNG DKR1314107</a> </h3>
+                        </div>
+                        <p class="content_product_list" style="padding-left: 16px; width: 100px;"> <span class="buttonStore"><em>
+                          <input type="button" style="border: solid 0px; background: none repeat scroll 0 0 transparent; color: #fff;
+                            width: 85px; font: 62.5% Arial,Verdana,sans-serif; font-size: 11px; margin-top: -2px;" rel="87f96fd4-017e-4bd9-b35f-fe73e3219a68" relid="fbf237e0-413d-4ef4-aa43-c13ddb3467a8" stock="1" quantity="0" paymode="Online" price="9430000,0000" class="buy_btn btnAddToCart_Iframe addtocart_button_module" value="Thêm vào giỏ">
+                          </em></span> </p>
+                      </div>
+                    </li>
+                    <li class="itemsep" style="width: 21px; background: transparent;"></li>
+                    <li>
+                      <div class="image_wrapper"> <a href="/cua-hang/dkny/san-pham/tui-xach-nu-dkny-mau-do-vien-hong-dkr1314103-ma-hang-DKR1314103_600.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/01/11/143406_Tui-xach-nu-DKNY-mau-do-vien-hong-DKR1314103_tui xach nu dkny mau do vien hong dkr1314103 DSC_0016 (1).JPG&amp;width=170&amp;height=190" alt="Túi xách nữ DKNY màu đỏ viền hồng DKR1314103" title="Túi xách nữ DKNY màu đỏ viền hồng DKR1314103" width="170" height="190"></a></div>
+                      <div class="title_product">
+                        <div class="price">
+                          <p style="visibility: block; margin-top: 2px;"> <span class="priceOld"> 6.900.000đ</span> </p>
+                          <p class="priceNew"> 6.900.000đ</p>
+                          <p>&nbsp;</p>
+                        </div>
+                        <div class="product_title_details">
+                          <h3> <a href="/cua-hang/dkny/san-pham/tui-xach-nu-dkny-mau-do-vien-hong-dkr1314103-ma-hang-DKR1314103_600.aspx#content" title="Túi xách nữ DKNY màu đỏ viền hồng DKR1314103"> TÚI XÁCH NỮ DKNY MÀU ĐỎ VIỀN HỒNG DKR1314103</a> </h3>
+                        </div>
+                        <p class="content_product_list" style="padding-left: 16px; width: 100px;"> <span class="buttonStore"><em>
+                          <input type="button" style="border: solid 0px; background: none repeat scroll 0 0 transparent; color: #fff;
+                            width: 85px; font: 62.5% Arial,Verdana,sans-serif; font-size: 11px; margin-top: -2px;" rel="87f96fd4-017e-4bd9-b35f-fe73e3219a68" relid="4252511c-7f8e-4035-a685-d26ec1b41b06" stock="1" quantity="0" paymode="Online" price="6900000,0000" class="buy_btn btnAddToCart_Iframe addtocart_button_module" value="Thêm vào giỏ">
+                          </em></span> </p>
+                      </div>
+                    </li>
+                    <li class="itemsep" style="width: 21px; background: transparent;"></li>
+                    <li>
+                      <div class="image_wrapper"> <a href="/cua-hang/dkny/san-pham/tui-xach-nu-dkny-mau-kem-phoi-chi-noi-dkr1314801-ma-hang-DKR1314801.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/01/11/143448_Tui-xach-nu-DKNY-mau-kem-phoi-chi-noi-DKR1314801_tui xach nu dkny mau kem phoi chi noi dkr1314801 DSC_0030 (1).JPG&amp;width=170&amp;height=190" alt="Túi xách nữ DKNY màu kem phối chỉ nổi DKR1314801" title="Túi xách nữ DKNY màu kem phối chỉ nổi DKR1314801" width="170" height="190"></a></div>
+                      <div class="title_product">
+                        <div class="price">
+                          <p style="visibility: block; margin-top: 2px;"> <span class="priceOld"> 5.770.000đ</span> </p>
+                          <p class="priceNew"> 5.770.000đ</p>
+                          <p>&nbsp;</p>
+                        </div>
+                        <div class="product_title_details">
+                          <h3> <a href="/cua-hang/dkny/san-pham/tui-xach-nu-dkny-mau-kem-phoi-chi-noi-dkr1314801-ma-hang-DKR1314801.aspx#content" title="Túi xách nữ DKNY màu kem phối chỉ nổi DKR1314801"> TÚI XÁCH NỮ DKNY MÀU KEM PHỐI CHỈ NỔI DKR1314801</a> </h3>
+                        </div>
+                        <p class="content_product_list" style="padding-left: 16px; width: 100px;"> <span class="buttonStore"><em>
+                          <input type="button" style="border: solid 0px; background: none repeat scroll 0 0 transparent; color: #fff;
+                            width: 85px; font: 62.5% Arial,Verdana,sans-serif; font-size: 11px; margin-top: -2px;" rel="87f96fd4-017e-4bd9-b35f-fe73e3219a68" relid="c352561b-5423-4cc1-8b19-5b576f919cc5" stock="1" quantity="0" paymode="Online" price="5770000,0000" class="buy_btn btnAddToCart_Iframe addtocart_button_module" value="Thêm vào giỏ">
+                          </em></span> </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="image_wrapper"> <a href="/cua-hang/dkny/san-pham/tui-xach-nu-dkny-mau-hong-phoi-chi-noi-dkr1314801-ma-hang-DKR1314801_HO.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/01/11/143455_Tui-xach-nu-DKNY-mau-hong-phoi-chi-noi-DKR1314801_tui xach nu dkny mau hong phoi chi noi dkr1314801 DSC_0040 (1).JPG&amp;width=170&amp;height=190" alt="Túi xách nữ DKNY màu hồng phối chỉ nổi DKR1314801" title="Túi xách nữ DKNY màu hồng phối chỉ nổi DKR1314801" width="170" height="190"></a></div>
+                      <div class="title_product">
+                        <div class="price">
+                          <p style="visibility: block; margin-top: 2px;"> <span class="priceOld"> 5.770.000đ</span> </p>
+                          <p class="priceNew"> 5.770.000đ</p>
+                          <p>&nbsp;</p>
+                        </div>
+                        <div class="product_title_details">
+                          <h3> <a href="/cua-hang/dkny/san-pham/tui-xach-nu-dkny-mau-hong-phoi-chi-noi-dkr1314801-ma-hang-DKR1314801_HO.aspx#content" title="Túi xách nữ DKNY màu hồng phối chỉ nổi DKR1314801"> TÚI XÁCH NỮ DKNY MÀU HỒNG PHỐI CHỈ NỔI DKR1314801</a> </h3>
+                        </div>
+                        <p class="content_product_list" style="padding-left: 16px; width: 100px;"> <span class="buttonStore"><em>
+                          <input type="button" style="border: solid 0px; background: none repeat scroll 0 0 transparent; color: #fff;
+                            width: 85px; font: 62.5% Arial,Verdana,sans-serif; font-size: 11px; margin-top: -2px;" rel="87f96fd4-017e-4bd9-b35f-fe73e3219a68" relid="31e90162-3507-4fba-b534-36dbbd3e3ce1" stock="1" quantity="0" paymode="Online" price="5770000,0000" class="buy_btn btnAddToCart_Iframe addtocart_button_module" value="Thêm vào giỏ">
+                          </em></span> </p>
+                      </div>
+                    </li>
+                    <li class="itemsep" style="width: 21px; background: transparent;"></li>
+                    <li>
+                      <div class="image_wrapper"> <a href="/cua-hang/dkny/san-pham/tui-xach-nu-dkny-mau-vang-nhat-van-ca-sau-dkr1312906-ma-hang-DKR1312906_VA.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/01/11/143459_Tui-xach-nu-DKNY-mau-vang-nhat-van-ca-sau-DKR1312906_tui xach nu dkny mau vang nhat van ca sau dkr1312906 DSC_0049 (1).JPG&amp;width=170&amp;height=190" alt="Túi xách nữ DKNY màu vàng nhạt vân cá sấu DKR1312906" title="Túi xách nữ DKNY màu vàng nhạt vân cá sấu DKR1312906" width="170" height="190"></a></div>
+                      <div class="title_product">
+                        <div class="price">
+                          <p style="visibility: block; margin-top: 2px;"> <span class="priceOld"> 9.430.000đ</span> </p>
+                          <p class="priceNew"> 9.430.000đ</p>
+                          <p>&nbsp;</p>
+                        </div>
+                        <div class="product_title_details">
+                          <h3> <a href="/cua-hang/dkny/san-pham/tui-xach-nu-dkny-mau-vang-nhat-van-ca-sau-dkr1312906-ma-hang-DKR1312906_VA.aspx#content" title="Túi xách nữ DKNY màu vàng nhạt vân cá sấu DKR1312906"> TÚI XÁCH NỮ DKNY MÀU VÀNG NHẠT VÂN CÁ SẤU ...</a> </h3>
+                        </div>
+                        <p class="content_product_list" style="padding-left: 16px; width: 100px;"> <span class="buttonStore"><em>
+                          <input type="button" style="border: solid 0px; background: none repeat scroll 0 0 transparent; color: #fff;
+                            width: 85px; font: 62.5% Arial,Verdana,sans-serif; font-size: 11px; margin-top: -2px;" rel="87f96fd4-017e-4bd9-b35f-fe73e3219a68" relid="ac8657af-4fb9-42c8-a454-56bfbbc736c6" stock="1" quantity="0" paymode="Online" price="9430000,0000" class="buy_btn btnAddToCart_Iframe addtocart_button_module" value="Thêm vào giỏ">
+                          </em></span> </p>
+                      </div>
+                    </li>
+                    <li class="itemsep" style="width: 21px; background: transparent;"></li>
+                    <li>
+                      <div class="image_wrapper"> <a href="/cua-hang/dkny/san-pham/tui-xach-nu-dkny-mau-hong-nhat-van-ca-sau-dkr1312906-ma-hang-DKR1312906_HO.aspx#content"> <img src="http://img.chon.vn/thumbnail.ashx?url=/files/upload/images/merchantproduct/2014/01/11/143463_Tui-xach-nu-DKNY-mau-hong-nhat-van-ca-sau-DKR1312906_tui xach nu dkny mau hong nhat van ca sau dkr1312906 DSC_0056 (1).JPG&amp;width=170&amp;height=190" alt="Túi xách nữ DKNY màu hồng nhạt vân cá sấu DKR1312906" title="Túi xách nữ DKNY màu hồng nhạt vân cá sấu DKR1312906" width="170" height="190"></a></div>
+                      <div class="title_product">
+                        <div class="price">
+                          <p style="visibility: block; margin-top: 2px;"> <span class="priceOld"> 9.430.000đ</span> </p>
+                          <p class="priceNew"> 9.430.000đ</p>
+                          <p>&nbsp;</p>
+                        </div>
+                        <div class="product_title_details">
+                          <h3> <a href="/cua-hang/dkny/san-pham/tui-xach-nu-dkny-mau-hong-nhat-van-ca-sau-dkr1312906-ma-hang-DKR1312906_HO.aspx#content" title="Túi xách nữ DKNY màu hồng nhạt vân cá sấu DKR1312906"> TÚI XÁCH NỮ DKNY MÀU HỒNG NHẠT VÂN CÁ SẤU ...</a> </h3>
+                        </div>
+                        <p class="content_product_list" style="padding-left: 16px; width: 100px;"> <span class="buttonStore"><em>
+                          <input type="button" style="border: solid 0px; background: none repeat scroll 0 0 transparent; color: #fff;
+                            width: 85px; font: 62.5% Arial,Verdana,sans-serif; font-size: 11px; margin-top: -2px;" rel="87f96fd4-017e-4bd9-b35f-fe73e3219a68" relid="ecb3e249-c0da-409f-93a9-ab3b919cd0fa" stock="1" quantity="0" paymode="Online" price="9430000,0000" class="buy_btn btnAddToCart_Iframe addtocart_button_module" value="Thêm vào giỏ">
+                          </em></span> </p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div id="pagenav" style="margin-left: 250px; width: 710px;"> <a href="/cua-hang/dkny/san-pham.aspx?sort=highestviewed"> Xem tất cả&gt;&gt;&gt;</a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--PRODUCT:END--> 
+        
+        <!--EVENT,BANNER,CONTACT:BEGIN-->
+        <div id="ch_easy">
+          <div id="ch_news">
+            <div id="ctl00_ctl00_ctl00_cphBody_cphContent_UpdatePanel1">
+              <h2> tin tức - sự kiện </h2>
+              <div id="news_container">
+                <div id="news_wrapper">
+                  <ul id="news_items">
+                    <li><a style="display: none;" href="/cua-hang/dkny/su-kien.aspx#event25562"> </a>
+                      <div class="nugget" style="text-align: justify; word-wrap: break-word;">
+                        <div class="nugget_content">
+                          <div>
+                            <h3 title="Năng động DKNY"> <a href="/cua-hang/dkny/su-kien.aspx#event25562"> Năng động DKNY</a></h3>
+                            <h4> 23
+                              Tháng Chín
+                              năm
+                              2013</h4>
+                          </div>
+                          <p> BST hè 2013 của DKNY gồm những mẫu váy áo mang vẻ trẻ trung, năng động, phù hợp với bạn ...</p>
+                          <a style="display: none;" href="/cua-hang/dkny/su-kien.aspx#event25562" class="read_more">&gt;&gt; Xem tiếp</a> </div>
+                      </div>
+                    </li>
+                    <li><a style="display: none;" href="/cua-hang/dkny/su-kien.aspx#event25560"> </a>
+                      <div class="nugget" style="text-align: justify; word-wrap: break-word;">
+                        <div class="nugget_content">
+                          <div>
+                            <h3 title="DKNY"> <a href="/cua-hang/dkny/su-kien.aspx#event25560"> DKNY</a></h3>
+                            <h4> 23
+                              Tháng Chín
+                              năm
+                              2013</h4>
+                          </div>
+                          <p> DKNY
+                            Được biết đến vào năm 1985 bởi Donna Karan, một nữ thiết kế có tài năng thiên phú ...</p>
+                          <a style="display: none;" href="/cua-hang/dkny/su-kien.aspx#event25560" class="read_more">&gt;&gt; Xem tiếp</a> </div>
+                      </div>
+                    </li>
+                    <li><a style="display: none;" href="/cua-hang/dkny/su-kien.aspx#event25706"> </a>
+                      <div class="nugget" style="text-align: justify; word-wrap: break-word;">
+                        <div class="nugget_content">
+                          <div>
+                            <h3 title="Tặng 10 Cặp vé tham dự show thời trang của DKNY"> <a href="/cua-hang/dkny/su-kien.aspx#event25706"> Tặng 10 Cặp vé tham dự show thời trang của DKNY</a></h3>
+                            <h4> 24
+                              Tháng Ba
+                              năm
+                              2013</h4>
+                          </div>
+                          <p> Tặng 10 Cặp vé tham dự show thời trang của DKNY </p>
+                          <a style="display: none;" href="/cua-hang/dkny/su-kien.aspx#event25706" class="read_more">&gt;&gt; Xem tiếp</a> </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="ch_adventiser">
+            <h2> quảng cáo</h2>
+            <div id="adventiser_container">
+              <p> <img src="http://img.chon.vn/Files/Upload/Images/Merchant/2013/09/17/dkny-0_ads_ad.jpg" width="301"> </p>
+            </div>
+          </div>
+          <div id="ch_Contact">
+            <h2> thông tin liên hệ</h2>
+            <div id="ch_container">
+              <p> Công ty: CÔNG TY CỔ PHẦN TÁM CON SƯ TỬ<br>
+                Địa chỉ: 02-03 Khu A, Tầng 19, Vincom Center (B), 72 Lê Thánh Tôn, Quận 1, Tp. HCM<br>
+                Website: www.8lions.com<br>
+              </p>
+              <p class="lr"> <a href="/cua-hang/dkny/lien-he.aspx"> <em>» Chi tiết</em></a></p>
+            </div>
+          </div>
+        </div>
+        <!--EVENT,BANNER,CONTACT:END--> 
+      </div>
+    </div>
+  </div>
+  <!--BODY:END--> 
+  
+  <!--FOOTER: BEGIN -->
+  <div id="ch_footer">
+    <div id="ch_footer_wapper">
+      <div class="sub_foot">
+        <div class="lt_foot">
+          <ul>
+            <li><a href="/">Chọn.vn</a></li>
+            <li><a href="/cua-hang/dkny/san-pham.aspx"> Sản phẩm</a></li>
+            <li><a href="/cua-hang/dkny/gioi-thieu.aspx"> Giới thiệu</a></li>
+            <li></li>
+            <li><a href="/cua-hang/dkny/su-kien.aspx"> Sự kiện</a></li>
+            <li><a href="/cua-hang/dkny/danh-gia.aspx"> Đánh giá</a></li>
+            <li><a href="/cua-hang/dkny/lien-he.aspx"> Liên hệ</a></li>
+            <li class="end"><a href="http://www.8lions.com" id="ctl00_ctl00_ctl00_cphBody_BottomNavigator1_lnkWebsite" target="_blank">Website</a></li>
+          </ul>
+        </div>
+        <div class="rt_foot"> <span>Bản quyền © 2011 <a href="/">Chọn.vn</a> - Bản quyền được bảo vệ</span>
+          <ul>
+            <li class="facebook"><a title="Đăng lên Facebook" onclick="window.open('http://www.facebook.com/share.php?u='+document.location,'_blank');" style="cursor: pointer;"></a></li>
+            <li class="twitter"><a title="Đăng lên Twitter" onclick="window.open('http://twitter.com/home?status='+document.location,'_blank');" style="cursor: pointer;"></a></li>
+            <li class="rss" style="display:none;"><a href="/rss/Cua-hang-giam-gia-noi-bat.aspx" target="_blank"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FOOTER: END --> 
+</div>
+<!--END-->
+</body>
+</html>

@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document Menu V */
+
+#mainnav{
+	margin:0;
+	padding:0;
+	padding: 13px 0 0 0;
+	}
+#mainnav ul{
+	list-style:none;
+	}
+#mainnav ul li{
+	float:left;
+	/*background:url(../images/M2_mainmenu_devide.jpg) no-repeat top left;*/
+	height:40px;
+	padding-left:2px;
+	display:inline;
+	}
+#mainnav ul li a{
+	color:#fff;
+	font-weight:bold;
+	height:40px;
+	line-height:40px;
+	padding:12px 15px 13px 16px;
+	}
+#mainnav ul li a:hover{
+	background:url(../images/mn_hover_span.gif) left center no-repeat ;
+	padding:12px 0px 13px 7px;
+	}
+#mainnav ul li a:hover span{
+	background:url(../images/mn_hover_a.gif) right center no-repeat ;
+	padding:12px 15px 13px 9px;
+	}
+#mainnav ul li.active a{
+	background:url(../images/mn_hover_span.gif) left center no-repeat ;
+	padding:12px 0px 13px 7px;
+	}
+#mainnav ul li.active a span{
+	background:url(../images/mn_hover_a.gif) right center no-repeat ;
+	color:#fff;
+	padding:12px 15px 13px 9px;
+	}
+	
+/*--------left menu---------*/
+
+ul.left_menu{
+	margin:0px 30px;
+	padding: 5px 0 20px 0;
+	list-style:none;
+}
+ul.left_menu ul.current a{
+	width:180px;
+	padding:10px 0px 10px 20px;
+	background:url(../images/3.gif) no-repeat left center; 
+	margin:0px;
+	list-style:none;
+}
+
+ul.left_menu li{
+	margin:0px;
+	list-style:none;
+	border-bottom:1px #333 solid;
+}
+ul.left_menu li a{
+	display:block;
+	background:url(../images/1.gif) no-repeat 10px center;
+	border-bottom:1px #000 solid;
+	text-decoration:none;
+	color:#333;
+	padding:0 0 0 30px; 
+	line-height:25px;
+}
+ul.left_menu li.old {
+	width:136px;
+	height:25px;
+}
+
+ul.left_menu li.even a{
+	display:block;
+	background:url(../images/1.gif) no-repeat left center ;
+	background-position:10px center;
+	/*border-bottom:1px #000 solid;
+	border-top:1px #333 solid;*/
+	text-decoration:none;
+	color:#fff;
+	padding:0 0 0 30px; 
+	line-height:25px;
+}
+
+ul.left_menu li.even a:hover, ul.left_menu li.odd a:hover{
+	background:url(../images/3.gif) no-repeat left center; 
+	background-position:10px center;
+	color:#cc0000;
+}
+ul.left_menu li.even a:active, ul.left_menu li.odd a:active {
+	background:url(../images/2.gif) no-repeat left center;
+	background-position:10px center;
+}
+/*---*/
+ul.left_menu li.even ul {
+	list-style: none;
+}
+
+ul.left_menu li.even li a {
+	background: url(../images/1.gif) no-repeat 30px center;
+	font-weight: normal;
+	padding-left: 45px ;
+	width: 72%; /*need for ie6 transparent*/
+}
+
+ul.left_menu li.even li a:hover, ul.left_menu li.odd li a:hover{
+	background:url(../images/3.gif) no-repeat left center;
+	background-position:30px center;
+	
+}
+
+ul.left_menu li.even li a:active{
+	background:url(../images/3.gif) no-repeat left center;
+	background-position:30px center;
+	
+}
+ul.left_menu li a.current2,ul.left_menu li a.current2:hover{
+	background:url(../images/3.gif) no-repeat left center;
+	background-position:10px center;
+	color:#cc0000;
+}
+ul.left_menu li a.current3,ul.left_menu li a.current3:hover{
+	background:url(../images/2.gif) no-repeat left center ;
+	background-position:10px center;
+	color:#cc0000;
+}
+ul.left_menu li ul a.current4,ul.left_menu li ul a.current4:hover{
+	background:url(../images/3.gif) no-repeat left center;
+	background-position:30px center;
+	color:#cc0000;
+}
+ul.left_menu li.even li a:focus {
+}
+/*--End menu sp--*/
+html>body ul.left_menu li a{ /*Non IE6 width*/
+width: auto;
+}

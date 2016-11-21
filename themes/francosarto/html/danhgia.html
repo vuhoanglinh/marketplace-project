@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Franco Sarto</title>
+<link href="../css/francosarto.css" type="text/css" rel="stylesheet">
+<link href="../css/stylesheet.css" type="text/css" rel="stylesheet">
+<link href="../../default/css/jquery1.8.1.css" type="text/css" rel="stylesheet">
+<link type="text/css" href="../../default/css/nivo-slider.css" rel="stylesheet">
+<script src="../js/jquery-1.7.2.min.js" type="application/javascript"></script>
+<script src="../../default/js/jquery.nivo.slider.js" type="application/javascript"></script>
+<script src="../../default/js/jquery-ui-1.8.1.js" type="application/javascript"></script>
+<script src="../../default/js/jcarousellite_1.0.1.min.js" type="application/javascript"></script>
+<script src="../../default/js/jquery.cycle.js" type="application/javascript"></script>
+<script src="../../default/js/jquery.pajinate.js" type="application/javascript"></script>
+<script src="../js/jquery.easing.1.3.js" type="application/javascript"></script>
+<script src="../js/jquery.mousewheel.js" type="application/javascript"></script>
+<script>
+$(function() {
+	$('.nivoSlider').nivoSlider({
+		effect: 'fold,sliceDown', // Specify sets like: 'fold,fade,sliceDown'
+		directionNav: false, // Next & Prev navigation
+		controlNav: false
+	});
+});
+$(document).ready(function() {
+    $('.clcode').hover(function() {
+        $(this).find('.box-info').stop().animate({
+            height: '85px'
+        });
+    }, function() {
+        $(this).find('.box-info').stop().animate({
+            height: '50px'
+        });
+    })
+}); 
+</script>
+</head>
+
+<body>
+
+<!--HEADER:BEGIN -->
+<div class="header full">
+  <div class="header-outside width-960">
+    <div class="header-inside full">
+      <div class="control-logon">
+        <ul class="list-logon">
+          <li id="nonLogin1" class="forgot-pass" style="display:block"> <a rel="noindex, nofollow" href="/nguoi-dung/Quen-mat-ma.aspx?returnUrl=%2fcua-hang%2ffranco-sarto.aspx"> Quên mật khẩu </a> </li>
+          <li id="nonLogin2" class="register" style="display:block"> <a rel="noindex, nofollow" href="/nguoi-dung/dang-nhap.aspx?returnUrl=%2fcua-hang%2ffranco-sarto.aspx"> Đăng ký </a> </li>
+          <li id="nonLogin3" class="login" style="display:block"> <a rel="noindex, nofollow" class="none_bor" href="/nguoi-dung/dang-nhap.aspx?returnUrl=%2fcua-hang%2ffranco-sarto.aspx"> Đăng nhập </a> </li>
+          <li id="lblLoginName1" class="username" style="display: none"> <a rel="noindex, nofollow" id="lblLoginName" style="cursor: pointer" onclick="window.location='/nguoi-dung/quan-ly/chinh-sua-tieu-su.aspx'"></a> </li>
+          <li id="lblLoginName2" class="logout" style="display: none"> <a rel="noindex, nofollow" href="/nguoi-dung/thoat.aspx?returnUrl=%2fcua-hang%2ffranco-sarto.aspx"> Thoát </a> </li>
+          <li id="shopCart" class="cart"> <a rel="noindex, nofollow" href="/nguoi-dung/gio-hang.aspx" id="header_cart"> Giỏ hàng<span class="black"> (<strong><span id="lblTotalQuantity">0</span></strong>)</span></a> </li>
+        </ul>
+        <div id="search_box"> 
+          <!--<input name="ctl00$ctl00$ctl00$cphBody$LoginBox1$txtQuery" type="text" value="Nhập từ khóa tìm kiếm" id="ctl00_ctl00_ctl00_cphBody_LoginBox1_txtQuery" class="inputsearch" onfocus="if(jQuery.trim(this.value)=='Nhập từ khóa tìm kiếm') this.value='';" onblur="if(jQuery.trim(this.value)=='') this.value='Nhập từ khóa tìm kiếm';" />
+    <input type="submit" name="ctl00$ctl00$ctl00$cphBody$LoginBox1$btnSearchQuery" value="Tìm kiếm" id="ctl00_ctl00_ctl00_cphBody_LoginBox1_btnSearchQuery" class="btn_black" />--> 
+          
+        </div>
+      </div>
+      <div class="search">
+        <input type="text" name="search" id="txtQueryClient" placeholder="Tìm kiếm..." maxlength="80">
+        <a href="javascript:void(0);" class="btn-search" ></a> </div>
+      <div class="logo"> <a href="/cua-hang/franco-sarto.aspx"> <img src="http://img.chon.vn/Files/Upload/Images/Merchant/2014/03/20/95770_logo store.png" alt="Franco Sarto"> </a> </div>
+      <div class="navigation">
+        <ul class="list-nav">
+          <li><a href="http://www.chon.vn" data-hover="Chon.vn"><span>Chon.vn</span></a></li>
+          <li class=""> <a href="/cua-hang/franco-sarto/san-pham.aspx?sort=newest" data-hover="Sản phẩm"><span>Sản phẩm</span></a> </li>
+          <li class=""> <a href="/cua-hang/franco-sarto/gioi-thieu.aspx#container" data-hover="Giới thiệu"><span>Giới thiệu</span></a> </li>
+          <li class=""> <a href="/cua-hang/franco-sarto/su-kien.aspx#container" data-hover="Sự kiện"><span>Sự kiện</span></a></li>
+          <li class=""><a href="/cua-hang/franco-sarto/danh-gia.aspx#container" data-hover="Đánh giá"><span>Đánh giá</span></a></li>
+          <li class=""><a href="/cua-hang/franco-sarto/lien-he.aspx#container" data-hover="Liên hệ"><span>Liên hệ</span></a></li>
+          <li class=""><a href="/cua-hang/franco-sarto/gioi-thieu.aspx?tab=2#container" data-hover="Hệ thống cửa hàng"><span>Hệ thống cửa hàng</span></a></li>
+          <li class="last-child"><a href="https://www.facebook.com/franco.sarto.vietnam" target="_blank" data-hover="facebook"><span>website</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- HEADER:END --> 
+<!-- BANNER: BEGIN -->
+<div class="banner full">
+  <div class="banner-outside width-960">
+    <div id="slider" class="nivoSlider"> <a><img src="http://www.chon.vn/Files/upload/Images/Banner/d0dd2f79-889d-41a8-b53a-63fd05dfd8d2_banner store.jpg?1403293185365" class="imgLoaded" data-alignment="" data-portrait="" width="960" height="420"> </a> <a><img src="http://www.chon.vn/Files/upload/Images/Banner/b40bcdcd-c1ca-45c0-baf3-cc84135fb2da_banner 02.jpg?1403293185652" class="imgLoaded"> </a> </div>
+  </div>
+</div>
+
+<!-- BANNER: END --> 
+
+<!-- CATEGORY: BEGIN -->
+<div class="category full">
+  <div class="category-outside width-960">
+    <div class="category-inside full">
+      <ul class="category-list">
+        <li class=""><a href="/cua-hang/franco-sarto/san-pham.aspx?nw=1&amp;sort=newest">Hàng mới</a></li>
+        <li class=""><a href="/cua-hang/franco-sarto/san-pham.aspx?cb=1&amp;sort=highestpromotion">Khuyến mãi</a></li>
+        <li class=""> <a href="/cua-hang/franco-sarto/san-pham/giay-cao-got-c4477.aspx" rel="boxx-4477"> Giày cao gót </a> </li>
+        <li class=""> <a href="/cua-hang/franco-sarto/san-pham/giay-de-xuong-c4479.aspx" rel="boxx-4479"> Giày đế xuồng </a> </li>
+        <li class=""> <a href="/cua-hang/franco-sarto/san-pham/giay-sandal-c4481.aspx" rel="boxx-4481"> Giày sandal </a> </li>
+        <li class=""> <a href="/cua-hang/franco-sarto/san-pham/giay-bup-be-c4483.aspx" rel="boxx-4483"> Giày búp bê </a> </li>
+        <li class=""> <a href="/cua-hang/franco-sarto/san-pham/dep-c4485.aspx" rel="boxx-4485"> Dép </a> </li>
+        <li class=""> <a href="/cua-hang/franco-sarto/san-pham/giay-boots-c4529.aspx" rel="boxx-4529"> Giày boots </a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- CATEGORY: END --> 
+
+<!-- CONTENT: BEGIN -->
+<div id="container">
+  <ul id="breadcrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+    <li><a href="/cua-hang/franco-sarto.aspx"> <img src="../images/home2.jpg" alt=""></a></li>
+    <li>Đánh giá</li>
+  </ul>
+  <div class="subpage">
+    <div class="spacing">&nbsp;</div>
+    <div class="fullpage_content">
+      <div class="big_left_title">
+        <h3 class="customfont white upper">Đánh giá</h3>
+        <div class="clearfloat"></div>
+      </div>
+      <div class="event_content even-pd">
+        <div class="contact_content">
+          <div id="review_brand">
+            <p>Thành viên: <span class="fltrt"> <strong><span id="ctl00_ctl00_ctl00_cphBody_cphContent_ProductUserReviewList1_lblMerchantType">Gold</span></strong> </span></p>
+            <p>Tham gia: <span class="fltrt"><span id="ctl00_ctl00_ctl00_cphBody_cphContent_ProductUserReviewList1_lblMerchantPublishDate">25/02/2014</span></span></p>
+            <p class="rating-links rating-links1"> <a href="#info" class="btn-style">Viết đánh giá</a> </p>
+          </div>
+          <div id="ctl00_ctl00_ctl00_cphBody_cphContent_ProductUserReviewList1_upMerchantUserReview_lvMechantReview1">
+            <div class="reviews fltlft">
+              <div class="review_item">
+                <p class="red1 review_title"><strong>Sản phẩm phù hợp</strong></p>
+                <p class="disable review_user">Được gửi bởi <span class="red1">hoalantim_0202@yahoo.com.vn</span><span style="font-style:italic"> 20/03/2014 10:01:55 SA</span></p>
+                <div class="review_detail fltlft">
+                  <p><strong>Ưu điểm: </strong>Phù hợp với nhu cầu người tiêu dùng</p>
+                  <p><strong>Khuyết điểm: </strong>Giá hơi cao</p>
+                  <p id="44038e43-a424-4d83-9da1-18a8cceedeb9danhgiachitiet1" style="display: block;"> chất lượng sản phẩm tốt, phù hợp với nhu cầu của mỗi người, sản phẩm sang trọng và thanh lịch, thoải mái. </p>
+                </div>
+                <div class="review_rate fltlft">                  
+                </div>
+              </div>
+              <div style="float:right"> <span class="button alignright"> <em style="color:#333;"> </em> </span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <div class="clearfloat"></div>
+	  <div class="search_top_paging">
+        <ul class="paging fltrt">
+       
+            <span id="ctl00_ctl00_ctl00_cphBody_cphContent_ProductUserReviewList1_lvPager"><a disabled="disabled">Đầu</a>&nbsp;<a disabled="disabled">trước</a>&nbsp;<span class="current">1</span>&nbsp;<a disabled="disabled">sau</a>&nbsp;<a disabled="disabled">Cuối</a>&nbsp;</span>
+            
+        </ul>
+   </div>
+    </div>
+  </div>
+</div>
+<!-- CONTENT: END --> 
+
+<!-- FOOTER: BEGIN -->
+<div class="footer full">
+  <div class="width-960">
+    <div class="ft-menu">
+      <ul>
+        <li class="first-child"><a href="/">Chọn.vn</a></li>
+        <li class=""><a href="/cua-hang/franco-sarto/gioi-thieu.aspx#container">Giới thiệu</a></li>
+        <li class=""><a href="/cua-hang/franco-sarto/san-pham.aspx#container">Sản phẩm</a></li>
+        <li class=""><a href="/cua-hang/franco-sarto/su-kien.aspx#container">Sự kiện</a></li>
+        <li class=""><a href="/cua-hang/franco-sarto/danh-gia.aspx#container">Đánh giá</a></li>
+        <li class=""><a href="/cua-hang/franco-sarto/lien-he.aspx#container">Liên hệ</a></li>
+        <li><a href="https://www.facebook.com/franco.sarto.vietnam">Website</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>Template Franco Sarto. GVHD: Dương Trọng Đính</p>
+    </div>
+  </div>
+</div>
+<!-- FOOTER: END -->
+</body>
+</html>

@@ -1,0 +1,283 @@
+/*************************//* PRODUCT LIST SHIFTING *//*************************/#product_list_container{overflow:hidden;/*width:960px;position:relative;*/}
+
+
+/*.product_list li:hover{background-color:#333;padding:5px}
+*/
+
+/* Tuan moi them vao neu co loi thi remove ra (07/01/2012) */.productnew_list span.priceNew{color:#000;font-weight:bold;font-size:14px}
+/* End */.product_list .title_product span.priceOld2,.productnew_list .title_product span.priceOld2{color:#999}
+.product_list .title_product span.priceOld2{color:#999}
+
+/* Tuan moi them vao neu co loi thi remove ra (07/01/2012) */.productnew_list span.priceOld{text-decoration:line-through;color:#c2c2c2;font-size:12px}
+/* End */.product_list .title_product span.Rewards{color:#090}
+
+/**************** Button Product *****************//*.product_list .title_product span.buttonStore{float:left;cursor:pointer;background:url(../images/colors/default/folder_bg.gif) left -1312px;color:#FFF}
+.product_list .title_product span.buttonStore em{margin-left:16px;padding:6px 10px 6px 4px;font-style:normal;float:left;background:url(../images/colors/default/folder_bg.gif) right -1237px}
+.product_list .title_product span.buttonStore:hover{float:left;cursor:pointer;background:url(../images/colors/default/folder_bg.gif) left -1351px;color:#FFF}
+.product_list .title_product span.buttonStore:hover em{margin-left:16px;padding:6px 10px 6px 4px;font-style:normal;float:left;background:url(../images/colors/default/folder_bg.gif) right -1276px}
+#TB_window{background:#313131}
+.product_list .title_product p.buttonStore{background:url(../images/colors/Pedro/Pedro_addtocart.gif) no-repeat 0 0;width:95px;height:21px;padding:11px 35px 0 8px;margin:5px 0 0 25px;font-size:11px;text-align:left;cursor:pointer}
+*/
+
+/********************//* PRODUCT LIST TOP *//********************/
+
+/*************************//* PRODUCT LIST SHIFTING *//*************************//* Specific to Catalog Page - All Products Review */#product_list_container{margin:0 0 0 0;float:left}
+.tab_container{border-top:none;clear:both;float:left;width:100%}
+.tab_container2{border-top:none;float:left;padding:0 10px}
+.tab_content{font-size:12px}
+#product_list_wrapper{overflow:hidden;position:relative;width:30000px}
+/**********info box***********/.tab_c{width:100%}
+.tab_c_sp{width:100%;margin-top:10px}
+/*.tab_t{background:url(../images/colors/default/top_box.gif) no-repeat 0 bottom;float:left;width:421px;height:10px}
+.tab_c{background:url(../images/colors/default/center_box.gif) repeat-y 0 0;float:left;width:381px;padding:0 20px;color:#1e1e1e;display:inline}
+.tab_b{background:url(../images/colors/default/bottom_box.gif) no-repeat 0 0;float:left;width:421px;height:10px}
+.tab_t_sp{background:url(../images/colors/default/1.gif) no-repeat 0 bottom;float:left;width:479px;height:8px}
+.tab_c_sp{background:url(../images/colors/default/2.gif) repeat-y 0 0;float:left;padding:0 0;color:#fff;width:479px}
+.tab_b_sp{background:url(../images/colors/default/3.gif) no-repeat 0 0;float:left;width:479px;height:8px}
+*//********************//* PRODUCT DETAIL *//********************/#product_detail{font-size:12px;float:left}
+/********************//* PRODUCT DETAIL SHOW *//********************/#product_detail_show{float:left;width:502px;margin-right:10px;display:inline}
+/********************//* PRODUCT DETAIL IMAGES *//********************/.product_detail_images{float:left}
+.product_detail_thumbnail{width:60px;float:left}
+.product_detail_thumbnail .detail_thumbnail{width:100%;float:left}
+.product_detail_thumbnail .detail_thumbnail li{list-style:none;display:inline-block;border:#ccc solid 1px;margin-bottom:10px}
+.product_detail_thumbnail .detail_thumbnail li:hover{border:#196bc2 solid 1px}
+.product_detail_thumbnail .detail_thumbnail li.current{border:#196bc2 solid 1px}
+.product_detail_thumbnail .detail_thumbnail li a img{}
+.product_detail_full{float:left;display:inline;margin-right:5px;position:relative}
+.product_detail_full img{border:none}
+.product_detail_full img:hover{border:none}
+/********************//* IMAGES SLIDE *//********************/
+
+.like_product h2 a{width:100%;float:left;color:black;text-transform:uppercase;background:#E9EBEE;padding:5px 10px}
+.image_product_slide{overflow:hidden;position:relative;height:130px;width:435px;margin:0 auto}
+.image_product_slide ul{position:absolute;list-style:none;overflow:none;white-space:nowrap;padding:0;margin:0}
+.image_product_slide ul li{display:inline;padding-right:7px}
+.image_product_slide ul li img{border:1px solid #e9e9e9}
+/*.image_product_slide .slider{height:6px;width:100%;background:#fff;margin-top:110px}
+.image_product_slide .slider a{background:url(../images/scroll.png) no-repeat;height:6px;width:50px;display:block}
+*/#scrollbar1{margin:0;width:100%}
+#scrollbar1 .viewport{height:204px;overflow:hidden;position:relative;width:940px}
+#scrollbar1 .overview{left:0;list-style:none outside none;margin:0;padding:0;position:absolute;top:0;width:1416px}
+#scrollbar1 .overview ul{position:absolute;list-style:none;padding:0;margin:0}
+#scrollbar1 .overview ul li{float:left;display:inline;padding-right:5px}
+#scrollbar1 .overview ul li img{float:left;/*border:1px solid #dcdacc;*/}
+#scrollbar1 .scrollbar,#scrollbar1 .thumb .end,#scrollbar1 .thumb{/*background:url("../images/bg-scrollbar-x.png") no-repeat scroll 0 0 transparent;*/background-color:#666}
+#scrollbar1 .scrollbar{clear:both;height:5px;overflow:hidden;position:relative;margin-top:10px}
+#scrollbar1 .track{/*background:url("../images/bg-scrollbar-x-end.png") no-repeat scroll 100% 0 transparent;*/background-color:#333;height:5px;padding:0 0;position:relative;width:100%}
+#scrollbar1 .thumb{background-position:100% -15px;cursor:pointer;height:5px;left:0;overflow:hidden;position:absolute;top:0}
+#scrollbar1 .thumb .end{background-position:0 -15px;height:5px;overflow:hidden;width:5px}
+#scrollbar1 .disable{display:none}
+/********scrollbar 2*********/#scrollbar2{margin:0 10px 0 15px;width:457px}
+#scrollbar2 .viewport{height:114px;overflow:hidden;position:relative;width:450px}
+#scrollbar2 .overview{left:0;list-style:none outside none;margin:0;padding:0;position:absolute;top:0;width:1416px}
+#scrollbar2 .overview ul{position:absolute;list-style:none;padding:0;margin:0}
+#scrollbar2 .overview ul li{float:left;display:inline;padding-right:15px}
+#scrollbar2 .overview ul li img{float:left;border:1px solid #dcdacc}
+#scrollbar2 .scrollbar,#scrollbar2 .thumb .end,#scrollbar2 .thumb{/*background:url("../images/bg-scrollbar-x.png") no-repeat scroll 0 0 transparent;*/background-color:#666}
+#scrollbar2 .scrollbar{clear:both;height:5px;overflow:hidden;position:relative;margin-top:10px}
+#scrollbar2 .track{/*background:url("../images/bg-scrollbar-x-end.png") no-repeat scroll 100% 0 transparent;*/background-color:#333;height:5px;padding:0 0;position:relative;width:100%}
+#scrollbar2 .thumb{background-position:100% -15px;cursor:pointer;height:5px;left:0;overflow:hidden;position:absolute;top:0}
+#scrollbar2 .thumb .end{background-position:0 -15px;height:5px;overflow:hidden;width:5px}
+#scrollbar2 .disable{display:none}
+/********************//* ZOOM IMAGES SLIDE *//********************/
+
+/* Zoom image detail*/
+
+/********************//* PRODUCT DETAIL DESCRIPTION *//********************/#product_detail_description{float:right;width:410px;margin-left:0;display:inline;font-size:11px}
+
+.block_detail{margin-top:10px;float:left}
+.block_detail_left{float:left;padding-right:10px;width:225px}
+.block_detail_left p{padding:5px 0 5px 0}
+.block_detail_left p label{width:85px;float:left}
+.block_detail_left p span{width:130px}
+.block_detail_left .p_price span{font-weight:bold;color:#999;text-decoration:line-through}
+.block_detail_left .low_price span{font-weight:bold}
+.block_detail_left .p_award span{font-weight:bold}
+.block_detail_left .p_award_after span{color:#000;font-size:14px;font-weight:bold}
+.block_detail_left .p_code span{font-size:12px;font-weight:bold}
+.block_detail_left .size_total label{width:60px;float:none;padding-right:5px}
+.block_detail_left .size_total span{width:60px}
+.block_detail_left .size_total span select{width:45px}
+.block_detail_left .size_total span.size{width:110px;display:block;float:left}
+.block_detail_left .p_color span{}
+.block_detail_left .p_color span select{}
+.block_detail_left .p_color span select option{}
+/*.block_detail_left .addtocart{float:left;display:inline;background:url(../images/colors/Pedro/Pedro_addtocart.gif) no-repeat 0 0;width:95px;height:21px;padding:11px 35px 0 8px}
+*/
+
+.block_detail_left p span.buttonStore{background:url("../images/colors/default/folder_bg.gif") repeat scroll left -1557px transparent;color:#FFF;cursor:pointer;float:left;margin:5px 0;width:100%}
+.block_detail_left p span.buttonStore em{background:url("../images/colors/default/folder_bg.gif") repeat scroll right -1468px transparent;float:left;font-style:normal;margin-left:10px;padding:8px 40px 8px 4px;color:#2e2e2e;text-shadow:0 1px 0 #d5d3d3}
+.block_detail_left p span.buttonStore:hover{float:left;cursor:pointer;background:url(../images/colors/default/folder_bg.gif) left -1697px}
+.block_detail_left p span.buttonStore:hover em{margin-left:10px;padding:8px 40px 8px 4px;font-style:normal;float:left;background:url(../images/colors/default/folder_bg.gif) right -1648px;color:#FFF;text-shadow:0 1px 0 #000}
+.block_detail_right{float:left;padding-left:10px;width:140px}
+.block_detail_right div p.lr{float:left}
+.block_detail_right div p{padding:0 0 5px 0}
+.block_detail_right div p a{color:#000}
+.block_detail_right div p a:hover{padding:0 0 5px 0}
+.block_detail_right div.voite{padding-bottom:30px}
+.block_detail_right p.addcomment{float:left;padding:0 0 5px 0}
+.block_detail_right p.addcomment a{color:#666}
+.block_detail_right p.addcomment a:hover{color:#666;text-decoration:underline}
+.block_detail_right p span.buttonadd{background:url("../images/colors/default/folder_bg.gif") repeat scroll left -1601px transparent;color:#1e1e1e;cursor:pointer;float:left;margin:0;width:100%}
+.block_detail_right p span.buttonadd em{background:url("../images/colors/default/folder_bg.gif") repeat scroll right -1512px transparent;float:left;font-style:normal;margin-left:10px;padding:10px 20px 8px 4px;text-shadow:0 1px 0 #d5d3d3}
+/*.block_detail_right p span.buttonadd:hover{float:left;cursor:pointer;background:url(../images/colors/default/folder_bg.gif) left -1312px;color:#FFF}
+.block_detail_right p span.buttonadd:hover em{margin-left:10px;padding:6px 20px 6px 4px;font-style:normal;float:left;background:url(../images/colors/default/folder_bg.gif) right -1389px}
+*/.block_detail_right .block_share{clear:both}
+.block_detail_right .block_share a{color:#999;margin:10px 0 0 0;float:left}
+.block_detail_right .block_share a:hover{color:#707070}
+.block_detail_right .block_share ul{list-style:none;padding-top:20px}
+.block_detail_right .block_share ul li{line-height:27px;padding:0}
+.block_detail_right .block_share ul li.addfavori a{background:url(../images/colors/default/store-header-footer-sprite.png) no-repeat left -314px}
+.block_detail_right .block_share ul li.sharefriend a{background:url(../images/colors/default/store-header-footer-sprite.png) no-repeat left -344px}
+.block_detail_right .block_share ul li.sendemail a{background:url(../images/colors/default/store-header-footer-sprite.png) no-repeat left -374px}
+.block_detail_right .block_share ul li.addfavori a:hover{background:url(../images/colors/default/store-header-footer-sprite.png) no-repeat left -402px}
+.block_detail_right .block_share ul li.sharefriend a:hover{background:url(../images/colors/default/store-header-footer-sprite.png) no-repeat left -427px}
+.block_detail_right .block_share ul li.sendemail a:hover{background:url(../images/colors/default/store-header-footer-sprite.png) no-repeat left -451px}
+.block_detail_right .block_share ul li a{color:#999;padding-left:25px;display:block}
+.block_detail_right .block_share ul li a:hover{color:#fff}
+.block_detail_pay{float:left;padding:10px 0 0 10px;border-top:#ccc solid 1px;width:98%;margin-top:10px}
+.block_detail_pay p{font-weight:bold;line-height:21px}
+.block_detail_pay a{color:#000;font-weight:normal;line-height:21px}
+.block_detail_pay .buystore{background:url(../images/icon/buystore.gif) no-repeat;padding:0 0 0 30px;margin:5px 0 5px 10px}
+.block_detail_pay .buystore.unactive{background:url(../images/icon/buystore_off.gif) no-repeat;padding:0 0 0 30px}
+.block_detail_pay .buytran{background:url(../images/icon/buytran.gif) no-repeat;padding:0 0 0 30px;margin:0 0 5px 10px}
+.block_detail_pay .buytran:hover,.block_detail_pay .buytran.unactive{background:url(../images/icon/buytran_off.gif) no-repeat;padding:0 0 0 30px}
+.block_detail_pay .buytran:hover a,.block_detail_pay .buytran.unactive a{color:#999}
+.block_detail_pay .buybank{background:url(../images/icon/buybank.gif) no-repeat;padding:0 0 0 30px;margin:0 0 0 10px}
+.block_detail_pay .buybank:hover,.block_detail_pay .buybank.unactive{background:url(../images/icon/buybank_off.gif) no-repeat;padding:0 0 0 30px}
+.block_detail_pay .buybank:hover,.block_detail_pay .buybank.unactive a{color:#999}
+
+/*****************tab info**********************/.info_product{clear:both;position:relative}
+.info_product #products_selection_info{padding-top:25px}
+.info_product #products_selection_info{list-style:none}
+.info_product #products_selection_info li{display:inline-block;float:left;background:url(../images/colors/default/folder_bg.gif) left -695px;cursor:pointer}
+.info_product #products_selection_info li em{display:inline-block;float:left;background:url(../images/colors/default/folder_bg.gif) right -654px;padding:6px 15px 4px 4px;margin:0 5px 0 6px;font-style:normal;font-weight:bold;color:#fff}
+.info_product #products_selection_info li:hover{background:url(../images/colors/default/folder_bg.gif) left -610px}
+.info_product #products_selection_info li:hover em{background:url(../images/colors/default/folder_bg.gif) right -568px;color:#000}
+.info_product #products_selection_info li.active,.info_product #products_selection_info li.hover{background:url(../images/colors/default/folder_bg.gif) left -610px;position:relative;padding:0;z-index:2;margin-right:5px}
+.info_product #products_selection_info li.active em,.info_product #products_selection_info li.hover em{background:url(../images/colors/default/folder_bg.gif) right -568px;color:#9EBA10;margin:0 0 0 5px}
+.info_product .tab_content{padding:20px 0;font-size:1.2em}
+/*.info_product .info_tab_t{background:url(../images/tab/info_tab_t.jpg) no-repeat;height:5px;width:100%;position:relative;z-index:1;margin-top:24px}
+*/.info_product .content_tab2{padding:15px;float:left;background:url(../images/tab/info_tab_c.jpg) repeat-y}
+.info_product .content_tab2 p{padding:0 0 10px 0;line-height:19px}
+.info_product .info_tab_b{background:url(../images/tab/info_tab_b.gif) no-repeat;height:6px}
+/********************//* EVENTS *//********************/.block_event{font-size:12px;line-height:16px}
+.block_event li{display:block;padding-bottom:10px;list-style:none}
+.block_event .block_1{background:url(../images/colors/default/Events_01.gif) no-repeat top left;width:940px;height:5px}
+.block_event .block_2{background:url(../images/colors/default/Events_02.gif) no-repeat top left;width:940px;height:5px}
+.block_event .block_content{padding:9px}
+.block_event li .block_content{height:auto;overflow:hidden;border-bottom:#ccc solid 1px}
+.block_event .leading_event .block_content{overflow:hidden}
+.block_event li .block_content h3 a{font-size:12px;color:#666;line-height:12px}
+.block_event li .block_content h3 a:hover{font-size:12px;color:#ccc}
+.block_event li .block_content img{margin-right:10px;}
+.block_event li .block_content .create_date{font-size:10px;color:#666;font-style:italic;padding:3px 0 0 0;display:inherit}
+.block_event li .block_content .author{font-size:10px;color:#666;font-style:italic;padding:0 0 3px 0;display:inherit}
+.block_event li .block_content p{font-size:11px;color:#666}
+
+/********************//* EVENTS *//********************/.pageview2 p{color:#000}
+/*view box css3 - don't view ie6*/#comment_box{margin:0 0 20px 0}
+
+
+/********************//* INTRODUCTION New*//********************/#introduction{font-size:12px;width:100%;float:left}
+.content_page{float:left;width:100%}
+.intro_content{width:100%;float:left}
+/********************//* INTRODUCTION RIGHT CONTNET *//********************/#introduction .right_pages .content img{padding:0 0 10px;text-align:center;display:inline;margin:0 auto}
+#introduction .right_pages{float:left;width:100%;padding-bottom:10px;margin-bottom:10px}
+
+#introduction .right_pages .container{color:#5d5d5d;position:relative}
+
+#introduction .right_pages .container li{margin-top:18px;padding:0 0 10px 0;list-style:none;float:left;border-bottom:#CCC solid 1px}
+#introduction .right_pages .content p{text-decoration:none;float:left}
+#introduction .right_pages .content .overview p{width:93%}
+.content{float:left;width:100%}
+.ct{float:left;display:inline-block}
+.ct p{width:100%;color:#666;line-height:20px}
+.ct select{border:none;width:188px}
+.ct .select{display:inline;margin-right:10px;border:#ccc solid 1px;padding:5px 3px;width:188px}
+.map{float:left;margin-right:20px;width:32%;display:inline-block}
+/********************//*CONTACT *//********************/.contect_left{float:left;width:282px;margin-right:20px}
+.contect_left img{float:none;margin-left:0}
+.contact_right{float:left;width:300px}
+.contact_right .contact_title{font-size:13px;font-weight:bold}
+.contact_right p{line-height:20px}
+/************* Contact Form ********************/.left_contact{float:left;width:20%;margin-right:50px}
+.left_contact h2{margin-bottom:15px;padding-bottom:5px}
+
+.comments-form{float:left;width:70%;margin-top:60px}
+
+
+
+form,fieldset,legend,label{border:none;margin:0;padding:0}
+input,select,textarea{padding:0;margin:0}
+.multicols{display:inline-block;float:left}
+.input-border{border-top:1px solid #d4d5d6;border-right:1px solid #d4d5d6;border-bottom:1px solid #d4d5d6;border-left:1px solid #d4d5d6}
+.focus{border-color:#aeb0b3}
+.ouiForm label{color:#5a5b5e}
+.ouiForm input{font:normal 12px Arial}
+.ouiForm textarea{font:normal 12px Arial}
+.ouiForm fieldset{*margin-bottom:21px}
+.ouiForm fieldset .field_holder{display:block;position:relative;vertical-align:top;margin:0 0 21px}
+.ouiForm fieldset .field_holder label{display:inline-block;vertical-align:top;width:80px;line-height:25px}
+.ouiForm fieldset .field_holder label .required{display:inline-block}
+.ouiForm fieldset .field_holder .input_holder{display:inline-block;position:relative;left:0;top:0}
+.ouiForm fieldset .field_holder .input_holder input[type='text']{padding:3px;width:270px;height:15px}
+.ouiForm fieldset .field_holder .input_holder input.text{padding:3px;width:270px;height:15px}
+.ouiForm fieldset .field_holder .input_holder textarea{padding:4px;width:590px;height:216px}
+.ouiForm fieldset .field_holder .input_holder input[type='text']{color:#5a5b5e}
+.ouiForm fieldset .field_holder .input_holder input.text{color:#5a5b5e}
+.ouiForm fieldset .field_holder .input_holder textarea{color:#5a5b5e}
+
+.ouiForm fieldset input.btn{height:33px;padding-top:3px}
+
+.ouiForm fieldset.onecol .field_holder{width:100%;display:inline-block;float:left}
+.ouiForm fieldset.twocols .field_holder{width:100%;display:inline-block;float:left}
+.ouiForm fieldset.threecols .field_holder{width:33.3%;display:inline-block;float:left}
+.ouiForm fieldset.fourcols .field_holder{width:25%;display:inline-block;float:left}
+.ouiForm fieldset.twocols .field_holder{/*width:279px;*/}
+.ouiForm fieldset.twocols .field_gutter{margin-right:41px;_margin-right:40px}
+.ouiForm fieldset.message .field_holder{margin:0 0 10px}
+.ouiForm fieldset.message .field_holder label{/*display:block;*/}
+.ouiForm fieldset .field_error .input_holder{padding:1px;*padding:0 1px;*margin-top:1px;background-color:#e90000 !important}
+.ouiForm fieldset .field_error .input_holder input[type='text']{height:13px;width:268px}
+.ouiForm fieldset .field_error .input_holder input.text{height:13px;width:268px}
+.ouiForm fieldset .field_error .input_holder textarea{height:213px;width:588px}
+.ouiForm fieldset .field_error .input_holder select{*margin:1px 0}
+.oneborder input{border-top:1px solid #d4d5d6;border-right:1px solid #d4d5d6;border-bottom:1px solid #d4d5d6;border-left:1px solid #d4d5d6}
+.oneborder textarea{border-top:1px solid #d4d5d6;border-right:1px solid #d4d5d6;border-bottom:1px solid #d4d5d6;border-left:1px solid #d4d5d6}
+.oneborder fieldset .field_holder .input_holder{padding:1px;*padding:0 1px;background-color:#d4d5d6}
+.oneborder fieldset .field_holder .input_holder input[type='text']{left:0;position:relative}
+.oneborder fieldset .field_holder .input_holder input.text{left:0;position:relative}
+.oneborder fieldset .field_holder .input_holder textarea{left:0;position:relative}
+.oneborder fieldset .field_holder .input_holder select{left:0;position:relative}
+.oneborder fieldset .field_holder .input_holder input[type='text']{border:none;height:19px;width:272px}
+.oneborder fieldset .field_holder .input_holder input.text{border:none;height:19px;width:272px}
+.oneborder fieldset .field_holder .input_holder textarea{border:none;height:217px;width:590px}
+.oneborder fieldset .field_error .input_holder{*margin-top:0}
+.oi input{border-top:1px solid #d4d5d6;border-right:1px solid #d4d5d6;border-bottom:1px solid #d4d5d6;border-left:1px solid #d4d5d6}
+.oi textarea{border-top:1px solid #d4d5d6;border-right:1px solid #d4d5d6;border-bottom:1px solid #d4d5d6;border-left:1px solid #d4d5d6}
+.oi textarea{resize:none}
+.oi fieldset .field_holder .input_holder{background-color:#d4d5d6;padding:0;*margin-top:0}
+.oi fieldset .field_holder .input_holder input[type='text']{left:1px;position:absolute;border-left:none}
+.oi fieldset .field_holder .input_holder input.text{left:4px;position:absolute;border-left:none}
+.oi fieldset .field_holder .input_holder textarea{left:1px;position:absolute;border-left:none}
+.oi fieldset .field_holder .input_holder input[type='text']{height:18px;width:272px}
+.oi fieldset .field_holder .input_holder input.text{height:18px;width:500px}
+.oi fieldset .field_holder .input_holder select{position:absolute;top:0;*top:-1px;left:11px}
+.oi fieldset .field_holder .input_holder textarea{height:216px;width:589px}
+.oi fieldset .field_holder .input_text{width:510px;height:26px}
+.oi fieldset .field_holder .input_select{height:18px;*height:20px;width:1px}
+.oi fieldset .field_holder .input_textarea{width:510px;height:226px}
+.oi fieldset .field_holder .input_checkbox{background-color:transparent}
+.oi fieldset .field_holder .input_checkbox input{border:none}
+.oi fieldset .field_holder .input_focus{background-color:#aeb0b3}
+.oi fieldset .field_holder .input_focus input[type='text']{border-color:#aeb0b3}
+.oi fieldset .field_holder .input_focus input.text{border-color:#aeb0b3}
+.oi fieldset .field_holder .input_focus textarea{border-color:#aeb0b3}
+.oi fieldset .field_required label .required{display:none}
+.oi fieldset .field_required .input_holder input[type='text']{left:4px;width:269px}
+.oi fieldset .field_required .input_holder input.text{left:4px;width:500px}
+.oi fieldset .field_required .input_holder textarea{left:4px;width:500px}
+.oi fieldset .field_required .input_select{width:4px}
+.oi fieldset .field_error .input_holder{background-color:#e90000}
+.mac.safari .oi fieldset .field_holder .input_checkbox input{margin:3px 0 0}

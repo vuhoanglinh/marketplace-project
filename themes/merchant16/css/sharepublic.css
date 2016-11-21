@@ -1,0 +1,259 @@
+﻿  .tooltip
+    {
+        display: none; 
+        -moz-border-radius: 5px; 
+	    -webkit-border-radius: 5px; 
+	    border-radius:5px;
+		background-color:#fff;
+        height: auto;
+        padding:10px ;
+        margin-top:12px;
+        width: 210px;
+        font-size: 11px;
+        color: #fff;
+        font-weight: bold;
+        position:absolute;
+    }
+    
+    /* a .label element inside tooltip */
+    .tooltip .label
+    {
+        color: yellow;
+        width: 35px;
+    }
+    .tooltip a
+    {
+        color: #cc0000;
+        font-size: 11px;
+        font-weight: bold;
+    }
+    /* tooltip styling */
+    .tooltip2{
+		display:none;
+		top:55px;
+		font-size:11px;
+		color:#fff;
+		float:left;
+		z-index:99999;
+		position:absolute;
+	}
+	.tooltip2{
+		background-color:#fff;
+		border:solid #CCC 5px;
+		width:220px;
+		height:125px;
+		padding: 0px 15px 0px 15px;
+		right:24%;
+	}
+	/* trigger button */
+	#shareicon {
+		display:block;
+		margin:0px;
+		overflow:hidden;
+		/*text-indent:-999em;*/
+		cursor:pointer;
+		position:relative;
+	}
+	.shareContent {
+		padding-top:15px;
+		}
+	.shareLinks {
+		padding:0px;
+	}
+	.shareLinks:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	
+	
+	
+ul.contentTools {
+	float:right;
+	list-style: none;
+	/*width:300px;*/
+}
+
+ul.contentTools li{
+	float:left;
+    margin:0px 6px;
+    _margin:0px 3px;
+    line-height:20px;
+}
+ul.contentTools li a{
+	font-size:11px;
+	font-weight:normal;
+	color:#999;
+	float:left;
+	}
+	
+a.linkIcon {
+	display:block;
+	height:20px;
+	line-height:20px;
+	padding-left:20px;
+	position:relative;
+	clear:both;
+}
+a.linkIcon.digg {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/digg_16x16.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+a.linkIcon.delicious {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/delicious_16x16.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+a.linkIcon.facebook {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/facebook_16x16.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+a.linkIcon.reddit {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/reddit_16x16.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+a.linkIcon.smRSS {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("http://i.i.com.com/cnwk.1d/i/ne/rss/feed-icon-10x10.jpg");
+	background-position:left 50%;
+	background-repeat:no-repeat;
+	padding-left:15px;
+}
+a.linkIcon.print {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/print.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+a.linkIcon.email {
+	background-color:transparent;
+	background-image:url(".././default/images/icon_connect/email.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+a.linkIcon.share {
+	background-image:url("../../default/images/icon_connect/share.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+a.linkIcon.stumble {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/stumble_16x16.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+a.linkIcon.google {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/googleig_16x16.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+a.linkIcon.newsvine {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/newsvine_16x16.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+a.linkIcon.ybookmarks {
+
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/yahoo_bkmks_16x16.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+a.linkIcon.twitter {
+
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/twitter_16x16.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+a.linkIcon.comments {
+
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/comments.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+a.linkIcon.private {
+
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/padlock_16x16.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+.linkIcon.fontSize {
+	display:block;
+	height:20px;
+	line-height:20px;
+}
+.linkIcon.fontSize a {
+	display:block;
+	float:left;
+	height:20px;
+	margin-right:4px;
+	width:16px;
+}
+.linkIcon.fontSize .smaller {
+
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/fontSizeSmall.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+.linkIcon.fontSize .larger {
+
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/fontSizeLarge.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+a.linkIcon.add {
+
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/expand.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+a.linkIcon.remove {
+
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/collapse.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+a.linkIcon.addToList {
+
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../default/images/icon_connect/listIcon.gif");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+	padding-left:25px;
+}

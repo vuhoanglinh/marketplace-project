@@ -1,0 +1,475 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html;" />
+<meta id="ctl00_ctl00_metaDescription" name="Description" content="cua hang ECCO, giay nam, giay nu" />
+<meta id="ctl00_ctl00_metaKeywords" name="Keywords" content="cua hang ECCO, giay nam, giay nu" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8; IE=EmulateIE9" />
+<title>Ecco</title>
+<link href="../../ice/css/ch_layout.css" type="text/css" rel="stylesheet">
+<link href="../css/color/ecco.css" type="text/css" rel="stylesheet">
+<link href="../css/main.css" type="text/css" rel="stylesheet">
+<link href="../css/menu.css" type="text/css" rel="stylesheet">
+<link href="../css/product.css" type="text/css" rel="stylesheet">
+<link type="text/css" href="../../default/css/nivo-slider.css" rel="stylesheet">
+<script src="../../default/js/jquery.min.js" type="application/javascript"></script>
+<script src="../../default/js/jquery.nivo.slider.js" type="application/javascript"></script>
+<script src="../../merchant1/js/jquery.cookie.js" type="application/javascript"></script>
+<script src="../../merchant1/js/jquery.tinyscrollbar.min.js" type="application/javascript"></script>
+<script type="text/javascript">
+function closeSearchChonFrame() {
+	$.cookie('hideSearchChonFrame', '1');
+	var hideFrame = $.cookie("hideSearchChonFrame");
+	if (hideFrame == '1') {
+		$('#wrapperhead').hide();
+	}	
+} 
+$(document).ready(function() {
+	var hideFrame = $.cookie("hideSearchChonFrame");
+	if (hideFrame == '1') {
+		$('#wrapperhead').hide();
+	}
+}); 
+</script>
+<script>
+$(function() {
+$('.nivoSlider').nivoSlider({
+	effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+	directionNav: false, // Next & Prev navigation
+	controlNav: false
+});
+});
+$(window).load(function() {
+	$('.btn-slide').click(function() {
+	$(this).parent().parent().find('#panel').toggleClass('autonav');
+	$(this).toggleClass("active");
+	});
+}); 
+
+
+$(document).ready(function(){
+	$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content 
+	
+	$("ul.tabs li").mouseover(function() {
+	$("ul.tabs li").removeClass("active"); //Remove any "active" class
+	$(this).addClass("active"); //Add "active" class to selected tab
+	$(".tab_content").hide(); //Hide all tab content
+	var activeTab = $(this).find("a").attr("tablink"); //Find the rel attribute value to identify the active tab + content
+	//$(activeTab).fadeIn(); //Fade in the active content
+	$(activeTab).show();
+	return false;
+	}); 
+
+});
+</script>
+</head>
+
+<body>
+<div id="loadingDiv" class="loading" style="display:none;"> <img src="../images/loading.gif" alt="Loading..."> </div>
+<div id="wrapper">
+<!-- BEGIN: MAIN FRAME -->
+<div id="wrapperframe" style="background:#121212;">
+  <div id="wrapperhead">
+    <div id="ctl00_ctl00_ChonSearchBox1_divSearchOnChon" class="header_top_bar">
+      <div class="logo_top_bar"> <a href="/"> <img src="../../Merchant1/images/Chon.vn Logo_3D.png" alt=""></a></div>
+      <div class="search_top_bar">
+        <div id="ctl00_ctl00_ChonSearchBox1_pnSearchOnChon" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_ctl00_ChonSearchBox1_btnSearchOnChon')"> <strong style="color:#999999">Tìm kiếm:&nbsp;&nbsp;&nbsp;</strong>
+          <input name="ctl00$ctl00$ChonSearchBox1$txtQueryOnChon" type="text" id="ctl00_ctl00_ChonSearchBox1_txtQueryOnChon">
+          <span class="btn_go"> <a id="ctl00_ctl00_ChonSearchBox1_btnSearchOnChon" href="javascript:__doPostBack('ctl00$ctl00$ChonSearchBox1$btnSearchOnChon','')">Tìm</a></span> </div>
+      </div>
+      <div class="close_top_bar"> Đóng khung này&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" onclick="closeSearchChonFrame()"><img src="../../FHouse/images/bar/btn_close.gif" style="vertical-align:middle"></a></div>
+    </div>
+  </div>
+</div>
+<!-- END: MAIN FRAME -->
+<div id="ch_header">
+  <div id="ch_wrapper"> 
+    <!-- BEGIN: HEADER -->
+    <div class="top">
+      <div class="logo"> <a href="/cua-hang/ecco.aspx"> <img height="59" src="http://img.chon.vn/Files/Upload/Images/Merchant/2013/06/20/6060_logostore.png" alt="ECCO"> </a> </div>
+      <div class="top_right"> 
+        <!-- HEADER: SEARCH-->
+        <div class="last">
+          <div class="search">
+            <form action="" method="post" id="frmsearch" name="frmsearch">
+              <div class="input">
+                <input type="text" name="search" id="txtQueryClient" placeholder="Nhập từ khóa tìm kiếm" maxlength="80" alt="Search" >
+              </div>
+              <button class="button" type="button" ></button>
+            </form>
+          </div>
+        </div>
+        <div class="share"></div>
+        <!-- HEADER USER: BEGIN -->
+        <div class="user_block"> 
+          <script type="text/javascript">
+        //alert(location.pathname);
+        /*
+        $(document).ready(function() {
+            if (currentUserInfo.Username != undefined) {
+                if (currentUserInfo.Username != null && currentUserInfo.Username != '') {
+                    $("#lblLoginName").html("<b>" + currentUserInfo.Username + "</b>");
+                    $("#nonLogin").attr("style", "display:none");
+                    $("#logon").attr("style", "display:block;float:right;");
+                    $("#lblTotalQuantity").html(currentUserInfo.TotalQuantity);
+                } else {
+                    $("#lblLoginName").html("");
+                    $("#nonLogin").attr("style", "display:block");
+                    $("#logon").attr("style", "display:none");
+                    $("#lblCartItemCount2").html(currentUserInfo.TotalQuantity);
+                }
+            }
+    
+    
+        });
+        */
+    </script>
+          <div id="nonLogin" style="display:block">
+            <p class="lostpass"> <a rel="noindex, nofollow" href="/nguoi-dung/Quen-mat-ma.aspx?returnUrl=%2fcua-hang%2fecco.aspx%3fref%3dmenu-merchant">Quên mật khẩu</a></p>
+            <p class="register"> <a rel="noindex, nofollow" href="/nguoi-dung/dang-nhap.aspx?returnUrl=%2fcua-hang%2fecco.aspx%3fref%3dmenu-merchant">Đăng ký</a> </p>
+            <p class="login_name"> <a rel="noindex, nofollow" href="/nguoi-dung/dang-nhap.aspx?returnUrl=%2fcua-hang%2fecco.aspx%3fref%3dmenu-merchant">Đăng nhập</a> </p>
+            <p class="l_cart"> <a rel="noindex, nofollow" href="/nguoi-dung/gio-hang.aspx">Giỏ hàng (<span id="lblCartItemCount2" style="font-size:x-small;">0</span>)</a> </p>
+          </div>
+          <div id="logon" style="display:none">
+            <div style="display: none;"> Chào
+              <label id="lblLoginName"></label>
+            </div>
+            <p class="l_cart"> <a rel="noindex, nofollow" href="/nguoi-dung/gio-hang.aspx">Giỏ hàng (<span id="lblTotalQuantity" style="font-size:x-small;"></span>)</a> </p>
+            <p class="l_signout"> <a rel="noindex, nofollow" href="/nguoi-dung/thoat.aspx?returnUrl=%2fcua-hang%2fecco.aspx%3fref%3dmenu-merchant">Thoát</a> </p>
+          </div>
+        </div>
+        <!-- HEADER USER: END --> 
+      </div>
+    </div>
+    <!-- END: HEADER --> 
+  </div>
+  <!-- BEGIN: MAIN NAVIGATION -->
+  <nav class="topMenu">
+    <div id="ch_mainmenu">
+      <div class="menunav">
+        <div class="chonlink"><a href="/">Chon.vn</a></div>
+        <div class="menunav_back">
+          <ul class="lavaLamp_menu" id="lava">
+            <li class="current"><a href="/cua-hang/ecco/san-pham.aspx#content" title="san-pham"><span>Sản phẩm</span></a></li>
+            <li><a href="/cua-hang/ecco/gioi-thieu.aspx#content" title="gioi-thieu"><span>Giới thiệu</span></a></li>
+            <li id="licollection" style="display:none;"><a href="#" title="bo-suu-tap">Bộ sưu tập</a></li>
+            <li><a href="/cua-hang/ecco/su-kien.aspx#content" title="su-kien"><span>Sự kiện</span></a></li>
+            <li><a href="/cua-hang/ecco/danh-gia.aspx#content" title="danh-gia"><span>Đánh giá</span></a></li>
+            <li><a href="/cua-hang/ecco/lien-he.aspx#content" title="lien-he"><span>Liên hệ</span></a></li>
+            <li><a href="/cua-hang/ecco/gioi-thieu/he-thong-cua-hang.aspx#content" title="he-thong"><span>Hệ thống cửa hàng</span></a></li>
+            <li id="ctl00_ctl00_TopNavigator1_liHome"> <a rel="nofollow" target="_blank" href="http://www.tbssport.com.vn">Website</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END: MAIN NAVIGATION --> 
+</div>
+<!-- BEGIN: SLIDER -->
+<div id="ch_wrapper">
+  <div id="ch_features">
+    <div id="features_panes_container">
+      <div id="slider" class="nivoSlider"> <a href='' target="_blank"> <img alt='banner 01' src='http://img.chon.vn/Files/upload/Images/Banner/4cea4af9-b706-47c1-9a3d-6c6b34eb3b64_001.jpg'  /> </a> <a href='' target="_blank"> <img alt='banner 02' src='http://img.chon.vn/Files/upload/Images/Banner/de183aff-42e4-48df-a5b1-cb4c6719cf25_004.jpg'  /> </a> <a href='' target="_blank"> <img alt='banner 03' src='http://img.chon.vn/Files/upload/Images/Banner/de762cc6-cb22-49ca-a5f3-b9eee319e290_005.jpg'  /> </a> </div>
+    </div>
+    <div class="liner"></div>
+  </div>
+  <!--END: SLIDER --> 
+  <!-- BEGIN: BODY -->
+  <div id="ch_body">
+    <div id="ch_wrapper">
+      <div id="ch_mainbody">
+        <div id="ch_submenu">
+          <div class="sub_left">
+            <div class="sub_left_c">
+              <h2> SẢN PHẨM</h2>
+              <!-- BEGIN: CATEGORY -->
+              <ul class="tabs" id="products_selection">
+                <li class="active"><a href="/cua-hang/ecco/san-pham/giay-nam-c3438.aspx#content" tablink="#tab3438"> <em> Giày nam<span class="txt_red">(297)</span></em> </a></li>
+                <li><a href="/cua-hang/ecco/san-pham/giay-nu-c3440.aspx#content" tablink="#tab3440"> <em> Giày nữ<span class="txt_red">(588)</span></em> </a></li>
+                <li><a href="/cua-hang/ecco/san-pham/giay-golf-c3442.aspx#content" tablink="#tab3442"> <em> Giày Golf<span class="txt_red">(71)</span></em> </a></li>
+                <li><a href="/cua-hang/ecco/san-pham/phu-kien-c3444.aspx#content" tablink="#tab3444"> <em> Phụ kiện<span class="txt_red">(0)</span></em> </a></li>
+                <li><a href="/cua-hang/ecco/san-pham/tui-xach-nu-c4632.aspx#content" tablink="#tab4632"> <em> Túi xách nữ<span class="txt_red">(12)</span></em> </a></li>
+                <li><a href="/cua-hang/ecco/san-pham/vi-nu-c4634.aspx#content" tablink="#tab4634"> <em> Ví nữ<span class="txt_red">(8)</span></em> </a></li>
+                <li><a href="/cua-hang/ecco/san-pham/vi-nam-c4636.aspx#content" tablink="#tab4636"> <em> Ví nam<span class="txt_red">(4)</span></em> </a></li>
+                <li><a href="/cua-hang/ecco/san-pham/that-lung-nam-c4637.aspx#content" tablink="#tab4637"> <em> Thắt lưng nam<span class="txt_red">(12)</span></em> </a></li>
+              </ul>
+              <!-- END: CATEGORY --> 
+            </div>
+            <!-- BEGIN: CATEGORY CHILDREN -->
+            <div id="product_list_container">
+              <div class="tab_container">
+                <div class="tab_content" id="tab3438" style="display: block;">
+                  <div class="sub_right">
+                    <div class="sub_right_r">
+                      <div style="display: block" class="hnav" id="panel">
+                        <ul class="Nav_sub_slide">
+                          <li><a href="/cua-hang/ecco/san-pham/mcasual-c3400.aspx#content"> MCasual <span class="txt_red">(139)</span></a></li>
+                          <li><a href="/cua-hang/ecco/san-pham/mformal-c3408.aspx#content"> MFormal <span class="txt_red">(114)</span></a></li>
+                          <li><a href="/cua-hang/ecco/san-pham/msport-c3412.aspx#content"> Msport <span class="txt_red">(44)</span></a></li>
+                        </ul>
+                      </div>
+                      <p class="slide"> <a class="btn-slide active" href="javascript:void(0)">&nbsp;</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab3440" style="display: none;">
+                  <div class="sub_right">
+                    <div class="sub_right_r">
+                      <div style="display: block" class="hnav" id="panel">
+                        <ul class="Nav_sub_slide">
+                          <li><a href="/cua-hang/ecco/san-pham/lcasual-c191.aspx#content"> Lcasual <span class="txt_red">(314)</span></a></li>
+                          <li><a href="/cua-hang/ecco/san-pham/lformal-c3402.aspx#content"> LFormal <span class="txt_red">(204)</span></a></li>
+                          <li><a href="/cua-hang/ecco/san-pham/lsport-c3406.aspx#content"> Lsport <span class="txt_red">(70)</span></a></li>
+                        </ul>
+                      </div>
+                      <p class="slide"> <a class="btn-slide active" href="javascript:void(0)">&nbsp;</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab3442" style="display: none;">
+                  <div class="sub_right">
+                    <div class="sub_right_r">
+                      <div style="display: block" class="hnav" id="panel">
+                        <ul class="Nav_sub_slide">
+                          <li><a href="/cua-hang/ecco/san-pham/lgolf-c3404.aspx#content"> Lgolf <span class="txt_red">(21)</span></a></li>
+                          <li><a href="/cua-hang/ecco/san-pham/mgolf-c3410.aspx#content"> Mgolf <span class="txt_red">(50)</span></a></li>
+                        </ul>
+                      </div>
+                      <p class="slide"> <a class="btn-slide active" href="javascript:void(0)">&nbsp;</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab3444" style="display: none;">
+                  <div class="sub_right">
+                    <div class="sub_right_r">
+                      <div style="display: block" class="hnav" id="panel">
+                        <ul class="Nav_sub_slide">
+                        </ul>
+                      </div>
+                      <p class="slide"> <a class="btn-slide active" href="javascript:void(0)">&nbsp;</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab4632" style="display: none;">
+                  <div class="sub_right">
+                    <div class="sub_right_r">
+                      <div style="display: block" class="hnav" id="panel">
+                        <ul class="Nav_sub_slide">
+                        </ul>
+                      </div>
+                      <p class="slide"> <a class="btn-slide active" href="javascript:void(0)">&nbsp;</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab4634" style="display: none;">
+                  <div class="sub_right">
+                    <div class="sub_right_r">
+                      <div style="display: block" class="hnav" id="panel">
+                        <ul class="Nav_sub_slide">
+                        </ul>
+                      </div>
+                      <p class="slide"> <a class="btn-slide active" href="javascript:void(0)">&nbsp;</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab4636" style="display: none;">
+                  <div class="sub_right">
+                    <div class="sub_right_r">
+                      <div style="display: block" class="hnav" id="panel">
+                        <ul class="Nav_sub_slide">
+                        </ul>
+                      </div>
+                      <p class="slide"> <a class="btn-slide active" href="javascript:void(0)">&nbsp;</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab4637" style="display: none;">
+                  <div class="sub_right">
+                    <div class="sub_right_r">
+                      <div style="display: block" class="hnav" id="panel">
+                        <ul class="Nav_sub_slide">
+                        </ul>
+                      </div>
+                      <p class="slide"> <a class="btn-slide active" href="javascript:void(0)">&nbsp;</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END: CATEGORY CHILDREN --> 
+          </div>
+        </div>
+        <!-- BEGIN :BREADCRUMB -->
+        <div id="ch_breadcrumbs" class="cleaner">
+          <ol class="breadcrumbs">
+            <li class="first-child"><a href="/" class="home" name="content"></a></li>
+            <li><a href="/cua-hang/ecco.aspx">Trang chủ</a></li>
+            <li><a href="#">Các hoạt động, sự kiện</a></li>
+          </ol>
+        </div>
+        <!-- END: BREADCRUMB --> 
+        <!-- BEGIN: PRODUCT -->
+        <div id="ch_containt">
+          <div class="event">
+            <h2><span>Sự kiện</span></h2>
+            <script type="text/javascript">
+
+	
+	
+	$(document).ready(function() {
+		formatEventList();
+	});
+
+	function formatEventList() {
+		$('div.content_detail div.content_event').click(function() {
+			$(this).next().toggle('fast');
+			if ($(this).hasClass("active"))
+				$(this).removeClass("active");
+			else
+				$(this).addClass("active");
+			return false;
+		}).next().hide();
+
+
+		$('a.hideContent').click(function() {
+			$(this).parent().parent().prev().click();
+		});
+
+
+		$('a.hideAllContents').click(function() {
+			$('div.content_detail div.content_event').removeClass('active');
+			$('div.content_detail div.content_event_content').hide();
+		});
+	}
+	
+</script>
+            <div id="ctl00_ctl00_cphContent_MerchantEventList_ctl00">
+              <div id="pagenav"> <span id="ctl00_ctl00_cphContent_MerchantEventList_lstEvents_pager1"><a disabled="disabled" class="button_nav2"></a>&nbsp;<a disabled="disabled" class="nav"></a>&nbsp;<span class="current">1</span>&nbsp;<a disabled="disabled" class="next"></a>&nbsp;<a disabled="disabled" class="button_nav3"></a>&nbsp;</span> </div>
+              <div class="content_detail" id="content_detail" style="float:left;width:100%;">
+                <ul class="block_event">
+                  <li class="leading_event">
+                    <div class="block_content">
+                      <div class="content_event" style="border:solid 0px;width:100%;margin:0px;padding:0px;" id="event22529" name="event22529">
+                        <h3 class="block_title"><a href="#">
+                          <p title="Chương trình khuyến mãi Ecco">Chương trình khuyến mãi Ecco</p>
+                          </a></h3>
+                        <span class="create_date">01 tháng 05 năm 2011</span>
+                        <p title="Hiện nay, tại các cửa hàng offline của giày Ecco đang chạy chương trình này đồng thời Ecco muốn đưa thông tin lên cửa hàng trực tuyến và áp dụng cho các khách hàng mua online luôn."> Hiện nay, tại các cửa hàng offline của giày Ecco đang chạy chương trình này đồng thời Ecco muốn đưa thông tin lên cửa hàng trực tuyến và áp dụng cho các khách hàng mua online luôn.</p>
+                      </div>
+                      <div class="content_event_content" style="width: 95%; display: none;">
+                        <p>Chương trình khuyến mãi như sau:<br>
+                          Khi khách hàng mua sản phẩm túi xách hoặc giày của Ecco sẽ nhận được 1 Phiếu rút thăm trúng thưởng đồng hồ Skagen (có tất cả 12 giải cho đồng hồ).<br>
+                          Ngoài ra, khi khách hàng mua sản phẩm còn được nhận 1 Phiếu rút thăm trúng ngay (100%) 01 trong 04 giải sau:<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiếu giảm giá 10% khi mua hàng của Ecco.<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiếu mua hàng trị giá 300.000.<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thẻ treo Vali.<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cây mang giày.<br>
+                          Thời gian khuyến mãi: Từ nay đến hết ngày 01/05/2011.<br>
+                        </p>
+                        <div style="text-align: right"><span style="font-style: italic">Nguồn: Ecco</span><br>
+                        </div>
+                        <p></p>
+                        <div class="block_share" style="display:none;">
+                          <ul>
+                            <li class="sharefriend"><a href="#">Chia sẻ trang này</a></li>
+                            <li class="sendemail"><a href="#">Gửi mail cho bạn bè</a></li>
+                          </ul>
+                        </div>
+                        <div class="actions" style="margin-top:10px;font-size:12px;"> <a class="hideContent">Thu nhỏ</a> | <a class="hideAllContents">Thu nhỏ tất cả</a></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="leading_event">
+                    <div class="block_content">
+                      <div class="content_event" style="border:solid 0px;width:100%;margin:0px;padding:0px;" id="event91" name="event91">
+                        <h3 class="block_title"><a href="#">
+                          <p title="ECCO tặng sản phẩm chăm sóc giày khi mua túi xách hoặc dây nịt ">ECCO tặng sản phẩm chăm sóc giày khi mua túi xách hoặc dây nịt </p>
+                          </a></h3>
+                        <span class="create_date">28 tháng 05 năm 2010</span>
+                        <p title="ECCO khuyến mại hấp dẫn tặng quà đặc biệt - sản phẩm chăm sóc giày cho KH mua túi xách hoặc dây nịt ECCO, áp dụng đến hết 28/5/2010. Ngoài ra, KH còn có cơ hội sở hữu giày ECCO với giá giảm tới 50%."> ECCO khuyến mại hấp dẫn tặng quà đặc biệt - sản phẩm chăm sóc giày cho KH mua túi xách hoặc dây nịt ECCO, áp dụng đến hết 28/5/2010. Ngoài ra, KH còn có cơ hội sở hữu giày ECCO với giá giảm tới 50%.</p>
+                      </div>
+                      <div class="content_event_content" style="width: 95%; display: none;">
+                        <p><span style="color: Snow"><span style="font-family: arial,helvetica,sans-serif"><span><strong><span style="font-weight: normal">ECCO khuyến mại hấp dẫn tặng quà đặc biệt - sản phẩm chăm sóc giày cho KH mua túi xách hoặc dây nịt ECCO, áp dụng đến hết 28/5/2010. Ngoài ra, KH còn có cơ hội sở hữu giày ECCO với giá giảm tới 50%.</span><br style="font-weight: normal">
+                          <span style="font-weight: normal">Sự kiện của ECCO</span><br style="font-weight: normal">
+                          <span style="font-weight: normal">Khi mua túi xách hoặc dây nịt, khách hàng sẽ được nhận được quà tặng đặc biệt - đó là sản phẩm chăm sóc giày, làm sáng bóng cho đôi giày của Quý khách. Chương trình được thực hiện từ 21 đến 28/05 tại hệ thống cửa hàng ECCO trên toàn quốc. Đặc biệt, trong thời gian này cho đến hết tháng 6 có nhiều mặt hàng ưu đãi giảm giá đến 50%.</span></strong></span></span><span style="font-family: arial,helvetica,sans-serif"><span><strong></strong></span></span><span style="font-family: arial,helvetica,sans-serif"><span><strong></strong></span></span><span style="font-family: arial,helvetica,sans-serif"><span><strong></strong></span></span><span style="font-family: arial,helvetica,sans-serif"><span><strong></strong></span></span></span><span style="color: Snow; font-weight: bold"><span style="font-family: arial,helvetica,sans-serif"><span><strong><br>
+                          </strong></span></span></span><img alt="" src="http://www.halo.vn/images/stories/anh_hang_hoa/5-2010/a4_card-halo.vn.jpg" style="font-weight: bold; color: Snow"><br style="font-weight: bold; color: Snow">
+                          <span style="color: Snow; font-weight: bold"><span style="font-family: arial,helvetica,sans-serif"><span><strong></strong></span></span></span><span style="color: DarkGray"><span style="font-family: arial,helvetica,sans-serif; color: Snow"><span><strong>Thông tin liên hệ:<br>
+                          <br>
+                          Hệ thống cửa hàng ECCO<br>
+                          - Vincom Center - 70-72 Lê Thánh Tôn, P.Bến Nghé, Q.1, HCM.<br>
+                          - Parkson Saigontourist Plaza – 35bis-45 Lê Thánh Tôn, P.Bến Nghé, Q.1, HCM.<br>
+                          - Parkson Hung Vuong Plaza – 126 Hùng Vương, Q.5, HCM.<br>
+                          - Parkson C.T Plaza – 60A Trường Sơn, P.2, Q.Tân Bình, HCM.<br>
+                          - Parkson&nbsp; Flemington Plaza – 184 Lê Đại Hành, P.15, Q.11, HCM.<br>
+                          - Zen Plaza – 54-56 Nguyễn Trãi, P.Bến Thành, Q.1, HCM.<br>
+                          - Thương xá Tax – 135 Nguyễn Huệ, P.Bến Nghé, Q.1, HCM.<br>
+                          - Parkson Viet Tower – 1 Thái Hà, Q.Đống Đa, Hà Nội.<br>
+                          - Vincom City Towers – 191 Bà Triệu, Q.Hai Bà Trưng, Hà Nội.<br>
+                          - Parkson Thùy Dương Plaza – Khu đô thị mới Ngã 5 sân bay Cát Bi, P.Đông Khê, Q.Ngô Quyền, Hải Phòng.<br>
+                          <br>
+                          Website: www.TBSsport.com.vn <br>
+                          Theo halo.vn</strong></span><span><strong><br>
+                          <br>
+                          </strong></span></span><span style="font-family: arial,helvetica,sans-serif"><span><span style="text-decoration: underline"><strong><br>
+                          <br>
+                          <br>
+                          <br>
+                          </strong></span></span></span></span><br style="color: DarkGray">
+                          <span style="color: DarkGray"><span style="font-family: arial,helvetica,sans-serif"><span><strong><br>
+                          <br>
+                          <br>
+                          </strong></span></span></span><br style="color: Snow">
+                        </p>
+                        <div class="block_share" style="display:none;">
+                          <ul>
+                            <li class="sharefriend"><a href="#">Chia sẻ trang này</a></li>
+                            <li class="sendemail"><a href="#">Gửi mail cho bạn bè</a></li>
+                          </ul>
+                        </div>
+                        <div class="actions" style="margin-top:10px;font-size:12px;"> <a class="hideContent">Thu nhỏ</a> | <a class="hideAllContents">Thu nhỏ tất cả</a></div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div id="pagenav" style="float:right;margin-top:10px;"> <span id="ctl00_ctl00_cphContent_MerchantEventList_lstEvents_pager2">
+                <div class="pageview" style="float:left;_padding:10px 0 0 10px;margin-right:390px;">Đang hiển thị 1 - 2 trong số 2 sự kiện </div>
+                <a disabled="disabled" class="button_nav2"></a>&nbsp;<a disabled="disabled" class="nav"></a>&nbsp;<span class="current">1</span>&nbsp;<a disabled="disabled" class="next"></a>&nbsp;<a disabled="disabled" class="button_nav3"></a>&nbsp;</span> </div>
+            </div>
+          </div>
+          <div class="cleaner"></div>
+        </div>
+        <!-- END: PRODUCT --> 
+      </div>
+    </div>
+    <!-- END: BODY --> 
+  </div>
+  <!-- BEGIN: FOOTER -->
+  <div id="ch_footer">
+    <div id="ch_footer_wapper">
+      <div class="sub_foot">
+        <div class="lt_foot">
+          <ul>
+            <li><a href="/">Chọn.vn</a></li>
+            <li><a href="/cua-hang/ecco/san-pham.aspx">Sản phẩm</a></li>
+            <li><a href="/cua-hang/ecco/gioi-thieu.aspx">Giới thiệu</a></li>
+            <li><a href="/cua-hang/ecco/su-kien.aspx">Sự kiện</a></li>
+            <li><a href="/cua-hang/ecco/danh-gia.aspx">Đánh giá</a></li>
+            <li><a href="/cua-hang/ecco/lien-he.aspx">Liên hệ</a></li>
+            <li><a href="/cua-hang/ecco/gioi-thieu.aspx?f=he-thong">Cửa hàng</a></li>
+            <li class="end"><a href="http://www.tbssport.com.vn" id="ctl00_ctl00_BottomNavigator1_lnkWebsite" rel="nofollow" target="_blank">Website</a></li>
+          </ul>
+        </div>
+        <div class="rt_foot"> <span>Template Ecco. GVHD: Dương Trọng Đính</span>
+          <div class="facebook"><a title="Đăng lên Facebook" onclick="window.open('http://www.facebook.com/share.php?u='+document.location,'_blank');" style="cursor: pointer;"></a></div>
+          <div class="twitter"><a title="Đăng lên Twitter" onclick="window.open('http://twitter.com/home?status='+document.location,'_blank');" style="cursor: pointer;"></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

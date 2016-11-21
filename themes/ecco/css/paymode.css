@@ -1,0 +1,13 @@
+/* CSS Document */
+.hinhthucmuahang_wrap{ clear:both; padding:10px 6px;_padding:10px 10px; }
+.hinhthucmuahang_bg{ background:url(../images/hinhthucmuahang/hinhthucmuahang_bg.png) no-repeat; height:125px; width:174px; position:relative; }
+.hinhthucmuahang_content{ padding-top:25px; }
+.thanhtoantructuyen_hien{ background:url(../images/hinhthucmuahang/thanhtoantructuyen_hien.png) no-repeat; height:28px; width:174px; position:relative; }
+.thanhtoantructuyen_an{ background:url(../images/hinhthucmuahang/thanhtoantructuyen_an.png) no-repeat; height:28px; width:174px; position:relative; }
+.giaohangnhantien_hien{ background:url(../images/hinhthucmuahang/giaohangnhantien_hien.png) no-repeat; height:33px; width:174px; position:relative; }
+.giaohangnhantien_an{ background:url(../images/hinhthucmuahang/giaohangnhantien_an.png) no-repeat; height:33px; width:174px; position:relative; }
+.bantaicuahang_hien{ background:url(../images/hinhthucmuahang/bantaicuahang_hien.png) no-repeat; height:33px; width:174px; position:relative; }
+.bantaicuahang_an{ background:url(../images/hinhthucmuahang/bantaicuahang_an.png) no-repeat; height:33px; width:174px; position:relative; }
+
+
+

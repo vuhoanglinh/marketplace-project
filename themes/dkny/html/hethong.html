@@ -1,0 +1,609 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html;" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8; IE=EmulateIE9" />
+<title>DKNY</title>
+<link href="../css/main.css" type="text/css" rel="stylesheet">
+<link href="../css/menu.css" type="text/css" rel="stylesheet">
+<link href="../css/product.css" type="text/css" rel="stylesheet">
+<link type="text/css" href="../../default/css/nivo-slider.css" rel="stylesheet">
+<script src="../../francosarto/js/jquery-1.7.2.min.js" type="application/javascript"></script>
+<script src="../../default/js/jquery.nivo.slider.js" type="application/javascript"></script>
+<script src="../../merchant1/js/jquery.cookie.js" type="application/javascript"></script>
+<script src="../../default/js/jcarousellite_1.0.1.min.js" type="application/javascript"></script>
+<script src="../../default/js/jquery.cycle.js" type="application/javascript"></script>
+<script src="../../merchant1/js/jquery.tinyscrollbar.min.js" type="application/javascript"></script>
+<link href="../css/ch_layout.css" type="text/css" rel="stylesheet">
+<link href="../css/ch_nav.css" type="text/css" rel="stylesheet">
+<link href="../css/color/DKNY.css" type="text/css" rel="stylesheet">
+<script type="text/javascript">
+function closeSearchChonFrame() {
+	$.cookie('hideSearchChonFrame', '1');
+	var hideFrame = $.cookie("hideSearchChonFrame");
+	if (hideFrame == '1') {
+		$('#wrapperhead').hide();
+	}	
+} 
+$(document).ready(function() {
+	var hideFrame = $.cookie("hideSearchChonFrame");
+	if (hideFrame == '1') {
+		$('#wrapperhead').hide();
+	}
+}); 
+</script>
+<script>
+$(function() {
+	$('.nivoSlider').nivoSlider({
+		effect: 'boxRainGrow', // Specify sets like: 'fold,fade,sliceDown'
+		directionNav: false, // Next & Prev navigation
+		controlNav: false
+	});
+});
+$(window).load(function() {
+	$('.btn-slide').click(function() {
+	$(this).parent().parent().find('#panel').toggleClass('autonav');
+	$(this).toggleClass("active");
+	});
+}); 
+</script>
+</head>
+
+<body>
+<div id="dialog"></div>
+<div id="loadingDiv" class="loading" style="display:none;"><img src="../images/loading.gif" alt="Loading..."></div>
+<!--BEGIN-->
+<div id="wrapper"> 
+  <!-- BEGIN: MAIN FRAME -->
+  <div id="wrapperframe" style="background:#121212;">
+    <div id="wrapperhead">
+      <div id="ctl00_ctl00_ChonSearchBox1_divSearchOnChon" class="header_top_bar">
+        <div class="logo_top_bar"> <a href="/"> <img src="../../Merchant1/images/Chon.vn Logo_3D.png" alt=""></a></div>
+        <div class="search_top_bar">
+          <div id="ctl00_ctl00_ChonSearchBox1_pnSearchOnChon" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_ctl00_ChonSearchBox1_btnSearchOnChon')"> <strong style="color:#999999">Tìm kiếm:&nbsp;&nbsp;&nbsp;</strong>
+            <input name="ctl00$ctl00$ChonSearchBox1$txtQueryOnChon" type="text" id="ctl00_ctl00_ChonSearchBox1_txtQueryOnChon">
+            <span class="btn_go"> <a id="ctl00_ctl00_ChonSearchBox1_btnSearchOnChon" href="javascript:__doPostBack('ctl00$ctl00$ChonSearchBox1$btnSearchOnChon','')">Tìm</a></span> </div>
+        </div>
+        <div class="close_top_bar"> Đóng khung này&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" onclick="closeSearchChonFrame()"><img src="../../FHouse/images/bar/btn_close.gif" style="vertical-align:middle"></a></div>
+      </div>
+    </div>
+  </div>
+  <!-- END: MAIN FRAME --> 
+  
+  <!--HEADER: BEGIN-->
+  <div class="content-header">
+    <div id="ch_header">
+      <div id="ch_wrapper"> 
+        <!-- BEGIN: HEADER -->
+        <div class="top">
+          <div class="logo"> <a href="/cua-hang/dkny.aspx"> <img height="100" src="http://img.chon.vn/Files/Upload/Images/Merchant/2013/09/17/81780_logostore.png" alt="DKNY"> </a> </div>
+          <div class="last">
+            <div class="search">
+              <div class="input">
+                <input type="text" name="search" id="txtQueryClient" value="" placeholder="Nhập từ khóa tìm kiếm" maxlength="80" alt="Search">
+              </div>
+              <button type="button" class="button"></button>
+            </div>
+          </div>
+          <div class="user_block">
+            <div id="nonLogin" style="display:block">
+              <p class="login_name"> <a href="/nguoi-dung/dang-nhap.aspx?returnUrl=%2fcua-hang%2fdkny.aspx%3fref%3dcatmer-merchant">Đăng nhập</a> </p>
+              <p class="register"> <a href="/nguoi-dung/dang-nhap.aspx?returnUrl=%2fcua-hang%2fdkny.aspx%3fref%3dcatmer-merchant">Đăng ký</a> </p>
+              <p class="lostpass"> <a href="/nguoi-dung/Quen-mat-ma.aspx?returnUrl=%2fcua-hang%2fdkny.aspx%3fref%3dcatmer-merchant">Quên mật khẩu</a></p>
+              <p class="l_cart" style="background: url(&quot;/files/themes/custom2/images/colors/pink/l_cart.gif&quot;) no-repeat scroll 15px 8px transparent;padding: 10px 0 0 40px;"> <a href="/nguoi-dung/gio-hang.aspx"><span class="text-cart">Giỏ hàng</span> <span class="carticon">(<span id="lblTotalQuantity" style="font-size:x-small;">0</span>)</span></a> </p>
+            </div>
+            <div id="logon" style="display:none">
+              <div style="display: none;"> Chào
+                <label id="lblLoginName"></label>
+              </div>
+              <p class="l_signout"> <a href="/nguoi-dung/thoat.aspx?returnUrl=%2fcua-hang%2fdkny.aspx%3fref%3dcatmer-merchant">Thoát</a> </p>
+            </div>
+          </div>
+          <div class="bookmark" style="width:400px;display:none;"> <a id="linkpublicshare" onmouseout="hideicon('subcontent2')" onmouseover="showicon('subcontent2')" rel="subcontent2" style="color:#fff; float:right; cursor:pointer;"><img src="/files/themes/merchant1/images/share.gif" style="display: none !important;">Chia sẻ</a> </div>
+          <div id="subcontent2" onmouseout="hideicon('subcontent2')" onmouseover="showicon('subcontent2')">
+            <div style="width: 49%; float: left;">
+              <ul style="padding: 4px; margin: 0 0 0 5px; list-style: none;">
+                <li><a class="linkIcon delicious" title="Thêm vào del.icio.us" style="cursor: pointer;" onclick="window.open('http://del.icio.us/post?url='+document.location,'_blank');"> Del.icio.us</a></li>
+                <li style="display:none;"><a class="linkIcon facebook" title="Đăng lên Facebook" style="cursor: pointer;" onclick="window.open('http://www.facebook.com/share.php?u='+document.location,'_blank');"> Facebook</a></li>
+                <li><a class="linkIcon stumble" title="Đăng lên Stumbleupon" style="cursor: pointer;" onclick="window.open('http://www.stumbleupon.com/submit?url='+document.location,'_blank');"> Stumbleupon</a></li>
+                <li><a class="linkIcon newsvine" title="Đăng lên Newsvine" style="cursor: pointer;" onclick="window.open('http://www.newsvine.com/_tools/seed&amp;save?u='+document.location,'_blank');"> Newsvine</a></li>
+                <li><a class="linkIcon ybookmarks" title="Đăng lên Yahoo Bookmarks" style="cursor: pointer;" onclick="window.open('http://bookmarks.yahoo.com/toolbar/savebm?opener=tb&amp;u='+document.location,'_blank');"> Ya bookmarks</a></li>
+              </ul>
+            </div>
+            <div style="width: 49%; float: left;">
+              <ul style="padding: 4px; margin:0 0 0 5px; list-style: none;">
+                <li><a class="linkIcon digg" title="Thêm vào Digg" style="cursor: pointer;margin-right:30px;" onclick="window.open('http://digg.com/submit?url='+document.location,'_blank');"> Digg</a></li>
+                <li><a class="linkIcon reddit" title="Thêm vào Reddit" style="cursor: pointer;margin-right:30px;" onclick="window.open('http://www.reddit.com/submit?url='+document.location,'_blank');"> Reddit</a></li>
+                <li><a class="linkIcon google" title="Đăng lên Google Bookmarks" style="cursor: pointer;margin-right:30px;" onclick="window.open('http://www.google.com/bookmarks/mark?op=edit&amp;bkmk='+document.location,'_blank');"> Google</a></li>
+                <li><a class="linkIcon twitter" title="Đăng lên Twitter" style="cursor: pointer;margin-right:30px;" onclick="window.open('http://twitter.com/home?status='+document.location,'_blank');"> Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+          <script type="text/javascript">
+			function showicon(divid) {
+				document.getElementById(divid).style.visibility = "visible";
+			}
+			function hideicon(divid) {
+				document.getElementById(divid).style.visibility = "hidden";
+			}
+			
+		</script> 
+        </div>
+        <!-- END: HEADER --> 
+      </div>
+    </div>
+    <div id="ch_mainmenu">
+      <div id="ch_wrapper">
+        <div class="wr-menu">
+          <div class="navLeft"></div>
+          <div class="menunav">
+            <div class="chonlink"> <a href="/">Chon.vn</a></div>
+            <div class="menunav_back">
+              <ul class="lavaLamp_menu" id="lava">
+                <li><a href="/">Chọn.vn</a></li>
+                <li><a href="/cua-hang/dkny/san-pham.aspx"> Sản phẩm</a></li>
+                <li><a href="/cua-hang/dkny/gioi-thieu.aspx"> Giới thiệu</a></li>
+                <li></li>
+                <li><a href="/cua-hang/dkny/su-kien.aspx"> Sự kiện</a></li>
+                <li><a href="/cua-hang/dkny/danh-gia.aspx"> Đánh giá</a></li>
+                <li><a href="/cua-hang/dkny/lien-he.aspx"> Liên hệ</a></li>
+                <li class=""><a href="http://www.8lions.com" id="ctl00_ctl00_ctl00_cphBody_BottomNavigator1_lnkWebsite" target="_blank">Website</a></li>
+              </ul>
+              <div class="share" onmouseout="hideicon('subcontent2')" onmouseover="showicon('subcontent2')"> <a>Chia sẻ</a> </div>
+            </div>
+          </div>
+          <div class="navRight"></div>
+        </div>
+      </div>
+    </div>
+    <!-- END: MAIN NAVIGATION --> 
+  </div>
+  <!--HEADER: END--> 
+  <!--BODY:BEGIN -->
+  <div id="ch_body">
+    <div id="ch_wrapper">
+      <div id="ch_mainbody">
+        <div id="ch_features">
+          <div id="features_panes_container"> 
+            <!-- SLIDER:BEGIN -->
+            <div id="slider" class="nivoSlider"> <a href='' target="_blank"><img alt="banner_17-9" src="http://img.chon.vn/Files/upload/Images/Banner/9bbf3b99-138d-4411-b009-765430e325f2_Banner store.jpg" /></a>  </div>
+            <!-- SLIDER:END --> 
+          </div>
+          <div class="liner"></div>
+        </div>
+        <!-- MENU:BEGIN-->
+        <div id="ch_MenuSub" class="cleaner">
+          <div id="ch_MenuSub_panes">
+            <ul id="cssdropdown">
+              <li class="headlink"><a class="icon_down" href="/cua-hang/dkny/san-pham.aspx"> DANH MỤC SẢN PHẨM</a> </li>
+            </ul>
+          </div>
+          <div id="ch_MenuSub_Sub">
+            <div id="ch_MenuSub_Sub">
+              <ul class="menuSubnav">
+                <li lang="3659" class=""><a href="/cua-hang/dkny/san-pham/ao-kieu-c3659.aspx#content"> Áo kiểu <span class="txt_red">(52)</span></a> </li>
+                <li lang="3661" class=""><a href="/cua-hang/dkny/san-pham/ao-dam-c3661.aspx#content"> Áo đầm <span class="txt_red">(53)</span></a> </li>
+                <li lang="3663" class=""><a href="/cua-hang/dkny/san-pham/vay-c3663.aspx#content"> Váy <span class="txt_red">(12)</span></a> </li>
+                <li lang="3665" class=""><a href="/cua-hang/dkny/san-pham/ao-khoac-c3665.aspx#content"> Áo khoác <span class="txt_red">(25)</span></a> </li>
+                <li lang="3679" class=""><a href="/cua-hang/dkny/san-pham/quan-c3679.aspx#content"> Quần <span class="txt_red">(9)</span></a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- MENU:END--> 
+        
+        <!--BREADCRUMB:BEGIN-->
+        <div id="ch_breadcrumbs" class="cleaner">
+          <ol class="breadcrumbs">
+            <li class="first-child"><a href="/" class="home" name="content"></a></li>
+            <li><a href="/cua-hang/dkny.aspx">Trang chủ</a></li>
+			<li><a href="/cua-hang/dkny.aspx">Hệ thống</a></li>
+          </ol>
+        </div>
+        <!--BREADGRUMB:END--> 
+        
+        <!--INTRO:BEGIN-->
+        <div class="new">
+          <div class="box">
+	<div id="ch_products">
+      <div id="introduction">
+        
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        loadScrollbar();
+
+    });
+    function loadScrollbar() {
+        $('#scrollbar3').tinyscrollbar({ scroll: true });
+    }
+</script>
+
+    <script type="text/javascript">
+
+        function showtab(p1, l1, p2, l2, p3, l3, p4, l4) {
+            document.getElementById(p1).style.display = 'block';
+            document.getElementById(p2).style.display = 'none';
+            document.getElementById(p3).style.display = 'none';
+            document.getElementById(p4).style.display = 'none';
+            document.getElementById(l1).className = 'active';
+            document.getElementById(l2).className = '';
+            document.getElementById(l3).className = '';
+            document.getElementById(l4).className = '';
+
+        }
+    
+    </script> 
+     <div class="content_page">
+     <div class="intro_top"></div>
+    
+  
+     <div class="intro_content">
+               	<div class="left_pages">
+                	<div class="menu_left">
+                        <ul>
+                            <li id="l1" onclick="showtab('p1','l1','p2','l2','p3','l3','p4','l4')"><a style="cursor:pointer;">THÔNG TIN LIÊN LẠC</a></li>
+                            <li id="l2" class="active" onclick="showtab('p2','l2','p1','l1','p3','l3','p4','l4')"><a style="cursor:pointer;">HỆ THỐNG CỬA HÀNG</a></li>
+                            <li id="l3" onclick="showtab('p3','l3','p2','l2','p1','l1','p4','l4')" class=""><a style="cursor:pointer;">GỬI EMAIL</a></li>
+                            <li id="l4" onclick="showtab('p4','l4','p1','l1','p3','l3','p2','l2')" style="cursor:pointer;display:none;" class=""><a>ĐỊA CHỈ CÁC CHI NHÁNH</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right_pages">
+                	<div class="container">
+                	<div id="p1" class="content" style="display: none;">
+                
+                            <div class="contact_right" style="text-align:justify;word-wrap: break-word;height:400px;width:688px;">
+                    <div style="float:left;height:300px;">         <img align="left" style="margin-right:10px;" width="160" src="http://img.chon.vn/Files/Upload/Images/Merchant/2013/09/17/81780_logostore.png" alt="DKNY">
+                        		</div>
+                	  <div class="contact_title"> DKNY</div>
+                           <p class="textform">
+                Địa chỉ: Công ty: CÔNG TY CỔ PHẦN TÁM CON SƯ TỬ<br>Địa chỉ: 02-03 Khu A, Tầng 19, Vincom Center (B), 72 Lê Thánh Tôn, Quận 1, Tp. HCM<br>Website: www.8lions.com<br>
+                                        Tel: <br>
+                                        Email: dkny@chonvn.com
+            </p>
+            </div>
+                	</div>
+                        <div class="content" id="p2" style="display: block;">
+          <div id="map" style="width:680px;margin-left:5px;">
+        
+        
+        <div class="contact_googlemap">
+        <div id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_upContactAddress">	
+			<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAADtKCySsD748uAcEr44aHdxTEAuq1iMwtYp3SCnt-BbQdMhzz2BT7pMosFC13keCWkfrqpiVhUu2U8Q" type="text/javascript"></script>
+<script src="http://maps.gstatic.com/cat_js/intl/en_us/mapfiles/api-3/17/5/%7Bmain,adsense,geometry,zombie%7D.js" type="text/javascript"></script>
+                <div class="col3">
+                    <p>
+                        <iframe id="frameGoogleMap" scrolling="no" marginwidth="0" width="300" height="300" marginheight="0" frameborder="0" vspace="0" hspace="0" src="../../map.html?longitude=10.778653;10.727026;10.778653;21.011565;21.015111&amp;latitude=106.701987;106.720201;106.701987;105.849246;105.777826"></iframe>
+                    </p>
+                </div>
+                <div class="col4"> 
+                    <div id="scrollbar3">
+                        <div class="scrollbar">
+                            <div class="track">
+                                <div class="thumb">
+                                    <div class="end">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="viewport">
+                            <div class="overview">
+                                <span id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_lbAllMerchantOfCity"></span>
+                                
+                                        <div class="content_1">
+                                            <div style="cursor: pointer;" onclick="javascript:Store_Click('10,778653' , '106,701987')">
+                                                <p class="title_merchantname">
+                                                    Cửa hàng DKNY Vincom Center
+                                                </p>
+                                                <p class="icon_address">
+                                                    Vincom Center B, Tầng L1, 70-72 Lê Thánh Tôn, Quận 1, Hồ Chí Minh
+                                                </p>
+                                                <p class="icon_tele">
+                                                    Điện thoại: (08) 3993 9376
+                                                </p>
+                                                <p class="icon_fax" style="display:none;">
+                                                    Fax: 
+                                                </p>
+                                           </div>
+                                        </div>
+                                    
+                                        <div class="content_1">
+                                            <div style="cursor: pointer;" onclick="javascript:Store_Click('10,727026' , '106,720201')">
+                                                <p class="title_merchantname">
+                                                    Cửa hàng DKNY Crescent Mall
+                                                </p>
+                                                <p class="icon_address">
+                                                    Crescent Mall, Tầng trệt, Phú Mỹ Hưng, Quận 7, Hồ Chí Minh
+                                                </p>
+                                                <p class="icon_tele">
+                                                    Điện thoại: (08) 5413 7320
+                                                </p>
+                                                <p class="icon_fax" style="display:none;">
+                                                    Fax: 
+                                                </p>
+                                           </div>
+                                        </div>
+                                    
+                                        <div class="content_1">
+                                            <div style="cursor: pointer;" onclick="javascript:Store_Click('10,778653' , '106,701987')">
+                                                <p class="title_merchantname">
+                                                    Cửa hàng DKNY Vincom A
+                                                </p>
+                                                <p class="icon_address">
+                                                    Vincom A (Accessories shop), Tầng L2, 171 Đồng Khởi, Quận 1, Hồ Chí Minh
+                                                </p>
+                                                <p class="icon_tele">
+                                                    Điện thoại: (08) 3993 9316
+                                                </p>
+                                                <p class="icon_fax" style="display:none;">
+                                                    Fax: 
+                                                </p>
+                                           </div>
+                                        </div>
+                                    
+                                        <div class="content_1">
+                                            <div style="cursor: pointer;" onclick="javascript:Store_Click('21,011565' , '105,849246')">
+                                                <p class="title_merchantname">
+                                                    Cửa hàng DKNY Vincom Center
+                                                </p>
+                                                <p class="icon_address">
+                                                    Vincom Center, Tầng trệt, 191 Bà Triệu, Quận Hai Bà Trưng, Hà Nội
+                                                </p>
+                                                <p class="icon_tele">
+                                                    Điện thoại: (04) 6253 5064
+                                                </p>
+                                                <p class="icon_fax" style="display:none;">
+                                                    Fax: 
+                                                </p>
+                                           </div>
+                                        </div>
+                                    
+                                        <div class="content_1">
+                                            <div style="cursor: pointer;" onclick="javascript:Store_Click('21,015111' , '105,777826')">
+                                                <p class="title_merchantname">
+                                                    Cửa hàng DKNY The Garden Center
+                                                </p>
+                                                <p class="icon_address">
+                                                    TTTM The Garden, Tầng Trệt, Mễ Trì, Huyện Từ Liêm, Hà Nội
+                                                </p>
+                                                <p class="icon_tele">
+                                                    Điện thoại: 04. 3787 8520
+                                                </p>
+                                                <p class="icon_fax" style="display:none;">
+                                                    Fax: 
+                                                </p>
+                                           </div>
+                                        </div>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+</div>
+        </div>
+    </div>
+                           
+                        </div>
+                        <div id="p3" style="padding-top: 20px; display: none;">
+                        <div>
+                <div class="mailtitle">
+                    Gửi mail trực tuyến</div>
+                      <div id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_udpMerchantContact">
+	
+                <table border="0" style="width:100%;">
+                    <tbody>
+                        <tr>
+                            <td colspan="3">
+                                <input type="hidden" value="Email from CSS contact page" id="subject" name="subject">
+                                <input type="hidden" value="name,email" name="required">
+                                <input type="hidden" value="" id="redirect" name="redirect">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <div align="right">
+                                    <span style="color: Red">*</span>&nbsp; Họ tên:</div>
+                            </td>
+                            <td width="2%">&nbsp;
+                                
+                            </td>
+                            <td width="78%">
+                                <input name="ctl00$ctl00$ctl00$cphBody$cphContent$ContactMerchantForm1$txtContactName" type="text" id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_txtContactName" class="textfield" size="45">
+                                <span id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_RequiredFieldValidator1" style="color:Red;font-size:13pt;display:none;">*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <div align="right">
+                                    Công ty:</div>
+                            </td>
+                            <td width="2%">&nbsp;
+                                
+                            </td>
+                            <td width="78%">
+                                <input name="ctl00$ctl00$ctl00$cphBody$cphContent$ContactMerchantForm1$txtCompany" type="text" id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_txtCompany" class="textfield" size="45">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <div align="right">
+                                    <span style="color: Red">*</span>&nbsp; Điện thoại:</div>
+                            </td>
+                            <td width="2%">&nbsp;
+                                
+                            </td>
+                            <td width="78%">                               
+                                <input name="ctl00$ctl00$ctl00$cphBody$cphContent$ContactMerchantForm1$txtPhone" type="text" id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_txtPhone" class="textfield" size="45">
+                                <span id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_RequiredFieldValidator3" style="color:Red;font-size:13pt;display:none;">*</span>
+                             <span id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_RegularExpressionValidator2" style="color:Red;display:none;">Vui lòng nhập 8-12 số</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <div align="right">
+                                    <span style="color: Red">*</span>&nbsp; Email:</div>
+                            </td>
+                            <td width="2%">&nbsp;
+                                
+                            </td>
+                            <td width="78%">
+                                <input name="ctl00$ctl00$ctl00$cphBody$cphContent$ContactMerchantForm1$txtEmail" type="text" id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_txtEmail" class="textfield" size="45">
+                                <span id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_RequiredFieldValidator4" style="color:Red;font-size:13pt;display:none;">*</span>
+                            <span id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_RegularExpressionValidator1" style="color:Red;display:none;">Email không hợp lệ</span>
+                               
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%" valign="top">
+                                <div align="right">
+                                    <span style="color: Red">*</span>&nbsp; Nội dung:</div>
+                            </td>
+                            <td width="2%">&nbsp;
+                                
+                            </td>
+                            <td width="78%">
+                                <textarea name="ctl00$ctl00$ctl00$cphBody$cphContent$ContactMerchantForm1$txtComments" rows="10" cols="47" id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_txtComments" class="textarea"></textarea>
+                                <p>
+                                    <span id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_RequiredFieldValidator2" style="color:Red;display:none;">Vui lòng nhập nội dung liên hệ</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                        <td></td>
+                        <td></td>
+                            <td>
+                                <span style="color: Gray">(<span style="color: Red">*</span>) Thông tin bắt buộc phải
+                                    nhập</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <div align="left">
+                                </div>
+                            </td>
+                            <td width="2%">&nbsp;
+                                
+                            </td>
+                            <td width="78%">
+                                <div class="button2 fleft">
+                                    <a style="margin-top:10px;"><span>
+                                  
+                                        <input type="submit" name="ctl00$ctl00$ctl00$cphBody$cphContent$ContactMerchantForm1$Button1" value="Xóa hết" id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_Button1" class="">
+                                    </span></a>
+                                </div>
+                                <div class="button2 fleft">  
+                                        <a id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_LinkButton1" href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$ctl00$ctl00$cphBody$cphContent$ContactMerchantForm1$LinkButton1", "", true, "contact", "", false, true))' style="_margin-top:10px;"><span>Gửi đi</span></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">&nbsp;
+                                
+                            </td>
+                            <td width="2%">&nbsp;
+                                
+                            </td>
+                            <td width="78%">
+                                <div id="ctl00_ctl00_ctl00_cphBody_cphContent_ContactMerchantForm1_ValidationSummary1" style="color:White;font-style:italic;display:none;">
+
+	</div>
+                        </td></tr>
+                    </tbody>
+                </table>
+                  
+</div>
+            </div>
+                        </div>
+                        <div id="p4" style="visibility: hidden; position: absolute; display: none;">
+                        
+                        
+                        
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <br clear="all">
+               </div>
+        <div class="intro_bottom"></div>
+  </div>
+
+<script type="text/javascript">
+    function Store_Click(x, y) {
+        $('#frameGoogleMap').attr("src", "../../map.html?longitude=" + x.toString().replace(',', '.') + "&latitude=" + y.toString().replace(',', '.'));
+    }        
+</script>
+<script type="text/javascript">
+    function doClearFormContact() {
+
+        $("input:text").each(function() {
+            $(this).val("");
+        });
+        $("textarea").each(function() {
+            $(this).val("");
+        });
+		$('#loadingDiv').hide();
+    }
+</script>
+
+<script type="text/javascript">
+    function doClearFormContact() {
+
+        $("input:text").each(function() {
+            $(this).val("");
+        });
+        $("textarea").each(function() {
+            $(this).val("");
+        });
+		$('#loadingDiv').hide();
+    }
+</script>
+
+
+      </div>
+    </div>
+
+	</div>
+        </div>
+        <!--INTRO:END--> 
+        
+      </div>
+    </div>
+  </div>
+  <!--BODY:END--> 
+  
+  <!--FOOTER: BEGIN -->
+  <div id="ch_footer">
+    <div id="ch_footer_wapper">
+      <div class="sub_foot">
+        <div class="lt_foot">
+          <ul>
+            <li><a href="/">Chọn.vn</a></li>
+            <li><a href="/cua-hang/dkny/san-pham.aspx"> Sản phẩm</a></li>
+            <li><a href="/cua-hang/dkny/gioi-thieu.aspx"> Giới thiệu</a></li>
+            <li></li>
+            <li><a href="/cua-hang/dkny/su-kien.aspx"> Sự kiện</a></li>
+            <li><a href="/cua-hang/dkny/danh-gia.aspx"> Đánh giá</a></li>
+            <li><a href="/cua-hang/dkny/lien-he.aspx"> Liên hệ</a></li>
+            <li class="end"><a href="http://www.8lions.com" id="ctl00_ctl00_ctl00_cphBody_BottomNavigator1_lnkWebsite" target="_blank">Website</a></li>
+          </ul>
+        </div>
+        <div class="rt_foot"> <span>Bản quyền © 2011 <a href="/">Chọn.vn</a> - Bản quyền được bảo vệ</span>
+          <ul>
+            <li class="facebook"><a title="Đăng lên Facebook" onclick="window.open('http://www.facebook.com/share.php?u='+document.location,'_blank');" style="cursor: pointer;"></a></li>
+            <li class="twitter"><a title="Đăng lên Twitter" onclick="window.open('http://twitter.com/home?status='+document.location,'_blank');" style="cursor: pointer;"></a></li>
+            <li class="rss" style="display:none;"><a href="/rss/Cua-hang-giam-gia-noi-bat.aspx" target="_blank"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FOOTER: END --> 
+</div>
+<!--END-->
+</body>
+</html>

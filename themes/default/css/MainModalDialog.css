@@ -1,0 +1,59 @@
+﻿.mainModalTable
+{
+	border-width:0px;
+	width:240px;
+	background-color:#ecf4fc;	
+}
+.mainModaTableTD
+{
+	border-left: 1px solid #ECE9D8; 
+	border-right: 1px solid #716F64; 
+	border-top: 1px solid #ECE9D8;
+	border-bottom: 1px solid #716F64;
+}
+.mainModalInnerTable
+{
+	border-width:0px;
+	width:100%;
+}
+.mainModalInnerTableTD
+{
+	border-left: 1px solid #FFFFFF; 
+	border-right: 1px solid #ACA899; 
+	border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #ACA899;
+}
+.mainModalDraggablePanelTD
+{
+	white-space:nowrap;
+	background-color:#93b6e8;
+	height: 15px; 
+	width: 99%;
+}
+.mainModalDraggablePanelCloseTD
+{
+	background-color:#93b6e8;
+	width:1%;
+}
+.mainModalDraggablePanel
+{
+	/*cursor:move; */
+	width:100%;
+}
+.mainModalTitle
+{
+	color:#FFFFFF;
+	font-weight:bold;
+}
+.mainModalContentsTD
+{
+	white-space:nowrap;
+	background-color:White;
+	width:95%;
+}
+ .modalBackground 
+ {
+    background-color:Silver;
+    filter:alpha(opacity=30);
+    opacity:0.3;
+ }

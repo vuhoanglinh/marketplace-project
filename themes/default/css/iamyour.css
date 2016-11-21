@@ -1,0 +1,27 @@
+﻿.wrapper-yours, .yours-top, .yours-banner{width: 100%; height: 507px; position: relative; background: url(../images/iamyour/banner-top.jpg) no-repeat top center; display: block;  margin-top: -30px;}
+.yours-banner a{}
+.sf-navbar{z-index: 10;}
+.yours-content{width: 980px; margin: auto;}
+.yOursbanner{float: left; border: 2px solid #d5d5d5; height: 445px; overflow: hidden; margin:6px 0px; width: 975px; clear: both;}
+.yOursbanner a{display: block;}
+.yours-banner6{margin-bottom: 12px;}
+
+/*banner*/
+.s_inner { margin: 0 auto;  width: 980px;}
+#s_main_banner {background: url("../images/iamyour/banner-inner.jpg") no-repeat scroll center top transparent; float: left; height: 480px; margin-top: -3px; overflow: hidden; position: relative; width: 980px;}
+.banner_img { background: url("../images/iamyour/item.png") no-repeat scroll left top transparent; display: block; position: absolute;}
+.nguoimau{background-position:-10px -10px;display:none;height:476px;right:5px;top:6px;width:261px;z-index:9}
+.aothun{background-position:-457px -10px;height:250px;left:29px;top:-268px;width:177px;z-index:6}
+.quanshort{background-position:-644px -10px;height:244px;left:169px;top:-273px;width:129px;z-index:4}
+.aovest{background-position:-281px -10px;height:251px;left:384px;top:-265px;width:166px;z-index:3}
+.tuixach{background-position:-10px -496px;height:189px;left:300px;top:-235px;width:131px;z-index:4}
+.stylist{background-position:-10px -695px;height:165px;left:-900px;top:305px;width:764px;z-index:8}
+.text{background-position:-151px -496px;display:none;height:133px;left:355px;top:200px;width:346px}
+.bop{background-position:-507px -496px;height:104px;left:530px;top:-284px;width:91px;z-index:3}
+.giay{background-position:-608px -496px;height:89px;left:586px;top:-296px;width:81px;z-index:3}
+.nuochoa{background-position:-699px -496px;height:71px;left:272px;top:-310px;width:58px;z-index:5}
+.iam{background-position:-10px -870px;display:none;height:72px;left:47px;top:206px;width:164px}
+.your{background-position:-184px -870px;display:none;height:46px;left:148px;top:278px;width:152px}
+.ke{background-position:-10px -952px;height:54px;left:-1054px;top:171px;width:641px;z-index:1}
+.tieude{background-position:-10px -1017px;bottom:0;height:30px;left:-500px;width:445px;z-index:20}
+.bongdo{background-position:-10px -1057px;display:none;height:24px;left:81px;top:165px;width:589px;z-index:2}

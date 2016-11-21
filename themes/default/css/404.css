@@ -1,0 +1,42 @@
+.container-2 {
+	width: 100%;
+	float: left;
+	background: url(../images/border-horizontal.png) repeat-x top;
+}
+.fourpage, .underpage {
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin: 40px 0 10px 0;
+}
+.fourpage h2 {
+	font-size: 100px;
+	line-height: 100px;
+	font-weight: 700;
+	margin: 0px 0 20px 0;
+	color: #353535;
+	font-family: 'Open Sans', sans-serif;
+	-moz-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	-o-transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	transform: rotate(7deg);
+}
+.fourpage h2 span {
+	color: #FF0000 !important;
+	margin-right: 20px;
+	font-size: 100px;
+}
+.fourpage h3 {
+	font-size: 18px;
+	margin: 0px 0 20px 0;
+	color: #353535;	
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.fourpage p {
+	color: #757575 !important;
+	margin-bottom: 20px !important;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
